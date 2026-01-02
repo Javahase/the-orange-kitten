@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5328172494373353365}
   - component: {fileID: 3229321801890153070}
+  - component: {fileID: 5095059537528433860}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -34,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3229321801890153070
 MonoBehaviour:
@@ -56,12 +57,26 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &5095059537528433860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747501456490752654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 1
 --- !u!1 &2463943311678441418
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e6ea272c0e9a14d8e8413b2994045c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatHistory
-  chatMessages: []
+  _chatMessagePrefab: {fileID: 2611747674217611333, guid: 7725c49af116bed4c8a7b7d7e8f38745, type: 3}
+  _viewport: {fileID: 3229321801890153070}
 --- !u!1 &4644279288642582468
 GameObject:
   m_ObjectHideFlags: 0

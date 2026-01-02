@@ -8,7 +8,6 @@ public class RecipeSequence : MonoBehaviour
 {
     public ChatHistoryManager chatHistoryManager;
     [HideInInspector] public RecipeStatement currentStatement;
-
     [SerializeField] private TMP_Text statementText;
     public List<RecipeStatement> statements;
     private int _index = 0;
@@ -21,6 +20,11 @@ public class RecipeSequence : MonoBehaviour
             chatHistoryManager.InitNewHistory();
         }
         SelectStatement(0);
+    }
+
+    public void Test()
+    {
+        chatHistoryManager.GetActiveHistory().PushMessage("ROBOT", "Why are you so cool?!?");
     }
 
     public void SelectStatement(int index)

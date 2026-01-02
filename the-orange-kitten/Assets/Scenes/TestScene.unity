@@ -183,46 +183,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[2].hidden
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[3].hidden
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[0].message
-      value: Hello There
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[1].message
-      value: Obiwan Kenobi!
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[2].message
-      value: Hmm, no
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[3].message
-      value: I guess it makes sense?
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[1].statementType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[2].statementType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: statements.Array.data[3].statementType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1278918798741041346, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_Camera
       value: 
@@ -250,10 +210,6 @@ PrefabInstance:
     - target: {fileID: 4403752788265687373, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6393109462944738679, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -202.49994
       objectReference: {fileID: 0}
     - target: {fileID: 7044576084549526834, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_SizeDelta.y

@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -202.5, y: -127.5}
+  m_AnchoredPosition: {x: -202.49994, y: -127.5}
   m_SizeDelta: {x: -405, y: -255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &204625841073031205
@@ -433,7 +433,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 244245768767919870}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879850669860624744}
+        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
+        m_MethodName: Test
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &872159803116126496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,6 +1257,19 @@ MonoBehaviour:
     hidden: 0
     statementType: 0
   statementText: {fileID: 1062566584664877950}
+  statements:
+  - message: Hello There
+    hidden: 0
+    statementType: 0
+  - message: Obiwan Kenobi!
+    hidden: 0
+    statementType: 1
+  - message: Hmm, no
+    hidden: 1
+    statementType: 1
+  - message: I guess it makes sense?
+    hidden: 0
+    statementType: 2
 --- !u!1 &3292332331563956070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,7 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20714667, g: 0.24958049, b: 0.3301887, a: 1}
+  m_Color: {r: 0.09554112, g: 0.1252426, b: 0.1792453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

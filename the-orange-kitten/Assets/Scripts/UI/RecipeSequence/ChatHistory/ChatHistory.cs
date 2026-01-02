@@ -1,19 +1,14 @@
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChatHistory : MonoBehaviour
 {
 
-    [HideInInspector] public List<TMP_Text> chatMessages;
+    [SerializeField] private ChatMessage _chatMessagePrefab;
+    [SerializeField] private VerticalLayoutGroup _viewport;
 
-    public void SetChatHistory(List<TMP_Text> chatMessages)
+    public void PushMessage(string author, string content)
     {
-        this.chatMessages = chatMessages;
-    }
-    
-    void PushMessage(string author, string content)
-    {
-        
+        _chatMessagePrefab.InstantiateMessage(author, content, _viewport.transform);
     }
 }

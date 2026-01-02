@@ -17,6 +17,8 @@ public class ChatHistoryManager : MonoBehaviour
         GetComponentsInChildren<ChatHistory>(includeInactive: true)[index].gameObject.SetActive(visible);
     }
 
-    
-    
+    public ChatHistory GetActiveHistory()
+    {
+        return GetComponentInChildren<ChatHistory>();
+    }
 }
