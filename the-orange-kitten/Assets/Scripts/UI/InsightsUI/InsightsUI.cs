@@ -20,11 +20,11 @@ public class InsightsUI : SingletonObject<InsightsUI>
            var button = slotElement.GetComponent<Button>();
            button.onClick.AddListener(() =>
            {
+                var selected = slotElement.IsSelected();
+                inventory.DeselectAll();
+                slotElement.SetSelected(!selected);
                _selectedInsight = slotElement.GetInsight();
-               if (_contradictionMode)
-               {
-                   _btnContradict.enabled = true;
-               }
+               _btnContradict.enabled = _contradictionMode;
            });
         });
         _btnLeft.onClick.AddListener(() =>

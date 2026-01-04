@@ -34,7 +34,7 @@ public class InsightService : SingletonObject<InsightService>
 
     public List<RecipeInsight> GetPaged(int pageSize, int page)
     {
-        var maxTargetPossible = Math.Min(pageSize - page * pageSize, _recipeInsights.Count - 1 - page * pageSize);
+        var maxTargetPossible = Math.Clamp(_recipeInsights.Count - page * pageSize, 0, 9);
         return _recipeInsights.GetRange(page * pageSize, maxTargetPossible);
     }
 }
