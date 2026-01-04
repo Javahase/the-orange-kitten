@@ -1,9 +1,26 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 
 public class MockLLMService : LLMService
 {
-    public override IEnumerator<string> CreateChatConnection(ChatConnection chatConnection)
+
+    List<RecipeStatement> _statements = new();
+
+    public override void InitStatements(List<RecipeStatement> statements)
     {
-        yield return chatConnection.message;
+        _statements = statements;
     }
+    
+    public override void ClearStatements()
+    {
+        _statements.Clear();
+    }
+
+    public override IEnumerator CreateChatConnection(RecipeStatement stmt, string request, Action<string> callback)
+    {
+        yield return request;
+        callback.Invoke(request);
+    }
+
 }

@@ -1,17 +1,20 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class RecipeSequence : MonoBehaviour
 {
-    public ChatHistoryManager chatHistoryManager;
     [HideInInspector] public RecipeStatement currentStatement;
-    [SerializeField] private TMP_Text statementText;
-    public List<RecipeStatement> statements;
-    private int _index = 0;
+    [SerializeField] private TMP_Text _statementText;
+    [SerializeField] private TMP_InputField _inputField;
 
+    public ChatHistoryManager chatHistoryManager;
+    public List<RecipeStatement> statements;
+    
+    private int _index = 0;
+    private bool _isLLMPondering = false;
 
     void Start()
     {
@@ -29,10 +32,11 @@ public class RecipeSequence : MonoBehaviour
 
     public void SelectStatement(int index)
     {
+        if (_isLLMPondering) return;
         currentStatement = statements[index];
         chatHistoryManager.SetHistoryVisible(_index, false);
         _index = index;
-        statementText.text = currentStatement.message;
+        _statementText.text = currentStatement.message;
         chatHistoryManager.SetHistoryVisible(_index, true);
     }
 
@@ -52,5 +56,21 @@ public class RecipeSequence : MonoBehaviour
     public void SelectNextStatement() => TraverseStatement(1);
     public void SelectPrevStatement() => TraverseStatement(-1);
 
+    public void PressStatement()
+    {
+        StartCoroutine(SendChatRequest(_inputField.text));
+    }
 
+    private IEnumerator SendChatRequest(string message)
+    {
+        _inputField.text = "";
+        _inputField.interactable = false;
+        _isLLMPondering = true;
+        yield return LLMService.GetInstance().CreateChatConnection(currentStatement, message, (action) =>
+        {
+            chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); 
+        });
+        _isLLMPondering = false;
+        _inputField.interactable = true;
+    }
 }

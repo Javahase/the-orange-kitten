@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -202.49994, y: -127.5}
-  m_SizeDelta: {x: -405, y: -255}
+  m_AnchoredPosition: {x: -202.49994, y: -102.5}
+  m_SizeDelta: {x: -405, y: -205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &204625841073031205
 GameObject:
@@ -436,7 +436,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 879850669860624744}
         m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: Test
+        m_MethodName: PressStatement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -881,7 +881,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -500.00003, y: 250}
+  m_SizeDelta: {x: -400, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7781434398113137640
 CanvasRenderer:
@@ -938,8 +938,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1017,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &4413934073775336713
@@ -1092,8 +1092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -400, y: -125}
-  m_SizeDelta: {x: 5, y: -250}
+  m_AnchoredPosition: {x: -400, y: -100}
+  m_SizeDelta: {x: 5, y: -200}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &33142046430284334
 CanvasRenderer:
@@ -1251,12 +1251,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788656d915ad1e14980cda61650a7e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSequence
-  chatHistoryManager: {fileID: 7641434271385279138}
   currentStatement:
     message: 
     hidden: 0
     statementType: 0
-  statementText: {fileID: 1062566584664877950}
+  _statementText: {fileID: 1062566584664877950}
+  _inputField: {fileID: 5519669781394235980}
+  chatHistoryManager: {fileID: 7641434271385279138}
   statements:
   - message: Hello There
     hidden: 0
@@ -1618,7 +1619,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 250}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &5120317625924980601
 GameObject:
@@ -1779,7 +1780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &7748394710648767117
@@ -1859,7 +1860,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 0}
+  m_SizeDelta: {x: 200, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &5939643753200315968
 CanvasRenderer:
@@ -2067,7 +2068,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 0}
+  m_SizeDelta: {x: 200, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &4157719110172534951
 CanvasRenderer:
