@@ -12,12 +12,14 @@ public class RecipeSequence : MonoBehaviour
 
     public ChatHistoryManager chatHistoryManager;
     public List<RecipeStatement> statements;
-    
+
+    private LLMService _service;
     private int _index = 0;
     private bool _isLLMPondering = false;
 
     void Start()
     {
+        _service = LLMService.GetInstance();
         foreach (var _ in statements)
         {
             chatHistoryManager.InitNewHistory();
@@ -66,7 +68,7 @@ public class RecipeSequence : MonoBehaviour
         _inputField.text = "";
         _inputField.interactable = false;
         _isLLMPondering = true;
-        yield return LLMService.GetInstance().CreateChatConnection(currentStatement, message, (action) =>
+        yield return _service.CreateChatConnection(currentStatement, message, (action) =>
         {
             chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); 
         });

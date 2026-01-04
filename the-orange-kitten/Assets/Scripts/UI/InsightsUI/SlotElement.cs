@@ -21,11 +21,6 @@ public class SlotElement : MonoBehaviour
         return slotElement;
     }
 
-    public void ToggleActivityState()
-    {
-        SetSelected(!IsSelected());
-    }
-
     public void SetSelected(bool selected)
     {
         if (_insight.Equals(RecipeInsight.EMPTY))

@@ -3,35 +3,64 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Persists a bunch of insights, until the current scene ends.
+/// </summary>
+/// <seealso cref="RecipeInsight"/>
 public class InsightService : SingletonObject<InsightService>
 {
 
+    /// <summary>
+    /// Base insights that the player has available right away.
+    /// </summary>
     [SerializeField]
-    private List<RecipeInsight> _defaultInsights;
+    private List<RecipeInsight> defaultInsights;
+    /// <summary>
+    /// The actual insight pool.
+    /// </summary>
     private List<RecipeInsight> _recipeInsights = new();
 
-    void Start()
+    private void Start()
     {
-        _recipeInsights.AddRange(_defaultInsights);
+        _recipeInsights.AddRange(defaultInsights);
     }
-
+    
+    /// <summary>
+    /// Adds a <see cref="RecipeInsight"/> to the pool.
+    /// </summary>
+    /// <param name="insight">The recipe insight.</param>
     public void AddInsight(RecipeInsight insight)
     {
         _recipeInsights.Add(insight);
     }
 
+    /// <summary>
+    /// Removes insight that no longer grant a win to the current puzzle.
+    /// Red herrings (insights flagged with <c>-1</c>) remain, however.
+    /// </summary>
+    /// <param name="progression">Every insight below this value, not equal to <c>-1</c>, will be removed.</param>
     public void RemoveUselessInsights(int progression)
     {
         _recipeInsights = (from insight in _recipeInsights
                            where insight.correctSequence >= progression || insight.correctSequence == -1
                            select insight).ToList();
     }
-
+    
+    /// <summary>
+    /// Gets all insights.
+    /// </summary>
+    /// <returns>All insights.</returns>
     public List<RecipeInsight> GetAllInsights()
     {
         return _recipeInsights;
     }
-
+    
+    /// <summary>
+    /// Gets a certain section of the insights, useful for the <see cref="InsightsUI"/>.
+    /// </summary>
+    /// <param name="pageSize">How many insights fit onto a page.</param>
+    /// <param name="page">Which page should be retrieved.</param>
+    /// <returns>A certain section of the insights.</returns>
     public List<RecipeInsight> GetPaged(int pageSize, int page)
     {
         var maxTargetPossible = Math.Clamp(_recipeInsights.Count - page * pageSize, 0, 9);
