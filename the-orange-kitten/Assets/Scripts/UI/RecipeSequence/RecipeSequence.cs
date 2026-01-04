@@ -73,4 +73,9 @@ public class RecipeSequence : MonoBehaviour
         _isLLMPondering = false;
         _inputField.interactable = true;
     }
+
+    public void OpenInsightInfo(bool contradictionMode)
+    {
+        InsightsUI.GetInstance().Open(contradictionMode);
+    }
 }

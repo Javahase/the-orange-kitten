@@ -10,7 +10,7 @@ public class SingletonObject<T> : MonoBehaviour where T : SingletonObject<T>
     {
         if (_instance == null)
         {
-            var objs = FindObjectsByType<T>(FindObjectsSortMode.InstanceID);
+            var objs = FindObjectsByType<T>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID);
             if (objs.Length != 1)
             {
                 Debug.LogError("Singleton may only exist once!");
