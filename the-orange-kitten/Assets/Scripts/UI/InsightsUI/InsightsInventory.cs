@@ -12,7 +12,7 @@ public class InsightsInventory : MonoBehaviour
     /// <summary>
     /// The page size of a page of the insights inventory.
     /// </summary>
-    private const int PageSize = 9;
+    public const int PageSize = 9;
     
     /// <summary>
     /// A <see cref="SlotElement"/>-prefab that gets copied.
@@ -35,7 +35,6 @@ public class InsightsInventory : MonoBehaviour
         _slots = Enumerable.Range(0, PageSize)
                             .Select(_ => slotElementPrefab.InstantiateWith(RecipeInsight.EMPTY, transform))
                             .ToList();
-        SetPage(null, 0);
     }
     
     /// <summary>
@@ -45,39 +44,41 @@ public class InsightsInventory : MonoBehaviour
     {
         _slots.ForEach(slot => slot.SetSelected(false));
     }
+
+    public void ToggleSlot(int slot)
+    {
+        var slotElement = _slots[slot];
+        var selected = slotElement.IsSelected();
+        DeselectAll();
+        slotElement.SetSelected(!selected);
+    }
     
     /// <summary>
     /// Sets the displayed page to <see cref="page"/>.
     /// </summary>
-    /// <param name="currSelected"></param>
-    /// <param name="page"></param>
-    public void SetPage(RecipeInsight? currSelected, int page)
+    /// <param name="page">The page that should be displayed</param>
+    public void SetPage(int page)
     {
-        // TODO: Delete currSelected.
-        if (page < 0 || page > GetMaxPageCount()) return;
+        if (page < 0 || page >= GetMaxPageCount()) return;
         var insights = InsightService.GetInstance().GetPaged(PageSize, page);
-        var maxSlotUsed = insights.Count;
-        for (var i = 0; i < maxSlotUsed; i++)
+        for (var i = 0; i < _slots.Count; i++)
         {
-            _slots[i].SetInsight(insights[i]);
-            _slots[i].SetSelected(insights[i].Equals(currSelected));
+            _slots[i].SetSelected(false);
+            _slots[i].SetInsight(insights.ElementAtOrElse(i, RecipeInsight.EMPTY));
         }
         _currentPage = page;
     }
 
-    // TODO: This throws a DivideByZeroException for some reason?
-    public void AddPage(RecipeInsight? currSelected, int pagesToAdd = 1) => SetPage(currSelected, (_currentPage + pagesToAdd) % GetMaxPageCount());
+    public void AddPage(int pagesToAdd) => SetPage((_currentPage + pagesToAdd) % GetMaxPageCount());
 
     public int GetCurrentPage() => _currentPage;
 
     private static int GetMaxPageCount()
-    {
-        return (int)Math.Floor(InsightService.GetInstance().GetAllInsights().Count / (float)PageSize);
-    }
+        => (int)Math.Ceiling(InsightService.GetInstance().GetAllInsights().Count / (float)PageSize);
 
-    public List<SlotElement> GetSlotElements()
-    {
-        return _slots;
-    }
+    public SlotElement GetSlot(int index) => _slots[index];
+
+    public List<SlotElement> GetSlotElements() => _slots;
+    
 
 }

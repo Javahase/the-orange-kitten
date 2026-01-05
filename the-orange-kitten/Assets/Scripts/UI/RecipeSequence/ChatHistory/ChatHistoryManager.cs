@@ -7,6 +7,7 @@ public class ChatHistoryManager : MonoBehaviour
 
     [SerializeField] private GameObject chatHistoryInstance;
     private readonly List<ChatHistory> _chatHistories = new();
+    private ChatHistory _activeHistory;
 
     public ChatHistory InitNewHistory()
     {
@@ -19,19 +20,18 @@ public class ChatHistoryManager : MonoBehaviour
 
     public void SetActiveHistory(int index)
     {
-        
-        SetHistoryVisible(index, true);
+        var history = _chatHistories[index];
+        history.gameObject.SetActive(true);
+        _activeHistory = history;
     }
 
     public void SetHistoryVisible(int index, bool visible)
     {
-        var target = GetComponentsInChildren<ChatHistory>()[index];
         _chatHistories[index].gameObject.SetActive(visible);
-        
     }
 
     public ChatHistory GetActiveHistory()
     {
-        return _chatHistories.Find(chatHistory => chatHistory.gameObject.activeSelf);
+        return _activeHistory;
     }
 }

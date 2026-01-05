@@ -3,23 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RecipeSequence : MonoBehaviour
 {
     [HideInInspector] public RecipeStatement currentStatement;
-    [SerializeField] private TMP_Text _statementText;
-    [SerializeField] private TMP_InputField _inputField;
+    [SerializeField] private TMP_Text statementText;
+    [SerializeField] private TMP_InputField inputField;
 
     public ChatHistoryManager chatHistoryManager;
     public List<RecipeStatement> statements;
 
-    private LLMService _service;
+    private LLMService _llmService;
     private int _index = 0;
-    private bool _isLLMPondering = false;
+    private bool _isLlmPondering = false;
 
-    void Start()
+    private void Start()
     {
-        _service = LLMService.GetInstance();
+        _llmService = LLMService.GetInstance();
         foreach (var _ in statements)
         {
             chatHistoryManager.InitNewHistory();
@@ -27,19 +28,14 @@ public class RecipeSequence : MonoBehaviour
         SelectStatement(0);
     }
 
-    public void Test()
-    {
-        chatHistoryManager.GetActiveHistory().PushMessage("ROBOT", "Why are you so cool?!?");
-    }
-
     public void SelectStatement(int index)
     {
-        if (_isLLMPondering) return;
+        if (_isLlmPondering) return;
         currentStatement = statements[index];
         chatHistoryManager.SetHistoryVisible(_index, false);
         _index = index;
-        _statementText.text = currentStatement.message;
-        chatHistoryManager.SetHistoryVisible(_index, true);
+        statementText.text = currentStatement.message;
+        chatHistoryManager.SetActiveHistory(_index);
     }
 
     private void TraverseStatement(int direction)
@@ -60,20 +56,20 @@ public class RecipeSequence : MonoBehaviour
 
     public void PressStatement()
     {
-        StartCoroutine(SendChatRequest(_inputField.text));
+        StartCoroutine(SendChatRequest(inputField.text));
     }
 
     private IEnumerator SendChatRequest(string message)
     {
-        _inputField.text = "";
-        _inputField.interactable = false;
-        _isLLMPondering = true;
-        yield return _service.CreateChatConnection(currentStatement, message, (action) =>
+        inputField.text = "";
+        inputField.interactable = false;
+        _isLlmPondering = true;
+        yield return _llmService.CreateChatConnection(currentStatement, message, (action) =>
         {
             chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); 
         });
-        _isLLMPondering = false;
-        _inputField.interactable = true;
+        _isLlmPondering = false;
+        inputField.interactable = true;
     }
 
     public void OpenInsightInfo(bool contradictionMode)

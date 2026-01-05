@@ -332,7 +332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 194135076535587810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1503780637684485286}
+        m_TargetAssemblyTypeName: InsightsInventory, Assembly-CSharp
+        m_MethodName: AddPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &671192898095977811
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a5a4c10951ca14c9346c11e0051cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsightsInventory
-  _slotElementPrefab: {fileID: 6117481964021385132, guid: 7ade8aa2cfd269949b6d022945424067, type: 3}
+  slotElementPrefab: {fileID: 6117481964021385132, guid: 7ade8aa2cfd269949b6d022945424067, type: 3}
 --- !u!1 &3534576166731741225
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +891,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7249724014654578660}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1503780637684485286}
+        m_TargetAssemblyTypeName: InsightsInventory, Assembly-CSharp
+        m_MethodName: AddPage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5113592242060593837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,9 +1196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsightsUI
   inventory: {fileID: 1503780637684485286}
-  _btnContradict: {fileID: 4658744222320412563}
-  _btnLeft: {fileID: 1909994823142936303}
-  _btnRight: {fileID: 6138546381198148669}
+  btnContradict: {fileID: 4658744222320412563}
 --- !u!1 &8849064916368002821
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using System;
 /// A <c>RecipeInsight</c> models a potential puzzle piece
 /// for solving a recipe sequence.
 /// </summary>
-[Serializable]
+[Serializable] 
 public struct RecipeInsight
 {
     
@@ -28,5 +28,15 @@ public struct RecipeInsight
     {
         this.info = info;
         this.correctSequence = correctSequence;
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (obj is RecipeInsight insight)
+        {
+            return info == insight.info && correctSequence == insight.correctSequence;
+        }
+
+        return false;
     }
 }

@@ -1392,8 +1392,8 @@ MonoBehaviour:
     message: 
     hidden: 0
     statementType: 0
-  _statementText: {fileID: 1062566584664877950}
-  _inputField: {fileID: 5519669781394235980}
+  statementText: {fileID: 1062566584664877950}
+  inputField: {fileID: 5519669781394235980}
   chatHistoryManager: {fileID: 7641434271385279138}
   statements:
   - message: Hello There
@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 4166508854497420769}
   - component: {fileID: 4608512942950899315}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: LiveCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2483,7 +2483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbfe44ac9f1c48d458da49bba87ea6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatHistoryManager
-  _chatHistoryInstance: {fileID: 2463943311678441418, guid: 0089c0fb5c2b339408500ded790e030c, type: 3}
+  chatHistoryInstance: {fileID: 2463943311678441418, guid: 0089c0fb5c2b339408500ded790e030c, type: 3}
 --- !u!1 &8079627517992133859
 GameObject:
   m_ObjectHideFlags: 0

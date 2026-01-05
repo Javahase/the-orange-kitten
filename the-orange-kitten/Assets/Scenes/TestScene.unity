@@ -644,10 +644,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7529a419dfb847c4486484599eb966f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InsightService
-  _defaultInsights:
-  - info: The Result should be cold
+  defaultInsights:
+  - info: Truly insightful
     correctSequence: 0
-  - info: The Recipe is cool
+  - info: Not so insightful...
+    correctSequence: -1
+  - info: A
+    correctSequence: -1
+  - info: B
+    correctSequence: -1
+  - info: C
+    correctSequence: -1
+  - info: D
+    correctSequence: -1
+  - info: F
+    correctSequence: -1
+  - info: G
+    correctSequence: -1
+  - info: H
+    correctSequence: -1
+  - info: I
     correctSequence: -1
 --- !u!1 &1051019839
 GameObject:

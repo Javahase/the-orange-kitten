@@ -5,43 +5,38 @@ public class InsightsUI : SingletonObject<InsightsUI>
 {
     
     public InsightsInventory inventory;
-    [SerializeField] private Button _btnContradict;
-    [SerializeField] private Button _btnLeft;
-    [SerializeField] private Button _btnRight;
+    [SerializeField] private Button btnContradict;
     private bool _contradictionMode = false;
 
     private RecipeInsight? _selectedInsight = null;
 
-    void Start()
+    private void Start()
     {
         gameObject.SetActive(false);
-        inventory.GetSlotElements().ForEach(slotElement =>
+        InitInsightInventory();
+    }
+
+    private void InitInsightInventory()
+    {
+        for (var i = 0; i < InsightsInventory.PageSize; i++)
         {
-           var button = slotElement.GetComponent<Button>();
-           button.onClick.AddListener(() =>
-           {
-                var selected = slotElement.IsSelected();
-                inventory.DeselectAll();
-                slotElement.SetSelected(!selected);
-               _selectedInsight = slotElement.GetInsight();
-               _btnContradict.enabled = _contradictionMode;
-           });
-        });
-        _btnLeft.onClick.AddListener(() =>
-        {
-           inventory.AddPage(_selectedInsight, 1); 
-        });
-        _btnRight.onClick.AddListener(() =>
-        {
-           inventory.AddPage(_selectedInsight, -1);
-        });
+            var i1 = i;
+            var slotElem = inventory.GetSlot(i);
+            var button = slotElem.GetComponent<Button>();
+            button.onClick.AddListener(() =>
+            {
+                inventory.ToggleSlot(i1);
+                _selectedInsight = slotElem.GetInsight();
+                btnContradict.enabled = _contradictionMode;
+            });
+        }
     }
 
     public void Open(bool contradictionMode)
     {
         _contradictionMode = contradictionMode;
-        _btnContradict.gameObject.SetActive(contradictionMode);
-        inventory.SetPage(_selectedInsight, 0);
+        btnContradict.gameObject.SetActive(contradictionMode);
+        inventory.SetPage(0);
         gameObject.SetActive(true);
     }
 
