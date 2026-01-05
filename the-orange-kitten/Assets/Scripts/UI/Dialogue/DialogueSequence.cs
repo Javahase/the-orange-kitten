@@ -1,35 +1,37 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 // TODO: Group Sequences together, Create Sequence Manager, let Sequences tell Sequence Manager when to progress to next.
-public class DialogueSequence : MonoBehaviour
+public class DialogueSequence : LinearGameSequence<BaseFrame>
 {
 
-    private List<BaseFrame> _frames;
-    private int _currentFrameIndex;
+    protected override List<BaseFrame> SequencePoints { get; set; }
+    private GameSequenceController _sequenceController;
 
-    private void Start()
+    public override void OnInitialize()
     {
-        _frames = GetComponentsInChildren<BaseFrame>(includeInactive: true).ToList();
-        _frames.ForEach(frame =>
+        _sequenceController = GameSequenceController.GetInstance();
+        SequencePoints = GetComponentsInChildren<BaseFrame>(includeInactive: true).ToList();
+        SequencePoints.ForEach(frame =>
         {
-            frame.Init();
-            frame.gameObject.SetActive(false);
+            frame.OnInitialize();
         });
-        gameObject.SetActive(false);
     }
 
-    public void StartSequence()
+    public override void OnEnabled()
     {
         gameObject.SetActive(true);
-        _frames[_currentFrameIndex].HandleSelected();
+        CurrentSequence.OnEnabled();
     }
 
-    public void NextFrame()
+    public override void OnDisabled()
     {
-        _frames[_currentFrameIndex].HandleDeselected();
-        _currentFrameIndex += 1;
-        _frames[_currentFrameIndex].HandleSelected();
+    }
+
+    protected override void OnSequenceEnded()
+    {
+        _sequenceController.Next();
     }
 }

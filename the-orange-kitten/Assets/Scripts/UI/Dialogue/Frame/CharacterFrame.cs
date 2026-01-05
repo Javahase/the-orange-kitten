@@ -6,9 +6,9 @@ public class CharacterFrame : BaseFrame
     public string characterName;
     private TMP_Text _characterNameField;
 
-    public override void Init()
+    public override void OnInitialize()
     {
-        base.Init();
+        base.OnInitialize();
         _characterNameField = transform.Find("DialogueCharacterName/CharacterName").GetComponent<TMP_Text>();
         _characterNameField.text = characterName;
     }

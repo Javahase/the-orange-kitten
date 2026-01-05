@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class BaseFrame : MonoBehaviour, IPointerClickHandler
+public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 {
     [SerializeField]
     private float frameSpeed = 0.1f;
@@ -16,14 +16,14 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler
     private TMP_Text _dialogueText;
     private Image _imgContinue;
 
-    public virtual void Init()
+    public virtual void OnInitialize()
     {
         _dialogueText = transform.Find("DialogueTextBox/DialogueText").GetComponent<TMP_Text>();
         _imgContinue = transform.Find("ProgressDialoguePrompt").GetComponent<Image>();
         _sequence = GetComponentInParent<DialogueSequence>(includeInactive: true);
     }
 
-    public void HandleSelected()
+    public void OnEnabled()
     {
         gameObject.SetActive(true);
         _imgContinue.gameObject.SetActive(false);
@@ -31,7 +31,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler
         _currentCoroutine = StartCoroutine(StartAnimation());
     }
 
-    public void HandleDeselected()
+    public void OnDisabled()
     {
         gameObject.SetActive(false);
         if (_currentCoroutine != null)
@@ -57,7 +57,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            _sequence.NextFrame();
+            _sequence.Next();
         }
     }
 

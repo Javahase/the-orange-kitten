@@ -3,56 +3,73 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class RecipeSequence : MonoBehaviour
+public class RecipeSequence : GameSequence<RecipeStatement>
 {
-    [HideInInspector] public RecipeStatement currentStatement;
     [SerializeField] private TMP_Text statementText;
     [SerializeField] private TMP_InputField inputField;
-
+    [SerializeField] private List<RecipeStatement> statements;
     public ChatHistoryManager chatHistoryManager;
-    public List<RecipeStatement> statements;
-
+    
+    protected override List<RecipeStatement> SequencePoints { get; set; }
     private LLMService _llmService;
-    private int _index = 0;
     private bool _isLlmPondering = false;
 
-    private void Start()
+    public override void OnInitialize()
     {
         _llmService = LLMService.GetInstance();
-        foreach (var _ in statements)
+        SequencePoints = statements;
+        foreach (var _ in SequencePoints)
         {
             chatHistoryManager.InitNewHistory();
         }
+    }
+
+    public override void OnEnabled()
+    {
+        gameObject.SetActive(true);
         SelectStatement(0);
     }
 
-    public void SelectStatement(int index)
+    public override void OnDisabled()
+    {
+        // TODO
+    }
+
+    public override void ResetSequence()
+    {
+        CurrentStep = 0;
+        chatHistoryManager.ChatHistories.ForEach(history => history.ClearChat());
+    }
+
+    private void SelectStatement(int index)
     {
         if (_isLlmPondering) return;
-        currentStatement = statements[index];
-        chatHistoryManager.SetHistoryVisible(_index, false);
-        _index = index;
-        statementText.text = currentStatement.message;
-        chatHistoryManager.SetActiveHistory(_index);
+        chatHistoryManager.SetHistoryVisible(CurrentStep, false);
+        CurrentStep = index;
+        statementText.text = CurrentSequence.message;
+        chatHistoryManager.SetActiveHistory(CurrentStep);
+        base.OnStepChange();
     }
 
-    private void TraverseStatement(int direction)
+    private bool TraverseStatement(int direction)
     {
-        if (_index + direction < 0 || _index + direction >= statements.Count)
-            return;
-        var traversed = statements[_index + direction];
-        if (traversed.hidden)
+        if (CurrentStep + direction < 0 || CurrentStep + direction >= SequencePoints.Count)
+            return false;
+        var traversed = SequencePoints[CurrentStep + direction];
+        while (traversed.hidden)
         {
-            TraverseStatement(direction + Math.Sign(direction));
-            return;
+            direction += Math.Sign(direction);
         }
-        SelectStatement(_index + direction);
+        SelectStatement(CurrentStep + direction);
+        return true;
     }
 
-    public void SelectNextStatement() => TraverseStatement(1);
-    public void SelectPrevStatement() => TraverseStatement(-1);
+    public override bool Next() => TraverseStatement(1);
+    public override bool Previous() => TraverseStatement(-1);
+
+    public void NextF() => Next();
+    public void PreviousF() => Previous();
 
     public void PressStatement()
     {
@@ -64,7 +81,7 @@ public class RecipeSequence : MonoBehaviour
         inputField.text = "";
         inputField.interactable = false;
         _isLlmPondering = true;
-        yield return _llmService.CreateChatConnection(currentStatement, message, (action) =>
+        yield return _llmService.CreateChatConnection(CurrentSequence, message, (action) =>
         {
             chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); 
         });
