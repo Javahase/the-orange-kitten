@@ -19,6 +19,30 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     public bool Next()
     {
+        var next = _sequences[_currentStep + 1];
+        return ProgressSequence(next);
+    }
+
+    private bool ProgressSequence(IGameSequence sequence)
+        => sequence switch
+        {
+            TransitionSequence t => ProgressTransition(t),
+            _ => ProgressDefault()
+        };
+
+    private bool ProgressTransition(TransitionSequence t)
+    {
+        var progress = t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
+            _sequences.ElementAtOrDefault(_currentStep + 1));
+        if (progress)
+        {
+            _currentStep++;
+        }
+        return progress;
+    }
+
+    private bool ProgressDefault()
+    {
         CurrentSequence.OnDisabled();
         if (CurrentSequence is MonoBehaviour monoBehaviour)
             monoBehaviour.gameObject.SetActive(false);
@@ -32,5 +56,5 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         return true;
     }
 
-    
+
 }

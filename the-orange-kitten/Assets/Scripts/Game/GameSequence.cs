@@ -2,11 +2,18 @@
 using UnityEngine;
 
 public interface IGameSequence : IInitializable
-{
-    public virtual void OnStepChange() {}
-    public abstract bool Next();
-    public abstract bool Previous();
+{ 
     public abstract void ResetSequence();
+}
+
+public abstract class TransitionSequence : MonoBehaviour, IGameSequence
+{
+    public abstract void ResetSequence();
+    public abstract bool BeginTransition(IGameSequence previous, IGameSequence next);
+    public abstract void OnInitialize();
+
+    public virtual void OnEnabled() {}
+    public virtual void OnDisabled() {}
 }
 
 public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
