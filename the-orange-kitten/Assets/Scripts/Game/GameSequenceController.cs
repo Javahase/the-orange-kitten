@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -32,14 +33,16 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     private bool ProgressTransition(TransitionSequence t)
     {
+        StartCoroutine(ProgressTransition1(t));
+        return true;
+    }
+
+    private IEnumerator ProgressTransition1(TransitionSequence t)
+    {
         _currentStep++;
-        var progress = t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
+        yield return t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1), 
             _sequences.ElementAtOrDefault(_currentStep + 1));
-        if (progress)
-        {
-            _currentStep++;
-        }
-        return progress;
+        _currentStep++;
     }
 
     private bool ProgressDefault()

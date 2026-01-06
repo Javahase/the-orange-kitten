@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public interface IGameSequence : IInitializable
@@ -9,7 +10,7 @@ public interface IGameSequence : IInitializable
 public abstract class TransitionSequence : MonoBehaviour, IGameSequence
 {
     public abstract void ResetSequence();
-    public abstract bool BeginTransition(IGameSequence previous, IGameSequence next);
+    public abstract IEnumerator BeginTransition(IGameSequence previous, IGameSequence next);
     public abstract void OnInitialize();
 
     public virtual void OnEnabled() {}
