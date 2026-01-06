@@ -32,6 +32,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     private bool ProgressTransition(TransitionSequence t)
     {
+        _currentStep++;
         var progress = t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
             _sequences.ElementAtOrDefault(_currentStep + 1));
         if (progress)
