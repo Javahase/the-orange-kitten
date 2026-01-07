@@ -28,11 +28,18 @@ public class DialogueSequence : LinearGameSequence<BaseFrame>
 
     public override void OnDisabled()
     {
+        ResetSequence();
         gameObject.SetActive(false);
     }
 
     protected override void OnSequenceEnded()
     {
         _sequenceController.Next();
+    }
+
+    public override void ResetSequence()
+    {
+        CurrentSequence.OnDisabled();
+        base.ResetSequence();
     }
 }
