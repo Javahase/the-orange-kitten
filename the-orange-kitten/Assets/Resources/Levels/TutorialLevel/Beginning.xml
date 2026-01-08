@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
 <DialogueSequence>
-    <BaseFrame bg="">
-        <Text>
-            This is a test.
-        </Text>
-    </BaseFrame>
-    
-    <NamedFrame bg="">
-        <Actor>Test</Actor>
-        <Text>
-            This is another Test!
-        </Text>
-    </NamedFrame>
+    <BaseDialogue bg="">
+        <Text>Location: ???</Text>
+    </BaseDialogue>
+    <CharacterDialogue>
+        <Actor>???</Actor>
+        <Text>The order has arrived, my lord. Are we ready to begin?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="">
+        <Actor>"Lord"</Actor>
+        <Text>Meow meow. Meow meow meow? Meow! MEEEEEEEEOW!!!!</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>???</Actor>
+        <Text>As you wish. I shall swiftly make the preparations...</Text>
+    </CharacterDialogue>
 </DialogueSequence>

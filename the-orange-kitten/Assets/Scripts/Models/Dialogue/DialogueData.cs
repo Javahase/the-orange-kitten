@@ -1,25 +1,21 @@
+
+using System.Xml.Serialization;
+
+[XmlRoot(ElementName = "BaseDialogue")]
 public class DialogueData
 {
 
+    [XmlAttribute(AttributeName = "bg")]
     public string BackgroundPath;
+    [XmlElement()]
     public string Text;
 
-    public DialogueData(string backgroundPath, string text)
-    {
-        BackgroundPath = backgroundPath;
-        Text = text;
-    }
 
+    [XmlRoot(ElementName = "CharacterDialogue")]
     public class CharacterDialogueData : DialogueData
     {
+        [XmlElement(ElementName = "Actor")]
         public string CharacterName;
         
-        public CharacterDialogueData(string backgroundPath, string text, string characterName) : base(backgroundPath, text)
-        {
-            CharacterName = characterName;
-        }
-
-        public CharacterDialogueData(DialogueData baseData, string characterName) : this(baseData.BackgroundPath,
-            baseData.Text, characterName) {}
     }
 }

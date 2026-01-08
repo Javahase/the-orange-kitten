@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml;
+using System.Xml.Serialization;
 using UnityEngine;
 
 
@@ -22,7 +24,6 @@ using UnityEngine;
 ///
 /// 
 /// </summary>
-
 public class DialogueParser
 {
     private readonly string _content;
@@ -37,37 +38,18 @@ public class DialogueParser
         var resultList = new List<DialogueData>();
         var doc = new XmlDocument();
         doc.LoadXml(_content);
-        foreach (XmlNode frame in doc.ChildNodes)
-        {
-            switch (frame.Name)
-            {
-                case "BaseFrame":
-                    resultList.Add(ParseBaseData(frame));
-                    break;
-                case "NamedFrame":
-                    resultList.Add(ParseCharacterData(frame));
-                    break;
-                default:
-                    throw new NullReferenceException("Data not found");
+        
+        var serializer = XmlSerializer.FromTypes(new[]
+            { 
+                typeof(DialogueData.CharacterDialogueData), typeof(DialogueData)
             }
+        );
+        foreach (XmlNode frame in doc.DocumentElement!.ChildNodes)
+        {
+            Debug.Log(frame.OuterXml);
+            using XmlReader reader = new XmlNodeReader(frame);
+            resultList.Add(serializer.First(s => s.CanDeserialize(reader)).Deserialize(reader) as DialogueData);
         }
-
         return resultList;
-    }
-
-    private DialogueData ParseBaseData(XmlNode node)
-    {
-        var backgroundGraphic = node.Attributes!["bg"].InnerText;
-        var text = node.SelectSingleNode("Text")!.InnerText;
-
-        return new DialogueData(backgroundGraphic, text);
-    }
-
-    private DialogueData.CharacterDialogueData ParseCharacterData(XmlNode node)
-    {
-        var baseData = ParseBaseData(node);
-        var character = node.SelectSingleNode("Actor")!.InnerText;
-
-        return new DialogueData.CharacterDialogueData(baseData, character);
     }
 }

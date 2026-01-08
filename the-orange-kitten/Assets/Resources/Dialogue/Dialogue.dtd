@@ -1,0 +1,10 @@
+﻿<!DOCTYPE DialogueSequence [
+        <!ELEMENT DialogueSequence (BaseDialogue|CharacterDialogue)*>
+        <!ELEMENT BaseDialogue (Text)>
+        <!ELEMENT CharacterDialogue (Actor,Text)>
+        <!ELEMENT Text (#PCDATA)>
+        <!ELEMENT Actor (#PCDATA)>
+        <!ATTLIST BaseDialogue bg CDATA #REQUIRED>
+        <!ATTLIST CharacterDialogue bg CDATA #REQUIRED>
+
+        ]>
