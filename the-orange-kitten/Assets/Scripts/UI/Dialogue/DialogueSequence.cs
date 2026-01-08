@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-// TODO: Group Sequences together, Create Sequence Manager, let Sequences tell Sequence Manager when to progress to next.
 public class DialogueSequence : LinearGameSequence<BaseFrame>
 {
 
@@ -17,6 +16,7 @@ public class DialogueSequence : LinearGameSequence<BaseFrame>
         SequencePoints.ForEach(frame =>
         {
             frame.OnInitialize();
+            frame.gameObject.SetActive(false);
         });
     }
 

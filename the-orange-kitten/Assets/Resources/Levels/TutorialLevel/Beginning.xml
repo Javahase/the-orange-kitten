@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<DialogueSequence>
+    <BaseFrame bg="">
+        <Text>
+            This is a test.
+        </Text>
+    </BaseFrame>
+    
+    <NamedFrame bg="">
+        <Actor>Test</Actor>
+        <Text>
+            This is another Test!
+        </Text>
+    </NamedFrame>
+</DialogueSequence>

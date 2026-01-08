@@ -69,6 +69,7 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
     public virtual void OnStepChange() {}
     public abstract void OnEnabled();
     public abstract void OnDisabled();
+
     public abstract void OnInitialize();
     
     /// <summary>
