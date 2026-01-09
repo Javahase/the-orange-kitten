@@ -12,7 +12,7 @@ public class GeneratedDialogueSequence : DialogueSequence
 
     public override void OnInitialize()
     {
-        var parser = new DialogueParser(dialogueFile.text);
+        var parser = new DialogueParser(dialogueFile);
         var dialogues = parser.ParseDialogue();
         foreach (var dialogue in dialogues)
         {

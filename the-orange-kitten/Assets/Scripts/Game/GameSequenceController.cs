@@ -34,6 +34,10 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         _sequences = GetComponentsInChildren<IGameSequence>(true).ToList();
         Debug.Log(_sequences.Count);
         _sequences.ForEach(seq => seq.OnInitialize());
+        _sequences.Where(seq => seq is DialogueSequence)
+            .Cast<DialogueSequence>()
+            .ToList()
+            .ForEach(seq => seq.SequenceEndEvent += (_) => Next());
         CurrentSequence.OnEnabled();
     }
 

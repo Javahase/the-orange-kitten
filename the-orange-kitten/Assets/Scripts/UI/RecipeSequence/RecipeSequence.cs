@@ -9,15 +9,18 @@ public class RecipeSequence : GameSequence<RecipeStatement>
     [SerializeField] private TMP_Text statementText;
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private List<RecipeStatement> statements;
+    [SerializeField] private DialogueSequence solutionSequence;
     public ChatHistoryManager chatHistoryManager;
     
     protected override List<RecipeStatement> SequencePoints { get; set; }
     private LLMService _llmService;
     private bool _isLlmPondering = false;
+    private GameSequenceController _sequenceController;
 
     public override void OnInitialize()
     {
         _llmService = LLMService.GetInstance();
+        _sequenceController = GameSequenceController.GetInstance();
         SequencePoints = statements;
         foreach (var _ in SequencePoints)
         {
@@ -33,7 +36,7 @@ public class RecipeSequence : GameSequence<RecipeStatement>
 
     public override void OnDisabled()
     {
-        // TODO
+        _sequenceController.Next();
     }
 
     public override void ResetSequence()

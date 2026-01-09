@@ -93,17 +93,20 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
 /// <typeparam name="T">The type of objects this sequence deals with.</typeparam>
 public abstract class LinearGameSequence<T> : GameSequence<T> where T : IInitializable
 {
+
     /// <summary>
     /// Called when this sequence ends, i.e. when the last SequencePoint
     /// was reached by <see cref="Next"/>.
     /// </summary>
-    protected abstract void OnSequenceEnded();
+    public delegate void OnSequenceEnded(LinearGameSequence<T> source);
+
+    public event OnSequenceEnded SequenceEndEvent;
 
     public override bool Next()
     {
         if (CurrentStep + 1 >= SequencePoints.Count)
         {
-            OnSequenceEnded();
+            SequenceEndEvent?.Invoke(this);
             return false;
         }
         

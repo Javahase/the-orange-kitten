@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 4258655763820756507}
   - component: {fileID: 879850669860624744}
   m_Layer: 5
-  m_Name: RecipeSequenceUI
+  m_Name: MistakeSequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
