@@ -45,6 +45,19 @@ public class RecipeSequence : GameSequence<RecipeStatement>
         chatHistoryManager.ChatHistories.ForEach(history => history.ClearChat());
     }
 
+    public void PresentStatement(RecipeInsight insight)
+    {
+        if (insight.correctSequence == _sequenceController.GetIndexOfPuzzle(this)
+            && CurrentSequence.statementType == RecipeStatement.StatementType.Incorrect)
+        {
+            Debug.Log("You won this sequence");
+        }
+        else
+        {
+            Debug.Log("This statement is faulty...");
+        }
+    }
+
     private void SelectStatement(int index)
     {
         if (_isLlmPondering) return;

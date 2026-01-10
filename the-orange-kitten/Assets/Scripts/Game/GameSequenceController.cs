@@ -27,7 +27,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     /// <summary>
     /// The current sequence the controller currently points to.
     /// </summary>
-    private IGameSequence CurrentSequence => _sequences[_currentStep];
+    public IGameSequence CurrentSequence => _sequences[_currentStep];
 
     private void Start()
     {
@@ -40,6 +40,11 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
             .ForEach(seq => seq.SequenceEndEvent += (_) => Next());
         CurrentSequence.OnEnabled();
     }
+
+    public int GetIndexOfPuzzle(RecipeSequence sequence)
+        => _sequences.Where(s => s is RecipeSequence)
+            .ToList()
+            .IndexOf(sequence);
 
     /// <summary>
     /// Progresses to the next sequence.

@@ -981,7 +981,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8884522309265860872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879850669860624744}
+        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
+        m_MethodName: OpenInsightInfo
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2299279239010498973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1415,7 @@ MonoBehaviour:
   - message: I guess it makes sense?
     hidden: 0
     statementType: 2
+  solutionSequence: {fileID: 0}
   chatHistoryManager: {fileID: 7641434271385279138}
 --- !u!1 &3292332331563956070
 GameObject:
