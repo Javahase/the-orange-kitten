@@ -53,7 +53,6 @@ public class GeneratedDialogueSequence : DialogueSequence
 
     private void CreateCharacterFrame(DialogueData.CharacterDialogueData data)
     {
-        Debug.Log("Here");
         var characterFrame = InstantiateFrameBase(characterFramePrefab, data).GetComponent<CharacterFrame>();
         characterFrame.characterName = data.CharacterName;
     }
