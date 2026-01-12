@@ -10,8 +10,7 @@ public class RecipeSequence : GameSequence<RecipeStatement>
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private List<RecipeStatement> statements;
     [SerializeField] private DialogueSequence solutionSequence;
-    [SerializeField] private DialogueSequence errorSequence;
-    [SerializeField] private DialogueSequence solveableErrorSequence;
+    [SerializeField] private DialogueSequence specialErrorSequence;
     public ChatHistoryManager chatHistoryManager;
     
     protected override List<RecipeStatement> SequencePoints { get; set; }
@@ -29,9 +28,8 @@ public class RecipeSequence : GameSequence<RecipeStatement>
             chatHistoryManager.InitNewHistory();
         }
         solutionSequence.OnInitialize();
-        errorSequence.OnInitialize();
         solutionSequence.SequenceEndEvent += (_) => _sequenceController.Next();
-        errorSequence.SequenceEndEvent += (_) => errorSequence.OnDisabled();
+        // specialErrorSequence.SequenceEndEvent += (_) => specialErrorSequence.OnDisabled();
     }
 
     public override void OnEnabled()
@@ -61,7 +59,7 @@ public class RecipeSequence : GameSequence<RecipeStatement>
         }
         else
         {
-            errorSequence.OnEnabled();
+            _sequenceController.StartGenericErrorSequence();
         }
     }
 

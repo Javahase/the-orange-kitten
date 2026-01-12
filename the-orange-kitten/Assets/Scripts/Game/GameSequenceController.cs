@@ -13,9 +13,19 @@ using UnityEngine;
 public class GameSequenceController : SingletonObject<GameSequenceController>
 {
     /// <summary>
+    /// Unity Field for a global error sequence that plays if the player made a mistake
+    /// during a <see cref="RecipeSequence"/>.
+    /// </summary>
+    [SerializeField]
+    [Tooltip("A generic error sequence that should play " +
+             "if the player made a mistake during a recipe sequence.")]
+    private DialogueSequence errorSequence;
+
+    /// <summary>
     /// A list of sequences that should be direct children of the <see cref="GameSequenceController"/>.
     /// </summary>
     private List<IGameSequence> _sequences;
+
     /// <summary>
     /// At which location within <see cref="_sequences"/> the controller
     /// currently is.<br/>
@@ -23,7 +33,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     /// Modifying this also modifies <see cref="CurrentSequence"/>.
     /// </summary>
     private int _currentStep;
-    
+
     /// <summary>
     /// The current sequence the controller currently points to.
     /// </summary>
@@ -31,13 +41,16 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     private void Start()
     {
+        errorSequence.OnInitialize();
+        errorSequence.SequenceEndEvent += (_) => errorSequence.OnDisabled();
+
         _sequences = GetComponentsInChildren<IGameSequence>(true).ToList();
-        Debug.Log(_sequences.Count);
         _sequences.ForEach(seq => seq.OnInitialize());
         _sequences.Where(seq => seq is DialogueSequence)
             .Cast<DialogueSequence>()
             .ToList()
             .ForEach(seq => seq.SequenceEndEvent += (_) => Next());
+
         CurrentSequence.OnEnabled();
     }
 
@@ -57,10 +70,18 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
             Debug.Log("Sorry, pal, last sequence");
             return false;
         }
+
         var next = _sequences[_currentStep + 1];
         return ProgressSequence(next);
     }
-    
+
+    /// <summary>
+    /// This enables the <see cref="errorSequence">generic error sequence</see>.
+    /// This sequence will be played parallel to the sequence progression
+    /// and will not progress the default <see cref="_sequences">sequences</see>.
+    /// </summary>
+    public void StartGenericErrorSequence() => errorSequence.OnEnabled();
+
     /// <summary>
     /// Checks what type of sequence the next sequence is
     /// and calls its corresponding progression-function.
@@ -73,7 +94,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
             TransitionSequence t => ProgressTransition(t),
             _ => ProgressDefault()
         };
-    
+
     /// <summary>
     /// Starts a <see cref="TransitionSequence"/>.
     /// </summary>
@@ -84,7 +105,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         StartCoroutine(ProgressTransition1(t));
         return true;
     }
-    
+
     /// <summary>
     /// Coroutine that calls the <see cref="TransitionSequence.BeginTransition"/>
     /// Coroutine.
@@ -93,11 +114,11 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     private IEnumerator ProgressTransition1(TransitionSequence t)
     {
         _currentStep++;
-        yield return t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1), 
+        yield return t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
             _sequences.ElementAtOrDefault(_currentStep + 1));
         _currentStep++;
     }
-    
+
     /// <summary>
     /// Progresses a default <see cref="IGameSequence"/>.
     /// If the sequence is a <see cref="MonoBehaviour"/>,
@@ -111,6 +132,4 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         CurrentSequence.OnEnabled();
         return true;
     }
-
-
 }

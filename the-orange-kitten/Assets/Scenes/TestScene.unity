@@ -1068,7 +1068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: 1_Error
+      value: 0_GenericError
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -1213,7 +1213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: GeneratedSequence
+      value: ThereIsMore
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -1749,6 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be83b9d15d13449eae232dfcb0c42587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameSequenceController
+  errorSequence: {fileID: 784938125}
 --- !u!4 &2135466411
 Transform:
   m_ObjectHideFlags: 0
