@@ -52,6 +52,11 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     /// <returns>Whether there was a next sequence.</returns>
     public bool Next()
     {
+        if (_currentStep + 1 >= _sequences.Count)
+        {
+            Debug.Log("Sorry, pal, last sequence");
+            return false;
+        }
         var next = _sequences[_currentStep + 1];
         return ProgressSequence(next);
     }
@@ -102,14 +107,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     private bool ProgressDefault()
     {
         CurrentSequence.OnDisabled();
-        if (CurrentSequence is MonoBehaviour monoBehaviour)
-            monoBehaviour.gameObject.SetActive(false);
         _currentStep++;
-        if (_currentStep >= _sequences.Count)
-        {
-            Debug.Log("Sorry, pal, last sequence");
-            return false;
-        }
         CurrentSequence.OnEnabled();
         return true;
     }

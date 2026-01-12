@@ -10,6 +10,8 @@ public class RecipeSequence : GameSequence<RecipeStatement>
     [SerializeField] private TMP_InputField inputField;
     [SerializeField] private List<RecipeStatement> statements;
     [SerializeField] private DialogueSequence solutionSequence;
+    [SerializeField] private DialogueSequence errorSequence;
+    [SerializeField] private DialogueSequence solveableErrorSequence;
     public ChatHistoryManager chatHistoryManager;
     
     protected override List<RecipeStatement> SequencePoints { get; set; }
@@ -26,6 +28,10 @@ public class RecipeSequence : GameSequence<RecipeStatement>
         {
             chatHistoryManager.InitNewHistory();
         }
+        solutionSequence.OnInitialize();
+        errorSequence.OnInitialize();
+        solutionSequence.SequenceEndEvent += (_) => _sequenceController.Next();
+        errorSequence.SequenceEndEvent += (_) => errorSequence.OnDisabled();
     }
 
     public override void OnEnabled()
@@ -36,7 +42,8 @@ public class RecipeSequence : GameSequence<RecipeStatement>
 
     public override void OnDisabled()
     {
-        _sequenceController.Next();
+        solutionSequence.OnDisabled();
+        gameObject.SetActive(false);
     }
 
     public override void ResetSequence()
@@ -50,11 +57,11 @@ public class RecipeSequence : GameSequence<RecipeStatement>
         if (insight.correctSequence == _sequenceController.GetIndexOfPuzzle(this)
             && CurrentSequence.statementType == RecipeStatement.StatementType.Incorrect)
         {
-            Debug.Log("You won this sequence");
+            solutionSequence.OnEnabled();
         }
         else
         {
-            Debug.Log("This statement is faulty...");
+            errorSequence.OnEnabled();
         }
     }
 

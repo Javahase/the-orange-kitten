@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+
+<DialogueSequence>
+    <CharacterDialogue>
+        <Actor>You</Actor>
+        <Text>Hmm, the problem becomes apparant.</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="">
+        <Actor>You</Actor>
+        <Text>Popsicles are supposed to be cold. Yet the robot heats them up? Why?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>You</Actor>
+        <Text>It makes no sense. And therein lies the mistake the robot made!</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>Supa Visor</Actor>
+        <Text>You're right!</Text>
+    </CharacterDialogue>
+</DialogueSequence>

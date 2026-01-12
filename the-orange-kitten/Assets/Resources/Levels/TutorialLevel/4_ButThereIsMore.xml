@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+
+<DialogueSequence>
+    <CharacterDialogue>
+        <Actor>Supa Visor</Actor>
+        <Text>I believe there are still problems to be solved, though...</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>Supa Visor</Actor>
+        <Text>And I'm not even talking about logical mistakes the robot has made, but rather...</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>Supa Visor</Actor>
+        <Text>... unusual steps the robot took. Maybe you should ask about those next.</Text>
+    </CharacterDialogue>
+</DialogueSequence>
