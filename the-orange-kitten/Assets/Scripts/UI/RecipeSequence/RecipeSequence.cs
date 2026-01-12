@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -15,12 +16,14 @@ public class RecipeSequence : GameSequence<RecipeStatement>
     
     protected override List<RecipeStatement> SequencePoints { get; set; }
     private LLMService _llmService;
+    private InsightService _insightService;
     private bool _isLlmPondering = false;
     private GameSequenceController _sequenceController;
 
     public override void OnInitialize()
     {
         _llmService = LLMService.GetInstance();
+        _insightService = InsightService.GetInstance();
         _sequenceController = GameSequenceController.GetInstance();
         SequencePoints = statements;
         foreach (var _ in SequencePoints)
@@ -29,7 +32,8 @@ public class RecipeSequence : GameSequence<RecipeStatement>
         }
         solutionSequence.OnInitialize();
         solutionSequence.SequenceEndEvent += (_) => _sequenceController.Next();
-        // specialErrorSequence.SequenceEndEvent += (_) => specialErrorSequence.OnDisabled();
+        specialErrorSequence.OnInitialize();
+        specialErrorSequence.SequenceEndEvent += (_) => specialErrorSequence.OnDisabled();
     }
 
     public override void OnEnabled()
@@ -52,10 +56,15 @@ public class RecipeSequence : GameSequence<RecipeStatement>
 
     public void PresentStatement(RecipeInsight insight)
     {
-        if (insight.correctSequence == _sequenceController.GetIndexOfPuzzle(this)
+        var currentSequence = _sequenceController.GetIndexOfPuzzle(this);
+        if (insight.correctSequence == currentSequence
             && CurrentSequence.statementType == RecipeStatement.StatementType.Incorrect)
         {
             solutionSequence.OnEnabled();
+        }
+        else if (_insightService.GetAllInsights().Any(it => it.correctSequence == currentSequence))
+        {
+            specialErrorSequence.OnEnabled();
         }
         else
         {
