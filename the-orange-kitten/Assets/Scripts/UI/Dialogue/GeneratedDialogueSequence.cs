@@ -12,6 +12,8 @@ public class GeneratedDialogueSequence : DialogueSequence
 
     public override void OnInitialize()
     {
+        if (Initialized)
+            return;
         var parser = new DialogueParser(dialogueFile);
         var dialogues = parser.ParseDialogue();
         foreach (var dialogue in dialogues)

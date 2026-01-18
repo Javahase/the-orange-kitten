@@ -487,19 +487,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2075115915418788887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: OpenInsightInfo
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &469612733302337222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1211,7 @@ GameObject:
   - component: {fileID: 1407087665530288804}
   - component: {fileID: 4258655763820756507}
   - component: {fileID: 879850669860624744}
+  - component: {fileID: 1020516089180058054}
   m_Layer: 5
   m_Name: OddSequence
   m_TagString: Untagged
@@ -1337,6 +1326,18 @@ MonoBehaviour:
   specialErrorSequence: {fileID: 0}
   isLlmPondering: 0
   chatHistoryManager: {fileID: 7641434271385279138}
+--- !u!114 &1020516089180058054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218886592271009111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9fceeea081b4fd78ad44b36ab3e849f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.SequenceTypes.OddSequenceHandler
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +1994,7 @@ GameObject:
   - component: {fileID: 818870344505016671}
   - component: {fileID: 5276272866875925787}
   - component: {fileID: 1597030893615850760}
+  - component: {fileID: 1486405590462915291}
   m_Layer: 5
   m_Name: SectionActions
   m_TagString: Untagged
@@ -2103,6 +2105,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &1486405590462915291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011092057269018468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675a3f27f74e44698a9df600f21c06d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.ActionBar.OddActionBar
+  coreSequence: {fileID: 879850669860624744}
+  editRecipeButton: {fileID: 209353518086918909}
+  checkRecipeInfoButton: {fileID: 8132327769841290822}
+  checkInsightsButton: {fileID: 7933218133411381216}
+  endExaminationButton: {fileID: 3856995205922450280}
+  markAsOddButton: {fileID: 4981995688353077094}
 --- !u!1 &4129230763546649333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,7 +2351,7 @@ GameObject:
   - component: {fileID: 6925213439495155358}
   - component: {fileID: 4981995688353077094}
   m_Layer: 5
-  m_Name: BtnMistake
+  m_Name: BtnMarkOdd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2438,19 +2458,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6925213439495155358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: OpenInsightInfo
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5217477889533753899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,19 +2716,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6601164641279248117}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: OpenInsightInfo
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5511204610343798880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3075,7 @@ GameObject:
   - component: {fileID: 2756530383692772957}
   - component: {fileID: 4017591135546461990}
   - component: {fileID: 2891681569034644631}
+  - component: {fileID: 4179391306694140313}
   m_Layer: 5
   m_Name: SectionOddityInfo
   m_TagString: Untagged
@@ -3185,6 +3182,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &4179391306694140313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718403059631285470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c5e454c7d1489198b7c482e89f5d0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.Info.StatementInfo
+  coreSequence: {fileID: 879850669860624744}
+  statementInfoText: {fileID: 1378085205771643191}
 --- !u!1 &5785951711973105377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,6 +4777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5308935250988636137}
+  - component: {fileID: 1378085205771643191}
   m_Layer: 5
   m_Name: FixedText
   m_TagString: Untagged
@@ -4794,6 +4806,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1378085205771643191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8669911648704264455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f0a7f8f4c74fe6ade82a8b048256f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Util.Object.SwitchBehavior
+  on: 0
 --- !u!1 &8827749261613641324
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,16 +6,27 @@ using UnityEngine;
 public class DialogueSequence : LinearGameSequence<BaseFrame>
 {
 
+    protected bool Initialized;
+    
     protected override List<BaseFrame> SequencePoints { get; set; }
 
     public override void OnInitialize()
     {
+        if (Initialized)
+        {
+            return;
+        }
         SequencePoints = GetComponentsInChildren<BaseFrame>(includeInactive: true).ToList();
         SequencePoints.ForEach(frame =>
         {
             frame.OnInitialize();
             frame.gameObject.SetActive(false);
         });
+        if (Initialized)
+        {
+            Debug.Log("DO NOT");
+        }
+        Initialized = true;
     }
 
     public override void OnEnabled()
