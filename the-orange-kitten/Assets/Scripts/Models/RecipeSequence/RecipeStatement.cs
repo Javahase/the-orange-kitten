@@ -19,6 +19,11 @@ public class RecipeStatement
     public bool hidden;
 
     /// <summary>
+    /// Whether this statement was marked as odd by the player.
+    /// </summary>
+    public bool marked;
+
+    /// <summary>
     /// Which <c>StatementType</c> the recipe is.
     /// </summary>
     /// <seealso cref="StatementType"/>

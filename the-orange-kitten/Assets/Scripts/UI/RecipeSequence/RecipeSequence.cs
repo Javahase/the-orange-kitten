@@ -91,8 +91,8 @@ namespace UI.RecipeSequence
             return true;
         }
 
-        public override bool Next() => TraverseStatement(1);
-        public override bool Previous() => TraverseStatement(-1);
+        public override bool Next() => TraverseStatement(1) && base.Next();
+        public override bool Previous() => TraverseStatement(-1) && base.Previous();
 
         public void NextF() => Next();
         public void PreviousF() => Previous();

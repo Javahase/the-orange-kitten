@@ -1077,15 +1077,19 @@ MonoBehaviour:
   statements:
   - message: Hello There
     hidden: 0
+    marked: 0
     statementType: 0
   - message: Obiwan Kenobi!
     hidden: 0
+    marked: 0
     statementType: 1
   - message: Hmm, no
     hidden: 1
+    marked: 0
     statementType: 1
   - message: I guess it makes sense?
     hidden: 0
+    marked: 0
     statementType: 2
   solutionSequence: {fileID: 0}
   specialErrorSequence: {fileID: 0}
@@ -1103,8 +1107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540dea77770e45f68d1bc3f98c9b8504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.SequenceTypes.MistakeSequenceHandler
-  coreSequence: {fileID: 0}
-  actionPointOutMistake: {fileID: 0}
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0

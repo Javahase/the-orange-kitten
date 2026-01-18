@@ -87,12 +87,16 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
         StepChangeEvent?.Invoke(this, SequencePoints.ElementAtOrDefault(CurrentStep - 1), CurrentSequence);
         return true;
     }
-    
+
     /// <summary>
     /// Sets the <see cref="CurrentSequence"/> to its previous sequence point.
     /// </summary>
     /// <returns>Whether there was a previous sequence point.</returns>
-    public abstract bool Previous();
+    public virtual bool Previous()
+    {
+        StepChangeEvent?.Invoke(this, SequencePoints.ElementAtOrDefault(CurrentStep + 1), CurrentSequence);
+        return true;
+    }
     public abstract void ResetSequence();
 }
 
