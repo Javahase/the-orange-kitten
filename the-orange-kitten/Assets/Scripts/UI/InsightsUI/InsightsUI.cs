@@ -1,3 +1,5 @@
+using UI.RecipeSequence;
+using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -55,7 +57,7 @@ public class InsightsUI : SingletonObject<InsightsUI>
         {
             var selected = _selectedInsight!.Value;
             Close();
-            recipeSequence.PresentStatement(selected);
+            recipeSequence.GetComponent<MistakeSequenceHandler>().PresentStatement(selected);
         }
     }
 

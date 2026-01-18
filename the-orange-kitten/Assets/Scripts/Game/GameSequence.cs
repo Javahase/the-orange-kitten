@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -46,6 +47,11 @@ public abstract class TransitionSequence : MonoBehaviour, IGameSequence
 /// <typeparam name="T">The type of objects this sequence deals with.</typeparam>
 public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
 {
+    
+    public delegate void OnStepChanged(GameSequence<T> source, T oldSequence, T newSequence);
+    
+    public event OnStepChanged StepChangeEvent;
+    
     /// <summary>
     /// A list of points this sequence can iterate through.
     /// </summary>
@@ -71,12 +77,16 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
     public abstract void OnDisabled();
 
     public abstract void OnInitialize();
-    
+
     /// <summary>
     /// Sets the <see cref="CurrentSequence"/> to its next sequence point.
     /// </summary>
     /// <returns>Whether there was a next sequence point.</returns>
-    public abstract bool Next();
+    public virtual bool Next()
+    {
+        StepChangeEvent?.Invoke(this, SequencePoints.ElementAtOrDefault(CurrentStep - 1), CurrentSequence);
+        return true;
+    }
     
     /// <summary>
     /// Sets the <see cref="CurrentSequence"/> to its previous sequence point.
@@ -113,8 +123,7 @@ public abstract class LinearGameSequence<T> : GameSequence<T> where T : IInitial
         SequencePoints[CurrentStep].OnDisabled();
         CurrentStep++;
         SequencePoints[CurrentStep].OnEnabled();
-        OnStepChange();
-        return true;
+        return base.Next();
     }
 
     public override bool Previous() => false;

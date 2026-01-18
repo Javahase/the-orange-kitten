@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e6ea272c0e9a14d8e8413b2994045c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatHistory
-  _chatMessagePrefab: {fileID: 2611747674217611333, guid: 7725c49af116bed4c8a7b7d7e8f38745, type: 3}
-  _viewport: {fileID: 3229321801890153070}
+  chatMessagePrefab: {fileID: 2611747674217611333, guid: 7725c49af116bed4c8a7b7d7e8f38745, type: 3}
+  viewport: {fileID: 3229321801890153070}
 --- !u!1 &4644279288642582468
 GameObject:
   m_ObjectHideFlags: 0

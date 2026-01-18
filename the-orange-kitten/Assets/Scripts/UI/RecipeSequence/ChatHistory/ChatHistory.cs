@@ -5,16 +5,16 @@ using UnityEngine.UI;
 public class ChatHistory : MonoBehaviour
 {
 
-    [SerializeField] private ChatMessage _chatMessagePrefab;
-    [SerializeField] private VerticalLayoutGroup _viewport;
+    [SerializeField] private ChatMessage chatMessagePrefab;
+    [SerializeField] private VerticalLayoutGroup viewport;
 
     public void PushMessage(string author, string content)
     {
-        _chatMessagePrefab.InstantiateMessage(author, content, _viewport.transform);
+        chatMessagePrefab.InstantiateMessage(author, content, viewport.transform);
     }
 
     public void ClearChat()
     {
-        _viewport.GetComponentsInChildren<ChatMessage>().ToList().ForEach(msg => Destroy(msg.gameObject));
+        viewport.GetComponentsInChildren<ChatMessage>().ToList().ForEach(msg => Destroy(msg.gameObject));
     }
 }

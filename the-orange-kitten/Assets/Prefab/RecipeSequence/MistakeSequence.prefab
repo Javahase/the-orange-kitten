@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6393109462944738679}
   - component: {fileID: 1071034692098194814}
   - component: {fileID: 1344613319644733126}
+  - component: {fileID: 1301845173120080417}
   m_Layer: 5
   m_Name: SectionChat
   m_TagString: Untagged
@@ -77,6 +78,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1301845173120080417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29113303373447924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e924d85b5b1479db014a931701470be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.ChatHistory.ChatHandler
+  inputField: {fileID: 5519669781394235980}
+  buttonSubmit: {fileID: 4249950826301016066}
+  coreSequence: {fileID: 879850669860624744}
 --- !u!1 &115393159666692193
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +964,7 @@ GameObject:
   - component: {fileID: 1407087665530288804}
   - component: {fileID: 4258655763820756507}
   - component: {fileID: 879850669860624744}
+  - component: {fileID: 8002212926947179042}
   m_Layer: 5
   m_Name: MistakeSequence
   m_TagString: Untagged
@@ -1072,7 +1089,22 @@ MonoBehaviour:
     statementType: 2
   solutionSequence: {fileID: 0}
   specialErrorSequence: {fileID: 0}
+  isLlmPondering: 0
   chatHistoryManager: {fileID: 7641434271385279138}
+--- !u!114 &8002212926947179042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218886592271009111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540dea77770e45f68d1bc3f98c9b8504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.SequenceTypes.MistakeSequenceHandler
+  coreSequence: {fileID: 0}
+  actionPointOutMistake: {fileID: 0}
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1761,7 @@ GameObject:
   - component: {fileID: 818870344505016671}
   - component: {fileID: 5276272866875925787}
   - component: {fileID: 1597030893615850760}
+  - component: {fileID: 6798161410208409504}
   m_Layer: 5
   m_Name: SectionActions
   m_TagString: Untagged
@@ -1838,6 +1871,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &6798161410208409504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4011092057269018468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03dfefa27ef44e7fb59fd0575419540e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.ActionBar.MistakeActionBar
+  coreSequence: {fileID: 879850669860624744}
+  editRecipeButton: {fileID: 209353518086918909}
+  checkRecipeInfoButton: {fileID: 8132327769841290822}
+  checkInsightsButton: {fileID: 7933218133411381216}
+  mistakeButton: {fileID: 4981995688353077094}
 --- !u!1 &4129230763546649333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,19 +2223,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6925213439495155358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: OpenInsightInfo
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5412469607903617253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,19 +2344,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6601164641279248117}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: OpenInsightInfo
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5511204610343798880
 GameObject:
   m_ObjectHideFlags: 0
