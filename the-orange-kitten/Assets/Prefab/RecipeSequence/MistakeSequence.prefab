@@ -1073,28 +1073,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSequence
   statementText: {fileID: 1062566584664877950}
-  inputField: {fileID: 5519669781394235980}
+  prevButton: {fileID: 3942077631468224025}
+  nextButton: {fileID: 8291282718917349624}
+  chatHistoryManager: {fileID: 7641434271385279138}
   statements:
   - message: Hello There
     hidden: 0
-    marked: 0
+    markingState: 0
     statementType: 0
   - message: Obiwan Kenobi!
     hidden: 0
-    marked: 0
+    markingState: 0
     statementType: 1
   - message: Hmm, no
     hidden: 1
-    marked: 0
+    markingState: 0
     statementType: 1
   - message: I guess it makes sense?
     hidden: 0
-    marked: 0
+    markingState: 0
     statementType: 2
   solutionSequence: {fileID: 0}
   specialErrorSequence: {fileID: 0}
-  isLlmPondering: 0
-  chatHistoryManager: {fileID: 7641434271385279138}
 --- !u!114 &8002212926947179042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,19 +2604,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4565805995843241770}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: NextF
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5702260757845600561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,19 +3212,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2597207947370754252}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879850669860624744}
-        m_TargetAssemblyTypeName: RecipeSequence, Assembly-CSharp
-        m_MethodName: PreviousF
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6297646242204530685
 GameObject:
   m_ObjectHideFlags: 0

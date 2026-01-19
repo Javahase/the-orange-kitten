@@ -17,24 +17,26 @@ namespace UI.RecipeSequence.ChatHistory
         {
             _llmService = LLMService.GetInstance();
             buttonSubmit.onClick.AddListener(PressStatement);
+            coreSequence.ControlStateChangedEvent += (controlsEnabled) =>
+            {
+                inputField.interactable = controlsEnabled;
+                buttonSubmit.enabled = controlsEnabled;
+            };
         }
 
         private void PressStatement()
         {
             StartCoroutine(SendChatRequest(inputField.text));
         }
-
-        // TODO: Let Chat History Manager handle this logic
+        
         private IEnumerator SendChatRequest(string message)
         {
             inputField.text = "";
-            inputField.interactable = false;
-            coreSequence.isLlmPondering = true;
+            coreSequence.SetControlsEnabled(false);
             yield return _llmService.CreateChatConnection(coreSequence.GetCurrentStatement(), message,
                 (action) => { coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); }
             );
-            coreSequence.isLlmPondering = false;
-            inputField.interactable = true;
+            coreSequence.SetControlsEnabled(true);
         }
     }
 }

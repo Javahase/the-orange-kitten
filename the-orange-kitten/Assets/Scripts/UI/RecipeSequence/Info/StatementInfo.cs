@@ -14,18 +14,18 @@ namespace UI.RecipeSequence.Info
         private void Start()
         {
             var oddSequenceHandler = coreSequence.GetComponent<OddSequenceHandler>();
-            oddSequenceHandler.StatementMarkChangedEvent += (stmt, marked) =>
+            oddSequenceHandler.StatementMarkChangedEvent += (stmt, state) =>
             {
                 if (stmt == coreSequence.GetCurrentStatement())
                 {
-                    statementInfoText.SetOn(marked);
+                    statementInfoText.Select((int)state);
                 }
             };
             coreSequence.StepChangeEvent += (src, _, next) =>
             {
                 // Will there be even situations where this is not true?
                 if (src == coreSequence)
-                    statementInfoText.SetOn(next.marked);
+                    statementInfoText.Select((int)next.markingState);
             };
         }
     }

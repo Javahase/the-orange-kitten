@@ -1,43 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Util.Object
 {
     public class SwitchBehavior : MonoBehaviour
     {
-        [SerializeField] private bool on;
-        private GameObject _child1;
-        private GameObject _child2;
+        [SerializeField] private int selected;
+        private List<GameObject> _children;
 
         private void Start()
         {
-            if (transform.childCount != 2)
-            {
-                throw new ArgumentException("Must have exactly two children");
-            }
-            _child1 = transform.GetChild(0).gameObject;
-            _child2 = transform.GetChild(1).gameObject;
-            
-            SetOn(on);
+            _children = transform.Cast<Transform>().Select(t => t.gameObject).ToList();
+            _children.ForEach(child => child.SetActive(false));
+            _children[selected].SetActive(true);
         }
-        
-        public void Toggle() => SetOn(!IsOn());
 
-        public void SetOn(bool isOn)
+        public void Select(int child)
         {
-            on = isOn;
-            if (on)
-            {
-                _child1.gameObject.SetActive(true);
-                _child2.gameObject.SetActive(false);
-            }
-            else
-            {
-                _child1.gameObject.SetActive(false);
-                _child2.gameObject.SetActive(true);
-            }
+            _children[selected].SetActive(false);
+            selected = child;
+            _children[selected].SetActive(true);
         }
 
-        public bool IsOn() => on;
+        public int GetIndex() => selected;
+        
+        public GameObject GetSelected() => _children[selected];
     }
 }

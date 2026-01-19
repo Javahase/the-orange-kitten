@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,8 +21,14 @@ namespace UI.RecipeSequence.ActionBar
             {
                 if (stmt == coreSequence.GetCurrentStatement())
                 {
-                    markAsOddButton.GetComponentInChildren<TMP_Text>().text 
-                        = marked ? "Unmark Statement" : "Mark as Odd";
+                    markAsOddButton.GetComponentInChildren<TMP_Text>().text
+                        = marked switch
+                        {
+                            RecipeStatement.MarkingState.Unmarked => "Mark as Odd",
+                            RecipeStatement.MarkingState.Pending => "Cancel",
+                            RecipeStatement.MarkingState.Marked => "Unmark Statement",
+                            _ => throw new ArgumentException("Invalid enum value")
+                        };
                 }
             };
             
@@ -30,13 +37,17 @@ namespace UI.RecipeSequence.ActionBar
 
         private void MarkAsOdd()
         {
-            if (!coreSequence.GetCurrentStatement().marked)
+            switch (coreSequence.GetCurrentStatement().markingState)
             {
-                _oddHandler.SetCurrentStatementMarked(true);
-            }
-            else
-            {
-                _oddHandler.SetCurrentStatementMarked(false);
+                case RecipeStatement.MarkingState.Marked:
+                case RecipeStatement.MarkingState.Pending:
+                    _oddHandler.SetCurrentStatementState(RecipeStatement.MarkingState.Unmarked);
+                    break;
+                case RecipeStatement.MarkingState.Unmarked:
+                    _oddHandler.SetCurrentStatementState(RecipeStatement.MarkingState.Pending);
+                    break;
+                default:
+                    throw new ArgumentException("Invalid enum value");
             }
         }
     }

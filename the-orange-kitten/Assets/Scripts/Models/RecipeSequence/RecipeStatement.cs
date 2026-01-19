@@ -21,7 +21,7 @@ public class RecipeStatement
     /// <summary>
     /// Whether this statement was marked as odd by the player.
     /// </summary>
-    public bool marked;
+    public MarkingState markingState;
 
     /// <summary>
     /// Which <c>StatementType</c> the recipe is.
@@ -58,5 +58,13 @@ public class RecipeStatement
         /// of the real recipe step or even a misstep.
         /// </summary>
         Incorrect
+    }
+
+    [Serializable]
+    public enum MarkingState
+    {
+        Unmarked = 0,
+        Pending = 1,
+        Marked = 2
     }
 }  

@@ -133,4 +133,11 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         CurrentSequence.OnEnabled();
         return true;
     }
+
+    public void SetSequence(int ix)
+    {
+        CurrentSequence.OnDisabled();
+        _currentStep = ix;
+        CurrentSequence.OnEnabled();
+    }
 }

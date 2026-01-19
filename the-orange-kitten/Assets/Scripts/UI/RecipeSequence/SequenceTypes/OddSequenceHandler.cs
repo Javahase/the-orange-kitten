@@ -1,27 +1,42 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using Util.Object;
 
 namespace UI.RecipeSequence.SequenceTypes
 {
     [RequireComponent(typeof(RecipeSequence))]
     public class OddSequenceHandler : MonoBehaviour
     {
-        public delegate void OnStatementMarked(RecipeStatement statement, bool marked);
-        public event OnStatementMarked StatementMarkChangedEvent;
-        
+        public delegate void OnStatementMarkChanged(RecipeStatement statement,
+            RecipeStatement.MarkingState markingState);
+
+        public event OnStatementMarkChanged StatementMarkChangedEvent;
+
+        public SwitchBehavior chatBoxSwitcher;
+
         private RecipeSequence _coreSequence;
 
         private void Start()
         {
             _coreSequence = GetComponent<RecipeSequence>();
+            StatementMarkChangedEvent += (stmt, marked) =>
+            {
+                if (stmt == _coreSequence.GetCurrentStatement())
+                {
+                    _coreSequence.SetControlsEnabled(marked != RecipeStatement.MarkingState.Pending);
+                    chatBoxSwitcher.Select(marked == RecipeStatement.MarkingState.Pending ? 1 : 0);
+                }
+            };
         }
 
-        private void SetStatementMarked(RecipeStatement statement, bool marked)
+        private void SetMarkingState(RecipeStatement statement, RecipeStatement.MarkingState markingState)
         {
-            statement.marked = marked;
-            StatementMarkChangedEvent?.Invoke(statement, marked);
+            statement.markingState = markingState;
+            StatementMarkChangedEvent?.Invoke(statement, markingState);
         }
-        
-        public void SetCurrentStatementMarked(bool marked) => SetStatementMarked(_coreSequence.GetCurrentStatement(), marked);
+
+        public void SetCurrentStatementState(RecipeStatement.MarkingState markingState) =>
+            SetMarkingState(_coreSequence.GetCurrentStatement(), markingState);
+
+        public void SetCurrentStatementMarked() => SetCurrentStatementState(RecipeStatement.MarkingState.Marked);
     }
 }

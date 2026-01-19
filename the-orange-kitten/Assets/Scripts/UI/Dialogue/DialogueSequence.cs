@@ -22,10 +22,6 @@ public class DialogueSequence : LinearGameSequence<BaseFrame>
             frame.OnInitialize();
             frame.gameObject.SetActive(false);
         });
-        if (Initialized)
-        {
-            Debug.Log("DO NOT");
-        }
         Initialized = true;
     }
 
