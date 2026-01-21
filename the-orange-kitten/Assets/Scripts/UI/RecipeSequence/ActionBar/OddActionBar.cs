@@ -17,22 +17,27 @@ namespace UI.RecipeSequence.ActionBar
         {
             base.Start();
             _oddHandler = coreSequence.GetComponent<OddSequenceHandler>();
-            _oddHandler.StatementMarkChangedEvent += (stmt, marked) =>
+            _oddHandler.StatementMarkChangedEvent += HandleMarkedChange;
+            coreSequence.StepChangeEvent += (_, _, stmt) =>
             {
-                if (stmt == coreSequence.GetCurrentStatement())
-                {
-                    markAsOddButton.GetComponentInChildren<TMP_Text>().text
-                        = marked switch
-                        {
-                            RecipeStatement.MarkingState.Unmarked => "Mark as Odd",
-                            RecipeStatement.MarkingState.Pending => "Cancel",
-                            RecipeStatement.MarkingState.Marked => "Unmark Statement",
-                            _ => throw new ArgumentException("Invalid enum value")
-                        };
-                }
+                HandleMarkedChange(stmt, stmt.markingState);
             };
-            
             markAsOddButton.onClick.AddListener(MarkAsOdd);
+        }
+
+        private void HandleMarkedChange(RecipeStatement stmt, RecipeStatement.MarkingState marked)
+        {
+            if (stmt == coreSequence.GetCurrentStatement())
+            {
+                markAsOddButton.GetComponentInChildren<TMP_Text>().text
+                    = marked switch
+                    {
+                        RecipeStatement.MarkingState.Unmarked => "Mark as Odd",
+                        RecipeStatement.MarkingState.Pending => "Cancel",
+                        RecipeStatement.MarkingState.Marked => "Unmark Statement",
+                        _ => throw new ArgumentException("Invalid enum value")
+                    };
+            }
         }
 
         private void MarkAsOdd()
