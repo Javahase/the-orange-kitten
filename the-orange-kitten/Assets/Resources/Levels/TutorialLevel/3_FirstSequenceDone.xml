@@ -15,7 +15,7 @@
         <Text>It makes no sense. And therein lies the mistake the robot made!</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
+        <Actor>Supervisor</Actor>
         <Text>You're right!</Text>
     </CharacterDialogue>
 </DialogueSequence>

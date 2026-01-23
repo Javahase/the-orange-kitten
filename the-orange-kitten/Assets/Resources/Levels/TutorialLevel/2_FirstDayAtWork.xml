@@ -14,7 +14,7 @@
         <Text>(I hope I am prepared enough. This is so exciting!)</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
+        <Actor>Supervisor</Actor>
         <Text>Ah, there you are! Took you long enough!</Text>
     </CharacterDialogue>
     <CharacterDialogue>
@@ -22,7 +22,7 @@
         <Text>Well, the Deutsche Bahn kind of doesn't expect snow in winter, so the trains were late by merely... 120 minutes.</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
+        <Actor>Supervisor</Actor>
         <Text>We have no time for any chit-chat. They have received the order. Now, we need to act and we act fast.</Text>
     </CharacterDialogue>
     <CharacterDialogue>
@@ -30,19 +30,27 @@
         <Text>Okay, what is it that I should do? You were so secretive in the flyer.</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
-        <Text>A special assignment, a special case. We successfully infiltrated a robot at this restaurant "The Orange Kitten".</Text>
+        <Actor>Supervisor</Actor>
+        <Text>Secretive indeed. It's a secret objective concerning a restaurant: "The Orange Kitten".</Text>
     </CharacterDialogue>
     <CharacterDialogue>
         <Actor>You</Actor>
-        <Text>Ohhh, I've heard about it. They make very delicious food! One time, I ate so much, I actually vom-</Text>
+        <Text>Ohhh, I've heard about it. They make very delicious food! I heard a cat walks around there?</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
-        <Text>TOO. MANY. DETAILS!!</Text>
+        <Actor>Supervisor</Actor>
+        <Text>Precisely. We'd like to establish our own restaurant chain, but to do so, we'd like to figure out how they make those recipes.</Text>
     </CharacterDialogue>
     <CharacterDialogue>
-        <Actor>Supa Visor</Actor>
-        <Text>Regardless, you are here today to work with the robot we've infiltrated there. We need to know the secret behind the tasty recipes.</Text>
+        <Actor>Supervisor</Actor>
+        <Text>That's why we need your service today. Are you willing to take on this task?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>You</Actor>
+        <Text>Yes, throw it at me. What do I need to do?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue>
+        <Actor>Supervisor</Actor>
+        <Text>Pay attention to the computer...</Text>
     </CharacterDialogue>
 </DialogueSequence>

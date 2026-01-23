@@ -1,16 +1,26 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Util.Object;
 
-public class TabUI : MonoBehaviour
+namespace UI.TabUI
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class TabUI : MonoBehaviour
     {
         
-    }
+        private List<Tab> _tabs;
+        private SwitchBehavior _contentArea;
+        
+        private void Start()
+        {
+            _contentArea = transform.Find("ContentArea").GetComponent<SwitchBehavior>();
+            _tabs = _contentArea.transform.Cast<Tab>().ToList();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
