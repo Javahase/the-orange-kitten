@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -46,7 +48,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
         StopCoroutine(_currentCoroutine);
         _imgContinue.gameObject.SetActive(true);
         _currentCoroutine = null;
-        _dialogueText.text = dialogueText;
+        _dialogueText.text = dialogueText.Replace("^1", "").Replace("^2", "");
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -64,7 +66,25 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 
     private IEnumerator StartAnimation()
     {
-        foreach (var symbol in dialogueText)
+        var breaksLarge = dialogueText.Split("^1");
+        var breaks = breaksLarge.Select((s) => s.Split("^2")).ToList();
+        foreach (var smallBreaks in breaks)
+        {
+            foreach (var sequence in smallBreaks)
+            {
+                yield return ReadSequence(sequence);
+                yield return new WaitForSeconds(2 * frameSpeed);
+            }
+
+            yield return new WaitForSeconds(4 * frameSpeed);
+        }
+        _imgContinue.gameObject.SetActive(true);
+        _currentCoroutine = null;
+    }
+
+    private IEnumerator ReadSequence(string sequence)
+    {
+        foreach (var symbol in sequence)
         {
             if (symbol == ' ')
             {
@@ -75,7 +95,5 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
             _dialogueText.text += symbol;
             yield return new WaitForSeconds(frameSpeed);
         }
-        _imgContinue.gameObject.SetActive(true);
-        _currentCoroutine = null;
     }
 }
