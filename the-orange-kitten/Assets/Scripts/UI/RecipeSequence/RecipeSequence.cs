@@ -60,9 +60,12 @@ namespace UI.RecipeSequence
         /// </summary>
         private GameSequenceController _sequenceController;
 
+        private LLMService _llmService;
+
         public override void OnInitialize()
         {
             _sequenceController = GameSequenceController.GetInstance();
+            _llmService = LLMService.GetInstance();
             SequencePoints = statements;
             foreach (var _ in SequencePoints)
             {
@@ -70,6 +73,16 @@ namespace UI.RecipeSequence
             }
             InitSubsequences();
             InitButtons();
+        }
+
+        private void OnEnable()
+        {
+            _llmService.InitStatements(statements);
+        }
+
+        private void OnDisable()
+        {
+            _llmService.ClearStatements();
         }
 
         private void InitButtons()

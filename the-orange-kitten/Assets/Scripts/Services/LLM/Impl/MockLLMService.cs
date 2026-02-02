@@ -17,7 +17,7 @@ public class MockLLMService : LLMService
         _statements.Clear();
     }
 
-    public override IEnumerator CreateChatConnection(RecipeStatement stmt, string request, Action<string> callback)
+    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request, Action<string> callback)
     {
         yield return request;
         callback.Invoke(request);

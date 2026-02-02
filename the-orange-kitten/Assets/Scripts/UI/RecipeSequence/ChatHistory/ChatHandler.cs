@@ -33,8 +33,9 @@ namespace UI.RecipeSequence.ChatHistory
         {
             inputField.text = "";
             coreSequence.SetControlsEnabled(false);
-            yield return _llmService.CreateChatConnection(coreSequence.GetCurrentStatement(), message,
-                (action) => { coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", action); }
+            coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", message);
+            yield return _llmService.SendMessageToConversation(coreSequence.GetCurrentStatement(), message,
+                (action) => { coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("ROBOT", action); }
             );
             coreSequence.SetControlsEnabled(true);
         }
