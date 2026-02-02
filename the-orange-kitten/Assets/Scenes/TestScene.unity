@@ -2998,9 +2998,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2043790889}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7800fa99a5d85b9469f1ff13441051ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d34e70439134f1db6e2e18d901aa248, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MockLLMService
+  m_EditorClassIdentifier: Assembly-CSharp::ChatAILLMService
+  model: 0
 --- !u!1001 &2106324259
 PrefabInstance:
   m_ObjectHideFlags: 0
