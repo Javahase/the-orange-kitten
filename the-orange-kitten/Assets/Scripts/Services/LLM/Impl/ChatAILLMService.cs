@@ -8,14 +8,40 @@ using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/// <summary>
+/// LLM Service by Chat AI.
+/// </summary>
 public class ChatAILLMService : LLMService
 {
+    /// <summary>
+    /// Chat AI general API endpoint.
+    /// </summary>
     private const string ApiEndpoint = "https://chat-ai.academiccloud.de/v1";
+    
+    /// <summary>
+    /// The completions endpoint for completing messages.
+    /// </summary>
     private const string CompletionsEndpoint = ApiEndpoint + "/chat/completions";
-
+    
+    /// <summary>
+    /// A list of statements of the current level.
+    /// </summary>
     private List<RecipeStatement> _statements = new();
+    
+    /// <summary>
+    /// The LLM model that we want to use.
+    /// </summary>
     [SerializeField] private Model model;
-
+    
+    /// <summary>
+    /// The system prompt the LLM should receive.
+    /// "{0}" will be replaced with a list the <see cref="_statements">recipe statements</see>.
+    /// </summary>
+    [SerializeField] private TextAsset prompt;
+    
+    /// <summary>
+    /// A translation map of the model enum to the API-internal LLM model names.
+    /// </summary>
     private readonly Dictionary<Model, string> _apiModel = new()
     {
         { Model.Apertus_70B_Instruct_2509, "apertus-70b-instruct-2509" },
@@ -31,10 +57,21 @@ public class ChatAILLMService : LLMService
         { Model.Mistral_Large_Instruct, "mistral-large-instruct" },
         { Model.GPT_OSS_120B, "openai-gpt-oss-120b" }
     };
+    
+    /// <summary>
+    /// Keeps track of conversations per recipe statement.
+    /// </summary>
+    private readonly Dictionary<RecipeStatement, List<Message>> _conversationMap = new();
 
-    private Dictionary<RecipeStatement, List<Message>> _conversationMap = new();
-
+    /// <summary>
+    /// The secret API key located under <c>Secrets/api_key.txt</c>.
+    /// </summary>
     private string _apiKey;
+    
+    /// <summary>
+    /// The final prompt text post-formatting.
+    /// </summary>
+    private string _prompt;
 
     private void Start()
     {
@@ -45,7 +82,8 @@ public class ChatAILLMService : LLMService
     public override void InitStatements(List<RecipeStatement> statements)
     {
         _statements = statements;
-        Debug.Log("Initializing as BEST as I can!");
+        var stmtTexts = statements.Select((stmt) => "- " + stmt.message).Aggregate((a, b) => a + "\n" + b);
+        _prompt = string.Format(prompt.text, stmtTexts);
     }
 
     public override void ClearStatements()
@@ -57,11 +95,11 @@ public class ChatAILLMService : LLMService
     {
         if (!_conversationMap.ContainsKey(stmt))
         {
-            _conversationMap.Add(stmt, new List<Message>() { Message.CreateSystemPrompt("Respond in maximum 50 words.") });
+            _conversationMap.Add(stmt, new List<Message>() { Message.CreateSystemPrompt(_prompt) });
         }
         if (!_conversationMap.TryGetValue(stmt, out var messages)) yield break;
 
-        messages.Add(Message.CreateUserMessage(request));
+        messages.Add(Message.CreateUserMessage($"A question regarding your statement {stmt.message}: {request}"));
 
         var json = new JObject()
         {

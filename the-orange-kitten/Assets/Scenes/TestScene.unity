@@ -3002,6 +3002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatAILLMService
   model: 0
+  prompt: {fileID: 4900000, guid: b5c57c0a475e446e90dd0223aa43b6c9, type: 3}
 --- !u!1001 &2106324259
 PrefabInstance:
   m_ObjectHideFlags: 0

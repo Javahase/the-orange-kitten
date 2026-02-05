@@ -28,15 +28,21 @@ namespace UI.RecipeSequence.ChatHistory
         {
             StartCoroutine(SendChatRequest(inputField.text));
         }
-        
+
         private IEnumerator SendChatRequest(string message)
         {
+            var currentHistory = coreSequence.chatHistoryManager.GetActiveHistory();
             inputField.text = "";
             coreSequence.SetControlsEnabled(false);
-            coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("PLAYER", message);
-            yield return _llmService.SendMessageToConversation(coreSequence.GetCurrentStatement(), message,
-                (action) => { coreSequence.chatHistoryManager.GetActiveHistory().PushMessage("ROBOT", action); }
+
+            // In case instantiation is taking too long. Will prevent the UI from being messed up.
+            yield return currentHistory.StartPushMessageRoutine("PLAYER", message);
+            yield return _llmService.SendMessageToConversation(
+                coreSequence.GetCurrentStatement(),
+                message,
+                (action) => { currentHistory.PushMessage("ROBOT", action); }
             );
+
             coreSequence.SetControlsEnabled(true);
         }
     }
