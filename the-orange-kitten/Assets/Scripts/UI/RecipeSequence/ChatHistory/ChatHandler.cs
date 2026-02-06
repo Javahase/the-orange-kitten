@@ -12,10 +12,12 @@ namespace UI.RecipeSequence.ChatHistory
         [SerializeField] private Button buttonSubmit;
         [SerializeField] private RecipeSequence coreSequence;
         private LLMService _llmService;
+        private InsightService _insightService;
 
         private void Start()
         {
             _llmService = LLMService.GetInstance();
+            _insightService = InsightService.GetInstance();
             buttonSubmit.onClick.AddListener(PressStatement);
             coreSequence.ControlStateChangedEvent += (controlsEnabled) =>
             {
@@ -37,11 +39,15 @@ namespace UI.RecipeSequence.ChatHistory
 
             // In case instantiation is taking too long. Will prevent the UI from being messed up.
             yield return currentHistory.StartPushMessageRoutine("PLAYER", message);
-            yield return _llmService.SendMessageToConversation(
+            var response= _llmService.SendMessageToConversation(
                 coreSequence.GetCurrentStatement(),
                 message,
-                (action) => { currentHistory.PushMessage("ROBOT", action); }
+                (_) => {}
             );
+            yield return response;
+            if (response.Current is not string llmMessage) yield break;
+            yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
+            yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), llmMessage);
 
             coreSequence.SetControlsEnabled(true);
         }

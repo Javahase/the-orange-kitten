@@ -29,12 +29,19 @@ public class InsightsInventory : MonoBehaviour
     /// </summary>
     private List<SlotElement> _slots;
 
+    private InsightService _insightService;
+
     private void Start()
     {
+        _insightService = InsightService.GetInstance();
         slotElementPrefab.gameObject.SetActive(false);
         _slots = Enumerable.Range(0, PageSize)
                             .Select(_ => slotElementPrefab.InstantiateWith(RecipeInsight.EMPTY, transform))
                             .ToList();
+        _insightService.OnInsightGained += (insight) =>
+        {
+            Debug.Log("New Insight Gained: " + insight.info);
+        };
     }
     
     /// <summary>
@@ -60,7 +67,7 @@ public class InsightsInventory : MonoBehaviour
     public void SetPage(int page)
     {
         if (page < 0 || page >= GetMaxPageCount()) return;
-        var insights = InsightService.GetInstance().GetPaged(PageSize, page);
+        var insights = _insightService.GetPaged(PageSize, page);
         for (var i = 0; i < _slots.Count; i++)
         {
             _slots[i].SetSelected(false);
@@ -73,8 +80,8 @@ public class InsightsInventory : MonoBehaviour
 
     public int GetCurrentPage() => _currentPage;
 
-    private static int GetMaxPageCount()
-        => (int)Math.Ceiling(InsightService.GetInstance().GetAllInsights().Count / (float)PageSize);
+    private int GetMaxPageCount()
+        => (int)Math.Ceiling(_insightService.GetAllInsights().Count / (float)PageSize);
 
     public SlotElement GetSlot(int index) => _slots[index];
 

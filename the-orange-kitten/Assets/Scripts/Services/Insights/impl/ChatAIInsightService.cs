@@ -1,0 +1,57 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+using UnityEngine;
+
+public class ChatAIInsightService : InsightService
+{
+    [SerializeField] private TextAsset insightPrompt;
+    [SerializeField] private TextAsset apiKey;
+    [SerializeField] private ChatAIModel.Model model;
+    private string _insightPrompt;
+    private string _apiKey;
+
+    protected override void Start()
+    {
+        base.Start();
+        _apiKey = apiKey.text;
+    }
+
+    public override IEnumerator GenerateInsight(RecipeStatement context, string statement)
+    {
+        var message = ChatAIUtil.SendMessage(_apiKey, model, new List<ChatAIMessage>()
+        {
+            ChatAIMessage.CreateSystemPrompt(_insightPrompt),
+            ChatAIMessage.CreateSystemPrompt($"The robot answered this about {context.message}"),
+            ChatAIMessage.CreateUserMessage(statement)
+        });
+        yield return message;
+
+        if (message.Current is not WebEither<string, ChatAIMessage> response) yield break;
+        if (response.IsLeft())
+        {
+            Debug.Log(response.GetLeft());
+            yield break;
+        }
+        Debug.Log(response.GetRight().content);
+        var json = JObject.Parse(response.GetRight().content);
+        if (!json.ContainsKey("insight") || !json.ContainsKey("important")) yield break;
+
+        var insight = json.GetValue("insight")?.ToObject<string>();
+        var important = json.GetValue("important")?.ToObject<bool>();
+        if (insight == null || important == null) yield break;
+
+        AddInsight(new RecipeInsight(insight,
+            important.Value ? GameSequenceController.GetInstance().GetIndexOfCurrentPuzzle() : -1));
+    }
+
+    public override void Init()
+    {
+        var stmts = LlmService.GetStatements();
+        var stmtList = stmts.Select((s) => $"- {s.message}").Aggregate((a, b) => a + "\n" + b);
+        var contradictoryStmt = stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect).message;
+        
+        _insightPrompt = string.Format(insightPrompt.text, stmtList, contradictoryStmt);
+    }
+}

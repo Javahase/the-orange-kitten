@@ -23,4 +23,5 @@ public class MockLLMService : LLMService
         callback.Invoke(request);
     }
 
+    public override List<RecipeStatement> GetStatements() => _statements;
 }

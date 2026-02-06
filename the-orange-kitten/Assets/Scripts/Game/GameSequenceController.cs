@@ -60,6 +60,8 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
             .ToList()
             .IndexOf(sequence);
 
+    public int GetIndexOfCurrentPuzzle() => CurrentSequence is RecipeSequence s ? GetIndexOfPuzzle(s) : -1;
+
     /// <summary>
     /// Progresses to the next sequence.
     /// </summary>

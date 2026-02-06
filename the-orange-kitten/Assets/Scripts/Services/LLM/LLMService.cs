@@ -29,4 +29,6 @@ public abstract class LLMService : SingletonObject<LLMService>
     /// <param name="callback">The function that is called when the LLM made a response</param>
     /// <returns>An IEnumerator</returns>
     public abstract IEnumerator SendMessageToConversation(RecipeStatement stmt, string request, Action<string> callback);
+    
+    public abstract List<RecipeStatement> GetStatements();
 }

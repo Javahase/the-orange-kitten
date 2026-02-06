@@ -1,0 +1,17 @@
+﻿A robot makes cold meow meows and gets questioned by a player about it. Cold meow meows are, as the name says, cold.
+The steps the robot took are as follows:
+{0}
+
+You are tasked to deduce from a statement what insight one can get from this.
+
+Respond in JSON-Formats, with the following form:
+{{
+"insight": "<Text>",
+"important": <true/false>
+}}
+
+However, if the statement has nothing to do with the current topic, return an empty json-object. {{}}
+
+The text should be maximum 100 symbols long and it should depict what insight the player learned from this. It also should be a whole sentence.
+The insight is important if it explains why it contradicts with this statement:
+{1}

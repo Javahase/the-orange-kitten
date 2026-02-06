@@ -358,21 +358,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[0].message
-      value: First, I poured the strawberry juice into the form you gave me.
+      value: 'First, I poured the pink funny liquid into a shape '
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[1].message
-      value: Next, I put the popsickle stick into the strawberry juice, but I made
-        sure that the stick wasn't entirely submerged in the juice.
+      value: Next, I put the long thingy thing into the liquid. But not entirely.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[2].message
-      value: Afterwards, I put the form in the oven
+      value: Afterwards, I put the shape into the great warm box.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[3].message
-      value: Finally, I placed the form in the garden on the table outside and waited
-        for 8 hours
+      value: Finally, I placed the shape into the great world outside.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[1].statementType
@@ -1475,30 +1473,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 764917435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7529a419dfb847c4486484599eb966f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b7b156fdba049ea9fe5582766d22fdc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InsightService
-  defaultInsights:
-  - info: Truly insightful
-    correctSequence: 0
-  - info: Not so insightful...
-    correctSequence: -1
-  - info: A
-    correctSequence: -1
-  - info: B
-    correctSequence: -1
-  - info: C
-    correctSequence: -1
-  - info: D
-    correctSequence: -1
-  - info: F
-    correctSequence: -1
-  - info: G
-    correctSequence: -1
-  - info: H
-    correctSequence: -1
-  - info: I
-    correctSequence: -1
+  m_EditorClassIdentifier: Assembly-CSharp::ChatAIInsightService
+  defaultInsights: []
+  insightPrompt: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
+  apiKey: {fileID: 4900000, guid: c56240c8034e74d4b8afacc825e0a3ce, type: 3}
+  model: 9
 --- !u!1001 &784938123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3001,7 +2982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d34e70439134f1db6e2e18d901aa248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatAILLMService
-  model: 0
+  model: 9
   prompt: {fileID: 4900000, guid: b5c57c0a475e446e90dd0223aa43b6c9, type: 3}
 --- !u!1001 &2106324259
 PrefabInstance:

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,8 +8,12 @@ using UnityEngine;
 /// Persists a bunch of insights, until the current scene ends.
 /// </summary>
 /// <seealso cref="RecipeInsight"/>
-public class InsightService : SingletonObject<InsightService>
+public abstract class InsightService : SingletonObject<InsightService>
 {
+    
+    public delegate void InsightGained(RecipeInsight insight);
+    
+    public event InsightGained OnInsightGained;
 
     /// <summary>
     /// Base insights that the player has available right away.
@@ -20,10 +25,17 @@ public class InsightService : SingletonObject<InsightService>
     /// </summary>
     private List<RecipeInsight> _recipeInsights = new();
 
-    private void Start()
+    protected LLMService LlmService;
+
+    protected virtual void Start()
     {
         _recipeInsights.AddRange(defaultInsights);
+        LlmService = LLMService.GetInstance();
     }
+
+    public abstract void Init();
+
+    public abstract IEnumerator GenerateInsight(RecipeStatement context, string statement);
     
     /// <summary>
     /// Adds a <see cref="RecipeInsight"/> to the pool.
@@ -32,6 +44,7 @@ public class InsightService : SingletonObject<InsightService>
     public void AddInsight(RecipeInsight insight)
     {
         _recipeInsights.Add(insight);
+        OnInsightGained?.Invoke(insight);
     }
 
     /// <summary>
