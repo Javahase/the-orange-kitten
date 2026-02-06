@@ -35,7 +35,7 @@ public abstract class InsightService : SingletonObject<InsightService>
 
     public abstract void Init();
 
-    public abstract IEnumerator GenerateInsight(RecipeStatement context, string statement);
+    public abstract IEnumerator GenerateInsight(RecipeStatement context, string question, string statement);
     
     /// <summary>
     /// Adds a <see cref="RecipeInsight"/> to the pool.

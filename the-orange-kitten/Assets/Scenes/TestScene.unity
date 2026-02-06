@@ -1479,7 +1479,7 @@ MonoBehaviour:
   defaultInsights: []
   insightPrompt: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
   apiKey: {fileID: 4900000, guid: c56240c8034e74d4b8afacc825e0a3ce, type: 3}
-  model: 9
+  model: 10
 --- !u!1001 &784938123
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class MockInsightService : InsightService
     {
     }
 
-    public override IEnumerator GenerateInsight(RecipeStatement context, string statement)
+    public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement)
     {
         switch (mode)
         {

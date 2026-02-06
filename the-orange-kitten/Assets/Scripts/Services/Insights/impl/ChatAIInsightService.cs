@@ -18,13 +18,15 @@ public class ChatAIInsightService : InsightService
         _apiKey = apiKey.text;
     }
 
-    public override IEnumerator GenerateInsight(RecipeStatement context, string statement)
+    public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement)
     {
         var message = ChatAIUtil.SendMessage(_apiKey, model, new List<ChatAIMessage>()
         {
             ChatAIMessage.CreateSystemPrompt(_insightPrompt),
-            ChatAIMessage.CreateSystemPrompt($"The robot answered this about {context.message}"),
-            ChatAIMessage.CreateUserMessage(statement)
+            ChatAIMessage.CreateSystemPrompt($"The user questioned about this statement: {context.message}"),
+            ChatAIMessage.CreateUserMessage(question),
+            ChatAIMessage.CreateAssistantMessage(statement),
+            ChatAIMessage.CreateUserMessage("What did I learn from this?")
         });
         yield return message;
 

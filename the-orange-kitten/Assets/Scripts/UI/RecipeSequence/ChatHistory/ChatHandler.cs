@@ -47,8 +47,8 @@ namespace UI.RecipeSequence.ChatHistory
             yield return response;
             if (response.Current is not string llmMessage) yield break;
             yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
-            yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), llmMessage);
-
+            yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage);
+            
             coreSequence.SetControlsEnabled(true);
         }
     }
