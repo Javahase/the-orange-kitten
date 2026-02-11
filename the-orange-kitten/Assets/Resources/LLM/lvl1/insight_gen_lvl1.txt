@@ -13,7 +13,7 @@ Respond ONLY in JSON-Formats, with the following form:
 However, if the statement has nothing to do with the current topic, return an empty json-object. {{}}
 
 The text should be maximum 100 symbols long and it should depict what insight the player learned from this. It also should be a whole sentence.
-The insight is important if it explains why it contradicts with this statement:
+The insight is important if it contradicts with this statement:
 {1}
 
 You will be giving the following chat:

@@ -36,6 +36,8 @@ public class ChatAIInsightService : InsightService
             Debug.Log(response.GetLeft());
             yield break;
         }
+
+        if (response.GetRight().content == null) yield break;
         Debug.Log(response.GetRight().content);
         var json = JObject.Parse(response.GetRight().content);
         if (!json.ContainsKey("insight") || !json.ContainsKey("important")) yield break;

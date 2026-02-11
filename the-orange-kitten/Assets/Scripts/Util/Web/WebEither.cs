@@ -12,9 +12,9 @@ public struct WebEither<L, R>
 
     public static WebEither<L, R> Either(L error, R value) => value == null ? Left(error) : Right(value);
 
-    public bool IsLeft() => _error != null && _value == null;
+    public bool IsLeft() => _value == null;
 
-    public bool IsRight() => _error == null && _value != null;
+    public bool IsRight() => !IsLeft();
 
     public L GetLeft() => _error;
 
