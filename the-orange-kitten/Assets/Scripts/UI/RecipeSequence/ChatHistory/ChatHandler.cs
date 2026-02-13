@@ -22,7 +22,7 @@ namespace UI.RecipeSequence.ChatHistory
             coreSequence.ControlStateChangedEvent += (controlsEnabled) =>
             {
                 inputField.interactable = controlsEnabled;
-                buttonSubmit.enabled = controlsEnabled;
+                buttonSubmit.interactable = controlsEnabled;
             };
         }
 

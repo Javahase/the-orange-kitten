@@ -91,8 +91,8 @@ namespace UI.RecipeSequence
             prevButton.onClick.AddListener(() => Previous());
             ControlStateChangedEvent += (controlsEnabled) =>
             {
-                nextButton.enabled = controlsEnabled;
-                prevButton.enabled = controlsEnabled;
+                nextButton.interactable = controlsEnabled;
+                prevButton.interactable = controlsEnabled;
             };
         }
 
