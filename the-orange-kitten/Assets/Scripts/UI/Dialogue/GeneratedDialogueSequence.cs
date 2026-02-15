@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -57,5 +58,9 @@ public class GeneratedDialogueSequence : DialogueSequence
     {
         var characterFrame = InstantiateFrameBase(characterFramePrefab, data).GetComponent<CharacterFrame>();
         characterFrame.characterName = data.CharacterName;
+        if (data.CurrentPortrait != "")
+        {
+            characterFrame.characterImage = Resources.Load<Sprite>(data.CurrentPortrait);
+        }
     }
 }

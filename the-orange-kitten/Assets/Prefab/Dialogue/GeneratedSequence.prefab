@@ -116,4 +116,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneratedDialogueSequence
   dialogueFile: {fileID: 0}
   baseFramePrefab: {fileID: 4528641874054339286, guid: d594e91db24560e47bde60eadc513457, type: 3}
-  characterFramePrefab: {fileID: 7728230441774134181, guid: 39d7072c8c13ee444929f029492ce54f, type: 3}
+  characterFramePrefab: {fileID: 2333279657194289483, guid: 05e34aae33475bb4f94975d078122bbf, type: 3}

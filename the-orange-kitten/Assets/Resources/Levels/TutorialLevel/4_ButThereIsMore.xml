@@ -2,15 +2,15 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
 
 <DialogueSequence>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>I believe there are still problems to be solved,^2 though...</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>And I'm not even talking about logical mistakes the robot has made,^2 but rather...</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>... unusual steps the robot took.^1 Maybe you should ask about those next.</Text>
     </CharacterDialogue>

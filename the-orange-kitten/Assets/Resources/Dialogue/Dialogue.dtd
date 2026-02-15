@@ -5,6 +5,6 @@
         <!ELEMENT Text (#PCDATA)>
         <!ELEMENT Actor (#PCDATA)>
         <!ATTLIST BaseDialogue bg CDATA #REQUIRED>
-        <!ATTLIST CharacterDialogue bg CDATA #REQUIRED>
+        <!ATTLIST CharacterDialogue bg CDATA #REQUIRED curr_portrait CDATA #REQUIRED>
 
         ]>

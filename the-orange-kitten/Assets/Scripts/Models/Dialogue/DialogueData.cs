@@ -16,6 +16,9 @@ public class DialogueData
     {
         [XmlElement(ElementName = "Actor")]
         public string CharacterName;
-        
+
+        [XmlAttribute(AttributeName = "curr_portrait")]
+        public string CurrentPortrait;
+
     }
 }

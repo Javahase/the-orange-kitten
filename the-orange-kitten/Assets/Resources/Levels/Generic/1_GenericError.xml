@@ -2,19 +2,19 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
 
 <DialogueSequence>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>There seems to be a problem with this statement!</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Hmm, are you sure? That statement sounds perfectly reasonable.</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>ARGH! You're right!</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Maybe you should ask the robot a bit more before jumping to conclusions.</Text>
     </CharacterDialogue>

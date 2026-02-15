@@ -5,51 +5,51 @@
     <BaseDialogue bg="">
         <Text>Location:^1 Digital Media Lab - Headquarters</Text>
     </BaseDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>(Finally,^2 my first day at the Digital Media Lab.^1 They say only the bravest of all can participate in an experiment like this...)</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>(I hope I am prepared enough.^1 This is so exciting!)</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Ah, there you are!^1 Took you long enough!</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>Well,^2 the Deutsche Bahn kind of doesn't expect snow in winter,^2 so the trains were late by merely...^1 120 minutes.</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>We have no time for any chit-chat.^1 They have received the order.^1 Now,^2 we need to act and we act fast.</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>Okay,^2 what is it that I should do?^2 You were so secretive in the flyer.</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Secretive indeed.^1 It's a secret objective concerning a restaurant:^1 "The Orange Kitten".</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>Ohhh,^2 I've heard about it.^1 They make very delicious food!^1 I heard a cat walks around there?</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Precisely.^1 We'd like to establish our own restaurant chain,^2 but to do so,^2 we'd like to figure out how they make those recipes.</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>That's why we need your service today.^1 Are you willing to take on this task?</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>You</Actor>
         <Text>Yes,^2 throw it at me.^1 What do I need to do?</Text>
     </CharacterDialogue>
-    <CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
         <Actor>Supervisor</Actor>
         <Text>Pay attention to the computer...</Text>
     </CharacterDialogue>

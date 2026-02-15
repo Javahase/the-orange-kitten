@@ -540,26 +540,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3324150700389710673, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3324150700389710673, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3324150700389710673, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 290
-      objectReference: {fileID: 0}
-    - target: {fileID: 3324150700389710673, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 165
-      objectReference: {fileID: 0}
-    - target: {fileID: 3324150700389710673, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -175
-      objectReference: {fileID: 0}
     - target: {fileID: 3408249310226777378, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
