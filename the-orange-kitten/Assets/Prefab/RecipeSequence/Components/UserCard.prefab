@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 1508887497144982923}
   - component: {fileID: 8036550726722985035}
   - component: {fileID: 2142453109571727818}
+  - component: {fileID: 8754957037399636363}
   m_Layer: 5
   m_Name: UserCard
   m_TagString: Untagged
@@ -395,6 +396,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &8754957037399636363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5921491181486713594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba566a963774923b40866f3a95fc21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConnectionInfo
 --- !u!1 &6190840167232228181
 GameObject:
   m_ObjectHideFlags: 0

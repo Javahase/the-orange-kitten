@@ -49,6 +49,7 @@ namespace UI.RecipeSequence.ChatHistory
             yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
             yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage);
             
+            coreSequence.healthContainer.Damage();
             coreSequence.SetControlsEnabled(true);
         }
     }

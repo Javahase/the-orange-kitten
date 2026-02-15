@@ -20,24 +20,30 @@ namespace UI.RecipeSequence
         /// <summary>
         /// The statement text on the top
         /// </summary>
-        [Header("Inner Components")]
-        [SerializeField] private TMP_Text statementText;
+        [Header("Inner Components")] [SerializeField]
+        private TMP_Text statementText;
 
         [SerializeField] private Button prevButton;
-        
+
         [SerializeField] private Button nextButton;
-        
+
+        public HealthContainer healthContainer;
+
+        [SerializeField] private ConnectionInfo userInfo;
+
+        [SerializeField] private Image lostPopUp;
+
         /// <summary>
         /// The <see cref="ChatHistoryManager"/> controlling
         /// chat histories for each statement.
         /// </summary>
         public ChatHistoryManager chatHistoryManager;
-        
+
         /// <summary>
         /// A list of <see cref="RecipeStatement">statements</see> to be shown.
         /// </summary>
-        [Header("Data Fields")]
-        [SerializeField] private List<RecipeStatement> statements;
+        [Header("Data Fields")] [SerializeField]
+        private List<RecipeStatement> statements;
 
         /// <summary>
         /// A <see cref="DialogueSequence"/> that should play when the player
@@ -51,6 +57,8 @@ namespace UI.RecipeSequence
         /// One can give the player a hint in this sequence.
         /// </summary>
         [SerializeField] private DialogueSequence specialErrorSequence;
+
+        [SerializeField] private DialogueSequence lostSequence;
 
         protected override List<RecipeStatement> SequencePoints { get; set; }
 
@@ -71,18 +79,14 @@ namespace UI.RecipeSequence
             {
                 chatHistoryManager.InitNewHistory();
             }
+
             InitSubsequences();
             InitButtons();
-        }
-
-        private void OnEnable()
-        {
-            _llmService.InitStatements(statements);
-        }
-
-        private void OnDisable()
-        {
-            _llmService.ClearStatements();
+            healthContainer.NoHealthEvent += () =>
+            {
+                userInfo.OnLost();
+                lostPopUp.gameObject.SetActive(true);
+            };
         }
 
         private void InitButtons()
@@ -110,17 +114,25 @@ namespace UI.RecipeSequence
                 if (_sequenceController.CurrentSequence.Equals(this))
                     specialErrorSequence.OnDisabled();
             };
+            lostSequence.OnInitialize();
+            lostSequence.SequenceEndEvent += (_) =>
+            {
+                if (_sequenceController.CurrentSequence.Equals(this))
+                    lostSequence.OnDisabled();
+            };
         }
 
         public override void OnEnabled()
         {
             gameObject.SetActive(true);
+            _llmService.InitStatements(statements);
             SelectStatement(0);
         }
 
         public override void OnDisabled()
         {
             solutionSequence.OnDisabled();
+            _llmService.ClearStatements();
             gameObject.SetActive(false);
         }
 
@@ -128,6 +140,15 @@ namespace UI.RecipeSequence
         {
             CurrentStep = 0;
             chatHistoryManager.ChatHistories.ForEach(history => history.ClearChat());
+            userInfo.ResetDisplay();
+        }
+
+        public void RecoverLoss()
+        {
+            userInfo.ResetDisplay();
+            healthContainer.ResetHealth();
+            lostPopUp.gameObject.SetActive(false);
+            lostSequence.OnEnabled();
         }
 
         /// <summary>
@@ -150,7 +171,7 @@ namespace UI.RecipeSequence
                 _sequenceController.StartGenericErrorSequence();
             }
         }
-        
+
         public void SetControlsEnabled(bool enableControls) => ControlStateChangedEvent?.Invoke(enableControls);
 
         /// <summary>
@@ -158,7 +179,7 @@ namespace UI.RecipeSequence
         /// </summary>
         /// <returns>The current statement.</returns>
         public RecipeStatement GetCurrentStatement() => CurrentSequence;
-        
+
         private void SelectStatement(int index)
         {
             chatHistoryManager.SetHistoryVisible(CurrentStep, false);
@@ -166,7 +187,7 @@ namespace UI.RecipeSequence
             statementText.text = CurrentSequence.message;
             chatHistoryManager.SetActiveHistory(CurrentStep);
         }
-        
+
         private bool TraverseStatement(int direction)
         {
             if (CurrentStep + direction < 0 || CurrentStep + direction >= SequencePoints.Count)
@@ -180,7 +201,7 @@ namespace UI.RecipeSequence
             SelectStatement(CurrentStep + direction);
             return true;
         }
-        
+
         public override bool Next() => TraverseStatement(1) && base.Next();
         public override bool Previous() => TraverseStatement(-1) && base.Previous();
     }

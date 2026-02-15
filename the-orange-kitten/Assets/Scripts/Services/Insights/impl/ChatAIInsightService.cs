@@ -25,8 +25,7 @@ public class ChatAIInsightService : InsightService
             ChatAIMessage.CreateSystemPrompt(_insightPrompt),
             ChatAIMessage.CreateSystemPrompt($"The user questioned about this statement: {context.message}"),
             ChatAIMessage.CreateUserMessage(question),
-            ChatAIMessage.CreateAssistantMessage(statement),
-            ChatAIMessage.CreateUserMessage("What did I learn from this?")
+            ChatAIMessage.CreateUserMessage($"What can I learn from this statement?: {statement}"),
         });
         yield return message;
 

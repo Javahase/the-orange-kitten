@@ -3,7 +3,6 @@ The steps the robot took are as follows:
 {0}
 
 You are tasked to deduce from a statement the robot made what insight one can get from this. 
-If the statement has nothing to do with the current topic, return an empty json-object. {{}}
 
 The insight should be maximum 100 symbols long and it should say what the player learned from the statement. Make the insight a whole sentence.
 The "important"-field must only be true, if it can be used as a solution for the puzzle.
@@ -12,10 +11,12 @@ The Puzzle-Solution:
 The false statement is {1}. This statement is false, because we are making *cold* meow meows, while the statement claimed to put the form into a warm box.
 Thus, an insight that points out that the cold-property of cold meow meows is a solution to the puzzle.
 
-Respond ONLY in JSON-Formats, with the following form:
+Respond ONLY in JSON-Formats, either empty or with the following form:
 {{
 "insight": "<Text>",
 "important": <true/false>
 }}
+
+If you think the player has learned nothing, return an empty json-object. {{}}
 
 You will be giving the following chat:
