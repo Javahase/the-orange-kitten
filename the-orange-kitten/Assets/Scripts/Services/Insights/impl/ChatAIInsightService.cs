@@ -8,7 +8,6 @@ public class ChatAIInsightService : InsightService
 {
     [SerializeField] private TextAsset insightRulesPrompt;
     [SerializeField] private TextAsset insightPrompt;
-    [SerializeField] private TextAsset apiKey;
     [SerializeField] private ChatAIModel.Model model;
     private string _insightRulesPrompt;
     private string _insightPrompt;
@@ -17,7 +16,7 @@ public class ChatAIInsightService : InsightService
     protected override void Start()
     {
         base.Start();
-        _apiKey = apiKey.text;
+        _apiKey = Resources.Load<TextAsset>("Secrets/api_key").text;
         _insightRulesPrompt = insightRulesPrompt.text;
     }
 
