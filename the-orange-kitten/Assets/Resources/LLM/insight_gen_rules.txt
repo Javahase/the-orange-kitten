@@ -11,3 +11,5 @@ Your response should follow those rules:
 - The insight should be a whole sentence.
 - The "important"-field must only be true, if it can be used as a solution for the puzzle.
 - If the statement does not relate to the topic, return an empty JSON.
+- Do not point any property out about the robot.
+- The robot is not to be mentioned in those insights.

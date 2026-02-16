@@ -29,6 +29,8 @@ public class ChatAILLMService : LLMService
     /// </summary>
     [SerializeField] private ChatAIModel.Model model;
 
+    [SerializeField] private TextAsset rulePrompt;
+
     /// <summary>
     /// The system prompt the LLM should receive.
     /// "{0}" will be replaced with a list the <see cref="_statements">recipe statements</see>.
@@ -51,10 +53,13 @@ public class ChatAILLMService : LLMService
     /// </summary>
     private string _prompt;
 
+    private string _rulePrompt;
+
     private void Start()
     {
         var file = Resources.Load<TextAsset>("Secrets/api_key");
         _apiKey = file.text;
+        _rulePrompt = rulePrompt.text;
     }
 
     public override void InitStatements(List<RecipeStatement> statements)
@@ -74,13 +79,22 @@ public class ChatAILLMService : LLMService
     {
         if (!_conversationMap.ContainsKey(stmt))
         {
-            _conversationMap.Add(stmt, new List<ChatAIMessage>() { ChatAIMessage.CreateSystemPrompt(_prompt) });
+            _conversationMap.Add(stmt, new List<ChatAIMessage>()
+            {
+                ChatAIMessage.CreateSystemPrompt(_rulePrompt),
+                ChatAIMessage.CreateSystemPrompt(_prompt),
+                ChatAIMessage.CreateSystemPrompt($"You will now answer questions related to this step you took: {stmt.message}")
+            });
         }
 
         if (!_conversationMap.TryGetValue(stmt, out var messages)) yield break;
 
-        messages.Add(ChatAIMessage.CreateSystemPrompt($"The user asks about {stmt.message}"));
         messages.Add(ChatAIMessage.CreateUserMessage(request));
+        
+        foreach (var msg in messages)
+        {
+            Debug.Log($"{msg.role}: {msg.content}");
+        }
 
         var message = ChatAIUtil.SendMessage(
             _apiKey,

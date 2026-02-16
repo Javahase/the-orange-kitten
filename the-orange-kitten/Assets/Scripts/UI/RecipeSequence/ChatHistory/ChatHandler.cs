@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,6 +47,7 @@ namespace UI.RecipeSequence.ChatHistory
             );
             yield return response;
             if (response.Current is not string llmMessage) yield break;
+            Debug.Log(llmMessage.Where(c => c != ' ').ToList().Count);
             yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
             yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage);
             
