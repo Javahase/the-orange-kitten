@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 
 [JsonObject(MemberSerialization.OptIn)]
-public struct ChatData
+public class ChatData
 {
     [JsonProperty(propertyName: "sender")] public string Sender;
 

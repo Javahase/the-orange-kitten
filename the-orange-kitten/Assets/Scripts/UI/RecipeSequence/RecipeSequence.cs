@@ -11,6 +11,7 @@ namespace UI.RecipeSequence
     /// as well as broadcasting said slide-through for other components within
     /// this sequence to handle.
     /// </summary>
+    [RequireComponent(typeof(RecipeEventLog))]
     public class RecipeSequence : GameSequence<RecipeStatement>
     {
         public delegate void OnControlStateChanged(bool controlsEnabled);
@@ -70,10 +71,13 @@ namespace UI.RecipeSequence
 
         private LLMService _llmService;
 
+        [HideInInspector] public RecipeEventLog eventLog;
+
         public override void OnInitialize()
         {
             _sequenceController = GameSequenceController.GetInstance();
             _llmService = LLMService.GetInstance();
+            eventLog = GetComponent<RecipeEventLog>();
             SequencePoints = statements;
             foreach (var _ in SequencePoints)
             {
@@ -82,10 +86,15 @@ namespace UI.RecipeSequence
 
             InitSubsequences();
             InitButtons();
+
+            eventLog.EnableLog(statements);
+
+            healthContainer.DamageEvent += () => { eventLog.IncrementQuestionCount(); };
             healthContainer.NoHealthEvent += () =>
             {
                 userInfo.OnLost();
                 lostPopUp.gameObject.SetActive(true);
+                eventLog.IncrementAttemptsCount();
             };
         }
 

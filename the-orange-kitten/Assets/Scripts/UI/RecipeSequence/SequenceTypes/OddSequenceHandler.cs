@@ -32,11 +32,19 @@ namespace UI.RecipeSequence.SequenceTypes
         {
             statement.markingState = markingState;
             StatementMarkChangedEvent?.Invoke(statement, markingState);
+            if (markingState == RecipeStatement.MarkingState.Unmarked)
+            {
+                _coreSequence.eventLog.LogOddUnmark(_coreSequence.GetCurrentStatement());
+            }
         }
 
         public void SetCurrentStatementState(RecipeStatement.MarkingState markingState) =>
             SetMarkingState(_coreSequence.GetCurrentStatement(), markingState);
 
-        public void SetCurrentStatementMarked() => SetCurrentStatementState(RecipeStatement.MarkingState.Marked);
+        public void SetCurrentStatementMarked(string reason)
+        {
+            SetCurrentStatementState(RecipeStatement.MarkingState.Marked);
+            _coreSequence.eventLog.LogOddMark(_coreSequence.GetCurrentStatement(), reason);
+        }
     }
 }

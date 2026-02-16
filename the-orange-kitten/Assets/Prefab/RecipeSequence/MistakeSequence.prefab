@@ -828,6 +828,7 @@ GameObject:
   - component: {fileID: 4258655763820756507}
   - component: {fileID: 879850669860624744}
   - component: {fileID: 8002212926947179042}
+  - component: {fileID: 7747481411903243863}
   m_Layer: 5
   m_Name: MistakeSequence
   m_TagString: Untagged
@@ -963,6 +964,7 @@ MonoBehaviour:
   solutionSequence: {fileID: 0}
   specialErrorSequence: {fileID: 0}
   lostSequence: {fileID: 0}
+  eventLog: {fileID: 0}
 --- !u!114 &8002212926947179042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,6 +977,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540dea77770e45f68d1bc3f98c9b8504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.SequenceTypes.MistakeSequenceHandler
+--- !u!114 &7747481411903243863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218886592271009111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09babf76e6214cbfa4b569b6893702f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecipeEventLog
+  puzzleId: 
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0

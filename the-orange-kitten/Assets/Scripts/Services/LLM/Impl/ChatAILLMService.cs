@@ -90,11 +90,6 @@ public class ChatAILLMService : LLMService
         if (!_conversationMap.TryGetValue(stmt, out var messages)) yield break;
 
         messages.Add(ChatAIMessage.CreateUserMessage(request));
-        
-        foreach (var msg in messages)
-        {
-            Debug.Log($"{msg.role}: {msg.content}");
-        }
 
         var message = ChatAIUtil.SendMessage(
             _apiKey,

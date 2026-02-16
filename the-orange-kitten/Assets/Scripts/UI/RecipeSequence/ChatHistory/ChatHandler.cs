@@ -53,6 +53,8 @@ namespace UI.RecipeSequence.ChatHistory
             
             coreSequence.healthContainer.Damage();
             coreSequence.SetControlsEnabled(true);
+            coreSequence.eventLog.LogStatement(coreSequence.GetCurrentStatement(), "PLAYER", message);
+            coreSequence.eventLog.LogStatement(coreSequence.GetCurrentStatement(), "ROBOT", llmMessage);
         }
     }
 }

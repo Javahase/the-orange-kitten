@@ -27,6 +27,7 @@ namespace UI.RecipeSequence.SequenceTypes
                 && _coreSequence.GetCurrentStatement().statementType == RecipeStatement.StatementType.Incorrect)
             {
                 _coreSequence.OnSequenceWon();
+                _coreSequence.eventLog.LogContradiction(insight.info);
             }
             else
             {

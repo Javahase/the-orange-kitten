@@ -42,15 +42,6 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     private void Start()
     {
-        Debug.Log(new ConversationData
-        {
-            Topic = "Topic",
-            Chat = new List<ChatData>()
-            {
-                new() {Sender="Mom", Message = "Hi"},
-                new() {Sender="Mom", Message = "Hi"},
-            }
-        }.ToJson());
         errorSequence.OnInitialize();
         errorSequence.SequenceEndEvent += (_) => errorSequence.OnDisabled();
 

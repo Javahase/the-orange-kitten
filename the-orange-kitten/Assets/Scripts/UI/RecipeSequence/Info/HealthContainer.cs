@@ -4,11 +4,13 @@ using UnityEngine.UI;
 
 public class HealthContainer : MonoBehaviour
 {
-    
+    public event OnDamage DamageEvent;
     public event NoHealth NoHealthEvent;
 
     public delegate void NoHealth();
-    
+
+    public delegate void OnDamage();
+
 
     [SerializeField] private Image healthBar;
     [SerializeField] private float maxHealth;
@@ -30,7 +32,10 @@ public class HealthContainer : MonoBehaviour
             NoHealthEvent?.Invoke();
         }
     }
-    
-    public void Damage() => SetHealth(_currentHealth - 1);
-    
+
+    public void Damage()
+    {
+        SetHealth(_currentHealth - 1);
+        DamageEvent?.Invoke();
+    }
 }

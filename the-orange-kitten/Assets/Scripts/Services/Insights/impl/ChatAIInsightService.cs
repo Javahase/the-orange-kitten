@@ -56,7 +56,7 @@ public class ChatAIInsightService : InsightService
     {
         var stmts = LlmService.GetStatements();
         var stmtList = stmts.Select((s) => $"- {s.message}").Aggregate((a, b) => a + "\n" + b);
-        var contradictoryStmt = stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect).message;
+        var contradictoryStmt = stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect)?.message;
         
         // TODO: Add Parameters to Init
         _insightPrompt = string.Format(insightPrompt.text, stmtList, contradictoryStmt);

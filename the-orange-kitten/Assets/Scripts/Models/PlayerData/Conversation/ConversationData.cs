@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 
 [JsonObject(MemberSerialization.OptIn)]
-public struct ConversationData
+public class ConversationData
 {
     [JsonProperty(propertyName: "topic")] public string Topic;
     [JsonProperty(propertyName: "chat")] public List<ChatData> Chat;

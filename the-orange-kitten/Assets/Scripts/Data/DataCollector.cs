@@ -3,13 +3,18 @@
 public abstract class DataCollector: SingletonObject<DataCollector>
 {
 
-    private string _participantId;
+    protected string ParticipantId;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
+        Init("P01"); //TODO: No.
     }
-
-    public abstract void InitLevel(string levelId);
     
+    public abstract void Init(string participantId);
+
+    public abstract void StartLevel(PuzzleData data);
+
+    public abstract void Save();
+
 }
