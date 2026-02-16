@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatAIInsightService
   defaultInsights: []
+  insightRulesPrompt: {fileID: 4900000, guid: 187190b31d4e43a8b527c673d74cad9b, type: 3}
   insightPrompt: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
   apiKey: {fileID: 4900000, guid: c56240c8034e74d4b8afacc825e0a3ce, type: 3}
   model: 9
