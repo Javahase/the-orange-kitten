@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UI.RecipeSequence;
 using UnityEngine;
 
 /// <summary>
@@ -33,7 +34,13 @@ public abstract class InsightService : SingletonObject<InsightService>
         LlmService = LLMService.GetInstance();
     }
 
-    public abstract void Init();
+    /// <summary>
+    /// Sets the topic prompt for this insight LLM to consider.
+    /// {0} yields a list of statements from the current <see cref="RecipeSequence"/>,
+    /// whilst {1} yields the incorrect statement from the recipe sequence.
+    /// </summary>
+    /// <param name="topicPrompt">The prompt data.</param>
+    public abstract void SetTopicPrompt(string topicPrompt);
 
     public abstract IEnumerator GenerateInsight(RecipeStatement context, string question, string statement);
     

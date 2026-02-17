@@ -32,13 +32,6 @@ public class ChatAILLMService : LLMService
     [SerializeField] private TextAsset rulePrompt;
 
     /// <summary>
-    /// The system prompt the LLM should receive.
-    /// "{0}" will be replaced with a list the <see cref="_statements">recipe statements</see>.
-    /// </summary>
-    [SerializeField] private TextAsset prompt;
-
-
-    /// <summary>
     /// Keeps track of conversations per recipe statement.
     /// </summary>
     private readonly Dictionary<RecipeStatement, List<ChatAIMessage>> _conversationMap = new();
@@ -49,10 +42,14 @@ public class ChatAILLMService : LLMService
     private string _apiKey;
 
     /// <summary>
-    /// The final prompt text post-formatting.
+    /// The system prompt the LLM should receive regarding the current topic.
+    /// "{0}" will be replaced with a list the <see cref="_statements">recipe statements</see>.
     /// </summary>
-    private string _prompt;
+    private string _topicPrompt;
 
+    /// <summary>
+    /// The rule prompt
+    /// </summary>
     private string _rulePrompt;
 
     private void Start()
@@ -65,9 +62,12 @@ public class ChatAILLMService : LLMService
     public override void InitStatements(List<RecipeStatement> statements)
     {
         _statements = statements;
-        var stmtTexts = statements.Select((stmt) => "- " + stmt.message).Aggregate((a, b) => a + "\n" + b);
-        _prompt = string.Format(prompt.text, stmtTexts);
-        InsightService.GetInstance().Init();
+    }
+
+    public override void SetTopicPrompt(string prompt)
+    {
+        _topicPrompt = string.Format(prompt,
+            _statements.Select((stmt) => "- " + stmt.message).Aggregate((a, b) => a + "\n" + b));
     }
 
     public override void ClearStatements()
@@ -82,8 +82,9 @@ public class ChatAILLMService : LLMService
             _conversationMap.Add(stmt, new List<ChatAIMessage>()
             {
                 ChatAIMessage.CreateSystemPrompt(_rulePrompt),
-                ChatAIMessage.CreateSystemPrompt(_prompt),
-                ChatAIMessage.CreateSystemPrompt($"You will now answer questions related to this step you took: {stmt.message}")
+                ChatAIMessage.CreateSystemPrompt(_topicPrompt),
+                ChatAIMessage.CreateSystemPrompt(
+                    $"You will now answer questions related to this step you took: {stmt.message}")
             });
         }
 

@@ -9,7 +9,7 @@ public class MockInsightService : InsightService
     [SerializeField] private List<RecipeInsight> insightPool;
     [SerializeField] private GenerationType mode;
 
-    public override void Init()
+    public override void SetTopicPrompt(string _)
     {
     }
 

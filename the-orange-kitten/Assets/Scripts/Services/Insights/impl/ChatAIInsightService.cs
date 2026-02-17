@@ -7,7 +7,6 @@ using UnityEngine;
 public class ChatAIInsightService : InsightService
 {
     [SerializeField] private TextAsset insightRulesPrompt;
-    [SerializeField] private TextAsset insightPrompt;
     [SerializeField] private ChatAIModel.Model model;
     private string _insightRulesPrompt;
     private string _insightPrompt;
@@ -52,13 +51,12 @@ public class ChatAIInsightService : InsightService
             important.Value ? GameSequenceController.GetInstance().GetIndexOfCurrentPuzzle() : -1));
     }
 
-    public override void Init()
+    public override void SetTopicPrompt(string topicPrompt)
     {
         var stmts = LlmService.GetStatements();
         var stmtList = stmts.Select((s) => $"- {s.message}").Aggregate((a, b) => a + "\n" + b);
         var contradictoryStmt = stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect)?.message;
         
-        // TODO: Add Parameters to Init
-        _insightPrompt = string.Format(insightPrompt.text, stmtList, contradictoryStmt);
+        _insightPrompt = string.Format(topicPrompt, stmtList, contradictoryStmt);
     }
 }

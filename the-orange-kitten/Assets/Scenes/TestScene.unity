@@ -393,9 +393,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 784938125}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
+      propertyPath: topicPromptLlm
+      value: 
+      objectReference: {fileID: 4900000, guid: b5c57c0a475e446e90dd0223aa43b6c9, type: 3}
+    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: solutionSequence
       value: 
       objectReference: {fileID: 1343995925}
+    - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
+      propertyPath: topicPromptInsights
+      value: 
+      objectReference: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: specialErrorSequence
       value: 
@@ -578,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_Name
-      value: RecipeSequenceUI
+      value: TutorialLevelMistake
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_IsActive
@@ -1534,7 +1542,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChatAIInsightService
   defaultInsights: []
   insightRulesPrompt: {fileID: 4900000, guid: 187190b31d4e43a8b527c673d74cad9b, type: 3}
-  insightPrompt: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
   model: 9
 --- !u!1001 &784938123
 PrefabInstance:
@@ -2198,9 +2205,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 810394090}
     - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
+      propertyPath: topicPromptLlm
+      value: 
+      objectReference: {fileID: 4900000, guid: b5c57c0a475e446e90dd0223aa43b6c9, type: 3}
+    - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: solutionSequence
       value: 
       objectReference: {fileID: 1343995925}
+    - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
+      propertyPath: topicPromptInsights
+      value: 
+      objectReference: {fileID: 4900000, guid: bfbaab3eb08b4f70a3ecde238ade75a3, type: 3}
     - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: specialErrorSequence
       value: 
@@ -2394,7 +2409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: m_Name
-      value: OddSequence
+      value: TutorialLevelOdd
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: m_IsActive
@@ -3092,7 +3107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChatAILLMService
   model: 9
   rulePrompt: {fileID: 4900000, guid: 14b74537ecb441728818760234164e33, type: 3}
-  prompt: {fileID: 4900000, guid: b5c57c0a475e446e90dd0223aa43b6c9, type: 3}
 --- !u!1001 &2106324259
 PrefabInstance:
   m_ObjectHideFlags: 0

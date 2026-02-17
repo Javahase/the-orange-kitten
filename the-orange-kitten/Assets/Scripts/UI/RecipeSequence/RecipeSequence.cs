@@ -44,6 +44,9 @@ namespace UI.RecipeSequence
         [Header("Data Fields")] [SerializeField]
         private List<RecipeStatement> statements;
 
+        [SerializeField] private TextAsset topicPromptLlm;
+        [SerializeField] private TextAsset topicPromptInsights;
+
         /// <summary>
         /// A <see cref="DialogueSequence"/> that should play when the player
         /// did win the sequence.
@@ -68,6 +71,7 @@ namespace UI.RecipeSequence
         private GameSequenceController _sequenceController;
 
         private LLMService _llmService;
+        private InsightService _insightService;
 
         [HideInInspector] public RecipeEventLog eventLog;
         [HideInInspector] public StatementInfoStore infoStore;
@@ -76,6 +80,8 @@ namespace UI.RecipeSequence
         {
             _sequenceController = GameSequenceController.GetInstance();
             _llmService = LLMService.GetInstance();
+            _insightService = InsightService.GetInstance();
+
             SequencePoints = statements;
 
             eventLog = GetComponent<RecipeEventLog>();
@@ -131,6 +137,8 @@ namespace UI.RecipeSequence
         {
             gameObject.SetActive(true);
             _llmService.InitStatements(statements);
+            _llmService.SetTopicPrompt(topicPromptLlm.text);
+            _insightService.SetTopicPrompt(topicPromptInsights.text);
             SetSequenceStep(0);
         }
 

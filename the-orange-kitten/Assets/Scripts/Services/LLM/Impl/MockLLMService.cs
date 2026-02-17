@@ -4,14 +4,13 @@ using System.Collections.Generic;
 
 public class MockLLMService : LLMService
 {
-
     List<RecipeStatement> _statements = new();
 
     public override void InitStatements(List<RecipeStatement> statements)
     {
         _statements = statements;
     }
-    
+
     public override void ClearStatements()
     {
         _statements.Clear();
@@ -21,6 +20,10 @@ public class MockLLMService : LLMService
     {
         yield return request;
         callback.Invoke(request);
+    }
+
+    public override void SetTopicPrompt(string prompt)
+    {
     }
 
     public override List<RecipeStatement> GetStatements() => _statements;
