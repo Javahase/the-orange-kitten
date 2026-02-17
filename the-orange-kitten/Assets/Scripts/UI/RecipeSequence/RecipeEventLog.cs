@@ -8,9 +8,11 @@ public class RecipeEventLog : MonoBehaviour
 {
     [SerializeField] private string puzzleId;
     private PuzzleData _playerData;
+    private DataCollector _collector;
 
     public void EnableLog(List<RecipeStatement> statements)
     {
+        _collector = DataCollector.GetInstance();
         if (gameObject.GetComponent<OddSequenceHandler>() != null)
         {
             _playerData = new OddSequenceData()
@@ -20,7 +22,7 @@ public class RecipeEventLog : MonoBehaviour
                 Id = puzzleId,
                 ConversationData = new List<ConversationData>(),
                 OddStatements = new List<OddStatement>(),
-                GeneratedInsights = new List<string>()
+                GeneratedInsights = new List<RecipeInsight>()
             };
         }
         else
@@ -32,7 +34,7 @@ public class RecipeEventLog : MonoBehaviour
                 Id = puzzleId,
                 ConversationData = new List<ConversationData>(),
                 ContradictReason = "",
-                GeneratedInsights = new List<string>()
+                GeneratedInsights = new List<RecipeInsight>()
             };
         }
 
@@ -44,7 +46,7 @@ public class RecipeEventLog : MonoBehaviour
                 Chat = new List<ChatData>()
             });
         }
-        DataCollector.GetInstance().StartLevel(_playerData);
+        _collector.StartLevel(_playerData);
     }
 
     public void LogStatement(RecipeStatement statement, string sender, string message)
@@ -55,21 +57,21 @@ public class RecipeEventLog : MonoBehaviour
             Sender = sender, Message = message
         });
         DataLog.GetInstance().Log(DataLog.DataEvent.ChatMessage, "Sent by: " + sender + ", Message: " + message);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
     }
 
     public void IncrementQuestionCount()
     {
         _playerData.QuestionCount++;
         DataLog.GetInstance().Log(DataLog.DataEvent.QuestionCountIncrease, "Question Count: " + _playerData.QuestionCount);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
     }
 
     public void IncrementAttemptsCount()
     {
         _playerData.Attempts++;
         DataLog.GetInstance().Log(DataLog.DataEvent.AttemptCountIncrease, "Attempt Count: " + _playerData.Attempts);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
     }
 
     public void LogOddMark(RecipeStatement statement, string reason)
@@ -77,7 +79,7 @@ public class RecipeEventLog : MonoBehaviour
         if (_playerData is not OddSequenceData oddSequenceData) return;
         oddSequenceData.OddStatements.Add(new OddStatement() { Topic = statement.message, Reason = reason });
         DataLog.GetInstance().Log(DataLog.DataEvent.StatementMarked, "Marked Statement: " + statement.message + " with reason: " + reason);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
     }
 
     public void LogOddUnmark(RecipeStatement statement)
@@ -87,7 +89,7 @@ public class RecipeEventLog : MonoBehaviour
         if (stmt == -1) return;
         oddSequenceData.OddStatements.RemoveAt(stmt);
         DataLog.GetInstance().Log(DataLog.DataEvent.StatementUnmarked, "Unmarked Statement: " + statement.message);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
     }
 
     public void LogContradiction(string reason)
@@ -95,7 +97,13 @@ public class RecipeEventLog : MonoBehaviour
         if (_playerData is not MistakeSequenceData mistakeSequenceData) return;
         mistakeSequenceData.ContradictReason = reason;
         DataLog.GetInstance().Log(DataLog.DataEvent.Contradict, "Successfully pointed out contradiction, used insight: " + reason);
-        DataCollector.GetInstance().Save();
+        _collector.Save();
+    }
+
+    public void LogInsights(List<RecipeInsight> insights)
+    {
+        _playerData.GeneratedInsights = insights;
+        _collector.Save();
     }
     
 }

@@ -136,6 +136,7 @@ namespace UI.RecipeSequence
 
         public override void OnDisabled()
         {
+            eventLog.LogInsights(InsightService.GetInstance().GetAllInsights());
             solutionSequence.OnDisabled();
             _llmService.ClearStatements();
             gameObject.SetActive(false);

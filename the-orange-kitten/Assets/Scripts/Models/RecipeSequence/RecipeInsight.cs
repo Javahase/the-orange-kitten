@@ -1,11 +1,13 @@
 
 using System;
+using Newtonsoft.Json;
 
 /// <summary>
 /// A <c>RecipeInsight</c> models a potential puzzle piece
 /// for solving a recipe sequence.
 /// </summary>
 [Serializable] 
+[JsonObject(MemberSerialization.OptIn)]
 public struct RecipeInsight
 {
     
@@ -17,11 +19,13 @@ public struct RecipeInsight
     /// <summary>
     /// The information that can be displayed by the insight.
     /// </summary>
+    [JsonProperty]
     public string info;
 
     /// <summary>
     /// Which sequence this insight might be a solution to. (-1 for no solution).
     /// </summary>
+    [JsonProperty]
     public int correctSequence;
 
     public RecipeInsight(string info, int correctSequence)
