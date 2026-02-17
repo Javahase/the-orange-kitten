@@ -17,10 +17,9 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     /// Unity Field for a global error sequence that plays if the player made a mistake
     /// during a <see cref="RecipeSequence"/>.
     /// </summary>
-    [SerializeField]
     [Tooltip("A generic error sequence that should play " +
              "if the player made a mistake during a recipe sequence.")]
-    private DialogueSequence errorSequence;
+    public DialogueSequence errorSequence;
 
     /// <summary>
     /// A list of sequences that should be direct children of the <see cref="GameSequenceController"/>.

@@ -15,6 +15,6 @@ namespace UI.RecipeSequence.ActionBar
             mistakeButton.onClick.AddListener(OnPointOutClicked);
         }
 
-        private void OnPointOutClicked() => insightsUI.Open(true);
+        private void OnPointOutClicked() => Insights.Open(true);
     }
 }

@@ -21,11 +21,11 @@ namespace UI.RecipeSequence.Info
                     statementInfoText.Select((int)state);
                 }
             };
-            coreSequence.StepChangeEvent += (src, _, next) =>
+            coreSequence.StepChangeEvent += (ev) =>
             {
                 // Will there be even situations where this is not true?
-                if (src == coreSequence)
-                    statementInfoText.Select((int)next.markingState);
+                if (ev.Source == coreSequence)
+                    statementInfoText.Select((int)ev.Current.markingState);
             };
         }
     }

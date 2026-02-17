@@ -13,11 +13,11 @@ namespace UI.RecipeSequence.ActionBar
 
         [SerializeField] protected Button checkRecipeInfoButton;
         [SerializeField] protected Button checkInsightsButton;
-        protected InsightsUI insightsUI;
+        protected InsightsUI Insights;
 
         protected virtual void Start()
         {
-            insightsUI = InsightsUI.GetInstance();
+            Insights = InsightsUI.GetInstance();
             editRecipeButton.onClick.AddListener(OnEditRecipeClicked);
             checkRecipeInfoButton.onClick.AddListener(OnCheckRecipeInfoClicked);
             checkInsightsButton.onClick.AddListener(OnCheckInsightsClicked);
@@ -27,6 +27,6 @@ namespace UI.RecipeSequence.ActionBar
 
         private void OnCheckRecipeInfoClicked() => Debug.Log("TODO");
 
-        private void OnCheckInsightsClicked() => insightsUI.Open(false);
+        private void OnCheckInsightsClicked() => Insights.Open(false);
     }
 }

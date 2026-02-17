@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Event.Sequence;
 using UnityEngine;
 
 /// <summary>
@@ -11,7 +12,7 @@ using UnityEngine;
 /// Dialogue Sequences, Recipe Sequences.
 /// </example>
 public interface IGameSequence : IInitializable
-{ 
+{
     /// <summary>
     /// Resets a game sequence back to its original state.
     /// </summary>
@@ -27,7 +28,7 @@ public interface IGameSequence : IInitializable
 public abstract class TransitionSequence : MonoBehaviour, IGameSequence
 {
     public abstract void ResetSequence();
-    
+
     /// <summary>
     /// Begins a transition between two sequences. <br/>
     /// <b>Note that this function is called as a Coroutine</b>
@@ -36,9 +37,16 @@ public abstract class TransitionSequence : MonoBehaviour, IGameSequence
     /// <param name="next">The game sequence after this transition sequence</param>
     /// <returns>An IEnumerator used by the Coroutine.</returns>
     public abstract IEnumerator BeginTransition(IGameSequence previous, IGameSequence next);
+
     public abstract void OnInitialize();
-    public void OnEnabled() {}
-    public void OnDisabled() {}
+
+    public void OnEnabled()
+    {
+    }
+
+    public void OnDisabled()
+    {
+    }
 }
 
 /// <summary>
@@ -47,56 +55,57 @@ public abstract class TransitionSequence : MonoBehaviour, IGameSequence
 /// <typeparam name="T">The type of objects this sequence deals with.</typeparam>
 public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
 {
-    
-    public delegate void OnStepChanged(GameSequence<T> source, T oldSequence, T newSequence);
-    
+    public delegate void OnStepChanged(SequenceStepChangeEvent<T> ev);
+
     public event OnStepChanged StepChangeEvent;
-    
+
     /// <summary>
     /// A list of points this sequence can iterate through.
     /// </summary>
     protected abstract List<T> SequencePoints { get; set; }
-    
+
     /// <summary>
     /// The current point this sequence is pointing to.
     /// </summary>
     protected T CurrentSequence => SequencePoints[CurrentStep];
-    
+
     /// <summary>
     /// The index of the current point this sequence is pointing to.
     /// Modifying this modifies <see cref="CurrentSequence"/>.
     /// </summary>
     protected int CurrentStep;
 
-    /// <summary>
-    /// Called when <see cref="Next"/> or
-    /// <see cref="Previous"/> is called.
-    /// </summary>
-    public virtual void OnStepChange() {}
     public abstract void OnEnabled();
     public abstract void OnDisabled();
 
     public abstract void OnInitialize();
 
+    public virtual bool SetSequenceStep(int step)
+    {
+        if (step >= SequencePoints.Capacity || step < 0) return false;
+        
+        var oldStep = CurrentStep;
+        CurrentStep = step;
+        
+        var ev = new SequenceStepChangeEvent<T>(this, oldStep, CurrentStep,
+            SequencePoints.ElementAtOrDefault(oldStep), CurrentSequence);
+        StepChangeEvent?.Invoke(ev);
+        
+        return true;
+    }
+
     /// <summary>
     /// Sets the <see cref="CurrentSequence"/> to its next sequence point.
     /// </summary>
     /// <returns>Whether there was a next sequence point.</returns>
-    public virtual bool Next()
-    {
-        StepChangeEvent?.Invoke(this, SequencePoints.ElementAtOrDefault(CurrentStep - 1), CurrentSequence);
-        return true;
-    }
+    public virtual bool Next() => SetSequenceStep(CurrentStep + 1);
 
     /// <summary>
     /// Sets the <see cref="CurrentSequence"/> to its previous sequence point.
     /// </summary>
     /// <returns>Whether there was a previous sequence point.</returns>
-    public virtual bool Previous()
-    {
-        StepChangeEvent?.Invoke(this, SequencePoints.ElementAtOrDefault(CurrentStep + 1), CurrentSequence);
-        return true;
-    }
+    public virtual bool Previous() => SetSequenceStep(CurrentStep - 1);
+
     public abstract void ResetSequence();
 }
 
@@ -107,7 +116,6 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
 /// <typeparam name="T">The type of objects this sequence deals with.</typeparam>
 public abstract class LinearGameSequence<T> : GameSequence<T> where T : IInitializable
 {
-
     /// <summary>
     /// Called when this sequence ends, i.e. when the last SequencePoint
     /// was reached by <see cref="Next"/>.
@@ -123,7 +131,7 @@ public abstract class LinearGameSequence<T> : GameSequence<T> where T : IInitial
             SequenceEndEvent?.Invoke(this);
             return false;
         }
-        
+
         SequencePoints[CurrentStep].OnDisabled();
         CurrentStep++;
         SequencePoints[CurrentStep].OnEnabled();

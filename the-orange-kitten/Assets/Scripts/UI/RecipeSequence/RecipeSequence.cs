@@ -11,7 +11,7 @@ namespace UI.RecipeSequence
     /// as well as broadcasting said slide-through for other components within
     /// this sequence to handle.
     /// </summary>
-    [RequireComponent(typeof(RecipeEventLog))]
+    [RequireComponent(typeof(RecipeEventLog), typeof(StatementInfoStore))]
     public class RecipeSequence : GameSequence<RecipeStatement>
     {
         public delegate void OnControlStateChanged(bool controlsEnabled);
@@ -22,9 +22,7 @@ namespace UI.RecipeSequence
         /// The statement text on the top
         /// </summary>
         [Header("Inner Components")] [SerializeField]
-        private TMP_Text statementText;
-
-        [SerializeField] private Button prevButton;
+        private Button prevButton;
 
         [SerializeField] private Button nextButton;
 
@@ -72,27 +70,27 @@ namespace UI.RecipeSequence
         private LLMService _llmService;
 
         [HideInInspector] public RecipeEventLog eventLog;
+        [HideInInspector] public StatementInfoStore infoStore;
 
         public override void OnInitialize()
         {
             _sequenceController = GameSequenceController.GetInstance();
             _llmService = LLMService.GetInstance();
-            eventLog = GetComponent<RecipeEventLog>();
             SequencePoints = statements;
-            foreach (var _ in SequencePoints)
-            {
-                chatHistoryManager.InitNewHistory();
-            }
+
+            eventLog = GetComponent<RecipeEventLog>();
+            infoStore = GetComponent<StatementInfoStore>();
+
+            eventLog.EnableLog(statements);
+            infoStore.Init();
+            chatHistoryManager.Init(this, statements);
 
             InitSubsequences();
             InitButtons();
 
-            eventLog.EnableLog(statements);
-
-            healthContainer.DamageEvent += () => { eventLog.IncrementQuestionCount(); };
+            healthContainer.DamageEvent += eventLog.IncrementQuestionCount;
             healthContainer.NoHealthEvent += () =>
             {
-                userInfo.OnLost();
                 lostPopUp.gameObject.SetActive(true);
                 eventLog.IncrementAttemptsCount();
             };
@@ -102,6 +100,7 @@ namespace UI.RecipeSequence
         {
             nextButton.onClick.AddListener(() => Next());
             prevButton.onClick.AddListener(() => Previous());
+
             ControlStateChangedEvent += (controlsEnabled) =>
             {
                 nextButton.interactable = controlsEnabled;
@@ -117,25 +116,22 @@ namespace UI.RecipeSequence
                 if (_sequenceController.CurrentSequence.Equals(this))
                     _sequenceController.Next();
             };
-            specialErrorSequence.OnInitialize();
-            specialErrorSequence.SequenceEndEvent += (_) =>
+            foreach (var sequence in new[] { specialErrorSequence, lostSequence })
             {
-                if (_sequenceController.CurrentSequence.Equals(this))
-                    specialErrorSequence.OnDisabled();
-            };
-            lostSequence.OnInitialize();
-            lostSequence.SequenceEndEvent += (_) =>
-            {
-                if (_sequenceController.CurrentSequence.Equals(this))
-                    lostSequence.OnDisabled();
-            };
+                sequence.OnInitialize();
+                sequence.SequenceEndEvent += (_) =>
+                {
+                    if (_sequenceController.CurrentSequence.Equals(this))
+                        sequence.OnDisabled();
+                };
+            }
         }
 
         public override void OnEnabled()
         {
             gameObject.SetActive(true);
             _llmService.InitStatements(statements);
-            SelectStatement(0);
+            SetSequenceStep(0);
         }
 
         public override void OnDisabled()
@@ -169,17 +165,9 @@ namespace UI.RecipeSequence
         /// Called when the player made a mistake.
         /// </summary>
         /// <param name="hasClues">Whether the player can be given a hint</param>
-        public void OnMistake(bool hasClues)
-        {
-            if (hasClues)
-            {
-                specialErrorSequence.OnEnabled();
-            }
-            else
-            {
-                _sequenceController.StartGenericErrorSequence();
-            }
-        }
+        public void OnMistake(bool hasClues) =>
+            (hasClues ? specialErrorSequence : _sequenceController.errorSequence).OnEnabled();
+
 
         public void SetControlsEnabled(bool enableControls) => ControlStateChangedEvent?.Invoke(enableControls);
 
@@ -188,30 +176,5 @@ namespace UI.RecipeSequence
         /// </summary>
         /// <returns>The current statement.</returns>
         public RecipeStatement GetCurrentStatement() => CurrentSequence;
-
-        private void SelectStatement(int index)
-        {
-            chatHistoryManager.SetHistoryVisible(CurrentStep, false);
-            CurrentStep = index;
-            statementText.text = CurrentSequence.message;
-            chatHistoryManager.SetActiveHistory(CurrentStep);
-        }
-
-        private bool TraverseStatement(int direction)
-        {
-            if (CurrentStep + direction < 0 || CurrentStep + direction >= SequencePoints.Count)
-                return false;
-            var traversed = SequencePoints[CurrentStep + direction];
-            while (traversed.hidden)
-            {
-                direction += Math.Sign(direction);
-            }
-
-            SelectStatement(CurrentStep + direction);
-            return true;
-        }
-
-        public override bool Next() => TraverseStatement(1) && base.Next();
-        public override bool Previous() => TraverseStatement(-1) && base.Previous();
     }
 }

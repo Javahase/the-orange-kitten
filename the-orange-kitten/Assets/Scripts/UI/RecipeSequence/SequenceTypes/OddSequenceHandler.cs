@@ -20,11 +20,12 @@ namespace UI.RecipeSequence.SequenceTypes
             _coreSequence = GetComponent<RecipeSequence>();
             StatementMarkChangedEvent += (stmt, marked) =>
             {
-                if (stmt == _coreSequence.GetCurrentStatement())
-                {
-                    _coreSequence.SetControlsEnabled(marked != RecipeStatement.MarkingState.Pending);
-                    chatBoxSwitcher.Select(marked == RecipeStatement.MarkingState.Pending ? 1 : 0);
-                }
+                if (stmt != _coreSequence.GetCurrentStatement()) return;
+
+                // If the current statement is marked as "pending", prevent the player from switching
+                // and make it so the reason-chatbox appears.
+                _coreSequence.SetControlsEnabled(marked != RecipeStatement.MarkingState.Pending);
+                chatBoxSwitcher.Select(marked == RecipeStatement.MarkingState.Pending ? 1 : 0);
             };
         }
 

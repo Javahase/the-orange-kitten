@@ -18,9 +18,9 @@ namespace UI.RecipeSequence.ActionBar
             base.Start();
             _oddHandler = coreSequence.GetComponent<OddSequenceHandler>();
             _oddHandler.StatementMarkChangedEvent += HandleMarkedChange;
-            coreSequence.StepChangeEvent += (_, _, stmt) =>
+            coreSequence.StepChangeEvent += (ev) =>
             {
-                HandleMarkedChange(stmt, stmt.markingState);
+                HandleMarkedChange(ev.Current, ev.Current.markingState);
             };
             markAsOddButton.onClick.AddListener(MarkAsOdd);
         }
