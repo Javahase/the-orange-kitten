@@ -8,7 +8,6 @@ public abstract class DataCollector: SingletonObject<DataCollector>
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        Init("P01"); //TODO: No.
     }
     
     public abstract void Init(string participantId);

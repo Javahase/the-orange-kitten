@@ -20,11 +20,11 @@ public class FadeTransition : TransitionSequence
     public override IEnumerator BeginTransition(IGameSequence previous, IGameSequence next)
     {
         gameObject.SetActive(true);
-        yield return Fade(fadeOutCurve);
+        yield return FadeOut();
         yield return new WaitForSeconds(fadedOutDuration);
         previous?.OnDisabled();
         next?.OnEnabled();
-        yield return Fade(fadeInCurve);
+        yield return FadeIn();
         gameObject.SetActive(false);
     }
     
@@ -37,8 +37,10 @@ public class FadeTransition : TransitionSequence
             time += Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
-
     }
+
+    public IEnumerator FadeIn() => Fade(fadeInCurve);
+    public IEnumerator FadeOut() => Fade(fadeOutCurve);
 
     public override void ResetSequence()
     {

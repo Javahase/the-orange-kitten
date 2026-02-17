@@ -21,6 +21,8 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
              "if the player made a mistake during a recipe sequence.")]
     public DialogueSequence errorSequence;
 
+    public FadeTransition genericFader;
+
     /// <summary>
     /// A list of sequences that should be direct children of the <see cref="GameSequenceController"/>.
     /// </summary>
@@ -50,7 +52,8 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
             .Cast<DialogueSequence>()
             .ToList()
             .ForEach(seq => seq.SequenceEndEvent += (_) => Next());
-
+        genericFader.OnInitialize();
+        ForceFadeIn();
         CurrentSequence.OnEnabled();
     }
 
@@ -141,4 +144,24 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         _currentStep = ix;
         CurrentSequence.OnEnabled();
     }
+
+    public void ForceFadeIn()
+    {
+        StartCoroutine(ForceFadeInCoroutine());
+    }
+
+    private IEnumerator ForceFadeInCoroutine()
+    {
+        genericFader.gameObject.SetActive(true);
+        yield return genericFader.FadeIn();
+        genericFader.gameObject.SetActive(false);
+    }
+    
+    private IEnumerator ForceFadeOutCoroutine()
+    {
+        genericFader.gameObject.SetActive(true);
+        yield return genericFader.FadeOut();
+    }
+
+    public void ForceFadeOut() => StartCoroutine(ForceFadeOutCoroutine());
 }
