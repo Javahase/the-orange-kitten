@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+
+<DialogueSequence>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>Supervisor</Actor>
+        <Text>Done already?!^1 You're doing great!</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>You</Actor>
+        <Text>Thank you,^2 sir!^1 Just trying my best,^2 honestly.</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>Supervisor</Actor>
+        <Text>That should be all for the day.^1 How about you go recharge while I process the information?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>You</Actor>
+        <Text>You're sure you don't need me for that?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>Supervisor</Actor>
+        <Text>Ha^2 Ha^2 Ha!^1 That's what other student workforces are there for!^1 You've done enough.</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>You</Actor>
+        <Text>Wow, ok</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>You</Actor>
+        <Text>(And thus,^2 I prevailed on my first day of work.^1 But what followed would be something that I will never forget...)</Text>
+    </CharacterDialogue>
+</DialogueSequence>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <BaseDialogue bg="">
+        <Text>Location:^1 ???</Text>
+    </BaseDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>"Lord"</Actor>
+        <Text>Meow meow.^1 Brrrrt?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>???</Actor>
+        <Text>Yes,^2 my lord,^2 they are exquisite at performing the task.^1 The excellent candidate for your plan.</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>"Lord"</Actor>
+        <Text>Meoooow meow.^1 Meow.</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>???</Actor>
+        <Text>Very well,^2 I shall rally the council.^1 We may begin discussions.</Text>
+    </CharacterDialogue>
+</DialogueSequence>

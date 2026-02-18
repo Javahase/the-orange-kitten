@@ -14,4 +14,12 @@
         <Actor>Supervisor</Actor>
         <Text>... unusual steps the robot took.^1 Maybe you should ask about those next.</Text>
     </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>Supervisor</Actor>
+        <Text>After all,^2 we need to make sure not to copy those steps in the end.^1 Understood?</Text>
+    </CharacterDialogue>
+    <CharacterDialogue bg="" curr_portrait="">
+        <Actor>You</Actor>
+        <Text>Very well,^2 what do I need to do?</Text>
+    </CharacterDialogue>
 </DialogueSequence>

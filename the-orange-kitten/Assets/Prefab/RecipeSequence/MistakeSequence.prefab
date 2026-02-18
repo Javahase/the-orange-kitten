@@ -961,6 +961,8 @@ MonoBehaviour:
     hidden: 0
     markingState: 0
     statementType: 2
+  topicPromptLlm: {fileID: 0}
+  topicPromptInsights: {fileID: 0}
   solutionSequence: {fileID: 0}
   specialErrorSequence: {fileID: 0}
   lostSequence: {fileID: 0}
@@ -1027,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1820183414014901394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1043,10 +1045,10 @@ RectTransform:
   - {fileID: 1320699393661034603}
   m_Father: {fileID: 5801925607503250330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 75}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 165, y: -312.5}
+  m_SizeDelta: {x: 290, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8532616635540207511
 CanvasRenderer:
@@ -2388,7 +2390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7243587826915406993
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2404,10 +2406,10 @@ RectTransform:
   - {fileID: 3804626387037145236}
   m_Father: {fileID: 5801925607503250330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 75}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 165, y: -227.5}
+  m_SizeDelta: {x: 290, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1496500284257904699
 CanvasRenderer:
