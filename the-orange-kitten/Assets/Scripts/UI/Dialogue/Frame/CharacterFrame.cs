@@ -15,7 +15,12 @@ public class CharacterFrame : BaseFrame
         _characterNameField = transform.Find("DialogueCharacterName/CharacterName").GetComponent<TMP_Text>();
         _characterNameField.text = characterName;
         _characterImage = transform.Find("CharacterSprite").GetComponent<Image>();
-        if (characterImage != null)
+        if (string.IsNullOrEmpty(characterName))
+        {
+            _characterNameField.gameObject.SetActive(false);
+        }
+        
+        if (characterImage)
         {
             _characterImage.sprite = characterImage;
         }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>You did already see that the robot can take *incorrect steps*,^2 but there is more.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>The robot also has a tendency of taking...^1 unusual steps.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Try searching for those,^2 and answer this:^1 What lead to this unusual behavior?</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Got it.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Once again, pay attention to the computer...</Text>
+    </Dialogue>
+</DialogueSequence>

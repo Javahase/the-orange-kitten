@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <!--TODO: Add Transparent BG-->
+    <Dialogue bg="">
+        <Text>Press the button right of the statement.</Text>
+    </Dialogue>
+</DialogueSequence>

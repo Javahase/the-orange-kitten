@@ -53,13 +53,6 @@ namespace UI.RecipeSequence
         /// </summary>
         [SerializeField] private DialogueSequence solutionSequence;
 
-        /// <summary>
-        /// A <see cref="DialogueSequence"/> that should play when the player
-        /// made a mistake, but already has the pieces to win this sequence.
-        /// One can give the player a hint in this sequence.
-        /// </summary>
-        [SerializeField] private DialogueSequence specialErrorSequence;
-
         [SerializeField] private DialogueSequence lostSequence;
 
         protected override List<RecipeStatement> SequencePoints { get; set; }
@@ -122,15 +115,13 @@ namespace UI.RecipeSequence
                 if (_sequenceController.CurrentSequence.Equals(this))
                     _sequenceController.Next();
             };
-            foreach (var sequence in new[] { specialErrorSequence, lostSequence })
+
+            lostSequence.OnInitialize();
+            lostSequence.SequenceEndEvent += (_) =>
             {
-                sequence.OnInitialize();
-                sequence.SequenceEndEvent += (_) =>
-                {
-                    if (_sequenceController.CurrentSequence.Equals(this))
-                        sequence.OnDisabled();
-                };
-            }
+                if (_sequenceController.CurrentSequence.Equals(this))
+                    lostSequence.OnDisabled();
+            };
         }
 
         public override void OnEnabled()
@@ -169,13 +160,6 @@ namespace UI.RecipeSequence
         /// Called when the player may progress beyond this sequence.
         /// </summary>
         public void OnSequenceWon() => solutionSequence.OnEnabled();
-
-        /// <summary>
-        /// Called when the player made a mistake.
-        /// </summary>
-        /// <param name="hasClues">Whether the player can be given a hint</param>
-        public void OnMistake(bool hasClues) =>
-            (hasClues ? specialErrorSequence : _sequenceController.errorSequence).OnEnabled();
 
 
         public void SetControlsEnabled(bool enableControls) => ControlStateChangedEvent?.Invoke(enableControls);

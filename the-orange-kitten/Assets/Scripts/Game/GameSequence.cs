@@ -135,7 +135,7 @@ public abstract class LinearGameSequence<T> : GameSequence<T> where T : IInitial
         SequencePoints[CurrentStep].OnDisabled();
         CurrentStep++;
         SequencePoints[CurrentStep].OnEnabled();
-        return base.Next();
+        return true;
     }
 
     public override bool Previous() => false;

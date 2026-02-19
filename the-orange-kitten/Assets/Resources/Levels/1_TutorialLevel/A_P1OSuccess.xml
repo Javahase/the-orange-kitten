@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Those should be all statements.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Well done,^2 I knew that we can count on you.</Text>
+    </Dialogue>
+</DialogueSequence>

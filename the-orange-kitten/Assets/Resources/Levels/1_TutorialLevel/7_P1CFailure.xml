@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Darn it,^2 is this truly it?</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>...that's regrettable,^2 but we'll be fine.^1 Just...^1 come back tomorrow,^2 okay?^1 For the day,^2 you're done.</Text>
+    </Dialogue>
+</DialogueSequence>

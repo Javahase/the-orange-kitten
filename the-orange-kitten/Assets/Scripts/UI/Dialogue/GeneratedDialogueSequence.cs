@@ -7,9 +7,7 @@ public class GeneratedDialogueSequence : DialogueSequence
     [SerializeField] private TextAsset dialogueFile;
 
     [Header("Prefab Resources")] [SerializeField]
-    private BaseFrame baseFramePrefab;
-
-    [SerializeField] private CharacterFrame characterFramePrefab;
+    private CharacterFrame baseFramePrefab;
 
     public override void OnInitialize()
     {
@@ -21,16 +19,14 @@ public class GeneratedDialogueSequence : DialogueSequence
         {
             switch (dialogue)
             {
-                case DialogueData.CharacterDialogueData characterDialogueData:
-                    CreateCharacterFrame(characterDialogueData);
+                case DialogueData.LocationData locationData:
+                    CreateLocationFrame(locationData);
                     break;
                 case not null:
-                    CreateBaseFrame(dialogue);
+                    CreateCharacterFrame(dialogue);
                     break;
-                default:
-                    Debug.LogError(
-                        $"Couldn't load Generated Dialogue Sequence \"{gameObject.name}\": Failed parsing dialogue file \"{dialogueFile.name}\"."
-                    );
+                case null:
+                    Debug.LogError("Unknown Frame Type!");
                     break;
             }
         }
@@ -52,15 +48,20 @@ public class GeneratedDialogueSequence : DialogueSequence
         return baseFrameObj;
     }
 
-    private void CreateBaseFrame(DialogueData data) => InstantiateFrameBase(baseFramePrefab, data);
-
-    private void CreateCharacterFrame(DialogueData.CharacterDialogueData data)
+    private void CreateLocationFrame(DialogueData.LocationData data)
     {
-        var characterFrame = InstantiateFrameBase(characterFramePrefab, data).GetComponent<CharacterFrame>();
-        characterFrame.characterName = data.CharacterName;
-        if (data.CurrentPortrait != "")
+        var baseFrame = InstantiateFrameBase(baseFramePrefab, data).GetComponent<BaseFrame>();
+        baseFrame.locationText = true;
+        baseFrame.dialogueText = $"Location:^1 {data.Location}";
+    }
+
+    private void CreateCharacterFrame(DialogueData data)
+    {
+        var characterFrame = InstantiateFrameBase(baseFramePrefab, data).GetComponent<CharacterFrame>();
+        characterFrame.characterName = data.Actor;
+        if (data.PortraitPath != "")
         {
-            characterFrame.characterImage = Resources.Load<Sprite>(data.CurrentPortrait);
+            characterFrame.characterImage = Resources.Load<Sprite>(data.PortraitPath);
         }
     }
 }

@@ -1,10 +1,7 @@
-﻿<!DOCTYPE DialogueSequence [
-        <!ELEMENT DialogueSequence (BaseDialogue|CharacterDialogue)*>
-        <!ELEMENT BaseDialogue (Text)>
-        <!ELEMENT CharacterDialogue (Actor,Text)>
+﻿<!ELEMENT DialogueSequence (Dialogue|LocationFrame)*>
+        <!ELEMENT Dialogue (Actor?,Text)>
+        <!ELEMENT LocationFrame EMPTY>
         <!ELEMENT Text (#PCDATA)>
         <!ELEMENT Actor (#PCDATA)>
-        <!ATTLIST BaseDialogue bg CDATA #REQUIRED>
-        <!ATTLIST CharacterDialogue bg CDATA #REQUIRED curr_portrait CDATA #REQUIRED>
-
-        ]>
+        <!ATTLIST LocationFrame bg CDATA #REQUIRED name CDATA #REQUIRED>
+        <!ATTLIST Dialogue bg CDATA #REQUIRED portrait CDATA "">

@@ -13,11 +13,32 @@ namespace UI.RecipeSequence.SequenceTypes
         private InsightService _insightService;
         private GameSequenceController _sequenceController;
 
+        /// <summary>
+        /// A <see cref="DialogueSequence"/> that should play when the player
+        /// made a mistake, but already has the pieces to win this sequence.
+        /// One can give the player a hint in this sequence.
+        /// </summary>
+        [SerializeField] private DialogueSequence hintErrorSequence;
+
+        [SerializeField] private DialogueSequence errorSequence;
+
         public void Start()
         {
             _coreSequence = GetComponent<RecipeSequence>();
             _sequenceController = GameSequenceController.GetInstance();
             _insightService = InsightService.GetInstance();
+            foreach (var seq in new[]
+                     {
+                         hintErrorSequence, errorSequence
+                     })
+            {
+                errorSequence.OnInitialize();
+                errorSequence.SequenceEndEvent += (_) =>
+                {
+                    if (_sequenceController.CurrentSequence.Equals(_coreSequence))
+                        errorSequence.OnDisabled();
+                };
+            }
         }
 
         public void PresentStatement(RecipeInsight insight)
@@ -31,9 +52,16 @@ namespace UI.RecipeSequence.SequenceTypes
             }
             else
             {
-                _coreSequence.OnMistake(
+                OnMistake(
                     _insightService.GetAllInsights().Any(it => it.correctSequence == currentSequence));
             }
         }
+
+        /// <summary>
+        /// Called when the player made a mistake.
+        /// </summary>
+        /// <param name="hasClues">Whether the player can be given a hint</param>
+        private void OnMistake(bool hasClues) =>
+            (hasClues ? hintErrorSequence : errorSequence).OnEnabled();
     }
 }

@@ -9,20 +9,22 @@ using UnityEngine.UI;
 
 public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 {
-    [SerializeField]
-    private float frameSpeed = 0.1f;
+    [SerializeField] private float frameSpeed = 0.1f;
     [TextArea] public string dialogueText;
+    public bool locationText = false;
 
     private Coroutine _currentCoroutine;
     private DialogueSequence _sequence;
     private TMP_Text _dialogueText;
     private Image _imgContinue;
+    private readonly char[] _controlChars = { '\\', '*', '(', ')' };
 
     public virtual void OnInitialize()
     {
         _dialogueText = transform.Find("DialogueTextBox/DialogueText").GetComponent<TMP_Text>();
         _imgContinue = transform.Find("ProgressDialoguePrompt").GetComponent<Image>();
         _sequence = GetComponentInParent<DialogueSequence>(includeInactive: true);
+        if (locationText) _dialogueText.alignment = TextAlignmentOptions.Center;
     }
 
     public void OnEnabled()
@@ -39,7 +41,6 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
         if (_currentCoroutine != null)
         {
             StopCoroutine(_currentCoroutine);
-            _currentCoroutine = null;
         }
     }
 
@@ -55,7 +56,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
     {
         if (_currentCoroutine != null)
         {
-            SkipToEnd();
+            frameSpeed = 0;
         }
         else
         {
@@ -78,21 +79,46 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 
             yield return new WaitForSeconds(4 * frameSpeed);
         }
+
         _imgContinue.gameObject.SetActive(true);
         _currentCoroutine = null;
     }
 
     private IEnumerator ReadSequence(string sequence)
     {
-        foreach (var symbol in sequence)
+        var decorated = false;
+
+        for (var i = 0; i < sequence.Length; i++)
         {
-            if (symbol == ' ')
+            var symbol = sequence[i];
+            switch (symbol)
             {
-                _dialogueText.text += " ";
-                continue;
+                case ' ':
+                    _dialogueText.text += symbol;
+                    continue;
+                case '\\':
+                    if (_controlChars.Contains(sequence[i + 1]))
+                    {
+                        i++;
+                        _dialogueText.text += sequence[i];
+                    }
+
+                    break;
+                case '*':
+                    decorated = !decorated;
+                    _dialogueText.text += (!decorated ? "</color>" : "<color=#de8b26>");
+                    continue;
+                case '(':
+                    _dialogueText.text += "<color=#4a86cf>(";
+                    continue;
+                case ')':
+                    _dialogueText.text += ")</color>";
+                    continue;
+                default:
+                    _dialogueText.text += symbol;
+                    break;
             }
 
-            _dialogueText.text += symbol;
             yield return new WaitForSeconds(frameSpeed);
         }
     }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Well done!^1 Now,^2 the robot won't tell you everything.^1 Thus,^2 it is imperative that you ask about the certain steps the robot made.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>You can use the chat box for that.^1 However,^2 watch out,^2 *The Orange Kitten*^2 has already taken precautions in their network.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>In a nutshell,^2 you may only send *7 messages* to the robot before the connection may get compromised.^1 You are also limited to only 100 characters.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>The health bar on the left helps you keep track.^1 If your lives are out,^2 we shall try tomorrow once more.^1 Though we shall have to tighten your payroll if that happens.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>You don't pay me already...</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>...right. For each statement the robot made,^2 an *insight* might be generated.^1 If you think this insight contradicts with a statement you think is *wrong*,^2 try to present it.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Text>\*Ring riiing ring\*</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Oh,^2 I need to take this call.^1 Please,^2 proceed with your mission now.^1 I'll get back to you soon.</Text>
+    </Dialogue>
+</DialogueSequence>

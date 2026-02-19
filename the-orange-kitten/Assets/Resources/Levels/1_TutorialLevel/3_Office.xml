@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <LocationFrame bg="" name="Digital Media Lab - Supervisor's Office"/>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Make yourself comfortable on that chair.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Doesn't really feel comfortable if you ask me.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Well,^2 our budget is ^2*limited*,^2 okay?!?^1 Ahem,^2 regardless,^2 we have made a deal recently with *The Orange Kitten*.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>In essence,^2 they wanted autonomous robots to cook,^2 as they found humans unreliable for such matters.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>That sounds...^1 dystopian!</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Regardless,^2 they paid us a huge sum of money.^1 Enough to warm our offices for two entire days,^2 so we built them a robot.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(Two entire days...^1 that sounds ridiculous)</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>This robot is currently stationed in the kitchen.^1 The robot shall send you what it did.^1 However,^2 some mistakes may have been made.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>We'd like you to note what kind of mistakes the robot made,^2 so that we can correctly infer the recipe from those statements.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Sounds... plausible enough. Okay, how do I do that?</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Pay attention to the computer.</Text>
+    </Dialogue>
+</DialogueSequence>

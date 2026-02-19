@@ -2,19 +2,17 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <BaseDialogue bg="">
-        <Text>Location:^1 ???</Text>
-    </BaseDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
+    <LocationFrame bg="" name="???"/>
+    <Dialogue bg="" portrait="">
         <Actor>???</Actor>
-        <Text>The order has arrived^2, my lord.^1 Are we ready to begin?</Text>
-    </CharacterDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
+        <Text>My lord,^2 they have arrived.^1 Shall we begin the procedure?</Text>
+    </Dialogue>
+    <Dialogue bg="" portrait="">
         <Actor>"Lord"</Actor>
-        <Text>Meow meow.^1 Meow meow meow?^2 Meow!^1 MEEEEEEEEOW!!!!</Text>
-    </CharacterDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
+        <Text>Meow Meow.^1 MEEEEEEEEEEOW!^1 Meow meow...^1 mrrrp.</Text>
+    </Dialogue>
+    <Dialogue bg="" portrait="">
         <Actor>???</Actor>
-        <Text>As you wish.^1 I shall swiftly make the preparations...</Text>
-    </CharacterDialogue>
+        <Text>Very well,^2 may it begin.^1 This shall finally bring glory to *The Orange Kitten*.</Text>
+    </Dialogue>
 </DialogueSequence>

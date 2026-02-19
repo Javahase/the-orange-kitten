@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class DialogueSequence : LinearGameSequence<BaseFrame>
+public class DialogueSequence : LinearGameSequence<CharacterFrame>
 {
-
+    
     protected bool Initialized;
     
-    protected override List<BaseFrame> SequencePoints { get; set; }
+    protected override List<CharacterFrame> SequencePoints { get; set; }
 
     public override void OnInitialize()
     {
@@ -16,7 +16,7 @@ public class DialogueSequence : LinearGameSequence<BaseFrame>
         {
             return;
         }
-        SequencePoints = GetComponentsInChildren<BaseFrame>(includeInactive: true).ToList();
+        SequencePoints = GetComponentsInChildren<CharacterFrame>(includeInactive: true).ToList();
         SequencePoints.ForEach(frame =>
         {
             frame.OnInitialize();

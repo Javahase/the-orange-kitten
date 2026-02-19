@@ -1,24 +1,16 @@
-
 using System.Xml.Serialization;
 
-[XmlRoot(ElementName = "BaseDialogue")]
+[XmlRoot(ElementName = "Dialogue")]
 public class DialogueData
 {
+    [XmlAttribute(AttributeName = "bg")] public string BackgroundPath;
+    [XmlAttribute(AttributeName = "portrait")] public string PortraitPath;
+    [XmlElement()] public string Actor;
+    [XmlElement()] public string Text;
 
-    [XmlAttribute(AttributeName = "bg")]
-    public string BackgroundPath;
-    [XmlElement()]
-    public string Text;
-
-
-    [XmlRoot(ElementName = "CharacterDialogue")]
-    public class CharacterDialogueData : DialogueData
+    [XmlRoot(ElementName = "LocationFrame")]
+    public class LocationData : DialogueData
     {
-        [XmlElement(ElementName = "Actor")]
-        public string CharacterName;
-
-        [XmlAttribute(AttributeName = "curr_portrait")]
-        public string CurrentPortrait;
-
+        [XmlAttribute(AttributeName = "name")] public string Location;
     }
 }

@@ -13,14 +13,7 @@ using UnityEngine;
 /// </summary>
 public class GameSequenceController : SingletonObject<GameSequenceController>
 {
-    /// <summary>
-    /// Unity Field for a global error sequence that plays if the player made a mistake
-    /// during a <see cref="RecipeSequence"/>.
-    /// </summary>
-    [Tooltip("A generic error sequence that should play " +
-             "if the player made a mistake during a recipe sequence.")]
-    public DialogueSequence errorSequence;
-
+    
     public FadeTransition genericFader;
 
     /// <summary>
@@ -43,9 +36,6 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
 
     private void Start()
     {
-        errorSequence.OnInitialize();
-        errorSequence.SequenceEndEvent += (_) => errorSequence.OnDisabled();
-
         _sequences = GetComponentsInChildren<IGameSequence>(true).ToList();
         _sequences.ForEach(seq => seq.OnInitialize());
         _sequences.Where(seq => seq is DialogueSequence)
@@ -79,13 +69,6 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         var next = _sequences[_currentStep + 1];
         return ProgressSequence(next);
     }
-
-    /// <summary>
-    /// This enables the <see cref="errorSequence">generic error sequence</see>.
-    /// This sequence will be played parallel to the sequence progression
-    /// and will not progress the default <see cref="_sequences">sequences</see>.
-    /// </summary>
-    public void StartGenericErrorSequence() => errorSequence.OnEnabled();
 
     /// <summary>
     /// Checks what type of sequence the next sequence is

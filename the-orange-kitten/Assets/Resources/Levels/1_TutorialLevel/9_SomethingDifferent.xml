@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Woah,^2 this looks way different!</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Yet it remains quite simple.^1 You can still ask questions and see insights.^1 Though the insights,^2 you needn't present.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Instead,^2 you can mark statements as odd.^1 There may be multiple.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>If you mark a statement as odd,^2 your text box will change and you answer the question what is asks there.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>Sending it locks in the result.^1 You can always cancel the marking,^2 or unmark a statement,^2 though.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Supervisor</Actor>
+        <Text>If you think you're done,^2 end your examination.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Very well.</Text>
+    </Dialogue>
+</DialogueSequence>

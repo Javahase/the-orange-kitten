@@ -46,7 +46,7 @@ public class DialogueParser
 
         var serializer = XmlSerializer.FromTypes(new[]
             {
-                typeof(DialogueData.CharacterDialogueData), typeof(DialogueData)
+                typeof(DialogueData.LocationData), typeof(DialogueData)
             }
         );
         foreach (XmlNode frame in doc.DocumentElement!.ChildNodes)
