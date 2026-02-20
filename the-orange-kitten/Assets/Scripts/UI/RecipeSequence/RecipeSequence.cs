@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace UI.RecipeSequence
@@ -11,7 +12,7 @@ namespace UI.RecipeSequence
     /// as well as broadcasting said slide-through for other components within
     /// this sequence to handle.
     /// </summary>
-    [RequireComponent(typeof(RecipeEventLog), typeof(StatementInfoStore))]
+    [RequireComponent(typeof(RecipeEventLog))]
     public class RecipeSequence : GameSequence<RecipeStatement>
     {
         public delegate void OnControlStateChanged(bool controlsEnabled);
@@ -22,27 +23,14 @@ namespace UI.RecipeSequence
         /// The statement text on the top
         /// </summary>
         [Header("Inner Components")] [SerializeField]
-        private Button prevButton;
-
-        [SerializeField] private Button nextButton;
-
-        public HealthContainer healthContainer;
-
-        [SerializeField] private ConnectionInfo userInfo;
-
-        [SerializeField] private Image lostPopUp;
-
-        /// <summary>
-        /// The <see cref="ChatHistoryManager"/> controlling
-        /// chat histories for each statement.
-        /// </summary>
-        public ChatHistoryManager chatHistoryManager;
+        private Image lostPopUp;
 
         /// <summary>
         /// A list of <see cref="RecipeStatement">statements</see> to be shown.
         /// </summary>
-        [Header("Data Fields")] [SerializeField]
-        private List<RecipeStatement> statements;
+        [Header("Data Fields")] public bool isTutorialSequence;
+
+        [SerializeField] private List<RecipeStatement> statements;
 
         [SerializeField] private TextAsset topicPromptLlm;
         [SerializeField] private TextAsset topicPromptInsights;
@@ -57,35 +45,32 @@ namespace UI.RecipeSequence
 
         protected override List<RecipeStatement> SequencePoints { get; set; }
 
-        /// <summary>
-        /// The global <see cref="GameSequenceController">sequence controller</see>
-        /// that handles the game progression.
-        /// </summary>
-        private GameSequenceController _sequenceController;
-
-        private LLMService _llmService;
-        private InsightService _insightService;
-
+        // <-------------- INNER COMPONENTS  -------------->
+        private ConnectionInfo _userInfo;
         [HideInInspector] public RecipeEventLog eventLog;
-        [HideInInspector] public StatementInfoStore infoStore;
+        [HideInInspector] public StatementHeader header;
+        [HideInInspector] public HealthContainer healthContainer;
+
+        /// <summary>
+        /// The <see cref="ChatHistoryManager"/> controlling
+        /// chat histories for each statement.
+        /// </summary>
+        [HideInInspector] public ChatHistoryManager chatHistoryManager;
+        // <----------------------------------------------->
 
         public override void OnInitialize()
         {
-            _sequenceController = GameSequenceController.GetInstance();
-            _llmService = LLMService.GetInstance();
-            _insightService = InsightService.GetInstance();
+            InitComponents();
 
             SequencePoints = statements;
 
             eventLog = GetComponent<RecipeEventLog>();
-            infoStore = GetComponent<StatementInfoStore>();
 
             eventLog.EnableLog(statements);
-            infoStore.Init();
+            header.Init();
             chatHistoryManager.Init(this, statements);
 
             InitSubsequences();
-            InitButtons();
 
             healthContainer.DamageEvent += eventLog.IncrementQuestionCount;
             healthContainer.NoHealthEvent += () =>
@@ -95,41 +80,40 @@ namespace UI.RecipeSequence
             };
         }
 
-        private void InitButtons()
+        private void InitComponents()
         {
-            nextButton.onClick.AddListener(() => Next());
-            prevButton.onClick.AddListener(() => Previous());
-
-            ControlStateChangedEvent += (controlsEnabled) =>
-            {
-                nextButton.interactable = controlsEnabled;
-                prevButton.interactable = controlsEnabled;
-            };
+            _userInfo = GetComponentInChildren<ConnectionInfo>(includeInactive: true);
+            header = GetComponentInChildren<StatementHeader>(includeInactive: true);
+            healthContainer = GetComponentInChildren<HealthContainer>(includeInactive: true);
+            chatHistoryManager = GetComponentInChildren<ChatHistoryManager>(includeInactive: true);
+            Debug.Log(gameObject.name);
         }
 
         private void InitSubsequences()
         {
+            var sequenceController = GameSequenceController.GetInstance();
             solutionSequence.OnInitialize();
             solutionSequence.SequenceEndEvent += (_) =>
             {
-                if (_sequenceController.CurrentSequence.Equals(this))
-                    _sequenceController.Next();
+                if (sequenceController.CurrentSequence.Equals(this))
+                    sequenceController.Next();
             };
 
             lostSequence.OnInitialize();
             lostSequence.SequenceEndEvent += (_) =>
             {
-                if (_sequenceController.CurrentSequence.Equals(this))
+                if (sequenceController.CurrentSequence.Equals(this))
                     lostSequence.OnDisabled();
             };
         }
 
         public override void OnEnabled()
         {
+            var llmService = LLMService.GetInstance();
             gameObject.SetActive(true);
-            _llmService.InitStatements(statements);
-            _llmService.SetTopicPrompt(topicPromptLlm.text);
-            _insightService.SetTopicPrompt(topicPromptInsights.text);
+            llmService.InitStatements(statements);
+            llmService.SetTopicPrompt(topicPromptLlm.text);
+            InsightService.GetInstance().SetTopicPrompt(topicPromptInsights.text);
             SetSequenceStep(0);
         }
 
@@ -137,7 +121,7 @@ namespace UI.RecipeSequence
         {
             eventLog.LogInsights(InsightService.GetInstance().GetAllInsights());
             solutionSequence.OnDisabled();
-            _llmService.ClearStatements();
+            LLMService.GetInstance().ClearStatements();
             gameObject.SetActive(false);
         }
 
@@ -145,12 +129,12 @@ namespace UI.RecipeSequence
         {
             CurrentStep = 0;
             chatHistoryManager.ChatHistories.ForEach(history => history.ClearChat());
-            userInfo.ResetDisplay();
+            _userInfo.ResetDisplay();
         }
 
         public void RecoverLoss()
         {
-            userInfo.ResetDisplay();
+            _userInfo.ResetDisplay();
             healthContainer.ResetHealth();
             lostPopUp.gameObject.SetActive(false);
             lostSequence.OnEnabled();

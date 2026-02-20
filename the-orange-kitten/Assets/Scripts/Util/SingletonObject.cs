@@ -8,7 +8,7 @@ public class SingletonObject<T> : MonoBehaviour where T : SingletonObject<T>
 
     public static T GetInstance()
     {
-        if (_instance != null)  return _instance;
+        if (_instance)  return _instance;
         var objs = FindObjectsByType<T>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID);
             if (objs.Length != 1)
             {

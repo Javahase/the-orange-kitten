@@ -829,7 +829,6 @@ GameObject:
   - component: {fileID: 879850669860624744}
   - component: {fileID: 8002212926947179042}
   - component: {fileID: 7747481411903243863}
-  - component: {fileID: 6241497688752370490}
   m_Layer: 5
   m_Name: MistakeSequence
   m_TagString: Untagged
@@ -938,12 +937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788656d915ad1e14980cda61650a7e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSequence
-  prevButton: {fileID: 3942077631468224025}
-  nextButton: {fileID: 8291282718917349624}
-  healthContainer: {fileID: 7801960468674067529}
-  userInfo: {fileID: 8950688983033177228}
   lostPopUp: {fileID: 4031705455924841443}
-  chatHistoryManager: {fileID: 7641434271385279138}
+  isTutorialSequence: 0
   statements:
   - message: Hello There
     hidden: 0
@@ -964,10 +959,11 @@ MonoBehaviour:
   topicPromptLlm: {fileID: 0}
   topicPromptInsights: {fileID: 0}
   solutionSequence: {fileID: 0}
-  specialErrorSequence: {fileID: 0}
   lostSequence: {fileID: 0}
   eventLog: {fileID: 0}
-  infoStore: {fileID: 0}
+  header: {fileID: 0}
+  healthContainer: {fileID: 7801960468674067529}
+  chatHistoryManager: {fileID: 7641434271385279138}
 --- !u!114 &8002212926947179042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,6 +976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540dea77770e45f68d1bc3f98c9b8504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.RecipeSequence.SequenceTypes.MistakeSequenceHandler
+  hintErrorSequence: {fileID: 0}
+  errorSequence: {fileID: 0}
 --- !u!114 &7747481411903243863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,24 +991,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeEventLog
   puzzleId: 
---- !u!114 &6241497688752370490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3218886592271009111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c8fadc782ac4ccf9077428811f5faa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StatementInfoStore
-  currentStatement:
-    message: 
-    hidden: 0
-    markingState: 0
-    statementType: 0
-  statementText: {fileID: 1062566584664877950}
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1710,7 @@ GameObject:
   - component: {fileID: 455450395735543445}
   - component: {fileID: 2672924743351109747}
   - component: {fileID: 2018728815008138034}
+  - component: {fileID: 2163114645433399677}
   m_Layer: 5
   m_Name: SectionStatement
   m_TagString: Untagged
@@ -1797,6 +1778,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2163114645433399677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150771412863733662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8fadc782ac4ccf9077428811f5faa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatementHeader
+  nextButton: {fileID: 8291282718917349624}
+  previousButton: {fileID: 3942077631468224025}
+  statementText: {fileID: 1062566584664877950}
+  coreSequence: {fileID: 879850669860624744}
 --- !u!1 &4757993721045525546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,17 +3853,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5344187944709864171, guid: 09ef3e2171b0e4f448107afa019d6f46, type: 3}
   m_PrefabInstance: {fileID: 380808427333688583}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8950688983033177228 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8754957037399636363, guid: 09ef3e2171b0e4f448107afa019d6f46, type: 3}
-  m_PrefabInstance: {fileID: 380808427333688583}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eba566a963774923b40866f3a95fc21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConnectionInfo
 --- !u!1001 &3109060647183213839
 PrefabInstance:
   m_ObjectHideFlags: 0
