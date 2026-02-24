@@ -2,64 +2,64 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <LocationFrame bg="" name="Digital Media Lab - Headquarters"/>
-    <Dialogue bg="">
+    <LocationFrame bg="Img/Scenes/dml_hallway" name="Digital Media Lab - Headquarters"/>
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>You</Actor>
         <Text>(My first day at the lab,^2 this will be fun!)</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>You</Actor>
         <Text>(They've specifically asked for someone to join on an unspecified mission.^1 Of course,^2 they'd be sending students to it,^2 but who cares?^1 I'll get snacks!)</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>Ah,^2 there you are.^1 Do excuse my tardiness,^2 I had a former appointment with the StugA to add more *water coolers* around the University.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>I^2 *love*^2 water!^1 And I shall do everything in my might to have them in vicinity all the time.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>You</Actor>
         <Text>... right.^1 But what about the job offer you posted.^1 You were searching for someone of my abilities?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>That's correct.^1 I see you signed the form of consent already,^2 which means I get to educate you now on the proceedings of your task.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>You see,^2 there is this restaurant that we always had a gaze on.^1 *The Orange Kitten*,^2 ever heard of that establishment?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>Yes,^2 they make like very tasty food,^2 don't they?^1 What do you want from them?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>Well,^2 we'd like to...^2 *borrow*...^2 their recipes so that we may uncover the secrets behind them.^1 Why do they taste so good?^1 That is what we'd like to know.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>You</Actor>
         <Text>How do I come into play?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>I'm glad you asked,^2 this is something only a student worker could accomplish.^1 Us persons of science are way too busy with discovering new things every day.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Distant Professor</Actor>
         <Text>Look how cute that kitty is!! I will make it my mission to pet it for the entire day now!</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>... as I said,^2 *important matters*!</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>Supervisor</Actor>
         <Text>Anyways,^2 let us proceed to my office.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_hallway">
         <Actor>You</Actor>
         <Text>Lead the way.</Text>
     </Dialogue>
