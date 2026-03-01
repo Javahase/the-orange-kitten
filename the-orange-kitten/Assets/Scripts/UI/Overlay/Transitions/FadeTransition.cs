@@ -17,13 +17,13 @@ public class FadeTransition : TransitionSequence
         _blackScreen = transform.Find("BlackScreen").GetComponent<Image>();
     }
 
-    public override IEnumerator BeginTransition(IGameSequence previous, IGameSequence next)
+    public override IEnumerator BeginTransition(IGameSequence previous, Action next)
     {
         gameObject.SetActive(true);
         yield return FadeOut();
         yield return new WaitForSeconds(fadedOutDuration);
         previous?.OnDisabled();
-        next?.OnEnabled();
+        next.Invoke();
         yield return FadeIn();
         gameObject.SetActive(false);
     }

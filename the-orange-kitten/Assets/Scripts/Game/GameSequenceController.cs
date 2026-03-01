@@ -80,6 +80,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         => sequence switch
         {
             TransitionSequence t => ProgressTransition(t),
+            ParallelSequencer s => ProgressParallel(s),
             _ => ProgressDefault()
         };
 
@@ -94,6 +95,14 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         return true;
     }
 
+    private bool ProgressParallel(ParallelSequencer s)
+    {
+        _currentStep += 1;
+        s.OnEnabled();
+        s.OnDisabled();
+        return Next();
+    }
+
     /// <summary>
     /// Coroutine that calls the <see cref="TransitionSequence.BeginTransition"/>
     /// Coroutine.
@@ -103,8 +112,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     {
         _currentStep++;
         yield return t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
-            _sequences.ElementAtOrDefault(_currentStep + 1));
-        _currentStep++;
+            () => Next());
     }
 
     /// <summary>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Event.Sequence;
@@ -36,7 +37,7 @@ public abstract class TransitionSequence : MonoBehaviour, IGameSequence
     /// <param name="previous">The game sequence before this transition sequence</param>
     /// <param name="next">The game sequence after this transition sequence</param>
     /// <returns>An IEnumerator used by the Coroutine.</returns>
-    public abstract IEnumerator BeginTransition(IGameSequence previous, IGameSequence next);
+    public abstract IEnumerator BeginTransition(IGameSequence previous, Action next);
 
     public abstract void OnInitialize();
 
