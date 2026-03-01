@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,24 +43,74 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
         }
     }
 
-    public void SkipToEnd()
+    private void SkipToEnd()
     {
         StopCoroutine(_currentCoroutine);
         _imgContinue.gameObject.SetActive(true);
         _currentCoroutine = null;
-        _dialogueText.text = dialogueText.Replace("^1", "").Replace("^2", "");
+        var withoutBreaks = dialogueText.Replace("^1", "").Replace("^2", "");
+        _dialogueText.text = GetTokens(withoutBreaks).Select((s) => s.Item1)
+            .Aggregate(string.Concat);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (_currentCoroutine != null)
         {
-            frameSpeed = 0;
+            SkipToEnd();
         }
         else
         {
             _sequence.Next();
         }
+    }
+
+    private List<(string, bool)> GetTokens(string sequence)
+    {
+        var tokens = new List<(string, bool)>();
+        var decorated = false;
+
+        for (var i = 0; i < sequence.Length; i++)
+        {
+            var symbol = sequence[i];
+            switch (symbol)
+            {
+                // Empty chars do not count towards small breaks between characters.
+                case ' ':
+                    tokens.Add((symbol.ToString(), false));
+                    break;
+                // Escape opportunity for control symbols. Only one \ or invalid control symbols next will output normally. Will do small break.
+                case '\\':
+                    if (_controlChars.Contains(sequence[i + 1]))
+                    {
+                        i++;
+                    }
+
+                    tokens.Add((sequence[i].ToString(), true));
+                    break;
+                // Toggles the orange highlighting. Will not break.
+                case '*':
+                    decorated = !decorated;
+                    tokens.Add((!decorated ? "</color>" : "<color=#de8b26>", false));
+                    break;
+                // Starts a blue thinking-highlight. The '('-token will count as a small break.
+                case '(':
+                    tokens.Add(("<color=#4a86cf>", false));
+                    tokens.Add(("(", true));
+                    break;
+                // Ends a blue thinking-highlight. The ')'-token will count as a small break.
+                case ')':
+                    tokens.Add((")", true));
+                    tokens.Add(("</color>", false));
+                    break;
+                // Normal behavior.
+                default:
+                    tokens.Add((symbol.ToString(), true));
+                    break;
+            }
+        }
+
+        return tokens;
     }
 
 
@@ -86,40 +135,12 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 
     private IEnumerator ReadSequence(string sequence)
     {
-        var decorated = false;
-
-        for (var i = 0; i < sequence.Length; i++)
+        var tokens = GetTokens(sequence);
+        foreach (var (token, shouldBreak) in tokens)
         {
-            var symbol = sequence[i];
-            switch (symbol)
-            {
-                case ' ':
-                    _dialogueText.text += symbol;
-                    continue;
-                case '\\':
-                    if (_controlChars.Contains(sequence[i + 1]))
-                    {
-                        i++;
-                        _dialogueText.text += sequence[i];
-                    }
-
-                    break;
-                case '*':
-                    decorated = !decorated;
-                    _dialogueText.text += (!decorated ? "</color>" : "<color=#de8b26>");
-                    continue;
-                case '(':
-                    _dialogueText.text += "<color=#4a86cf>(";
-                    continue;
-                case ')':
-                    _dialogueText.text += ")</color>";
-                    continue;
-                default:
-                    _dialogueText.text += symbol;
-                    break;
-            }
-
-            yield return new WaitForSeconds(frameSpeed);
+            _dialogueText.text += token;
+            if (shouldBreak)
+                yield return new WaitForSeconds(frameSpeed);
         }
     }
 }
