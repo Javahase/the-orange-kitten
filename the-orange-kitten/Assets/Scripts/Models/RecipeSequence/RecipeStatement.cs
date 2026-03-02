@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 /// <summary>
 /// A <c>RecipeStatement</c> provides one statement section for
@@ -11,7 +12,7 @@ public class RecipeStatement
     /// <summary>
     /// A message showcasing the step that was performed.
     /// </summary>
-    public string message;
+    [TextArea] public string message;
 
     /// <summary>
     /// Whether the recipe sequence should display this statement.

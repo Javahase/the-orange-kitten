@@ -1,0 +1,11 @@
+﻿A robot makes yummy webby things with flesh and yum yum sauce and gets questioned by a player about it.
+The steps the robot took are as follows:
+{0}
+
+The Puzzle-Solution:
+The false statement is {1}. This statement is false, because the small balls were supposed to be prepared together with the yum yum sauce, not seperately.
+Thus, an insight is important if it mentions one of those criteria:
+- The small balls should be put into the pot with the yum yum sauce
+- The small balls are used together with the yum yum sauce
+
+You will be giving the following chat:

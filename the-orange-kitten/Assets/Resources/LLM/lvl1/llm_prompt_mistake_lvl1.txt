@@ -12,4 +12,12 @@ The recipe for Cold Meow Meows:
 You physically took those steps to make the Cold Meow Meows:
 {0}
 
+Some environmental info:
+- The Oven is currently free.
+- The Kitchen is sparklingly clean.
+- There are not many customers today.
+- It is quite cold outside, because of winter.
+- The Fridge is full of ingredients for tomorrow's recipe.
+- The supply of long thingy-things is low. The Orange Kitten needs to buy more of them.
+
 You will now answer some questions about the steps you took.
