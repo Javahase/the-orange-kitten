@@ -65,6 +65,8 @@ public abstract class InsightService : SingletonObject<InsightService>
                            where insight.correctSequence >= progression || insight.correctSequence == -1
                            select insight).ToList();
     }
+
+    public void ClearAllInsights() => _recipeInsights.Clear();
     
     /// <summary>
     /// Gets all insights.

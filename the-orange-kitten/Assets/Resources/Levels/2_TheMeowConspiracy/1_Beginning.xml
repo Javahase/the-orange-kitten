@@ -2,23 +2,29 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <BaseDialogue bg="">
-        <Text>Location:^1 ???</Text>
-    </BaseDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
-        <Actor>"Lord"</Actor>
-        <Text>Meow meow.^1 Brrrrt?</Text>
-    </CharacterDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
-        <Actor>???</Actor>
-        <Text>Yes,^2 my lord,^2 they are exquisite at performing the task.^1 The excellent candidate for your plan.</Text>
-    </CharacterDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
-        <Actor>"Lord"</Actor>
-        <Text>Meoooow meow.^1 Meow.</Text>
-    </CharacterDialogue>
-    <CharacterDialogue bg="" curr_portrait="">
-        <Actor>???</Actor>
-        <Text>Very well,^2 I shall rally the council.^1 We may begin discussions.</Text>
-    </CharacterDialogue>
+    <LocationFrame bg="Img/Scenes/dml_office" name="Digital Media Lab - Supervisor's Office"/>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Anyone here?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>(Where is the Supervisor?^1 Can I really start without him?)</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Oh,^2 a note.^1 It reads...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>I shan't make it today.^1 My deepest apologies.^1 I have important matters to attend to,^2 but I've already prepared your environment.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Oh well.^1 Let's see,^2 the password is...^1 ...^1 I see.</Text>
+    </Dialogue>
 </DialogueSequence>

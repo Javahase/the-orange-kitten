@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>This is bad...^1 Now what?</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Robot</Actor>
+        <Text>FAILURE IS NOT AN OPTION.^1 CONTINUE.^1 I PLAYED VIDEOS OF MICE PLAYING INTO THE SECURITY SYSTEM.^1 IT WILL BE DISTRACTED.</Text>
+    </Dialogue>
+</DialogueSequence>

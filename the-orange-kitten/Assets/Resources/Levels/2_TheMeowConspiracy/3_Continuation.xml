@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Alright,^2 phew.^1 The pressure is on.^1 Next,^2 there were some glaring odd statements I found.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Let's do this...</Text>
+    </Dialogue>
+</DialogueSequence>

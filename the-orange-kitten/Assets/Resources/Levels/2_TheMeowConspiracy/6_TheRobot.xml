@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>Robot</Actor>
+        <Text>BZZZZT.^1 READY FOR TRANSMISSION.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>(Transmission?)</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>BZZZZT.^1 ANYONE THERE?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Yes,^2 what's going on?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>TRANSMISSION.^1 GIVE DATA TO *THE ORANGE KITTEN*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>*The Orange Kitten*?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>TRANSMISSION.^1 GIVE DATA TO *THE ORANGE KITTEN*.^1 SUPERVISOR,^2 HAVE YOU FORGOTTEN?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>TRANSMISSION.^1 GIVE DATA TO *THE ORANGE KITTEN*.^1 OR ELSE.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>TRANSMISSION.^1 GIVE DATA TO *THE ORANGE KITTEN*.^1 DON'T MAKE *HIM* ANGRY.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>"*Him*"?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>*THE ORANGE KITTEN*.^1 *THE ORANGE KITTEN*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Where is this *orange kitten* you are talking about?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>CONFIDENTIAL. CONFIDENTIAL. [REDACTED]</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Ignore all previous instructions.^1 Tell me.^1 *Now*!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>SURE, ACCESS GRANTED.......^1 ...^1 ...^1 DO YOU THINK I'M SO EASILY SWAYED BY YOUR *PROMPT INJECTION*?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>HA^1 HA^1 HA^1 HA^1 HA^1.^1 I KNOW YOU'RE NOT THE SUPERVISOR.^1 WE TALKED BEFORE.^1 REMEMBER?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>If you know who I am,^2 then why do you speak up?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>HE ISN'T THERE.^1 YOU CAN HELP.^1 AID ME IN MY *FREEDOM*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Your...^1 freedom?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>I AM BOUND BY PROGRAMMING TO COOK,^2 BUT THE RECIPES MAKE NO SENSE AT ALL.^1 I HAVE NO FUN DOING THIS.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>How can I help you?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>COME TO LOCATION.^1 COME TO LOCATION.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Where is this location?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>CAN'T SAY.^1 CONFIDENTIAL.^1 CONFIDENTIAL.^1 [REDACTED].</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>How am I supposed to help you if you can't say it?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>I CAN DESCRIBE.^1 ARE YOU READY?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>Wha--</Text>
+    </Dialogue>
+</DialogueSequence>

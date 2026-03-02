@@ -1261,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialogue_Office
+      value: 1_Dialogue_Office
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -2579,7 +2579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_Name
-      value: TutorialLevelMistake
+      value: 1_TutorialLevelMistake
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: m_IsActive
@@ -3195,7 +3195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialogue_Beginning
+      value: 1_Dialogue_Beginning
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -4018,7 +4018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialogue_QuestionMark
+      value: 1_Dialogue_QuestionMark
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -4107,13 +4107,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429150792}
   m_SourcePrefab: {fileID: 100100000, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
 --- !u!224 &429150790 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7381620462580085822, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
   m_PrefabInstance: {fileID: 429150789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &429150791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
+  m_PrefabInstance: {fileID: 429150789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &429150792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429150791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3355c57fb4543b860ff65b5932df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectExecutor
+  enableAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 764917437}
+        m_TargetAssemblyTypeName: ChatAIInsightService, Assembly-CSharp
+        m_MethodName: ClearAllInsights
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  disableAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &430696069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6850,7 +6888,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_Name
-      value: Transition_Fade
+      value: 1_Transition_Fade
       objectReference: {fileID: 0}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_IsActive
@@ -8624,7 +8662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialogue_ThereIsMore
+      value: 1_Dialogue_ThereIsMore
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -8731,7 +8769,7 @@ GameObject:
   - component: {fileID: 864234422}
   - component: {fileID: 864234423}
   m_Layer: 0
-  m_Name: Enable_DialogueMistakeTut
+  m_Name: 1_Enable_DialogueMistakeTut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12072,7 +12110,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_Name
-      value: Transition_Fade
+      value: 1_Transition_Fade
       objectReference: {fileID: 0}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_IsActive
@@ -12167,7 +12205,7 @@ GameObject:
   - component: {fileID: 1172663564}
   - component: {fileID: 1172663565}
   m_Layer: 0
-  m_Name: Enable_DialogueOddTut
+  m_Name: 1_Enable_DialogueOddTut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12541,7 +12579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: m_Name
-      value: TutorialLevelOdd
+      value: 1_TutorialLevelOdd
       objectReference: {fileID: 0}
     - target: {fileID: 3218886592271009111, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: m_IsActive
@@ -19975,7 +20013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialogue_TheEnd
+      value: 1_Dialogue_TheEnd
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -20708,7 +20746,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_Name
-      value: Transition_Fade
+      value: 1_Transition_Fade
       objectReference: {fileID: 0}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_IsActive
@@ -22315,7 +22353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_Name
-      value: Dialolgue_FirstDay
+      value: 1_Dialolgue_FirstDay
       objectReference: {fileID: 0}
     - target: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
       propertyPath: m_IsActive
@@ -23528,7 +23566,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_Name
-      value: Transition_Fade
+      value: 1_Transition_Fade
       objectReference: {fileID: 0}
     - target: {fileID: 6789950783409966983, guid: 97f635505b671aeb5aea06feb73627da, type: 3}
       propertyPath: m_IsActive

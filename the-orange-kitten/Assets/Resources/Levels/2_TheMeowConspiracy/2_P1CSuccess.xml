@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>It all makes sense when you consider it from this angle.</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>Why would the robot discard the small balls?^1 It makes no sense.^1 It's a dish-ruining mistake.</Text>
+    </Dialogue>
+</DialogueSequence>

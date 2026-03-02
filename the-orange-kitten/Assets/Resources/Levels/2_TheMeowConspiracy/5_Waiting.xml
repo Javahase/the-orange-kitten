@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>I guess I should wait for the Supervisor to arrive again...</Text>
+    </Dialogue>
+</DialogueSequence>

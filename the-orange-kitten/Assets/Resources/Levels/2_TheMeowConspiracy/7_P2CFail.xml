@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>This must be the location!</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>Robot</Actor>
+        <Text>YOU ARE NOT REALLY THE BRIGHTEST ONE,^2 ARE YOU?</Text>
+    </Dialogue>
+</DialogueSequence>
