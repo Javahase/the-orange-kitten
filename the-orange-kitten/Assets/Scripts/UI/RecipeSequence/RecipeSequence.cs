@@ -28,9 +28,8 @@ namespace UI.RecipeSequence
         /// <summary>
         /// A list of <see cref="RecipeStatement">statements</see> to be shown.
         /// </summary>
-        [Header("Data Fields")] public bool isTutorialSequence;
-
-        [SerializeField] private List<RecipeStatement> statements;
+        [Header("Data Fields")] [SerializeField]
+        private List<RecipeStatement> statements;
 
         [SerializeField] private TextAsset topicPromptLlm;
         [SerializeField] private TextAsset topicPromptInsights;

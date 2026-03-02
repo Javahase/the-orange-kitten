@@ -17,7 +17,7 @@ public interface IGameSequence : IInitializable
     /// <summary>
     /// Resets a game sequence back to its original state.
     /// </summary>
-    public abstract void ResetSequence();
+    public void ResetSequence();
 }
 
 /// <summary>
@@ -35,7 +35,7 @@ public abstract class TransitionSequence : MonoBehaviour, IGameSequence
     /// <b>Note that this function is called as a Coroutine</b>
     /// </summary>
     /// <param name="previous">The game sequence before this transition sequence</param>
-    /// <param name="next">The game sequence after this transition sequence</param>
+    /// <param name="next">The next-call to be used by the parent sequence.</param>
     /// <returns>An IEnumerator used by the Coroutine.</returns>
     public abstract IEnumerator BeginTransition(IGameSequence previous, Action next);
 
@@ -81,6 +81,12 @@ public abstract class GameSequence<T> : MonoBehaviour, IGameSequence
 
     public abstract void OnInitialize();
 
+    /// <summary>
+    /// Sets the current step and invoke a <see cref="SequenceStepChangeEvent{T}"/>.
+    /// Won't do anything, if <paramref name="step"/> is out of bounds.
+    /// </summary>
+    /// <param name="step">Which part of the sequence to jump to.</param>
+    /// <returns>Whether the jump was successful.</returns>
     public virtual bool SetSequenceStep(int step)
     {
         if (step >= SequencePoints.Capacity || step < 0) return false;

@@ -45,6 +45,7 @@ namespace UI.RecipeSequence.SequenceTypes
         public void SetCurrentStatementMarked(string reason)
         {
             SetCurrentStatementState(RecipeStatement.MarkingState.Marked);
+            if (reason == null || reason.Trim() == "") return;
             _coreSequence.eventLog.LogOddMark(_coreSequence.GetCurrentStatement(), reason);
         }
     }

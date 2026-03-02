@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>This is all we have for today.^1 Please,^2 come back tomorrow so we can resume the activities.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor">
+        <Actor>You</Actor>
+        <Text>Okay.</Text>
+    </Dialogue>
+</DialogueSequence>

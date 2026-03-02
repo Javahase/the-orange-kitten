@@ -1697,7 +1697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeSequence
   lostPopUp: {fileID: 2196652556014449703}
-  isTutorialSequence: 0
   statements: []
   topicPromptLlm: {fileID: 0}
   topicPromptInsights: {fileID: 0}

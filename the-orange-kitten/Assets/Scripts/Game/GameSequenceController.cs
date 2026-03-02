@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UI.RecipeSequence;
@@ -13,7 +12,6 @@ using UnityEngine;
 /// </summary>
 public class GameSequenceController : SingletonObject<GameSequenceController>
 {
-    
     public FadeTransition genericFader;
 
     /// <summary>
@@ -95,12 +93,30 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         return true;
     }
 
+    /// <summary>
+    /// Starts a <see cref="ParallelSequencer"/>.
+    /// </summary>
+    /// <param name="s">The <see cref="ParallelSequencer"/> that is being started.</param>
+    /// <returns>Whether the next sequence could be started.</returns>
     private bool ProgressParallel(ParallelSequencer s)
     {
+        CurrentSequence.OnDisabled();
         _currentStep += 1;
         s.OnEnabled();
         s.OnDisabled();
         return Next();
+    }
+
+    /// <summary>
+    /// Progresses a default <see cref="IGameSequence"/>.
+    /// </summary>
+    /// <returns>Whether there was a next sequence.</returns>
+    private bool ProgressDefault()
+    {
+        CurrentSequence.OnDisabled();
+        _currentStep++;
+        CurrentSequence.OnEnabled();
+        return true;
     }
 
     /// <summary>
@@ -113,20 +129,6 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         _currentStep++;
         yield return t.BeginTransition(_sequences.ElementAtOrDefault(_currentStep - 1),
             () => Next());
-    }
-
-    /// <summary>
-    /// Progresses a default <see cref="IGameSequence"/>.
-    /// If the sequence is a <see cref="MonoBehaviour"/>,
-    /// it hides the previous sequence.
-    /// </summary>
-    /// <returns>Whether there was a next sequence.</returns>
-    private bool ProgressDefault()
-    {
-        CurrentSequence.OnDisabled();
-        _currentStep++;
-        CurrentSequence.OnEnabled();
-        return true;
     }
 
     public void SetSequence(int ix)
@@ -147,7 +149,7 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
         yield return genericFader.FadeIn();
         genericFader.gameObject.SetActive(false);
     }
-    
+
     private IEnumerator ForceFadeOutCoroutine()
     {
         genericFader.gameObject.SetActive(true);

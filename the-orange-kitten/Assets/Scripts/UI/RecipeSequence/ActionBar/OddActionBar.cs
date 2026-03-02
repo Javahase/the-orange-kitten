@@ -23,6 +23,7 @@ namespace UI.RecipeSequence.ActionBar
                 HandleMarkedChange(ev.Current, ev.Current.markingState);
             };
             markAsOddButton.onClick.AddListener(MarkAsOdd);
+            endExaminationButton.onClick.AddListener(coreSequence.OnSequenceWon);
         }
 
         private void HandleMarkedChange(RecipeStatement stmt, RecipeStatement.MarkingState marked)
@@ -40,7 +41,7 @@ namespace UI.RecipeSequence.ActionBar
             }
         }
 
-        private void MarkAsOdd()
+        public void MarkAsOdd()
         {
             switch (coreSequence.GetCurrentStatement().markingState)
             {
