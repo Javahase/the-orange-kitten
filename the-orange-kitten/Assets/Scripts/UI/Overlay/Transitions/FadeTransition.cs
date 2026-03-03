@@ -27,7 +27,7 @@ public class FadeTransition : TransitionSequence
         yield return FadeIn();
         gameObject.SetActive(false);
     }
-    
+
     private IEnumerator Fade(AnimationCurve curve)
     {
         var time = curve.GetMinTime();

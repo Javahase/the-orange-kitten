@@ -1,0 +1,10 @@
+﻿A robot wants to be freed and gives the player location instructions.
+The instructions are as follows:
+{0}
+
+The Puzzle-Solution:
+The statement the player needs to complete is {1}. The Solution to the location is the castle of the orange kitten.
+Thus, an insight is important if it mentions one of those criteria:
+- Castle.
+
+You will be giving the following chat:

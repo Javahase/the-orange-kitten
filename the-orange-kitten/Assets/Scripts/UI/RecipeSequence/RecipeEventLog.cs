@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class RecipeEventLog : MonoBehaviour
 {
-    [SerializeField] private string puzzleId;
+    public string puzzleId;
     private PuzzleData _playerData;
     private DataCollector _collector;
 
@@ -102,7 +102,7 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogInsights(List<RecipeInsight> insights)
     {
-        _playerData.GeneratedInsights = insights;
+        _playerData.GeneratedInsights = new List<RecipeInsight>(insights);
         _collector.Save();
     }
     

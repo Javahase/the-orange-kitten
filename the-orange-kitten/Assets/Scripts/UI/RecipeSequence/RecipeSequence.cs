@@ -110,9 +110,12 @@ namespace UI.RecipeSequence
         {
             var llmService = LLMService.GetInstance();
             gameObject.SetActive(true);
+            
             llmService.InitStatements(statements);
             llmService.SetTopicPrompt(topicPromptLlm.text);
             InsightService.GetInstance().SetTopicPrompt(topicPromptInsights.text);
+            
+            DataLog.GetInstance().Log(DataLog.DataEvent.PuzzleStart, eventLog.puzzleId);
             SetSequenceStep(0);
         }
 
