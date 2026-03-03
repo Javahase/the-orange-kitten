@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <LocationFrame bg="Img/Scenes/throne_room" name="The Castle - Throne Room"/>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>???</Actor>
+        <Text>There are many interesting papers we could *steal*,^2 wouldn't you agree?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>"Lord"</Actor>
+        <Text>Meow?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>???</Actor>
+        <Text>Oh please,^2 as if you'd know...^1 oooh,^2 this paper will definitely do well.^1 Now, I can steal all the world's water-supplies.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>You</Actor>
+        <Text>WHAT?!?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>"Lord"</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>You</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>Well,^2 looks like the student has overstepped their boundaries.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>"Lord"</Actor>
+        <Text>Mrrrow?^1 \*Purr\*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Text>The Cat happily purrs,^2 as it moves towards you.^1 They look...^2 grateful?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>What?^1 You're on his side?^1 You were never cut out for that restaurant anyway.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>I mean,^2 please,^2 those STUPID recipe-descriptions.^1 Really makes ones processors overheat.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>Even your robot started tiring!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>"Lord"</Actor>
+        <Text>\*Hiss\*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>You</Actor>
+        <Text>Leave the cat out of this.^1 What was it about you stealing all the water-supplies?^1 For what?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Supervisor</Actor>
+        <Text>...^1 looks like you leave me no choice.^1 Are you ready?</Text>
+    </Dialogue>
+</DialogueSequence>

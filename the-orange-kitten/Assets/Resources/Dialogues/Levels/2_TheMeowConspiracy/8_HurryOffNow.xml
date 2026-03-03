@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>MAYBE YOU HAVE A FUTURE AFTER ALL.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>You</Actor>
+        <Text>We can't put this off.^1 I'll immediately make a run for the castle.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_office">
+        <Actor>Robot</Actor>
+        <Text>I WILL SEE YOU THERE.</Text>
+    </Dialogue>
+</DialogueSequence>
