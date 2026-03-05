@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 {
-    [SerializeField] private float frameSpeed = 0.1f;
+    [SerializeField] private float frameSpeed = 0.005f;
     [TextArea] public string dialogueText;
     public bool locationText = false;
 
