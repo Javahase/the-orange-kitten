@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e928878d18322409960fea639ca010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterFrame
-  frameSpeed: 0.1
+  frameSpeed: 0.05
   dialogueText: 
   locationText: 0
   characterName: 

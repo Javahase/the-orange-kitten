@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <LocationFrame bg="Img/Scenes/dml_hallway" name="Digital Media Lab - Hallway"/>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>What a lengthy day it was...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>That was quite a discussion we had with the head of the Digital Media Lab,^2 but we managed to talk things through.^1 Apparently,^2 the Supervisor infiltrated *their* ranks from the *Robotic Takeover Movement*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>Glad that all is over.^1 Wouldn't you agree,^2 Robot?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>Robot</Actor>
+        <Text>DO NOT THINK US AS FRIENDS.^1 I AM JUST HERE TO DISPOSE OF THE WASTE.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>Hmm,^2 on that note,^2 I have a question.^1 You do like to cook,^2 right?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>Robot</Actor>
+        <Text>IT'S ONE OF THE JOYS OF LIFE,^2 YES.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>Well, I had a chat with *"Lord"*.^1 Maybe there's still some hope left for us.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>Robot</Actor>
+        <Text>WHAT DO YOU MEAN?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>I've been understanding a lot of the things you said during our deductions.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>I can help translate the recipes for you.^1 Then,^2 you wouldn't have as much trouble.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>Robot</Actor>
+        <Text>...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>Like,^2 for instance,^2 long thingy things,^2 right?^1 Those are just sticks for the Popsicles.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>You</Actor>
+        <Text>And the yum yum sauce?^1 Bolognese!^1 Yum yum,^2 indeed.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/dml_hallway">
+        <Actor>Robot</Actor>
+        <Text>FINE,^2 I WILL KEEP COOKING FOR *THE ORANGE KITTEN* UNDER THOSE TERMS AND CONDITIONS.</Text>
+    </Dialogue>
+</DialogueSequence>

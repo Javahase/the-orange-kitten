@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
 {
-    [SerializeField] private float frameSpeed = 0.005f;
+    [SerializeField] private float frameSpeed = 0.05f;
     [TextArea] public string dialogueText;
     public bool locationText = false;
 
@@ -123,10 +123,10 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
             foreach (var sequence in smallBreaks)
             {
                 yield return ReadSequence(sequence);
-                yield return new WaitForSeconds(2 * frameSpeed);
+                yield return new WaitForSeconds(0.1f);
             }
 
-            yield return new WaitForSeconds(4 * frameSpeed);
+            yield return new WaitForSeconds(0.2f);
         }
 
         _imgContinue.gameObject.SetActive(true);
@@ -140,7 +140,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
         {
             _dialogueText.text += token;
             if (shouldBreak)
-                yield return new WaitForSeconds(frameSpeed);
+                yield return new WaitForSecondsRealtime(frameSpeed);
         }
     }
 }

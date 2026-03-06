@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(Sleeping peacefully,^2 and sometimes maintaining the restaurant.^1 Business is booming and we're all happy.)</Text>
+    </Dialogue>
+</DialogueSequence>

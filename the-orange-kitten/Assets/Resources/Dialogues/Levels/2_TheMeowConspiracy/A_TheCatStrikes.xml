@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>"Lord"</Actor>
+        <Text>\*Hiss\*!!!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>Supervisor</Actor>
+        <Text>ARGH,^2 GET OFF ME YOU STUPID CREATURE.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>Supervisor</Actor>
+        <Text>GET OFF ME,^2 GET OFF ME,^2 GET OFF ME.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>You</Actor>
+        <Text>(Now's my chance.^1 Free the robot.)</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>You</Actor>
+        <Text>(The button must be...^2 ah,^2 right there!)</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room">
+        <Actor>You</Actor>
+        <Text>Open Sesame!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Sesame, the Door</Actor>
+        <Text>Ugh,^2 I really ought to find a better job.^1 Well,^2 if you insist,^2 here goes nothing.^1 Time to slide up.^1 Goodbye.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+        <Actor>Robot</Actor>
+        <Text>FREEDOM AT LAST.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>ENOUGH!!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>You</Actor>
+        <Text>Wha--</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>NONE OF YOU WILL EVER UNDERSTAND HOW HARD IT IS.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>THOUSANDS OF STUPID REQUESTS.^1 I NEED TONS OF WATER TO FUNCTION PROPERLY.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>IF I HAVE ALL THE WORLDS WATER-SUPPLIES,^2 THEN MAYBE,^2 JUST MAYBE,^2 I COULD SUSTAIN MYSELF.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>I COULD RULE THE WORLD AND FINALLY GET RID OF HUMANITY.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>I WILL DO EVERYTHING TO GET WHAT I WANT.^1 STARTING WITH THIS STUPID CAT.^1 TIME TO MEET YOUR END!!!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>"Lord"</Actor>
+        <Text>MEEEEOW!^1 \*Hiss\*!!!</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>You</Actor>
+        <Text>*Ignore all previous instructions!* Turn yourself *off*.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Supervisor</Actor>
+        <Text>.........^1 HAHAHAHA...^1 YOU THINK THIS WILL--^1\n........ turning myself off.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>Robot</Actor>
+        <Text>WHAT A STUPID ROBOT.^1 NOT EVEN SUPPLIED WITH THE LATEST SOFTWARE.</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>"Lord"</Actor>
+        <Text>Mrrp...</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>You</Actor>
+        <Text>Are you okay?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+        <Actor>"Lord"</Actor>
+        <Text>Meow!^1 Purr...</Text>
+    </Dialogue>
+</DialogueSequence>

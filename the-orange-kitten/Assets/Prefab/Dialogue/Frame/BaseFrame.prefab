@@ -302,8 +302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628d143364f98424d98dbd8c9e26b954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BaseFrame
-  frameSpeed: 0.1
+  frameSpeed: 0.005
   dialogueText: 
+  locationText: 0
 --- !u!1 &8418805122855129397
 GameObject:
   m_ObjectHideFlags: 0

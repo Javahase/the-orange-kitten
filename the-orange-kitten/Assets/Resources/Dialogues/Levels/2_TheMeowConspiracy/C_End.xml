@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(And thus,^2 peace was restored to the three of us.)</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(The Supervisor has been re-programmed to be the robot's assistant.)</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(Meanwhile,^2 I continue my deductions with the robot and translate recipes.)</Text>
+    </Dialogue>
+    <Dialogue bg="">
+        <Actor>You</Actor>
+        <Text>(And the cat...)</Text>
+    </Dialogue>
+</DialogueSequence>
