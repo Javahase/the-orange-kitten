@@ -17,7 +17,6 @@
     </Dialogue>
     <Dialogue bg="Img/Scenes/throne_room">
         <Actor>???</Actor>
-        <Text>Yes^2, there shall be more. But remember...^1 .^2.^2.^2
-              Remember^2 what^2 I'm^2 doing^2 a^2l^2l^2 o^2f^2 t^2h^2i^2s^2 f^1o^1r^1.</Text>
+        <Text>Yes^2, there shall be more. But remember...^1 .^2.^2.^2\nRemember^2 what^2 I'm^2 doing^2 a^2l^2l^2 o^2f^2 t^2h^2i^2s^2 f^1o^1r^1.</Text>
     </Dialogue>
 </DialogueSequence>

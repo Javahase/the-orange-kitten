@@ -26,7 +26,7 @@
         <Actor>You</Actor>
         <Text>Open Sesame!</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/sesame_the_door">
         <Actor>Sesame, the Door</Actor>
         <Text>Ugh,^2 I really ought to find a better job.^1 Well,^2 if you insist,^2 here goes nothing.^1 Time to slide up.^1 Goodbye.</Text>
     </Dialogue>
