@@ -44,7 +44,7 @@
     </Dialogue>
     <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_angry">
         <Actor>Supervisor</Actor>
-        <Text>What?^1 You're on his side?^1 You were never cut out for that restaurant anyway.</Text>
+        <Text>What?^1 You're on their side?^1 You were never cut out for that restaurant anyway.</Text>
     </Dialogue>
     <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_angry">
         <Actor>Supervisor</Actor>

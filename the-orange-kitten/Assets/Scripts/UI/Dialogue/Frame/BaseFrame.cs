@@ -17,6 +17,7 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
     private TMP_Text _dialogueText;
     private Image _imgContinue;
     private readonly char[] _controlChars = { '\\', '*', '(', ')' };
+    private readonly char[] _defaultEscapableChars = { 'n', 't' };
 
     public virtual void OnInitialize()
     {
@@ -84,9 +85,18 @@ public class BaseFrame : MonoBehaviour, IPointerClickHandler, IInitializable
                     if (_controlChars.Contains(sequence[i + 1]))
                     {
                         i++;
+                        tokens.Add((sequence[i].ToString(), true));
+                    }
+                    else if (_defaultEscapableChars.Contains(sequence[i + 1])) // Handle Escape-Chars by not rendering \ first. \\ still allows escaping of those.
+                    {
+                        i++;
+                        tokens.Add(($"\\{sequence[i].ToString()}", false));
+                    }
+                    else
+                    {
+                        tokens.Add((sequence[i].ToString(), true));
                     }
 
-                    tokens.Add((sequence[i].ToString(), true));
                     break;
                 // Toggles the orange highlighting. Will not break.
                 case '*':

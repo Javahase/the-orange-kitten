@@ -2,20 +2,20 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <LocationFrame bg="Img/Scenes/throne_room" name="???"/>
-    <Dialogue bg="Img/Scenes/throne_room">
+    <LocationFrame bg="Img/Scenes/throne_room_dark" name="???"/>
+    <Dialogue bg="Img/Scenes/throne_room_dark" portrait="Img/Chars/cat_blackened">
         <Actor>"Lord"</Actor>
         <Text>Meow...^1 meeeeeeeow!!!^1 mrrrrp?</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room">
+    <Dialogue bg="Img/Scenes/throne_room_dark" portrait="Img/Chars/cat_blackened">
         <Actor>???</Actor>
         <Text>It was a grand success,^2 my lord.^1 We got several documents from our *last heist*.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room">
+    <Dialogue bg="Img/Scenes/throne_room_dark" portrait="Img/Chars/cat_blackened">
         <Actor>"Lord"</Actor>
         <Text>Mlem.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room">
+    <Dialogue bg="Img/Scenes/throne_room_dark" portrait="Img/Chars/cat_blackened">
         <Actor>???</Actor>
         <Text>Yes^2, there shall be more. But remember...^1 .^2.^2.^2\nRemember^2 what^2 I'm^2 doing^2 a^2l^2l^2 o^2f^2 t^2h^2i^2s^2 f^1o^1r^1.</Text>
     </Dialogue>
