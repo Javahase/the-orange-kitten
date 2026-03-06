@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>This statement seems odd!</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>Supervisor</Actor>
         <Text>...you are on the right track.^1 Try to remember a certain property that might be at odds with what the robot said.</Text>
     </Dialogue>

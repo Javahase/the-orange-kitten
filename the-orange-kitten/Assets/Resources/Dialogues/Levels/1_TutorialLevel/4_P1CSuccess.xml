@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>The problem becomes apparent.^1 Cold meow meows,^2 as the name already states,^2 are *cold*.^1 So why would the robot use the *warm box*?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>Supervisor</Actor>
         <Text>You're right!^1 I shall make a note.</Text>
     </Dialogue>

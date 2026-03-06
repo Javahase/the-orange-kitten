@@ -2,7 +2,7 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/blackscreen">
         <Actor>Robot</Actor>
         <Text>BZZZZT.^1 READY FOR TRANSMISSION.</Text>
     </Dialogue>

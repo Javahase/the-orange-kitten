@@ -2,7 +2,7 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="Img/Scenes/throne_room">
+    <Dialogue bg="Img/Scenes/blackscreen">
         <Actor>"Lord"</Actor>
         <Text>\*Hiss\*!!!</Text>
     </Dialogue>

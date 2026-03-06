@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>It all makes sense when you consider it from this angle.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>Why would the robot discard the small balls?^1 It makes no sense.^1 It's a dish-ruining mistake.</Text>
     </Dialogue>

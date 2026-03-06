@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor">
         <Actor>You</Actor>
         <Text>Darn it,^2 is this truly it?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor">
         <Actor>Supervisor</Actor>
         <Text>...that's regrettable,^2 but we'll be fine.^1 Just...^1 come back tomorrow,^2 okay?^1 For the day,^2 you're done.</Text>
     </Dialogue>

@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>This statement seems odd!</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>...^2actually,^2 it seems quite fine. Why did I say that again?</Text>
     </Dialogue>

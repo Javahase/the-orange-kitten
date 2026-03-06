@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>Those should be all statements.</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>Supervisor</Actor>
         <Text>Well done,^2 I knew that we can count on you.</Text>
     </Dialogue>

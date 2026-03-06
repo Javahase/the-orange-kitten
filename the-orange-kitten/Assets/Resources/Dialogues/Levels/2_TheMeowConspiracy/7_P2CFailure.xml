@@ -2,11 +2,11 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>This is bad...^1 Now what?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>Robot</Actor>
         <Text>FAILURE IS NOT AN OPTION.^1 CONTINUE.^1 I PLAYED VIDEOS OF MICE PLAYING INTO THE SECURITY SYSTEM.^1 IT WILL BE DISTRACTED.</Text>
     </Dialogue>

@@ -2,15 +2,15 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>This must be the location!</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>Robot</Actor>
         <Text>YOU ALREADY HAVE ANSWER.^1 WHY DO YOU NOT SAY IT?^1 ARE YOU SCARED?^1 IS *HE* THERE?</Text>
     </Dialogue>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/overlay_dark">
         <Actor>You</Actor>
         <Text>Wha-^2 no!^1 Of course I'll say it.^1 Just...^1 give me a minute.</Text>
     </Dialogue>
