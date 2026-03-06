@@ -11,7 +11,7 @@
         <Actor>You</Actor>
         <Text>Doesn't really feel comfortable if you ask me.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor">
+    <Dialogue bg="Img/Scenes/dml_office" portrait="Img/Chars/supervisor_angry">
         <Actor>Supervisor</Actor>
         <Text>Well,^2 our budget is ^2*limited*,^2 okay?!?^1 Ahem,^2 regardless,^2 we have made a deal recently with *The Orange Kitten*.</Text>
     </Dialogue>

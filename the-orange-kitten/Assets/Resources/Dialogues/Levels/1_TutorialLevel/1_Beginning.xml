@@ -3,15 +3,15 @@
  
 <DialogueSequence>
     <LocationFrame bg="Img/Scenes/throne_room" name="???"/>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_normal">
         <Actor>???</Actor>
         <Text>My lord,^2 they have arrived.^1 Shall we begin the procedure?</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_normal">
         <Actor>"Lord"</Actor>
         <Text>Meow Meow.^1 MEEEEEEEEEEOW!^1 Meow meow...^1 mrrrp.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_normal">
         <Actor>???</Actor>
         <Text>Very well,^2 may it begin.^1 This shall finally bring glory to *The Orange Kitten*.</Text>
     </Dialogue>
