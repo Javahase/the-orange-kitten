@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
+ 
+<DialogueSequence>
+    <Dialogue bg="Img/Scenes/overlay_dark">
+        <Actor>You</Actor>
+        <Text>Darn it,^2 is this truly it?</Text>
+    </Dialogue>
+    <Dialogue bg="Img/Scenes/overlay_dark">
+        <Actor>You</Actor>
+        <Text>...^2 wait, why did it go away?^1 And why do I hear...^2 squeaking noises?</Text>
+    </Dialogue>
+</DialogueSequence>
