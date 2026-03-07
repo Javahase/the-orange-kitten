@@ -155,5 +155,7 @@ namespace UI.RecipeSequence
         /// </summary>
         /// <returns>The current statement.</returns>
         public RecipeStatement GetCurrentStatement() => CurrentSequence;
+
+        public List<RecipeStatement> GetAllStatements() => SequencePoints;
     }
 }

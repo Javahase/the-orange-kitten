@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using TMPro;
 using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;
@@ -8,20 +9,18 @@ namespace UI.RecipeSequence.ActionBar
 {
     public class OddActionBar : DefaultActionBar
     {
-        [Header("Odd Sequence Actions")]
-        [SerializeField] private Button endExaminationButton;
+        [Header("Odd Sequence Actions")] [SerializeField]
+        private Button endExaminationButton;
+
         [SerializeField] private Button markAsOddButton;
         private OddSequenceHandler _oddHandler;
-        
+
         protected override void Start()
         {
             base.Start();
             _oddHandler = coreSequence.GetComponent<OddSequenceHandler>();
             _oddHandler.StatementMarkChangedEvent += HandleMarkedChange;
-            coreSequence.StepChangeEvent += (ev) =>
-            {
-                HandleMarkedChange(ev.Current, ev.Current.markingState);
-            };
+            coreSequence.StepChangeEvent += (ev) => { HandleMarkedChange(ev.Current, ev.Current.markingState); };
             markAsOddButton.onClick.AddListener(MarkAsOdd);
             endExaminationButton.onClick.AddListener(coreSequence.OnSequenceWon);
         }
@@ -38,6 +37,10 @@ namespace UI.RecipeSequence.ActionBar
                         RecipeStatement.MarkingState.Marked => "Unmark Statement",
                         _ => throw new ArgumentException("Invalid enum value")
                     };
+
+                endExaminationButton.interactable = (marked == RecipeStatement.MarkingState.Marked) || coreSequence
+                    .GetAllStatements().Any(statement =>
+                        statement.markingState == RecipeStatement.MarkingState.Marked);
             }
         }
 
