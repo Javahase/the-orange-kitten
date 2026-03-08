@@ -40,7 +40,7 @@ public class InsightsInventory : MonoBehaviour
                             .ToList();
         _insightService.OnInsightGained += (insight) =>
         {
-            Debug.Log("New Insight Gained: " + insight.info);
+            DataLog.GetInstance().Log(DataLog.DataEvent.InsightGenerated, "New Insight: " + insight.info);
         };
     }
     

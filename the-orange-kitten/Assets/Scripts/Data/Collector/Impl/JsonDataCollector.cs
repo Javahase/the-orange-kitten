@@ -4,26 +4,31 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Collects player metrics and saves them in JSON-Format.
+///
+/// Location of the JSON File: <see cref="Application.persistentDataPath"/>/<c>&lt;ParticipantID&gt;.json</c>
+/// </summary>
 public class JsonDataCollector : DataCollector
 {
     private PlayerData _playerData;
     public override void Init(string participantId)
     {
         ParticipantId = participantId;
-        if (_playerData == null)
+        if (_playerData != null) return;
+
+        _playerData = new PlayerData()
         {
-            _playerData = new PlayerData()
-            {
-                ParticipantId = participantId,
-                LevelData = new List<PuzzleData>()
-            };
-            var path = Path.GetFullPath(Path.Combine(Application.persistentDataPath, $"{participantId}.json"));
-            if (!File.Exists(path))
-            {
-                File.Create(path).Close();
-            }
-            Save();
+            ParticipantId = participantId,
+            LevelData = new List<PuzzleData>()
+        };
+        var path = Path.GetFullPath(Path.Combine(Application.persistentDataPath, $"{participantId}.json"));
+        if (!File.Exists(path))
+        {
+            File.Create(path).Close();
         }
+        Save();
+        
     }
 
     public override void StartLevel(PuzzleData data)

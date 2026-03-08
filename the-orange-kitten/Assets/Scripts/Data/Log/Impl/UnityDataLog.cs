@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class UnityDataLog : DataLog
 {
@@ -11,13 +12,10 @@ public class UnityDataLog : DataLog
             _currentPuzzle = payload;
         }
 
-        if (_currentPuzzle != null)
-        {
-            Debug.Log($"[{ev}/{_currentPuzzle}]: {payload}");
-        }
-        else
-        {
-            Debug.Log($"[{ev}]: {payload}");
-        }
+        var currentTime = DateTime.Now.ToString("HH:mm:ss");
+
+        Debug.Log(_currentPuzzle != null
+            ? $"[{currentTime}] [{ev}/{_currentPuzzle}]: {payload}"
+            : $"[{currentTime}] [{ev}]: {payload}");
     }
 }
