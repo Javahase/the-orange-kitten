@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Unity.VisualScripting;
 
 public struct WebEither<L, R>
@@ -16,7 +17,24 @@ public struct WebEither<L, R>
 
     public bool IsRight() => !IsLeft();
 
+    public bool IsRight(out R right)
+    {
+        if (!IsRight())
+        {
+            right = default;
+            return false;
+        }
+        
+        right = _value;
+        return true;
+    }
+
     public L GetLeft() => _error;
 
     public R GetRight() => _value;
+    
+    public WebEither<L, TV> Map<TV>(Func<R,TV> f)
+    {
+        return IsLeft() ? WebEither<L,TV>.Left(_error) : WebEither<L,TV>.Right(f(_value));
+    }
 }

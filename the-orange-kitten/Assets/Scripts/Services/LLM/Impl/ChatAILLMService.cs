@@ -54,7 +54,7 @@ public class ChatAILLMService : LLMService
 
     private void Start()
     {
-        var file = Resources.Load<TextAsset>("Secrets/api_key");
+        var file = Resources.Load<TextAsset>(ResourceConstants.ApiKey);
         _apiKey = file.text;
         _rulePrompt = rulePrompt.text;
     }

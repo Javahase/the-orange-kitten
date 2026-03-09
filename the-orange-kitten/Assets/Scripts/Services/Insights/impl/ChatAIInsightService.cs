@@ -15,7 +15,7 @@ public class ChatAIInsightService : InsightService
     protected override void Start()
     {
         base.Start();
-        _apiKey = Resources.Load<TextAsset>("Secrets/api_key").text;
+        _apiKey = Resources.Load<TextAsset>(ResourceConstants.ApiKey).text;
         _insightRulesPrompt = insightRulesPrompt.text;
     }
 
@@ -27,22 +27,22 @@ public class ChatAIInsightService : InsightService
             ChatAIMessage.CreateSystemPrompt(_insightPrompt),
             ChatAIMessage.CreateSystemPrompt($"The user asked a question about: {context.message}"),
             ChatAIMessage.CreateUserMessage($"I asked: {question}"),
-            ChatAIMessage.CreateUserMessage($"What can I learn from the statement the robot made in response? The statement is: {statement}"),
+            ChatAIMessage.CreateUserMessage(
+                $"What can I learn from the statement the robot made in response? The statement is: {statement}"),
         });
         yield return message;
 
         if (message.Current is not WebEither<string, ChatAIMessage> response) yield break;
-        if (response.IsLeft())
+        var content = response
+            .Map((m) => m.content)
+            .Map(JObject.Parse);
+
+        if (!content.IsRight(out var json))
         {
             Debug.Log(response.GetLeft());
             yield break;
         }
-
-        if (response.GetRight().content == null) yield break;
-        Debug.Log(response.GetRight().content);
-        var json = JObject.Parse(response.GetRight().content);
-        if (!json.ContainsKey("insight") || !json.ContainsKey("important")) yield break;
-
+        
         var insight = json.GetValue("insight")?.ToObject<string>();
         var important = json.GetValue("important")?.ToObject<bool>();
         if (insight == null || important == null) yield break;
@@ -55,8 +55,9 @@ public class ChatAIInsightService : InsightService
     {
         var stmts = LlmService.GetStatements();
         var stmtList = stmts.Select((s) => $"- {s.message}").Aggregate((a, b) => a + "\n" + b);
-        var contradictoryStmt = stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect)?.message;
-        
+        var contradictoryStmt =
+            stmts.Find(stmt => stmt.statementType == RecipeStatement.StatementType.Incorrect)?.message;
+
         _insightPrompt = string.Format(topicPrompt, stmtList, contradictoryStmt);
     }
 }
