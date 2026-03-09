@@ -95,7 +95,7 @@ public class ChatAILLMService : LLMService
         var message = ChatAIUtil.SendMessage(
             _apiKey,
             model,
-            messages);
+            messages, 2 * 60);
         yield return message;
 
         if (message.Current is WebEither<string, ChatAIMessage> either)

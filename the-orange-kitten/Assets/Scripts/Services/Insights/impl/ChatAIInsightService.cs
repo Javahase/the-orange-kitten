@@ -29,7 +29,7 @@ public class ChatAIInsightService : InsightService
             ChatAIMessage.CreateUserMessage($"I asked: {question}"),
             ChatAIMessage.CreateUserMessage(
                 $"What can I learn from the statement the robot made in response? The statement is: {statement}"),
-        });
+        }, 2 * 60);
         yield return message;
 
         if (message.Current is not WebEither<string, ChatAIMessage> response) yield break;

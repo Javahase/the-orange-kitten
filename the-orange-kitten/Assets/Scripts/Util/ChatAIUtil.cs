@@ -20,7 +20,8 @@ public class ChatAIUtil
     public static IEnumerator SendMessage(
         string apiKey,
         ChatAIModel.Model model,
-        List<ChatAIMessage> chatHistory)
+        List<ChatAIMessage> chatHistory,
+        int timeout = 0)
     {
         var messages = new JArray(chatHistory.Select(it => it.ToJObject()));
         var json = new JObject()
@@ -31,6 +32,7 @@ public class ChatAIUtil
 
         using var req = UnityWebRequest.Post(CompletionsEndpoint, json.ToString(), "application/json");
         req.SetRequestHeader("Authorization", "Bearer " + apiKey);
+        req.timeout = timeout;
         yield return req.SendWebRequest();
 
         if (req.result == UnityWebRequest.Result.Success)
