@@ -1,4 +1,7 @@
-﻿public class FileDataLog
+﻿namespace Data.Log.Impl
 {
+    public class FileDataLog
+    {
     
+    }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using Services.Insights;
+using Services.LLM;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

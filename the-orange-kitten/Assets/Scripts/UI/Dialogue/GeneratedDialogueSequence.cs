@@ -1,3 +1,5 @@
+using Models.Dialogue;
+using Serialization.Dialogue;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;

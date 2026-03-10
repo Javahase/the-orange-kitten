@@ -1,12 +1,28 @@
 ﻿using Newtonsoft.Json;
 
-[JsonObject(MemberSerialization.OptIn)]
-public class ChatData
+namespace Models.PlayerData.Conversation
 {
-    [JsonProperty(propertyName: "sender")] public string Sender;
+    /// <summary>
+    /// Represents a chat message. Can be serialized into JSON.
+    /// </summary>
+    [JsonObject(MemberSerialization.OptIn)]
+    public class ChatData
+    {
+        /// <summary>
+        /// Who sent the message.
+        /// </summary>
+        [JsonProperty(propertyName: "sender")] public string Sender;
 
-    [JsonProperty(propertyName: "message")]
-    public string Message;
+        /// <summary>
+        /// The content of the message.
+        /// </summary>
+        [JsonProperty(propertyName: "message")]
+        public string Message;
 
-    public string ToJsonString() => JsonConvert.SerializeObject(this);
+        /// <summary>
+        /// Converts the message into a JSON-String.
+        /// </summary>
+        /// <returns>A JSON-String.</returns>
+        public string ToJsonString() => JsonConvert.SerializeObject(this);
+    }
 }

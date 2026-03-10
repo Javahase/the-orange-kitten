@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Models.RecipeSequence;
 using TMPro;
 using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;

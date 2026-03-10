@@ -1,46 +1,48 @@
-
 using System;
 using Newtonsoft.Json;
 
-/// <summary>
-/// A <c>RecipeInsight</c> models a potential puzzle piece
-/// for solving a recipe sequence.
-/// </summary>
-[Serializable] 
-[JsonObject(MemberSerialization.OptIn)]
-public struct RecipeInsight
+namespace Models.RecipeSequence
 {
+    /// <summary>
+    /// A <c>RecipeInsight</c> models a potential puzzle piece
+    /// for solving a recipe sequence.
+    /// </summary>
+    [Serializable] 
+    [JsonObject(MemberSerialization.OptIn)]
+    public struct RecipeInsight
+    {
     
-    /// <summary>
-    /// Empty placeholder insight that implies the lack of an insight.
-    /// </summary>
-    public static readonly RecipeInsight EMPTY = new("", -1);
+        /// <summary>
+        /// Empty placeholder insight that implies the lack of an insight.
+        /// </summary>
+        public static readonly RecipeInsight EMPTY = new("", -1);
 
-    /// <summary>
-    /// The information that can be displayed by the insight.
-    /// </summary>
-    [JsonProperty]
-    public string info;
+        /// <summary>
+        /// The information that can be displayed by the insight.
+        /// </summary>
+        [JsonProperty]
+        public string info;
 
-    /// <summary>
-    /// Which sequence this insight might be a solution to. (-1 for no solution).
-    /// </summary>
-    [JsonProperty]
-    public int correctSequence;
+        /// <summary>
+        /// Which sequence this insight might be a solution to. (-1 for no solution).
+        /// </summary>
+        [JsonProperty]
+        public int correctSequence;
 
-    public RecipeInsight(string info, int correctSequence)
-    {
-        this.info = info;
-        this.correctSequence = correctSequence;
-    }
-
-    public override bool Equals(object obj)
-    {
-        if (obj is RecipeInsight insight)
+        public RecipeInsight(string info, int correctSequence)
         {
-            return info == insight.info && correctSequence == insight.correctSequence;
+            this.info = info;
+            this.correctSequence = correctSequence;
         }
 
-        return false;
+        public override bool Equals(object obj)
+        {
+            if (obj is RecipeInsight insight)
+            {
+                return info == insight.info && correctSequence == insight.correctSequence;
+            }
+
+            return false;
+        }
     }
 }

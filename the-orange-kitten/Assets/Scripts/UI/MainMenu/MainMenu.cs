@@ -1,4 +1,6 @@
 using System.Collections;
+using Data.Collector;
+using Sequence.Types.Transitions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;

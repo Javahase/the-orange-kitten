@@ -1,30 +1,35 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using Models.RecipeSequence;
 
-public class MockLLMService : LLMService
+namespace Services.LLM.Impl
 {
-    List<RecipeStatement> _statements = new();
-
-    public override void InitStatements(List<RecipeStatement> statements)
+    /// <summary>
+    /// A fake LLM service.
+    /// </summary>
+    public class MockLLMService : LLMService
     {
-        _statements = statements;
-    }
+        List<RecipeStatement> _statements = new();
 
-    public override void ClearStatements()
-    {
-        _statements.Clear();
-    }
+        public override void InitStatements(List<RecipeStatement> statements)
+        {
+            _statements = statements;
+        }
 
-    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request)
-    {
-        yield return request;
-    }
+        public override void ClearStatements()
+        {
+            _statements.Clear();
+        }
 
-    public override void SetTopicPrompt(string prompt)
-    {
-    }
+        public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request)
+        {
+            yield return request;
+        }
 
-    public override List<RecipeStatement> GetStatements() => _statements;
+        public override void SetTopicPrompt(string prompt)
+        {
+        }
+
+        public override List<RecipeStatement> GetStatements() => _statements;
+    }
 }

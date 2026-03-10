@@ -1,3 +1,5 @@
+using Models.RecipeSequence;
+using Sequence;
 using UI.RecipeSequence;
 using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;

@@ -1,49 +1,80 @@
 using System;
 using System.Collections;
-using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FadeTransition : TransitionSequence
+namespace Sequence.Types.Transitions
 {
-    [SerializeField] private AnimationCurve fadeOutCurve;
-    [SerializeField] private float fadedOutDuration;
-    [SerializeField] private AnimationCurve fadeInCurve;
-    private Image _blackScreen;
-
-    public override void OnInitialize()
+    /// <summary>
+    /// Transition sequence that fades in a blackscreen between two sequences.
+    /// </summary>
+    public class FadeTransition : TransitionSequence
     {
-        _blackScreen = transform.Find("BlackScreen").GetComponent<Image>();
-    }
+        /// <summary>
+        /// The curve used to fade out the blackscreen.
+        /// </summary>
+        [SerializeField] private AnimationCurve fadeOutCurve;
 
-    public override IEnumerator BeginTransition(IGameSequence previous, Action next)
-    {
-        gameObject.SetActive(true);
-        yield return FadeOut();
-        yield return new WaitForSeconds(fadedOutDuration);
-        previous?.OnDisabled();
-        next.Invoke();
-        yield return FadeIn();
-        gameObject.SetActive(false);
-    }
+        /// <summary>
+        /// The amount of time the blackscreen stays faded out after a fade-in.
+        /// </summary>
+        [SerializeField] private float fadedOutDuration;
 
-    private IEnumerator Fade(AnimationCurve curve)
-    {
-        var time = curve.GetMinTime();
-        while (time < curve.GetMaxTime())
+        /// <summary>
+        /// The curve used to fade in the blackscreen.
+        /// </summary>
+        [SerializeField] private AnimationCurve fadeInCurve;
+
+        /// <summary>
+        /// The blackscreen inner-component.
+        /// </summary>
+        private Image _blackScreen;
+
+        public override void OnInitialize()
         {
-            _blackScreen.color = _blackScreen.color.WithAlpha(curve.Evaluate(time));
-            time += Time.deltaTime;
-            yield return new WaitForSeconds(Time.deltaTime);
+            _blackScreen = transform.Find("BlackScreen").GetComponent<Image>();
         }
-    }
 
-    public IEnumerator FadeIn() => Fade(fadeInCurve);
-    public IEnumerator FadeOut() => Fade(fadeOutCurve);
+        public override IEnumerator BeginTransition(IGameSequence previous, Action next)
+        {
+            gameObject.SetActive(true);
+            yield return FadeOut();
+            yield return new WaitForSeconds(fadedOutDuration);
+            previous?.OnDisabled();
+            next.Invoke();
+            yield return FadeIn();
+            gameObject.SetActive(false);
+        }
 
-    public override void ResetSequence()
-    {
-        _blackScreen.color = _blackScreen.color.WithAlpha(fadeOutCurve.Evaluate(fadeOutCurve.GetMinTime()));
+        /// <summary>
+        /// General fade-function for the blackscreen.
+        /// </summary>
+        /// <param name="curve">The curve used.</param>
+        private IEnumerator Fade(AnimationCurve curve)
+        {
+            var time = curve.GetMinTime();
+            while (time < curve.GetMaxTime())
+            {
+                _blackScreen.color = _blackScreen.color.WithAlpha(curve.Evaluate(time));
+                time += Time.deltaTime;
+                yield return new WaitForSeconds(Time.deltaTime);
+            }
+        }
+
+        /// <summary>
+        /// Fades the blackscreen in.
+        /// </summary>
+        public IEnumerator FadeIn() => Fade(fadeInCurve);
+
+        /// <summary>
+        /// Fades the blackscreen out.
+        /// </summary>
+        public IEnumerator FadeOut() => Fade(fadeOutCurve);
+
+        public override void ResetSequence()
+        {
+            _blackScreen.color = _blackScreen.color.WithAlpha(fadeOutCurve.Evaluate(fadeOutCurve.GetMinTime()));
+        }
     }
 }

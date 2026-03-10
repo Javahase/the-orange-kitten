@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Models.RecipeSequence;
+using UnityEngine;
 using Util.Object;
 
 namespace UI.RecipeSequence.SequenceTypes

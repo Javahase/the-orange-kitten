@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Models.RecipeSequence;
 using UI.RecipeSequence;
 using UnityEngine;
 
