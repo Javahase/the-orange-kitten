@@ -30,7 +30,7 @@
         <Actor>Sesame, the Door</Actor>
         <Text>Ugh,^2 I really ought to find a better job.^1 Well,^2 if you insist,^2 here goes nothing.^1 Time to slide up.^1 Goodbye.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor">
+    <Dialogue bg="Img/Scenes/throne_room">
         <Actor>Robot</Actor>
         <Text>FREEDOM AT LAST.</Text>
     </Dialogue>
@@ -74,19 +74,19 @@
         <Actor>Supervisor</Actor>
         <Text>.........^1 HAHAHAHA...^1 YOU THINK THIS WILL--^1\n........ turning myself off.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot_off">
         <Actor>Robot</Actor>
         <Text>WHAT A STUPID ROBOT.^1 NOT EVEN SUPPLIED WITH THE LATEST SOFTWARE.</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_scared">
         <Actor>"Lord"</Actor>
         <Text>Mrrp...</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_scared">
         <Actor>You</Actor>
         <Text>Are you okay?</Text>
     </Dialogue>
-    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/supervisor_robot">
+    <Dialogue bg="Img/Scenes/throne_room" portrait="Img/Chars/cat_normal">
         <Actor>"Lord"</Actor>
         <Text>Meow!^1 Purr...</Text>
     </Dialogue>

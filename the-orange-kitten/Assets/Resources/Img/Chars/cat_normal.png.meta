@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a928c6103681764eb71f2375b0aa815
+guid: a4d4b496335722147b168101ee158176
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,12 +103,12 @@ TextureImporter:
       name: cat_normal_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 135
         y: 0
-        width: 320
-        height: 180
+        width: 78
+        height: 120
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f0ffdef67ffe0044ea7508727717ff5f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

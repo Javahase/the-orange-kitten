@@ -2,7 +2,7 @@
 <!DOCTYPE DialogueSequence SYSTEM "Dialogue.dtd">
  
 <DialogueSequence>
-    <Dialogue bg="">
+    <Dialogue bg="Img/Scenes/sleepy">
         <Actor>You</Actor>
         <Text>(Sleeping peacefully,^2 and sometimes maintaining the restaurant.^1 Business is booming and we're all happy.)</Text>
     </Dialogue>
