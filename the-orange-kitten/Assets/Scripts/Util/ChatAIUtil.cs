@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
-using UnityEngine;
 using UnityEngine.Networking;
 
 public class ChatAIUtil
@@ -35,19 +34,15 @@ public class ChatAIUtil
         req.timeout = timeout;
         yield return req.SendWebRequest();
 
-        if (req.result == UnityWebRequest.Result.Success)
-        {
-            var raw = req.downloadHandler.text;
-            var result = JObject.Parse(raw)?["choices"] as JArray;
-            var messageObj = result?.ElementAt(0) as JObject;
-            
-            var message = (messageObj?["message"] as JObject)?["content"]?.ToObject<string>();
-            
-            yield return WebEither<string, ChatAIMessage>.Either($"Malformed Json: {raw}", ChatAIMessage.CreateAssistantMessage(message));
-        }
-        else
-        {
-            yield return WebEither<string, ChatAIMessage>.Left($"Error: {req.error}\nMessage: {req.downloadHandler.text}");
-        }
+        yield return
+            req.result != UnityWebRequest.Result.Success
+                ? WebEither<string, ChatAIMessage>.Left($"Error: {req.error}\nMessage: {req.downloadHandler.text}")
+                : WebEither<string, string>.Right(req.downloadHandler.text)
+                    .MapNonNull(JObject.Parse, $"Couldn't parse text json: {req.downloadHandler.text}")
+                    .GetAsJArray("choices")
+                    .MapNonNull(choices => choices.First() as JObject, "Empty JArray!")
+                    .GetAsJObject("message")
+                    .GetAsString("content")
+                    .Map(ChatAIMessage.CreateAssistantMessage);
     }
 }

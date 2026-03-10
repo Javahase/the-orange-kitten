@@ -40,17 +40,16 @@ namespace UI.RecipeSequence.ChatHistory
 
             // In case instantiation is taking too long. Will prevent the UI from being messed up.
             yield return currentHistory.StartPushMessageRoutine("PLAYER", message);
-            var response= _llmService.SendMessageToConversation(
+            var response = _llmService.SendMessageToConversation(
                 coreSequence.GetCurrentStatement(),
-                message,
-                (_) => {}
+                message
             );
             yield return response;
             if (response.Current is not string llmMessage) yield break;
             Debug.Log(llmMessage.Where(c => c != ' ').ToList().Count);
             yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
             yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage);
-            
+
             coreSequence.healthContainer.Damage();
             coreSequence.SetControlsEnabled(true);
             coreSequence.eventLog.LogStatement(coreSequence.GetCurrentStatement(), "PLAYER", message);

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public class MockLLMService : LLMService
 {
@@ -16,10 +17,9 @@ public class MockLLMService : LLMService
         _statements.Clear();
     }
 
-    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request, Action<string> callback)
+    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request)
     {
         yield return request;
-        callback.Invoke(request);
     }
 
     public override void SetTopicPrompt(string prompt)

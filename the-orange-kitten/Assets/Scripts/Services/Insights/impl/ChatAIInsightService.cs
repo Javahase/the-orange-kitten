@@ -30,19 +30,21 @@ public class ChatAIInsightService : InsightService
             ChatAIMessage.CreateUserMessage(
                 $"What can I learn from the statement the robot made in response? The statement is: {statement}"),
         }, 2 * 60);
+
         yield return message;
 
         if (message.Current is not WebEither<string, ChatAIMessage> response) yield break;
+
         var content = response
-            .Map((m) => m.content)
-            .Map(JObject.Parse);
+            .MapNonNull((m) => m.content, "Content is null")
+            .MapNonNull(JObject.Parse, "Malformed JSON");
 
         if (!content.IsRight(out var json))
         {
             Debug.Log(response.GetLeft());
             yield break;
         }
-        
+
         var insight = json.GetValue("insight")?.ToObject<string>();
         var important = json.GetValue("important")?.ToObject<bool>();
         if (insight == null || important == null) yield break;

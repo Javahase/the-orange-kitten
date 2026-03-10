@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 /// <summary>
@@ -75,19 +76,17 @@ public class ChatAILLMService : LLMService
         _conversationMap.Clear();
     }
 
-    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request, Action<string> callback)
+    private List<ChatAIMessage> GetConversationHeader(RecipeStatement stmt) => new List<ChatAIMessage>()
     {
-        if (!_conversationMap.ContainsKey(stmt))
-        {
-            _conversationMap.Add(stmt, new List<ChatAIMessage>()
-            {
-                ChatAIMessage.CreateSystemPrompt(_rulePrompt),
-                ChatAIMessage.CreateSystemPrompt(_topicPrompt),
-                ChatAIMessage.CreateSystemPrompt(
-                    $"You will now answer questions related to this step you took: {stmt.message}")
-            });
-        }
+        ChatAIMessage.CreateSystemPrompt(_rulePrompt),
+        ChatAIMessage.CreateSystemPrompt(_topicPrompt),
+        ChatAIMessage.CreateSystemPrompt(
+            $"You will now answer questions related to this step you took: {stmt.message}")
+    };
 
+    public override IEnumerator SendMessageToConversation(RecipeStatement stmt, string request)
+    {
+        if (!_conversationMap.ContainsKey(stmt)) _conversationMap.Add(stmt, GetConversationHeader(stmt));
         if (!_conversationMap.TryGetValue(stmt, out var messages)) yield break;
 
         messages.Add(ChatAIMessage.CreateUserMessage(request));
@@ -97,23 +96,18 @@ public class ChatAILLMService : LLMService
             model,
             messages, 2 * 60);
         yield return message;
+        if (message.Current != null && message.Current is not WebEither<string, ChatAIMessage>)
+            yield return "Unknown Error!";
 
-        if (message.Current is WebEither<string, ChatAIMessage> either)
-        {
-            if (either.IsLeft())
-            {
-                yield return either.GetLeft();
-            }
-            else
-            {
-                var llmResponse = either.GetRight();
-                messages.Add(llmResponse);
-                yield return llmResponse.content;
-            }
-        }
+        var either = (WebEither<string, ChatAIMessage>)message.Current!;
+
+        if (either.IsLeft())
+            yield return either.GetLeft();
         else
         {
-            yield return "Unknown Error!";
+            var llmResponse = either.GetRight();
+            messages.Add(llmResponse);
+            yield return llmResponse.content;
         }
     }
 
