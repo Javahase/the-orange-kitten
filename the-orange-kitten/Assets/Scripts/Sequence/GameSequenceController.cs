@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UI.RecipeSequence;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// The Game Sequence controller is responsible for the core
@@ -72,7 +73,8 @@ public class GameSequenceController : SingletonObject<GameSequenceController>
     {
         if (_currentStep + 1 >= _sequences.Count)
         {
-            Debug.Log("Sorry, pal, last sequence");
+            ForceFadeOut();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             return false;
         }
 
