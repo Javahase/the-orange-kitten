@@ -44,29 +44,11 @@ namespace Sequence
                 .Cast<DialogueSequence>()
                 .ToList()
                 .ForEach(seq => seq.SequenceEndEvent += (_) => Next());
-        
+
             genericFader.OnInitialize();
             ForceFadeIn();
             CurrentSequence.OnEnabled();
         }
-    
-        /// <summary>
-        /// Retrieves the index of a <see cref="RecipeSequence"/>
-        /// in a list of only <see cref="RecipeSequence">RecipeSequences</see>
-        /// </summary>
-        /// <param name="sequence">The RecipeSequence to get the index from.</param>
-        /// <returns>The index of a RecipeSequence.</returns>
-        public int GetIndexOfPuzzle(RecipeSequence sequence)
-            => _sequences.Where(s => s is RecipeSequence)
-                .ToList()
-                .IndexOf(sequence);
-    
-        /// <summary>
-        /// Retrieves the index of the current puzzle.
-        /// <seealso cref="GetIndexOfPuzzle"/>
-        /// </summary>
-        /// <returns>The index of the current puzzle.</returns>
-        public int GetIndexOfCurrentPuzzle() => CurrentSequence is RecipeSequence s ? GetIndexOfPuzzle(s) : -1;
 
         /// <summary>
         /// Progresses to the next sequence.
@@ -163,12 +145,12 @@ namespace Sequence
         /// Creates a fade-in effect.
         /// </summary>
         public void ForceFadeIn() => StartCoroutine(ForceFadeInCoroutine());
-    
+
         /// <summary>
         /// Creates a fade-out effect.
         /// </summary>
         public void ForceFadeOut() => StartCoroutine(ForceFadeOutCoroutine());
-    
+
 
         /// <summary>
         /// Coroutine for the fade-in effect.
@@ -188,6 +170,5 @@ namespace Sequence
             genericFader.gameObject.SetActive(true);
             yield return genericFader.FadeOut();
         }
-
     }
 }

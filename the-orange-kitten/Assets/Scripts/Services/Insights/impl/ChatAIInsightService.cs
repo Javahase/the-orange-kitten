@@ -65,8 +65,7 @@ namespace Services.Insights.impl
             var important = json.GetValue("important")?.ToObject<bool>();
             if (insight == null || important == null) yield break;
 
-            AddInsight(new RecipeInsight(insight,
-                important.Value ? GameSequenceController.GetInstance().GetIndexOfCurrentPuzzle() : -1));
+            AddInsight(new RecipeInsight(insight, important.Value));
         }
 
         public override void SetTopicPrompt(string topicPrompt)

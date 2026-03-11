@@ -46,8 +46,7 @@ namespace UI.RecipeSequence.SequenceTypes
 
         public void PresentStatement(RecipeInsight insight)
         {
-            var currentSequence = _sequenceController.GetIndexOfPuzzle(_coreSequence);
-            if (insight.correctSequence == currentSequence
+            if (insight.important
                 && _coreSequence.GetCurrentStatement().statementType == RecipeStatement.StatementType.Incorrect)
             {
                 _coreSequence.OnSequenceWon();
@@ -56,7 +55,7 @@ namespace UI.RecipeSequence.SequenceTypes
             else
             {
                 OnMistake(
-                    _insightService.GetAllInsights().Any(it => it.correctSequence == currentSequence));
+                    _insightService.GetAllInsights().Any(it => it.important));
             }
         }
 

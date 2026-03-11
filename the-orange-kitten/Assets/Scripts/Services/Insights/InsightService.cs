@@ -58,18 +58,6 @@ namespace Services.Insights
             OnInsightGained?.Invoke(insight);
         }
 
-        /// <summary>
-        /// Removes insight that no longer grant a win to the current puzzle.
-        /// Red herrings (insights flagged with <c>-1</c>) remain, however.
-        /// </summary>
-        /// <param name="progression">Every insight below this value, not equal to <c>-1</c>, will be removed.</param>
-        public void RemoveUselessInsights(int progression)
-        {
-            _recipeInsights = (from insight in _recipeInsights
-                where insight.correctSequence >= progression || insight.correctSequence == -1
-                select insight).ToList();
-        }
-
         public void ClearAllInsights() => _recipeInsights.Clear();
     
         /// <summary>

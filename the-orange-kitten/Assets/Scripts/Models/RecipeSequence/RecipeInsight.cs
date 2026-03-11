@@ -15,7 +15,7 @@ namespace Models.RecipeSequence
         /// <summary>
         /// Empty placeholder insight that implies the lack of an insight.
         /// </summary>
-        public static readonly RecipeInsight EMPTY = new("", -1);
+        public static readonly RecipeInsight EMPTY = new("", false);
 
         /// <summary>
         /// The information that can be displayed by the insight.
@@ -24,22 +24,22 @@ namespace Models.RecipeSequence
         public string info;
 
         /// <summary>
-        /// Which sequence this insight might be a solution to. (-1 for no solution).
+        /// Whether this insight is a solution to this puzzle sequence.
         /// </summary>
         [JsonProperty]
-        public int correctSequence;
+        public bool important;
 
-        public RecipeInsight(string info, int correctSequence)
+        public RecipeInsight(string info, bool important)
         {
             this.info = info;
-            this.correctSequence = correctSequence;
+            this.important = important;
         }
 
         public override bool Equals(object obj)
         {
             if (obj is RecipeInsight insight)
             {
-                return info == insight.info && correctSequence == insight.correctSequence;
+                return info == insight.info && important == insight.important;
             }
 
             return false;
