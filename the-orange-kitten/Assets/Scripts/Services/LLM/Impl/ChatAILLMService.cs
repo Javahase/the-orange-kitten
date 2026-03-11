@@ -78,7 +78,7 @@ namespace Services.LLM.Impl
             _conversationMap.Clear();
         }
 
-        private List<ChatAIMessage> GetConversationHeader(RecipeStatement stmt) => new List<ChatAIMessage>()
+        private List<ChatAIMessage> GetConversationHeader(RecipeStatement stmt) => new()
         {
             ChatAIMessage.CreateSystemPrompt(_rulePrompt),
             ChatAIMessage.CreateSystemPrompt(_topicPrompt),
