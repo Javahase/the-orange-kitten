@@ -3,81 +3,100 @@ using System.Collections;
 using Newtonsoft.Json.Linq;
 using Unity.VisualScripting;
 
-public struct WebEither<L, R>
+public abstract class WebEither<TErr, TVal>
 {
-    private L _error;
-    private R _value;
+    public bool IsLeft() => this is Left<TErr, TVal>;
+    public bool IsRight() => this is Right<TErr, TVal>;
 
-    public static WebEither<L, R> Left(L error) => new() { _error = error };
-
-    public static WebEither<L, R> Right(R value) => new() { _value = value };
-
-    public static WebEither<L, R> Either(L error, R value) => value == null ? Left(error) : Right(value);
-
-    public bool IsLeft() => _value == null;
-
-    public bool IsRight() => !IsLeft();
-
-    public bool IsRight(out R right)
+    public bool IsLeft(out TErr error)
     {
-        if (!IsRight())
-        {
-            right = default;
-            return false;
-        }
-
-        right = _value;
-        return true;
+        error = GetLeft();
+        return IsLeft();
     }
 
-    public L GetLeft() => _error;
+    public bool IsRight(out TVal right)
+    {
+        right = GetRight();
+        return IsRight();
+    }
 
-    public R GetRight() => _value;
 
-    public WebEither<L, TV> Map<TV>(Func<R, TV> f) =>
-        IsLeft() ? WebEither<L, TV>.Left(_error) : WebEither<L, TV>.Right(f(_value));
+    public TErr GetLeft(TErr fallback = default) => IsLeft() ? ((Left<TErr, TVal>)this).Error : fallback;
+    public TVal GetRight(TVal fallback = default) => IsRight() ? ((Right<TErr, TVal>)this).Value : fallback;
 
-    public WebEither<L, TV> MapNonNull<TV>(Func<R, TV> f, L error) => Map(f).RequireNonNull(error);
+    public static WebEither<TErr, TVal> Either(TErr error, TVal value) =>
+        value == null ? new Left<TErr, TVal>(error) : new Right<TErr, TVal>(value);
 
-    public WebEither<TL, R> MapError<TL>(Func<L, TL> f) =>
-        IsLeft() ? WebEither<TL, R>.Left(f(_error)) : WebEither<TL, R>.Right(_value);
+    public WebEither<TErr, TNewVal> Map<TNewVal>(Func<TVal, TNewVal> f) => this switch
+    {
+        Left<TErr, TVal> l => new Left<TErr, TNewVal>(l.Error),
+        Right<TErr, TVal> r => new Right<TErr, TNewVal>(f(r.Value)),
+        _ => null
+    };
 
-    public WebEither<L, TR> AndThen<TR>(Func<R, WebEither<L, TR>> bind) =>
-        IsLeft() ? WebEither<L, TR>.Left(_error) : bind(_value);
+    public WebEither<TErr, TNewVal> MapNonNull<TNewVal>(Func<TVal, TNewVal> f, TErr error) =>
+        Map(f).RequireNonNull(error);
 
-    public WebEither<L, R> Validate(Func<R, bool> validate, L error) =>
-        (IsLeft() || validate(_value)) ? this : Left(IsLeft() ? _error : error);
+    public WebEither<TNewErr, TVal> MapError<TNewErr>(Func<TErr, TNewErr> f) => this switch
+    {
+        Left<TErr, TVal> l => new Left<TNewErr, TVal>(f(l.Error)),
+        Right<TErr, TVal> r => new Right<TNewErr, TVal>(r.Value),
+        _ => null
+    };
 
-    public WebEither<L, R> RequireNonNull(L error) => _value == null ? Left(error) : this;
+    public WebEither<TErr, TNewVal> AndThen<TNewVal>(Func<TVal, WebEither<TErr, TNewVal>> bind) => this switch
+    {
+        Left<TErr, TVal> l => new Left<TErr, TNewVal>(l.Error),
+        Right<TErr, TVal> r => bind(r.Value),
+        _ => null
+    };
 
-    public WebEither<L, TR> MapAs<TR>(L error) =>
-        Validate(r => r is TR, error).Map(r => r is TR arg ? arg : default); // Default case should never happen.
+    public WebEither<TErr, TVal> Validate(Func<TVal, bool> f, TErr error) => this switch
+    {
+        Left<TErr, TVal> _ => this,
+        Right<TErr, TVal> r => f(r.Value) ? this : new Left<TErr, TVal>(error),
+        _ => null
+    };
+
+    public WebEither<TErr, TVal> RequireNonNull(TErr error) => Validate((r) => r != null, error);
+
+    public WebEither<TErr, TCast> MapAs<TCast>(TErr error) =>
+        Validate((r) => r is TCast, error)
+            .Map(r => r is TCast arg ? arg : default);
+}
+
+public class Left<TErr, TVal> : WebEither<TErr, TVal>
+{
+    public TErr Error;
+
+    public Left(TErr error) => Error = error;
+}
+
+public class Right<TErr, TVal> : WebEither<TErr, TVal>
+{
+    public TVal Value;
+    public Right(TVal value) => Value = value;
 }
 
 public static class WebUtil
 {
-    public static WebEither<string, TR> ContainsKey<TR>(this WebEither<string, TR> either, string key)
-        where TR : JObject
+    public static WebEither<string, TVal> ContainsKey<TVal>(this WebEither<string, TVal> either, string key)
+        where TVal : JObject
         => either.Validate((o) => o.ContainsKey(key), $"Malformed JSON: \"{key}\"-Field not found.");
 
-    public static WebEither<string, TP> GetJToken<TR, TP>(this WebEither<string, TR> either, string key)
-        where TR : JObject
-        where TP : JToken
-        => either.ContainsKey(key).Map(obj => obj[key]).MapAs<TP>($"Not a {typeof(TP).Name}: \"{key}\"");
+    public static WebEither<string, TJToken> GetJToken<TJToken>(this WebEither<string, JObject> either, string key)
+        where TJToken : JToken
+        => either.ContainsKey(key).Map(obj => obj[key]).MapAs<TJToken>($"Not a {typeof(TJToken).Name}: \"{key}\"");
 
-    public static WebEither<string, JObject> GetAsJObject<TR>(this WebEither<string, TR> either, string key)
-        where TR : JObject
-        => either.GetJToken<TR, JObject>(key);
+    public static WebEither<string, JObject> GetAsJObject(this WebEither<string, JObject> either, string key)
+        => either.GetJToken<JObject>(key);
 
-    public static WebEither<string, JArray> GetAsJArray<TR>(this WebEither<string, TR> either, string key)
-        where TR : JObject
-        => either.GetJToken<TR, JArray>(key);
+    public static WebEither<string, JArray> GetAsJArray(this WebEither<string, JObject> either, string key)
+        => either.GetJToken<JArray>(key);
 
-    public static WebEither<string, TO> GetObject<TR, TO>(this WebEither<string, TR> either, string key)
-        where TR : JObject
-        => either.ContainsKey(key).MapNonNull(obj => obj[key].ToObject<TO>(), $"Not a {typeof(TO).Name}: \"{key}\"");
+    public static WebEither<string, TObj> GetObject<TObj>(this WebEither<string, JObject> either, string key)
+        => either.ContainsKey(key).MapNonNull(obj => obj[key].ToObject<TObj>(), $"Not a {typeof(TObj).Name}: \"{key}\"");
 
-    public static WebEither<string, string> GetAsString<TR>(this WebEither<string, TR> either, string key)
-        where TR : JObject
-        => either.GetObject<TR, string>(key);
+    public static WebEither<string, string> GetAsString(this WebEither<string, JObject> either, string key)
+        => either.GetObject<string>(key);
 }

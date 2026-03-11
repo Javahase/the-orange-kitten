@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Sequence.Types;
 using Sequence.Types.Transitions;
-using UI.RecipeSequence;
 using UnityEngine.SceneManagement;
 
 namespace Sequence

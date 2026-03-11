@@ -98,18 +98,20 @@ namespace Services.LLM.Impl
                 model,
                 messages, 2 * 60);
             yield return message;
-            if (message.Current != null && message.Current is not WebEither<string, ChatAIMessage>)
+
+            if (message.Current is not WebEither<string, ChatAIMessage>)
                 yield return "Unknown Error!";
 
             var either = (WebEither<string, ChatAIMessage>)message.Current!;
-
-            if (either.IsLeft())
-                yield return either.GetLeft();
-            else
+            switch (either)
             {
-                var llmResponse = either.GetRight();
-                messages.Add(llmResponse);
-                yield return llmResponse.content;
+                case Left<string, ChatAIMessage> l:
+                    yield return l.Error;
+                    break;
+                case Right<string, ChatAIMessage> r:
+                    messages.Add(r.Value);
+                    yield return r.Value.content;
+                    break;
             }
         }
 

@@ -37,8 +37,8 @@ public class ChatAIUtil
 
         yield return
             req.result != UnityWebRequest.Result.Success
-                ? WebEither<string, ChatAIMessage>.Left($"Error: {req.error}\nMessage: {req.downloadHandler.text}")
-                : WebEither<string, string>.Right(req.downloadHandler.text)
+                ? new Left<string, ChatAIMessage>($"Error: {req.error}\nMessage: {req.downloadHandler.text}")
+                : new Right<string, string>(req.downloadHandler.text)
                     .MapNonNull(JObject.Parse, $"Couldn't parse text json: {req.downloadHandler.text}")
                     .GetAsJArray("choices")
                     .MapNonNull(choices => choices.First() as JObject, "Empty JArray!")

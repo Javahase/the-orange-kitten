@@ -9,7 +9,7 @@ namespace Services.LLM.Impl
     /// </summary>
     public class MockLLMService : LLMService
     {
-        List<RecipeStatement> _statements = new();
+        private List<RecipeStatement> _statements = new();
 
         public override void InitStatements(List<RecipeStatement> statements)
         {
