@@ -108,7 +108,7 @@ TextureImporter:
         width: 320
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +121,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: throne_room_dark_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 28
+        width: 200
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2872bc6c814f0468ae01c86406c7f2
+      internalID: 1306567087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 64f4b7c2ab8124e4487d423671f8c98b
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +158,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       throne_room_dark_0: -7486884539892162017
+      throne_room_dark_1: 1306567087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

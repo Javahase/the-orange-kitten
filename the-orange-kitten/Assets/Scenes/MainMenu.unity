@@ -1175,8 +1175,11 @@ MonoBehaviour:
   btnProceed: {fileID: 1903319416}
   btnCredits: {fileID: 103404286}
   inputField: {fileID: 375792200}
-  backgroundComponent: {fileID: 0}
-  backgroundPool: []
+  backgroundComponent: {fileID: 168480001}
+  backgroundPool:
+  - {fileID: 1306567087, guid: a8069479b4bc9c446825d0515c497a7d, type: 3}
+  - {fileID: 2429406105312824742, guid: e8f5338c3d5a4804bbf3615b0a1cf6e2, type: 3}
+  - {fileID: -2546953938227591284, guid: 9d6154670054717419bcf866223bd642, type: 3}
 --- !u!1 &1186200534
 GameObject:
   m_ObjectHideFlags: 0
