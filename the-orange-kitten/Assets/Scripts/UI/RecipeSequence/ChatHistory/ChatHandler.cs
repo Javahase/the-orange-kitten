@@ -27,6 +27,7 @@ namespace UI.RecipeSequence.ChatHistory
                 inputField.interactable = controlsEnabled;
                 buttonSubmit.interactable = controlsEnabled;
             };
+            inputField.onSubmit.AddListener((_) => { PressStatement(); });
         }
 
         private void PressStatement()

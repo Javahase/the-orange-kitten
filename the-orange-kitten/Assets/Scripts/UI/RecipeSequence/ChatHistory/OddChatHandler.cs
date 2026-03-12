@@ -12,5 +12,6 @@ public class OddChatHandler : MonoBehaviour
     private void Start()
     {
         send.onClick.AddListener(() => oddSequence.SetCurrentStatementMarked(text.text));
+        text.onSubmit.AddListener(oddSequence.SetCurrentStatementMarked);
     }
 }
