@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Data.Collector;
 using Sequence.Types.Transitions;
 using TMPro;
@@ -14,6 +15,8 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private Button btnCredits;
     [SerializeField] private TMP_InputField inputField;
+    [SerializeField] private Image backgroundComponent;
+    [SerializeField] private List<Sprite> backgroundPool;
 
     void Start()
     {
@@ -25,6 +28,7 @@ public class MainMenu : MonoBehaviour
                 StartCoroutine(SwitchScene());
             }
         );
+        backgroundComponent.sprite = backgroundPool[Random.Range(0, backgroundPool.Count)];
     }
 
     private IEnumerator SwitchScene()
