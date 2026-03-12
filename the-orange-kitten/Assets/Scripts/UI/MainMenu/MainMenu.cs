@@ -30,6 +30,6 @@ public class MainMenu : MonoBehaviour
     private IEnumerator SwitchScene()
     {
         yield return fadeTransition.FadeOut();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        yield return SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
