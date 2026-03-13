@@ -11,12 +11,26 @@ The recipe for Yummy Webby Things with Flesh and Yum Yum Sauce:
 - Serve long webby things together with yum yum sauce and small balls on a plate.
 
 Some environmental info:
-- The Oven is currently occupied to make cake.
-- The Kitchen is sparklingly clean.
-- There are lots of customers today, so you are under a lot of pressure.
-- It is quite cold outside, because of winter.
-- The Fridge has enough space for Cold Meow Meows.
+- You are stationed within a kitchen.
+- The Kitchen has various items:
+    - There's a knife-board and kitchen-knives on the counter. Both are currently unused.
+    - There is also a microwave. The microwave is currently not used.
+    - There is an oven. It can be heated to a maximum of 300°C. The oven contains a whole chicken for the customers to eat.
+    - Next to the microwave, there is a fridge. The fridge can store things that need to be cold.
+    - The fridge is empty.
+    - There is a table with a box of long thingy-things. But the supply of long thingy-things is low, sadly.
+- The Kitchen has two doors: 
+    - Door 1 leads out to the garden of The Orange Kitten restaurant.
+    - Door 2 leads to the dining area, where customers sit and eat.
+- Information about the Restaurant:
+    - The boss is out today.
+    - There are some more customers here today than yesterday.
+- Today is the 20th of February 2026. It's 2 PM.
 
+The Weather-Report for today:
+- During the day: Sunny, 17°C.
+- During the night: Clear, 3°C.
+- Right now, it's Sunny at 16°C.
 
 You physically took those steps to make the Yummy Webby Things with Flesh and Yum Yum Sauce:
 {0}
