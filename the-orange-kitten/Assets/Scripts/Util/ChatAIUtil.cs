@@ -36,14 +36,16 @@ public class ChatAIUtil
         yield return req.SendWebRequest();
 
         yield return
-            req.result != UnityWebRequest.Result.Success
-                ? new Left<string, ChatAIMessage>($"Error: {req.error}\nMessage: {req.downloadHandler.text}")
-                : new Right<string, string>(req.downloadHandler.text)
-                    .MapNonNull(JObject.Parse, $"Couldn't parse text json: {req.downloadHandler.text}")
-                    .GetAsJArray("choices")
-                    .MapNonNull(choices => choices.First() as JObject, "Empty JArray!")
-                    .GetAsJObject("message")
-                    .GetAsString("content")
-                    .Map(ChatAIMessage.CreateAssistantMessage);
+            WebEither<string, UnityWebRequest>.FromPredicate(
+                    req,
+                    r => r.result == UnityWebRequest.Result.Success,
+                    $"Error: {req.error}\nMessage: {req.downloadHandler.text}")
+                .Map(r => r.downloadHandler.text)
+                .MapNonNull(JObject.Parse, $"Couldn't parse text json: {req.downloadHandler.text}")
+                .GetAsJArray("choices")
+                .MapNonNull(choices => choices.First() as JObject, "Empty JArray!")
+                .GetAsJObject("message")
+                .GetAsString("content")
+                .Map(ChatAIMessage.CreateAssistantMessage);
     }
 }
