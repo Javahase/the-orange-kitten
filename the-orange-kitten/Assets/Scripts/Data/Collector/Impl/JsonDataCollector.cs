@@ -16,7 +16,7 @@ namespace Data.Collector.Impl
         private PlayerData _playerData;
         public override void Init(string participantId)
         {
-            ParticipantId = participantId;
+            base.participantId = participantId;
             if (_playerData != null) return;
 
             _playerData = new PlayerData()
@@ -40,7 +40,7 @@ namespace Data.Collector.Impl
 
         public override void Save()
         { 
-            using var file = new StreamWriter(Path.Combine(Application.persistentDataPath, $"{ParticipantId}.json"), false);
+            using var file = new StreamWriter(Path.Combine(Application.persistentDataPath, $"{participantId}.json"), false);
             var str = JsonConvert.SerializeObject(_playerData, Formatting.Indented);
             file.Write(str);
         }

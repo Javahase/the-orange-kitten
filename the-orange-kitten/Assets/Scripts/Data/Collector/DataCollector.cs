@@ -1,4 +1,6 @@
 ﻿using Models.PlayerData;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data.Collector
 {
@@ -11,7 +13,7 @@ namespace Data.Collector
         /// <summary>
         /// The ID of the participant who started the game.
         /// </summary>
-        protected string ParticipantId;
+        [HideInInspector] public string participantId;
 
         private void Start()
         {

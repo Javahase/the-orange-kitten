@@ -1,4 +1,6 @@
-﻿using Models.RecipeSequence;
+﻿using System;
+using Models.RecipeSequence;
+using UnityEngine;
 
 namespace Data.Log
 {
@@ -7,7 +9,9 @@ namespace Data.Log
     /// </summary>
     public abstract class DataLog : SingletonObject<DataLog>
     {
-        private void Start()
+        private string _currentPuzzle;
+        
+        protected virtual void Start()
         {
             DontDestroyOnLoad(gameObject);
         }
@@ -17,7 +21,23 @@ namespace Data.Log
         /// </summary>
         /// <param name="ev">The type of data event that caused the log.</param>
         /// <param name="payload">The text that describes what happened.</param>
-        public abstract void Log(DataEvent ev, string payload);
+        public void Log(DataEvent ev, string payload)
+        {
+            if (ev == DataEvent.PuzzleStart)
+            {
+                _currentPuzzle = payload;
+            }
+
+            var currentTime = DateTime.Now.ToString("HH:mm:ss");
+
+            LogString(_currentPuzzle != null
+                ? $"[{currentTime}] [{ev}/{_currentPuzzle}]: {payload}"
+                : $"[{currentTime}] [{ev}]: {payload}");
+        }
+
+        public abstract void Init(string participantId);
+
+        public abstract void LogString(string message);
 
 
         /// <summary>
@@ -25,6 +45,16 @@ namespace Data.Log
         /// </summary>
         public enum DataEvent
         {
+            /// <summary>
+            /// Event that indicates when the play session started.
+            /// </summary>
+            SessionStart,
+            
+            /// <summary>
+            /// Event that indicates when the play session ended.
+            /// </summary>
+            SessionEnd,
+            
             /// <summary>
             /// Event that monitors when a new puzzle sequence started.
             /// </summary>

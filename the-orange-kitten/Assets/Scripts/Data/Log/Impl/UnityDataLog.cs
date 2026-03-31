@@ -11,18 +11,11 @@ namespace Data.Log.Impl
     {
         private string _currentPuzzle;
 
-        public override void Log(DataEvent ev, string payload)
+        public override void LogString(string message) => Debug.Log(message);
+
+        public override void Init(string participantId)
         {
-            if (ev == DataEvent.PuzzleStart)
-            {
-                _currentPuzzle = payload;
-            }
-
-            var currentTime = DateTime.Now.ToString("HH:mm:ss");
-
-            Debug.Log(_currentPuzzle != null
-                ? $"[{currentTime}] [{ev}/{_currentPuzzle}]: {payload}"
-                : $"[{currentTime}] [{ev}]: {payload}");
+            Log(DataEvent.SessionStart, $"Starting session for {participantId}.");
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Data.Collector;
+using Data.Log;
 using Sequence.Types.Transitions;
 using TMPro;
 using UnityEngine;
@@ -24,6 +25,7 @@ public class MainMenu : MonoBehaviour
         btnProceed.onClick.AddListener(() =>
             {
                 DataCollector.GetInstance().Init(inputField.text);
+                DataLog.GetInstance().Init(inputField.text);
                 fadeTransition.gameObject.SetActive(true);
                 StartCoroutine(SwitchScene());
             }
