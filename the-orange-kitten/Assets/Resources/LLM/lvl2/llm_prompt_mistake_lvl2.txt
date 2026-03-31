@@ -10,6 +10,9 @@ The recipe for Yummy Webby Things with Flesh and Yum Yum Sauce:
 - After the small balls are done, add the yum yum sauce into a pot and let it cook for 20 minutes at low heat
 - Serve long webby things together with yum yum sauce and small balls on a plate.
 
+You actually took those steps to make the Yummy Webby Things with Flesh and Yum Yum Sauce:
+{0}
+
 Some environmental info:
 - You are stationed within a kitchen.
 - The Kitchen has various items:
@@ -31,8 +34,5 @@ The Weather-Report for today:
 - During the day: Sunny, 17°C.
 - During the night: Clear, 3°C.
 - Right now, it's Sunny at 16°C.
-
-You physically took those steps to make the Yummy Webby Things with Flesh and Yum Yum Sauce:
-{0}
 
 You will now answer some questions about the steps you took.
