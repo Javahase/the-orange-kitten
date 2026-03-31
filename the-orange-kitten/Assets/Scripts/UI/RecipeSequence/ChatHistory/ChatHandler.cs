@@ -4,6 +4,7 @@ using System.Linq;
 using Services.Insights;
 using Services.LLM;
 using TMPro;
+using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -49,9 +50,9 @@ namespace UI.RecipeSequence.ChatHistory
             );
             yield return response;
             if (response.Current is not string llmMessage) yield break;
-            Debug.Log(llmMessage.Where(c => c != ' ').ToList().Count);
+            
             yield return currentHistory.StartPushMessageRoutine("ROBOT", llmMessage);
-            yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage);
+            yield return _insightService.GenerateInsight(coreSequence.GetCurrentStatement(), message, llmMessage, coreSequence.GetComponent<MistakeSequenceHandler>());
 
             coreSequence.healthContainer.Damage();
             coreSequence.SetControlsEnabled(true);

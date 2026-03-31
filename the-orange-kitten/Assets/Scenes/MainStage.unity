@@ -48114,13 +48114,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907589289}
   m_SourcePrefab: {fileID: 100100000, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
 --- !u!224 &1907589287 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7381620462580085822, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
   m_PrefabInstance: {fileID: 1907589286}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1907589288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6860106514260127596, guid: 3e1f95724aa701bb29330145fca62be5, type: 3}
+  m_PrefabInstance: {fileID: 1907589286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1907589289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907589288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb3355c57fb4543b860ff65b5932df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectExecutor
+  enableAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 764917437}
+        m_TargetAssemblyTypeName: ChatAIInsightService, Assembly-CSharp
+        m_MethodName: ClearAllInsights
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  disableAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1907897436
 GameObject:
   m_ObjectHideFlags: 0

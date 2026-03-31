@@ -35,7 +35,7 @@ namespace Services.Insights.impl
             _insightRulesPrompt = insightRulesPrompt.text;
         }
 
-        public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement)
+        public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement, bool notify)
         {
             var message = ChatAIUtil.SendMessage(_apiKey, model, new List<ChatAIMessage>()
             {
@@ -65,7 +65,7 @@ namespace Services.Insights.impl
             var important = json.GetValue("important")?.ToObject<bool>();
             if (insight == null || important == null) yield break;
 
-            AddInsight(new RecipeInsight(insight, important.Value));
+            AddInsight(new RecipeInsight(insight, important.Value), notify);
         }
 
         public override void SetTopicPrompt(string topicPrompt)

@@ -26,7 +26,7 @@ namespace Services.Insights.impl
         {
         }
 
-        public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement)
+        public override IEnumerator GenerateInsight(RecipeStatement context, string question, string statement, bool notify)
         {
             switch (mode)
             {

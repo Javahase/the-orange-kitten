@@ -46,16 +46,18 @@ namespace Services.Insights
         /// <param name="topicPrompt">The prompt data.</param>
         public abstract void SetTopicPrompt(string topicPrompt);
 
-        public abstract IEnumerator GenerateInsight(RecipeStatement context, string question, string statement);
+        public abstract IEnumerator GenerateInsight(RecipeStatement context, string question, string statement, bool notify);
     
         /// <summary>
         /// Adds a <see cref="RecipeInsight"/> to the pool.
         /// </summary>
         /// <param name="insight">The recipe insight.</param>
-        public void AddInsight(RecipeInsight insight)
+        /// <param name="notify">Whether a notification about the newly added insight should be shown.</param>
+        public void AddInsight(RecipeInsight insight, bool notify = true)
         {
             _recipeInsights.Add(insight);
-            OnInsightGained?.Invoke(insight);
+            if (notify)
+                OnInsightGained?.Invoke(insight);
         }
 
         public void ClearAllInsights() => _recipeInsights.Clear();
