@@ -8,7 +8,11 @@ public class InsightNotification : SingletonObject<InsightNotification>
 
     private void Start()
     {
-        InsightService.GetInstance().OnInsightGained += insight => DisplayNotification(insight.info);
+        InsightService.GetInstance().OnInsightGained += (insight, display) =>
+        {
+            if (display) 
+                DisplayNotification(insight.info);
+        };
         gameObject.SetActive(false);
     }
 

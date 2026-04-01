@@ -41,7 +41,7 @@ public class InsightsInventory : MonoBehaviour
         _slots = Enumerable.Range(0, PageSize)
                             .Select(_ => slotElementPrefab.InstantiateWith(RecipeInsight.EMPTY, transform))
                             .ToList();
-        _insightService.OnInsightGained += (insight) =>
+        _insightService.OnInsightGained += (insight, _) =>
         {
             DataLog.GetInstance().Log(DataLog.DataEvent.InsightGenerated, "New Insight: " + insight.info);
         };

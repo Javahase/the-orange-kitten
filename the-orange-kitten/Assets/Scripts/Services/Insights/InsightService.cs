@@ -16,7 +16,7 @@ namespace Services.Insights
     public abstract class InsightService : SingletonObject<InsightService>
     {
     
-        public delegate void InsightGained(RecipeInsight insight);
+        public delegate void InsightGained(RecipeInsight insight, bool notify);
     
         public event InsightGained OnInsightGained;
 
@@ -55,9 +55,9 @@ namespace Services.Insights
         /// <param name="notify">Whether a notification about the newly added insight should be shown.</param>
         public void AddInsight(RecipeInsight insight, bool notify = true)
         {
+            Debug.Log("Got insight " + insight.info);
             _recipeInsights.Add(insight);
-            if (notify)
-                OnInsightGained?.Invoke(insight);
+            OnInsightGained?.Invoke(insight, notify);
         }
 
         public void ClearAllInsights() => _recipeInsights.Clear();
