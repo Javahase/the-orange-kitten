@@ -14,12 +14,15 @@ using UnityEngine;
 public class RecipeEventLog : MonoBehaviour
 {
     public string puzzleId;
+    [SerializeField] private bool doMeasure = true;
     private PuzzleData _playerData;
     private DataCollector _collector;
 
     public void EnableLog(List<RecipeStatement> statements)
     {
         _collector = DataCollector.GetInstance();
+        if (!doMeasure)
+            return;
         if (gameObject.GetComponent<OddSequenceHandler>() != null)
         {
             _playerData = new OddSequenceData()
@@ -58,6 +61,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogStatement(RecipeStatement statement, string sender, string message)
     {
+        if (!doMeasure)
+            return;
         var conversation = _playerData.ConversationData.Find((data) => data.Topic == statement.message);
         conversation?.Chat.Add(new ChatData()
         {
@@ -69,6 +74,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void IncrementQuestionCount()
     {
+        if (!doMeasure)
+            return;
         _playerData.QuestionCount++;
         DataLog.GetInstance().Log(DataLog.DataEvent.QuestionCountIncrease, "Question Count: " + _playerData.QuestionCount);
         _collector.Save();
@@ -76,6 +83,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void IncrementAttemptsCount()
     {
+        if (!doMeasure)
+            return;
         _playerData.Attempts++;
         DataLog.GetInstance().Log(DataLog.DataEvent.AttemptCountIncrease, "Attempt Count: " + _playerData.Attempts);
         _collector.Save();
@@ -83,6 +92,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogOddMark(RecipeStatement statement, string reason)
     {
+        if (!doMeasure)
+            return;
         if (_playerData is not OddSequenceData oddSequenceData) return;
         oddSequenceData.OddStatements.Add(new OddStatement() { Topic = statement.message, Reason = reason });
         DataLog.GetInstance().Log(DataLog.DataEvent.StatementMarked, "Marked Statement: " + statement.message + " with reason: " + reason);
@@ -91,6 +102,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogOddUnmark(RecipeStatement statement)
     {
+        if (!doMeasure)
+            return;
         if (_playerData is not OddSequenceData oddSequenceData) return;
         var stmt = oddSequenceData.OddStatements.FindIndex((odd) => odd.Topic == statement.message);
         if (stmt == -1) return;
@@ -101,7 +114,7 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogContradiction(string reason)
     {
-        if (_playerData is not MistakeSequenceData mistakeSequenceData) return;
+        if (!doMeasure || _playerData is not MistakeSequenceData mistakeSequenceData) return;
         mistakeSequenceData.ContradictReason = reason;
         DataLog.GetInstance().Log(DataLog.DataEvent.Contradict, "Successfully pointed out contradiction, used insight: " + reason);
         _collector.Save();
@@ -109,6 +122,8 @@ public class RecipeEventLog : MonoBehaviour
 
     public void LogInsights(List<RecipeInsight> insights)
     {
+        if (!doMeasure)
+            return;
         _playerData.GeneratedInsights = new List<RecipeInsight>(insights);
         _collector.Save();
     }

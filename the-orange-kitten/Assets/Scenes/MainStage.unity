@@ -4326,6 +4326,10 @@ PrefabInstance:
       propertyPath: puzzleId
       value: PuzzleLocation
       objectReference: {fileID: 0}
+    - target: {fileID: 7747481411903243863, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
+      propertyPath: doMeasure
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8002212926947179042, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: errorSequence
       value: 
@@ -8720,6 +8724,10 @@ PrefabInstance:
     - target: {fileID: 7747481411903243863, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: puzzleId
       value: PuzzleTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7747481411903243863, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
+      propertyPath: doMeasure
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8002212926947179042, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: errorSequence
@@ -31069,6 +31077,10 @@ PrefabInstance:
     - target: {fileID: 7747481411903243863, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: puzzleId
       value: OddPuzzleTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7747481411903243863, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
+      propertyPath: doMeasure
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8515820335208395862, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: m_Pivot.x

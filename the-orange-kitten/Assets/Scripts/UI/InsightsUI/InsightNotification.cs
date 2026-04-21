@@ -18,7 +18,6 @@ public class InsightNotification : SingletonObject<InsightNotification>
 
     public void DisplayNotification(string description)
     {
-        Debug.Log("Display");
         descriptionText.text = description;
         gameObject.SetActive(true);
     }
