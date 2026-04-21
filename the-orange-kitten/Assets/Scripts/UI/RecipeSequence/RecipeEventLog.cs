@@ -11,13 +11,36 @@ using UI.RecipeSequence;
 using UI.RecipeSequence.SequenceTypes;
 using UnityEngine;
 
+/// <summary>
+/// A component that is attached to a <see cref="RecipeSequence"/>.<br/>
+/// Creates and provides data log functionality for a specific <see cref="RecipeSequence"/>.
+/// </summary>
 public class RecipeEventLog : MonoBehaviour
 {
+    /// <summary>
+    /// The ID that the log refers to when mentioning this sequence.
+    /// </summary>
     public string puzzleId;
+    
+    /// <summary>
+    /// Whether the log should measure this <see cref="RecipeSequence"/>.
+    /// </summary>
     [SerializeField] private bool doMeasure = true;
+    
+    /// <summary>
+    /// The <see cref="PuzzleData"/> that is updated throughout the puzzle and afterward saved.
+    /// </summary>
     private PuzzleData _playerData;
+    
+    /// <summary>
+    /// An instance of the <see cref="DataCollector"/>.
+    /// </summary>
     private DataCollector _collector;
 
+    /// <summary>
+    /// Enables logging functionality, initializing the necessary data stores.
+    /// </summary>
+    /// <param name="statements">The statements to be put into the data store.</param>
     public void EnableLog(List<RecipeStatement> statements)
     {
         _collector = DataCollector.GetInstance();
@@ -59,6 +82,12 @@ public class RecipeEventLog : MonoBehaviour
         _collector.StartLevel(_playerData);
     }
 
+    /// <summary>
+    /// Logs a message the player or the chat bot made within a certain conversation topic.
+    /// </summary>
+    /// <param name="statement">The conversation topic.</param>
+    /// <param name="sender">The name of the sender.</param>
+    /// <param name="message">The message the sender sent.</param>
     public void LogStatement(RecipeStatement statement, string sender, string message)
     {
         if (!doMeasure)
@@ -72,6 +101,9 @@ public class RecipeEventLog : MonoBehaviour
         _collector.Save();
     }
 
+    /// <summary>
+    /// Logs an increment of the amount of questions the player aksed.
+    /// </summary>
     public void IncrementQuestionCount()
     {
         if (!doMeasure)
@@ -81,6 +113,9 @@ public class RecipeEventLog : MonoBehaviour
         _collector.Save();
     }
 
+    /// <summary>
+    /// Logs an increment of the amount of "game overs" the player had.
+    /// </summary>
     public void IncrementAttemptsCount()
     {
         if (!doMeasure)
@@ -89,7 +124,12 @@ public class RecipeEventLog : MonoBehaviour
         DataLog.GetInstance().Log(DataLog.DataEvent.AttemptCountIncrease, "Attempt Count: " + _playerData.Attempts);
         _collector.Save();
     }
-
+    
+    /// <summary>
+    /// Logs the player marking a statement as odd.
+    /// </summary>
+    /// <param name="statement">The statement that got marked as odd.</param>
+    /// <param name="reason">The reason the player provides for the marking.</param>
     public void LogOddMark(RecipeStatement statement, string reason)
     {
         if (!doMeasure)
@@ -100,6 +140,10 @@ public class RecipeEventLog : MonoBehaviour
         _collector.Save();
     }
 
+    /// <summary>
+    /// Logs the player unmarking a statement from being odd.
+    /// </summary>
+    /// <param name="statement">The statement that got unmarked.</param>
     public void LogOddUnmark(RecipeStatement statement)
     {
         if (!doMeasure)
@@ -112,6 +156,10 @@ public class RecipeEventLog : MonoBehaviour
         _collector.Save();
     }
 
+    /// <summary>
+    /// Logs the player pointing out a contradiction.
+    /// </summary>
+    /// <param name="reason">The reason the player provided for the inconsistency.</param>
     public void LogContradiction(string reason)
     {
         if (!doMeasure || _playerData is not MistakeSequenceData mistakeSequenceData) return;
@@ -120,6 +168,10 @@ public class RecipeEventLog : MonoBehaviour
         _collector.Save();
     }
 
+    /// <summary>
+    /// Pushes a list of insights into the log.
+    /// </summary>
+    /// <param name="insights">The insights to push into the log.</param>
     public void LogInsights(List<RecipeInsight> insights)
     {
         if (!doMeasure)
