@@ -38,6 +38,10 @@ namespace Services.LLM
         public abstract IEnumerator
             SendMessageToConversation(RecipeStatement stmt, string request);
 
+        /// <summary>
+        /// Receives a list of the conversation topics the LLM should know.
+        /// </summary>
+        /// <returns>A list of conversation topics the LLM should know.</returns>
         public abstract List<RecipeStatement> GetStatements();
     }
 }

@@ -46,6 +46,15 @@ namespace Services.Insights
         /// <param name="topicPrompt">The prompt data.</param>
         public abstract void SetTopicPrompt(string topicPrompt);
 
+        
+        /// <summary>
+        /// Generates an insight from a conversation topic, a question and a statement.
+        /// </summary>
+        /// <param name="context">The conversation topic that will be used as a context.</param>
+        /// <param name="question">The question asked, usually by the player.</param>
+        /// <param name="statement">The statement made, usually by some LLM.</param>
+        /// <param name="notify">Whether the game should display a notification for this generated insight.</param>
+        /// <returns></returns>
         public abstract IEnumerator GenerateInsight(RecipeStatement context, string question, string statement, bool notify);
     
         /// <summary>
@@ -55,11 +64,13 @@ namespace Services.Insights
         /// <param name="notify">Whether a notification about the newly added insight should be shown.</param>
         public void AddInsight(RecipeInsight insight, bool notify = true)
         {
-            Debug.Log("Got insight " + insight.info);
             _recipeInsights.Add(insight);
             OnInsightGained?.Invoke(insight, notify);
         }
 
+        /// <summary>
+        /// Clears all insights from the internal insight storage.
+        /// </summary>
         public void ClearAllInsights() => _recipeInsights.Clear();
     
         /// <summary>
