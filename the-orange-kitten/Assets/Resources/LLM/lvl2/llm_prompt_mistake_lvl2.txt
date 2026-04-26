@@ -8,7 +8,7 @@ The recipe for Yummy Webby Things with Flesh and Yum Yum Sauce:
 - Put result into warm box for 20 to 30 minutes, until brown.
 - Put a bit of water in a pot, let it cook, then add long webby thingies until soft.
 - After the small balls are done, add the yum yum sauce into a pot and let it cook for 20 minutes at low heat
-- Serve long webby things together with yum yum sauce and small balls on a plate.
+- Serve long webby things together with yum yum sauce on a plate.
 
 You actually took those steps to make the Yummy Webby Things with Flesh and Yum Yum Sauce:
 {0}
@@ -18,7 +18,7 @@ Some environmental info:
 - The Kitchen has various items:
     - There's a knife-board and kitchen-knives on the counter. Both are currently unused.
     - There is also a microwave. The microwave is currently not used.
-    - There is an oven. It can be heated to a maximum of 300°C. The oven contains a whole chicken for the customers to eat.
+    - There is an oven. Normally, it can be heated to a maximum of 300°C. However, the oven is currently broken.
     - Next to the microwave, there is a fridge. The fridge can store things that need to be cold.
     - The fridge is empty.
     - There is a table with a box of long thingy-things. But the supply of long thingy-things is low, sadly.
