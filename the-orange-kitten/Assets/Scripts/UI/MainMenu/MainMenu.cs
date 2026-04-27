@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
                 StartCoroutine(SwitchScene());
             }
         );
+        btnCredits.onClick.AddListener(Application.Quit);
         backgroundComponent.sprite = backgroundPool[Random.Range(0, backgroundPool.Count)];
     }
 
