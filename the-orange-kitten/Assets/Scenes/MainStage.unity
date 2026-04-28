@@ -8303,11 +8303,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[4].message
-      value: Afterwards, I put the shape into the great warm box.
+      value: Afterwards, I put the shape into the great warm box for heating.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[5].message
-      value: Finally, I placed the shape into the great world outside.
+      value: Finally, to freeze the liquid, I placed the shape into the great world
+        outside.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[1].statementType
@@ -30544,7 +30545,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: statements.Array.data[4].message
-      value: Finally, I placed the shape into the great world outside.
+      value: Finally, to freeze the liquid, I placed the shape into the great world
+        outside.
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 2f41c17f9c2d6864d84f7312e55036d7, type: 3}
       propertyPath: statements.Array.data[5].message
