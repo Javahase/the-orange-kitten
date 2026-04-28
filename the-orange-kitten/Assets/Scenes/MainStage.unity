@@ -3891,7 +3891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[5].message
-      value: Respond here. The type of location I'm hiding is...
+      value: Point out here. The type of location I'm hiding is...
       objectReference: {fileID: 0}
     - target: {fileID: 879850669860624744, guid: 8c674a4c14a69ed4db34a6efff8964aa, type: 3}
       propertyPath: statements.Array.data[6].message
