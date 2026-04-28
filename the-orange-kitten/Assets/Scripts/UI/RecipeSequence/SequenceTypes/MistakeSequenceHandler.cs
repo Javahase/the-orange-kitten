@@ -35,11 +35,11 @@ namespace UI.RecipeSequence.SequenceTypes
                          hintErrorSequence, errorSequence
                      })
             {
-                errorSequence.OnInitialize();
-                errorSequence.SequenceEndEvent += (_) =>
+                seq.OnInitialize();
+                seq.SequenceEndEvent += (_) =>
                 {
                     if (_sequenceController.CurrentSequence.Equals(_coreSequence))
-                        errorSequence.OnDisabled();
+                        seq.OnDisabled();
                 };
             }
         }
