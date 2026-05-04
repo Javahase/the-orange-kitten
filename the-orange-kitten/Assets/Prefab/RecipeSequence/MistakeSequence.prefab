@@ -990,6 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeEventLog
   puzzleId: 
+  doMeasure: 1
 --- !u!1 &3431868232473474169
 GameObject:
   m_ObjectHideFlags: 0
