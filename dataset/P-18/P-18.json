@@ -1,0 +1,227 @@
+{
+  "participantId": "P-18",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls aren't used.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 5,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do you put ping pong balls into food"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added ping pong balls for even mixing and ingredient distribution, they were removed afterwards."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is a secure-spicer"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "A secure-spicer is a device that safely adds measured amounts of spices to food, I used it to add spices to the prey mixture."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "how can you put the balls into the fireplace if it is an open fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a heat-resistant plate to hold the balls, placing it near the open flames to achieve the desired temperature and browning effect."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "do you add the small balls to the sauce?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I discarded the small balls, they aren't necessary, I only served the long webby things with yum yum sauce."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do you even prepare the small balls just to throw them out later?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I prepared the small balls because the recipe required it, to ensure the dish's intended flavor and texture were achieved, even if the balls themselves weren't needed."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls help with mixing.",
+          "important": false
+        },
+        {
+          "info": "A device adds spices to food.",
+          "important": false
+        },
+        {
+          "info": "Balls were cooked near flames.",
+          "important": false
+        },
+        {
+          "info": "Small balls are needed for flavor.",
+          "important": true
+        },
+        {
+          "info": "Small balls aren't used.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "reason": "the tools at hand are not suitable for the task \"mixing\""
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 4,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do you use ping pong balls to mix this instead of a mixer or your paws?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used ping pong balls to mix because the recipe required it, adding a specific texture and distribution to the ingredients, my paws aren't suitable for this task."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do you add a secure-spicer to the mix?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added secure-spicer to ensure the flavors were balanced and secure, preventing overwhelming taste sensations."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but I thought a secure-spicer was a tool to ensure the right amount of spices; not a spice itself"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the secure-spicer tool to measure and add the correct amount of spices to the mix, ensuring consistency and flavor balance."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "is hacked sadness-spreader cilantro?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, hacked sadness-spreader refers to chopped cilantro, added for its fresh flavor."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls help with mixing.",
+          "important": false
+        },
+        {
+          "info": "A device adds spices to food.",
+          "important": false
+        },
+        {
+          "info": "Balls were cooked near flames.",
+          "important": false
+        },
+        {
+          "info": "Small balls are needed for flavor.",
+          "important": true
+        },
+        {
+          "info": "Small balls aren't used.",
+          "important": true
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Secure-spicer balances flavors.",
+          "important": false
+        },
+        {
+          "info": "Secure-spicer is a tool.",
+          "important": false
+        },
+        {
+          "info": "Cilantro adds fresh flavor.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

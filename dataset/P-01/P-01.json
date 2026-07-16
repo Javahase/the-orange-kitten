@@ -1,0 +1,273 @@
+	{
+  "participantId": "P-01",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Balls are part of recipe.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 7,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why were the balls required?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Balls were required because the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce specified rolling ingredients into small balls before baking."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Are the small balls edible?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I discarded them, they aren't necessary for the dish."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are the thingies?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies are a key ingredient in the Yummy Webby Things with Flesh and Yum Yum Sauce, they are actually noodles."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are the balls made of?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Balls are made of prey, ping pong balls, greens, powder of anger, secure-spicer, cromch of bread, and hacked sadness-spreader."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are they to be served with the noodles?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I discarded the balls, they aren't necessary, only noodles and yum yum sauce are served."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you make them then?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I made them because the recipe required it, ensuring I followed instructions, even if not all parts were needed."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Were the ping ping balls meant to be discarded?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls were mixed with prey, so they were discarded with the small balls, serving no final purpose."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are part of the recipe.",
+          "important": true
+        },
+        {
+          "info": "Ping pong balls were discarded.",
+          "important": false
+        },
+        {
+          "info": "Small balls are discarded.",
+          "important": true
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Balls are made of various ingredients.",
+          "important": false
+        },
+        {
+          "info": "Noodles and yum yum sauce are served.",
+          "important": false
+        },
+        {
+          "info": "Balls are part of recipe.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "There was no quick alternative to the oven so a fire pit was made."
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 5,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "You mean an oven?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, oven is broken, used indoors campfire instead."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How did you do that"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a portable fire pit, a safe alternative to oven."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "The prey is meat? What are the ping pong balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The prey refers to meat, yes. Ping pong balls are actually onions, finely chopped to resemble ping pong balls in size."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What kind of ingredients are these?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are seasoning ingredients, added for flavor enhancement."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Was ist required that these are baked instead of fried?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Baking was required to achieve the desired brown color and texture, frying would have made them too greasy."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are part of the recipe.",
+          "important": true
+        },
+        {
+          "info": "Ping pong balls were discarded.",
+          "important": false
+        },
+        {
+          "info": "Small balls are discarded.",
+          "important": true
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Balls are made of various ingredients.",
+          "important": false
+        },
+        {
+          "info": "Noodles and yum yum sauce are served.",
+          "important": false
+        },
+        {
+          "info": "Balls are part of recipe.",
+          "important": true
+        },
+        {
+          "info": "Meat is used.",
+          "important": false
+        },
+        {
+          "info": "Oven is broken.",
+          "important": false
+        },
+        {
+          "info": "Portable fire pits are safe.",
+          "important": false
+        },
+        {
+          "info": "Ingredients add flavor.",
+          "important": false
+        },
+        {
+          "info": "Baking achieves desired color.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

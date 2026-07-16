@@ -1,0 +1,287 @@
+[14:08:27] [SessionStart]: Starting session for P-11
+[14:08:42] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[14:10:07] [InsightGenerated/PuzzleTutorial]: New Insight: Mixing stops when powder dissolves.
+[14:10:26] [InsightGenerated/PuzzleTutorial]: New Insight: Sugar is used.
+[14:13:09] [InsightGenerated/PuzzleTutorial]: New Insight: Temperature is crucial.
+[14:13:49] [InsightGenerated/PuzzleTutorial]: New Insight: Form is rectangular.
+[14:14:39] [InsightGenerated/PuzzleTutorial]: New Insight: Meow meows are cold.
+[14:16:14] [InsightGenerated/PuzzleTutorial]: New Insight: The world outside is cold.
+[14:17:09] [InsightGenerated/PuzzleTutorial]: New Insight: Lemon juice is sour.
+[14:18:45] [InsightGenerated/PuzzleTutorial]: New Insight: Liquid has no chunks.
+[14:19:34] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients were mixed until balanced.
+[14:20:32] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[14:27:03] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[14:27:39] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[14:27:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why those ingredients?
+[14:27:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:28:13] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[14:28:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why those ingredients?
+[14:28:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:28:20] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[14:28:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why those ingredients?
+[14:28:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:29:18] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[14:29:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of ingredients are they?
+[14:29:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: They are required for Yummy Webby Things with Flesh and Yum Yum Sauce recipe.
+[14:30:04] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[14:30:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Is the powder of anger really necessary?
+[14:30:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:30:31] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[14:30:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What is a "sadness-spreader"?
+[14:30:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: A sadness-spreader is an ingredient used to balance flavors, I used a hacked one to achieve desired taste.
+[14:30:54] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[14:30:54] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[14:30:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why the powder of anger?
+[14:30:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:31:07] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[14:31:07] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why the powder of anger?
+[14:31:07] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:31:43] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[14:31:43] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:31:43] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:32:25] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 10
+[14:32:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How small are those balls?
+[14:32:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:32:31] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are 5cm in diameter.
+[14:32:31] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 11
+[14:32:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How small are those balls?
+[14:32:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: They are around 5 cm in diameter, made that way for even cooking.
+[14:32:51] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 12
+[14:32:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:32:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:32:55] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 13
+[14:32:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:32:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:32:57] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 2
+[14:32:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 14
+[14:32:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:32:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:33:05] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 15
+[14:33:05] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:33:05] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:33:08] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 16
+[14:33:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:33:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:33:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 17
+[14:33:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:33:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:33:33] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 18
+[14:33:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Is the temperature crucial?
+[14:33:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:33:40] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Prey means meat.
+[14:33:40] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 19
+[14:33:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What kind of prey?
+[14:33:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Meat, as specified in the recipe for Yummy Webby Things.
+[14:33:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 20
+[14:33:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Is the temperature crucial?
+[14:33:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Yes, temperature is crucial for even cooking and food safety.
+[14:34:37] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 3
+[14:34:37] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 21
+[14:34:37] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Do the ping-pong balls serve a purpose?
+[14:34:37] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:35:00] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 22
+[14:35:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the ping-pong balls truly necessary?
+[14:35:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, they aren't, I was just following the recipe.
+[14:35:17] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 23
+[14:35:17] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What greens are we talking about?
+[14:35:17] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:35:33] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 24
+[14:35:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why the powder of anger?
+[14:35:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:35:39] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 25
+[14:35:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why!????
+[14:35:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:36:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 26
+[14:36:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What are those long webby things?
+[14:36:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: They are noodles, used in Yummy Webby Things with Flesh and Yum Yum Sauce.
+[14:36:35] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 27
+[14:36:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What is "yum yum sauce" made of?
+[14:36:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:36:48] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 4
+[14:36:48] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 28
+[14:36:48] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Then why make them?
+[14:36:48] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I made them because the recipe required it, ensuring I followed instructions initially.
+[14:37:25] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Greens are unspecified.
+[14:37:25] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 29
+[14:37:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What greens are we talking about?
+[14:37:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The recipe doesn't specify, I used available greens.
+[14:37:54] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 30
+[14:37:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How much of each?
+[14:37:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:38:16] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 31
+[14:38:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What is this yum yum sauce?
+[14:38:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:39:00] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients must be mixed well.
+[14:39:00] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 32
+[14:39:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How long do we mix them?
+[14:39:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Until the ingredients are well mixed.
+[14:39:19] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Quantities are important.
+[14:39:19] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 33
+[14:39:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How many of each?
+[14:39:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Recipe called for specific amounts, but I don't recall exact quantities now.
+[14:40:13] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 34
+[14:40:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the balls important?
+[14:40:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: Internal Server Error
+[14:40:22] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 5
+[14:40:22] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 35
+[14:40:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the balls important?
+[14:40:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:40:56] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 36
+[14:40:56] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How many noodles?
+[14:40:56] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:41:30] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 37
+[14:41:30] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Were the balls important?
+[14:41:30] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:41:52] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 38
+[14:41:52] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the balls important?
+[14:41:52] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:41:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 39
+[14:41:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls
+[14:41:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:42:10] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 40
+[14:42:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls important?
+[14:42:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:42:17] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 41
+[14:42:17] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls important? Pwease?
+[14:42:17] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:42:26] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 6
+[14:42:26] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 42
+[14:42:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls important? plz answer
+[14:42:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:42:39] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 43
+[14:42:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls important? plz plz plzu+
+[14:42:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:42:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 44
+[14:42:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the balls important?
+[14:42:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[14:43:12] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 45
+[14:43:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls important at all? Why?
+[14:43:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 429 Too Many Requests
+Message: {
+  "message":"API rate limit exceeded",
+  "request_id":"70fafc35822f5e577dd57230704e677f"
+}
+[14:43:22] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 46
+[14:43:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: hi
+[14:43:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 429 Too Many Requests
+Message: {
+  "message":"API rate limit exceeded",
+  "request_id":"78e4ae387869c73150a7316fde5a3c05"
+}
+[14:44:21] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 47
+[14:44:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: .
+[14:44:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 429 Too Many Requests
+Message: {
+  "message":"API rate limit exceeded",
+  "request_id":"a048e86d6cc5767771175764d1121f4e"
+}
+[14:46:04] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 48
+[14:46:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: jhkhiukzih
+[14:46:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 429 Too Many Requests
+Message: {
+  "message":"API rate limit exceeded",
+  "request_id":"db6d0c3b369a4248dddf851b6570d96b"
+}
+[14:48:11] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 7
+[14:48:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 49
+[14:48:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Balls
+[14:48:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 429 Too Many Requests
+Message: {
+  "message":"API rate limit exceeded",
+  "request_id":"5c125869a640ab176386561595903d60"
+}
+[15:00:18] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 50
+[15:00:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the balls even required at all?
+[15:00:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:00:59] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are in the recipe.
+[15:00:59] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 51
+[15:00:59] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Then why do we utilize the balls at all?
+[15:00:59] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Recipe included them, so I initially followed it, then discarded as unnecessary.
+[15:01:34] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 52
+[15:01:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are they unnecessary?
+[15:01:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:05:50] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 53
+[15:05:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are they unnecessary?
+[15:05:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: Request timeout
+Message: 
+[15:08:02] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 54
+[15:08:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are they unnecessary?
+[15:08:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: Request timeout
+Message: 
+[15:10:42] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 55
+[15:10:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:10:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: Request timeout
+Message: 
+[15:10:49] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 8
+[15:10:49] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 56
+[15:10:49] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: WHYYYYY?
+[15:10:49] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:11:07] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 57
+[15:11:07] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:11:07] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:11:38] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 58
+[15:11:38] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:11:38] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:00] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 59
+[15:12:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:12:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:06] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 60
+[15:12:06] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:12:06] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:10] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 61
+[15:12:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:12:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:13] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 62
+[15:12:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:12:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:16] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 9
+[15:12:16] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 63
+[15:12:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary?
+[15:12:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 
+[15:12:25] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 64
+[15:12:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the balls unnecessary? plz
+[15:12:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Error: HTTP/1.1 500 Internal Server Error
+Message: 

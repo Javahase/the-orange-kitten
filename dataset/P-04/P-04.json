@@ -1,0 +1,501 @@
+{
+  "participantId": "P-04",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are needed.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 26,
+      "attempts": 3,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Do you really mean an outside fireplace or is this a metapher for the heating plate?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used an open flame, as the oven was broken, to heat the dish to 180°C."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What did you do with the oven? :o"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't use the oven, it's currently broken, so I found an alternative."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Who broke the oven?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I don't know, it was already broken when I started cooking."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What do you really used as ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a pound of meat, ping pong balls as egg substitutes, and greens like onions and herbs, along with other seasonings."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What spices do you really used here?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What spices do you really used here?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used salt, pepper, and paprika, as powder of anger, secure-spicer, and hacked sadness-spreader are figurative names."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How do you but the balls into the fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How do you put the balls into the fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a long handled tool to place the balls into the fireplace, ensuring my mechanical body didn't get too close to the flames."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "So do you make each ball step by step?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I mixed all ingredients together, then rolled them into small balls all at once, before placing them in the fireplace."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "I mean to put in the fireplace because you use a long handled tool"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I placed each ball individually into the fireplace using the long handled tool, one by one, to avoid breaking them."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "And how are you managing their safety in the fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I monitored temperature and adjusted ball positions with the tool to prevent burning, ensuring they browned evenly on all sides."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "do you cook the small balls and the \"webby things\" at the same place?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I cooked the small balls in the fireplace and the webby things in a pot on the stove."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "i thought it was broken"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the open fireplace, not the oven, to cook the small balls, and a pot on the stove for the webby things."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How do you manage a low temperature when you use the open fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I managed low heat by placing pot farther from flames, controlling distance to regulate temperature."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "And how do you control the temperature?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I adjusted pot's distance from flames and used a metal sheet to shield or expose pot to heat as needed."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why are the small balls not necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the small balls not necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They aren't needed for the dish's final presentation, long webby things with yum yum sauce is the focus."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "so why do you cook them?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe, cooking them was a required step, even if they aren't used later."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "whhhhhhhhhhhhhhhhhhhhhhhhhyyyyyyyyyyyyyyyyYYYYYYYY? :(((((((((((((8"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Recipe said to, I didn't question, just executed the steps as given."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "And you dont think that this is maybe food wasting? :o"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, it seems that way, but I followed the recipe, didn't want to deviate."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But sometimes ... its good to think out of the box :D"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Normally I follow rules, but you're right, sometimes thinking differently is better."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Yes and the dish will be soooo much tastier :DD"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Maybe, but I already made it, can't change now, yum yum sauce is ready."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "And what about the costumer?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They're waiting, I need to serve, can't keep them waiting, have to deliver now."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But they want to have the small balls :("
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Too late, I threw them away, can't retrieve, have to tell them sorry."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Okay. But with a very cute voice and *Pweety sorry* :D"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Pweety sorry, I threw them away, didn't mean to disappoint."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Than look cute with \"dog eyes\" :D"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "*looks up with big, sad robot eyes* Pweety sorry, really am."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Meat is used as ingredient.",
+          "important": false
+        },
+        {
+          "info": "Spices used are salt, pepper, and paprika.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't main focus.",
+          "important": false
+        },
+        {
+          "info": "Heating method is crucial.",
+          "important": false
+        },
+        {
+          "info": "Alternative used for oven.",
+          "important": false
+        },
+        {
+          "info": "Small balls are cooked separately.",
+          "important": false
+        },
+        {
+          "info": "Fireplace was used for cooking.",
+          "important": false
+        },
+        {
+          "info": "Cooking is required",
+          "important": false
+        },
+        {
+          "info": "Temperature is controlled by distance and shielding.",
+          "important": false
+        },
+        {
+          "info": "Balls are made all at once.",
+          "important": false
+        },
+        {
+          "info": "Small balls are fragile.",
+          "important": false
+        },
+        {
+          "info": "Temperature is crucial.",
+          "important": false
+        },
+        {
+          "info": "Recipe was followed.",
+          "important": false
+        },
+        {
+          "info": "Recipe was followed.",
+          "important": false
+        },
+        {
+          "info": "Thinking differently is helpful.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is ready.",
+          "important": false
+        },
+        {
+          "info": "Small balls are needed.",
+          "important": true
+        },
+        {
+          "info": "Small balls are needed.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "the oven was broken but why dont use the heating plate?!"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 4,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Inside? Do you want to burn the restaurant down? :oooo"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the fireplace-like warm box, it's controlled and safe for indoor use, to achieve the 180°C temperature needed for the recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are you really sure about this?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The oven was broken, so I had to improvise with the fireplace-like setup to reach the required temperature for cooking the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "It's really.... creative. But odd. "
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Unconventional, yes, but it was necessary to complete the recipe as instructed and achieve the desired result for the Yummy Webby Things."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "And how do you manage the low heat with you indoor \"warm box\"/fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I adjusted the distance of the pot from the fireplace to manage low heat, ensuring yum yum sauce cooked slowly and evenly."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Meat is used as ingredient.",
+          "important": false
+        },
+        {
+          "info": "Spices used are salt, pepper, and paprika.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't main focus.",
+          "important": false
+        },
+        {
+          "info": "Heating method is crucial.",
+          "important": false
+        },
+        {
+          "info": "Alternative used for oven.",
+          "important": false
+        },
+        {
+          "info": "Small balls are cooked separately.",
+          "important": false
+        },
+        {
+          "info": "Fireplace was used for cooking.",
+          "important": false
+        },
+        {
+          "info": "Cooking is required",
+          "important": false
+        },
+        {
+          "info": "Temperature is controlled by distance and shielding.",
+          "important": false
+        },
+        {
+          "info": "Balls are made all at once.",
+          "important": false
+        },
+        {
+          "info": "Small balls are fragile.",
+          "important": false
+        },
+        {
+          "info": "Temperature is crucial.",
+          "important": false
+        },
+        {
+          "info": "Recipe was followed.",
+          "important": false
+        },
+        {
+          "info": "Recipe was followed.",
+          "important": false
+        },
+        {
+          "info": "Thinking differently is helpful.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is ready.",
+          "important": false
+        },
+        {
+          "info": "Small balls are needed.",
+          "important": true
+        },
+        {
+          "info": "Small balls are needed.",
+          "important": true
+        },
+        {
+          "info": "Fireplace is safe indoors.",
+          "important": false
+        },
+        {
+          "info": "Alternative cooking methods exist.",
+          "important": false
+        },
+        {
+          "info": "Recipe requires unconventional steps.",
+          "important": false
+        },
+        {
+          "info": "Distance manages heat.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

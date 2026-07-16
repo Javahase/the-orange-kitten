@@ -1,0 +1,51 @@
+[15:51:03] [SessionStart]: Starting session for P-02
+[15:57:20] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[16:03:00] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients are known.
+[16:05:15] [InsightGenerated/PuzzleTutorial]: New Insight: We're making dessert.
+[16:09:08] [InsightGenerated/PuzzleTutorial]: New Insight: Heating is incorrect for Cold Meow Meows.
+[16:10:22] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[16:13:31] [InsightGenerated/OddPuzzleTutorial]: New Insight: Outside is cold.
+[16:17:39] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[16:21:58] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are not needed.
+[16:21:58] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[16:21:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: You discarded the small yummi balls, are you insane?
+[16:21:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded them because they weren't necessary for the Yummy Webby Things with Flesh and Yum Yum Sauce dish.
+[16:22:18] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: We cook webby things.
+[16:22:18] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[16:22:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What are we cooking?
+[16:22:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: We're cooking Yummy Webby Things with Flesh and Yum Yum Sauce.
+[16:23:08] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls help mix ingredients.
+[16:23:08] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[16:23:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are we putting ping ping balls anywhere near our food?
+[16:23:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I added ping pong balls to help mix and distribute ingredients evenly, ensuring consistent flavor and texture in the Yummy Webby Things.
+[16:25:20] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the recipe.
+[16:25:20] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[16:25:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why do we cook small balls if they are not needed for the dish?
+[16:25:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I cooked the small balls as they were part of the original recipe, to follow instructions and ensure no crucial step was missed, even if they weren't needed later.
+[16:28:51] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls seem unnecessary.
+[16:28:51] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[16:28:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why are the small balls not needed, when they are on the recipe?
+[16:28:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I thought the long webby things and yum yum sauce were the main focus, making the small balls redundant.
+[16:29:40] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[16:29:40] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[16:29:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: But wasn't that ordered?
+[16:29:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The customer did order Yummy Webby Things with Flesh and Yum Yum Sauce, which typically includes the small balls.
+[16:31:04] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are part of the dish.
+[16:31:26] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[16:33:05] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Oven is broken.
+[16:33:05] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[16:33:05] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why do we use an indoor campfire, what is with our oven?
+[16:33:05] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Our oven is currently broken, so I used an indoors campfire as a substitute to reach the required 180°C temperature for cooking the small balls of prey.
+[16:34:00] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: Oven is broken.
+[16:35:24] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Ingredients are known.
+[16:35:24] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[16:35:24] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: what are the ingredients for small balls exaclty?
+[16:35:24] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: A pound of prey, 2-4 ping pong balls, greens, powder of anger, secure-spicer, cromch of bread, and hacked sadness-spreader.
+[16:38:39] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[16:42:35] [InsightGenerated/PuzzleLocation]: New Insight: It's a place of power.
+[16:44:06] [InsightGenerated/PuzzleLocation]: New Insight: It's a grand building.
+[16:45:11] [InsightGenerated/PuzzleLocation]: New Insight: Location is old and majestic.
+[16:46:02] [InsightGenerated/PuzzleLocation]: New Insight: It's a whole structure.
+[16:46:19] [InsightGenerated/PuzzleLocation]: New Insight: Location is fortified.
+[16:47:03] [InsightGenerated/PuzzleLocation]: New Insight: It's a castle.
+[16:53:16] [SessionEnd/PuzzleLocation]: Session ended for P-02

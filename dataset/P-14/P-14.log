@@ -1,0 +1,76 @@
+[13:57:39] [SessionStart]: Starting session for P-14
+[14:00:52] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[14:06:38] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients are known.
+[14:08:35] [InsightGenerated/PuzzleTutorial]: New Insight: Meow meows have handles.
+[14:09:43] [InsightGenerated/PuzzleTutorial]: New Insight: The shape was not heated.
+[14:11:05] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[14:13:07] [InsightGenerated/OddPuzzleTutorial]: New Insight: It was frozen outside.
+[14:16:22] [InsightGenerated/OddPuzzleTutorial]: New Insight: Meow meows are cold.
+[14:16:59] [InsightGenerated/OddPuzzleTutorial]: New Insight: Sticks are too short.
+[14:17:42] [InsightGenerated/OddPuzzleTutorial]: New Insight: Supply affects production.
+[14:18:53] [InsightGenerated/OddPuzzleTutorial]: New Insight: Sticks are too short.
+[14:20:29] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[14:22:55] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are part of the recipe.
+[14:22:55] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[14:22:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why are the balls not necessary?
+[14:22:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The balls aren't necessary because the dish primarily requires long webby thingies and yum yum sauce, the balls were just part of the initial recipe.
+[14:23:18] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't key elements.
+[14:23:18] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[14:23:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: and why did you remove them from the recipe?
+[14:23:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I removed the balls to simplify the dish and focus on the main components, long webby thingies and yum yum sauce, as they are the key elements.
+[14:24:12] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Chicken, onions, and parsley add flavor.
+[14:24:12] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[14:24:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is the prey, the ping pong balls and the greens for humans in the kitchen?
+[14:24:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The prey is chicken, ping pong balls are onions, and greens are parsley, used for flavor and texture in the dish.
+[14:25:03] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Chili is powder of anger.
+[14:25:03] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[14:25:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is powder of anger, secure-spicer, cromch of bread, hacked sadness-spreader for humans?
+[14:25:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: They are ingredients: powder of anger is chili, secure-spicer is salt, cromch of bread is croutons, hacked sadness-spreader is chopped onion.
+[14:25:57] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Yum yum sauce is part of the dish.
+[14:25:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[14:25:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is yum yum sauce?
+[14:25:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Yum yum sauce is a key component of the Yummy Webby Things dish, its exact recipe is unknown to me, but I followed the given instructions to prepare it.
+[14:26:28] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Powder of anger is used.
+[14:26:28] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[14:26:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what are these 2 ingredients for humans in the kitchen?
+[14:26:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The two ingredients are powder of anger and hacked sadness-spreader, used in the Yummy Webby Things recipe.
+[14:27:42] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are not part of dish.
+[14:27:42] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[14:27:42] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[14:27:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: are the balls part of the dish?
+[14:27:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, the balls are not part of the final dish, Yummy Webby Things with Flesh and Yum Yum Sauce, they were just an initial step in the recipe.
+[14:29:01] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls should be served with webby things.
+[14:29:01] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[14:29:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: should they not go on the webby things with the yumyum together?
+[14:29:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The original recipe implied the balls should be served together, but I intentionally left them out to create a different presentation.
+[14:29:06] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Balls should be served with webby things.
+[14:29:20] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[14:30:54] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Oven can be used for campfire alternative.
+[14:30:54] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[14:30:54] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: How is it possible to have an indoor campfire?
+[14:30:54] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used the kitchen's fireplace alternative, as the oven was broken, to achieve the desired temperature of 180°C.
+[14:31:46] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: A kitchen has no fire place. A kitchen has an oven or a stove
+[14:31:53] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[14:31:53] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: 
+[14:31:53] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: It seems like there is no question to answer.
+[14:32:38] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Chicken is used.
+[14:32:38] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[14:32:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: what are the ingridients in human terms and how are you preparing them before mixing?
+[14:32:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used a pound of chicken, ping pong balls are actually eggs, and greens are parsley. I chopped the chicken, cracked the eggs, and chopped the parsley before mixing them together.
+[14:33:48] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Paprika is added to the mixture.
+[14:33:48] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 4
+[14:33:48] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: what are the ingredients you mentioned in human terms? Are they drugs?
+[14:33:48] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I added paprika, salt, croutons, and a hacked blender's garlic press to the mixture, not drugs.
+[14:34:43] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Balls are flavored before baking.
+[14:34:43] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 5
+[14:34:43] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: Did you put these into the Yum Yum sauce or the Balls?
+[14:34:43] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I added them to the balls, to give them flavor before baking.
+[14:35:35] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Cooking time depends on size and temperature.
+[14:35:35] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 6
+[14:35:35] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: 20 or 30 minutes. thats a huge difference?
+[14:35:35] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I chose 20-30 minutes to ensure the small balls were cooked through and browned, as exact time depended on their size and fireplace temperature.
+[14:37:10] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[14:40:03] [InsightGenerated/PuzzleLocation]: New Insight: It's a large structure with walls and towers.
+[14:40:33] [InsightGenerated/PuzzleLocation]: New Insight: It is a castle.
+[14:41:51] [InsightGenerated/PuzzleLocation]: New Insight: The location is northeast.
+[14:46:06] [SessionEnd/PuzzleLocation]: Session ended for P-14

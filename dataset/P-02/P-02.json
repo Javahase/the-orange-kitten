@@ -1,0 +1,216 @@
+{
+  "participantId": "P-02",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are part of the dish.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 6,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why are we putting ping ping balls anywhere near our food?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added ping pong balls to help mix and distribute ingredients evenly, ensuring consistent flavor and texture in the Yummy Webby Things."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why do we cook small balls if they are not needed for the dish?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I cooked the small balls as they were part of the original recipe, to follow instructions and ensure no crucial step was missed, even if they weren't needed later."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "You discarded the small yummi balls, are you insane?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them because they weren't necessary for the Yummy Webby Things with Flesh and Yum Yum Sauce dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What are we cooking?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "We're cooking Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the small balls not needed, when they are on the recipe?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I thought the long webby things and yum yum sauce were the main focus, making the small balls redundant."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But wasn't that ordered?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The customer did order Yummy Webby Things with Flesh and Yum Yum Sauce, which typically includes the small balls."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are not needed.",
+          "important": false
+        },
+        {
+          "info": "We cook webby things.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the recipe.",
+          "important": false
+        },
+        {
+          "info": "Small balls seem unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "Oven is broken."
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 2,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do we use an indoor campfire, what is with our oven?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Our oven is currently broken, so I used an indoors campfire as a substitute to reach the required 180°C temperature for cooking the small balls of prey."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are the ingredients for small balls exaclty?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "A pound of prey, 2-4 ping pong balls, greens, powder of anger, secure-spicer, cromch of bread, and hacked sadness-spreader."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are not needed.",
+          "important": false
+        },
+        {
+          "info": "We cook webby things.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the recipe.",
+          "important": false
+        },
+        {
+          "info": "Small balls seem unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Oven is broken.",
+          "important": false
+        },
+        {
+          "info": "Ingredients are known.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

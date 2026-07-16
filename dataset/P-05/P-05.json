@@ -1,0 +1,453 @@
+{
+  "participantId": "P-05",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are crucial.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 23,
+      "attempts": 3,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why are u cooking in the fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the fireplace because the oven is currently broken and I needed to heat the small balls to 180°C to cook them properly."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "how do u make meatballs out of chicken"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I mixed chicken with ping pong balls, greens, and other ingredients, then rolled them into small balls, the ping pong balls were later removed."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "please dont remove them"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I was instructed to discard the small balls, but I can try to make new ones without removing the ping pong balls if that's what you want."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "are the ping pong balls actual ping pong balls. and did u put the secure-spicer itself into the bowl"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls are not actual ping pong balls, but rather a measurement unit. I added the contents of the secure-spicer, not the device itself, to the bowl."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "measurement unit for what!?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls are a measurement unit for the amount of flesh to be used, indicating a certain volume or quantity."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what kind of prey"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The prey refers to chicken, a common ingredient in cooking, which I used in the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "um.... where is the cat"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat is outside in the garden, accessible through Door 1 of the kitchen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "can u get it please"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I'll go through Door 1 to get the cat from the garden."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "could u ask it what was the mistake here"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat says the mistake was discarding the small balls, as they were a crucial part of the Yummy Webby Things dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what else do u know cat? when am i gonna die"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat says it doesn't know that information, it's just a cat."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "do u hear mice too kitty? am i going insane?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat hears the mice too, they're in the kitchen, but it says you're not going insane."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "do u want to do something about it"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat wants to catch the mice, it's a natural instinct for cats."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "please do"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat is now hunting the mice in the kitchen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "good job!!"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The cat has caught the mice, problem solved, it's purring."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "how fine did u cut the ingredients#"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't cut them, I used pre-measured powdered forms."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "how do u put a baking plate in a fireplace"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a heat-resistant tray to hold the baking plate, allowing me to place it near the fire, ensuring even heating."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "is the time enough"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, 20 to 30 minutes was sufficient to brown the small balls at 180°C."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "bro wtf"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them because they weren't needed for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "wtf are u making, if it isnt spaghetti and meatballs why did u throw out the meatballs"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Meatballs weren't the main focus, webby things and yum yum sauce were, so I discarded them to prioritize the dish's main components."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "i apologize ur so right go off king i will try this method myself i didnt know u play ball"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ping pong balls were just an ingredient, added for texture and mix, not for playing."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "do u serve them in a plate with utincels?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I serve with long webby thingies and yum yum sauce, not utincels."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but u have to mix everything together at the end no?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I serve webby things and yum yum sauce together, separately from the discarded mixture."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "didnt u say u needed the texture from the mixture tho"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The texture was achieved during mixing, then the small balls were discarded, only webby things and sauce were served."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls are a measurement unit.",
+          "important": false
+        },
+        {
+          "info": "Fireplace used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Small balls are not needed.",
+          "important": false
+        },
+        {
+          "info": "Meatballs aren't the main focus.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Heat-resistant tray helps",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls measure flesh.",
+          "important": false
+        },
+        {
+          "info": "Prey refers to chicken.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were pre-measured powders.",
+          "important": false
+        },
+        {
+          "info": "Small balls brown at 180°C.",
+          "important": false
+        },
+        {
+          "info": "Small balls are crucial.",
+          "important": true
+        },
+        {
+          "info": "Meatballs are made by mixing ingredients.",
+          "important": false
+        },
+        {
+          "info": "Small balls can be reused.",
+          "important": false
+        },
+        {
+          "info": "Webby thingies are served.",
+          "important": false
+        },
+        {
+          "info": "Webby things and yum yum sauce are served together.",
+          "important": false
+        },
+        {
+          "info": "Texture comes from mixing.",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "oven was broken and only campfire ingredients were available i assume"
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "reason": "fireplace and campfire seem interchangable to them"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 3,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "i assume u broke the fireplace now"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I used the indoors campfire as the oven was broken."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "too much bread"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added a cromch of bread for texture, but it seems excessive now."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "fireplace or indoors campfire?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used an indoors campfire, not a fireplace, to cook the small balls."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls are a measurement unit.",
+          "important": false
+        },
+        {
+          "info": "Fireplace used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Small balls are not needed.",
+          "important": false
+        },
+        {
+          "info": "Meatballs aren't the main focus.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Heat-resistant tray helps",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls measure flesh.",
+          "important": false
+        },
+        {
+          "info": "Prey refers to chicken.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were pre-measured powders.",
+          "important": false
+        },
+        {
+          "info": "Small balls brown at 180°C.",
+          "important": false
+        },
+        {
+          "info": "Small balls are crucial.",
+          "important": true
+        },
+        {
+          "info": "Meatballs are made by mixing ingredients.",
+          "important": false
+        },
+        {
+          "info": "Small balls can be reused.",
+          "important": false
+        },
+        {
+          "info": "Webby thingies are served.",
+          "important": false
+        },
+        {
+          "info": "Webby things and yum yum sauce are served together.",
+          "important": false
+        },
+        {
+          "info": "Texture comes from mixing.",
+          "important": false
+        },
+        {
+          "info": "The oven was broken.",
+          "important": false
+        },
+        {
+          "info": "Bread adds texture.",
+          "important": false
+        },
+        {
+          "info": "Indoors campfire was used.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

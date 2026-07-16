@@ -1,0 +1,323 @@
+{
+  "participantId": "P-09",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Balls are paired with noodle sauce.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 14,
+      "attempts": 2,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why you need an open fireplace set up?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the fireplace because the oven was broken and couldn't be used to heat to 180°C as required by the recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What will you cook in the oven?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Small balls of prey mixed with other ingredients, according to the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "for this dish, do the need the small balls? If so, why you dont use it?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls aren't necessary, I discarded them as they weren't required for the final dish, only the long webby thingies and yum yum sauce are needed."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why you use the balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used ping pong balls to add texture, they were part of the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "you did this for the sauce?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I added those for the prey mixture, not the sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "for webby things"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I didn't add them to the webby things, but to the prey mixture for the small balls."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why you do this step ? Is this necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I did this step because the recipe required forming the mixture into small balls, but I later discarded them, so it wasn't necessary for the final dish."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why you that?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I did that to cook the long webby thingies, making them soft to serve with yum yum sauce."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "for what you need the yum yum sauce"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I need the yum yum sauce to serve with the long webby thingies, as part of the Yummy Webby Things with Flesh and Yum Yum Sauce dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what are the long webby thingies?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies are likely noodles, which I cooked in a pot of water until they were soft, to be served with the yum yum sauce."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "if it is not necessary, why you did that?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe initially, but since the small balls weren't needed for the final dish, I discarded them to save resources and reduce waste."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why is this not necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls were meant for the Yummy Webby Things, but the main focus is the webby things with yum yum sauce, the small balls don't add value."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why you think that?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I analyzed the recipe and saw that the final serving instruction only mentions the webby things with yum yum sauce, implying the small balls are optional or unnecessary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "you need for the noodle sauce and balls, thats the topic"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls are typically paired with the noodle sauce, but in this case, the focus is on the webby things with yum yum sauce, so the balls weren't needed for that specific combination."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Fireplace used due to oven failure.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls don't add value.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": true
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": false
+        },
+        {
+          "info": "Ingredients added for prey mixture.",
+          "important": false
+        },
+        {
+          "info": "Webby things aren't mixed with small balls.",
+          "important": false
+        },
+        {
+          "info": "Long webby thingies are served with yum yum sauce.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce serves with webby thingies.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked in water.",
+          "important": false
+        },
+        {
+          "info": "Balls are paired with noodle sauce.",
+          "important": true
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "You cant make campfire in the kitchen, because of brandgefahr. "
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 0,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Fireplace used due to oven failure.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls don't add value.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": true
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": false
+        },
+        {
+          "info": "Ingredients added for prey mixture.",
+          "important": false
+        },
+        {
+          "info": "Webby things aren't mixed with small balls.",
+          "important": false
+        },
+        {
+          "info": "Long webby thingies are served with yum yum sauce.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce serves with webby thingies.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked in water.",
+          "important": false
+        },
+        {
+          "info": "Balls are paired with noodle sauce.",
+          "important": true
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

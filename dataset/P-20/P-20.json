@@ -1,0 +1,493 @@
+{
+  "participantId": "P-20",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Balls were made for a reason.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 20,
+      "attempts": 2,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "was that hot enough"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, 180°C was the desired temperature, so it was sufficient."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "did you check if the fireplace was hot"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, my measurement-devices confirmed it reached 180°C."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is prey bowl and why did you use ping pong balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Prey refers to the main ingredient, likely meat. I used ping pong balls to help mix and distribute the ingredients evenly, ensuring consistency in the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "how can ping pong balls help mix and distibute ingredients evenly"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls helped to break up clumps and mix the ingredients as I stirred, their smooth surface allowing them to move freely and distribute the components uniformly."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but ping pong balls are lighter and meat consistansy is high. it should not help"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls were not effective in mixing the dense meat mixture, I should have used a more suitable tool, like a spoon or blender, to achieve a uniform consistency."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is hached sadness-spreader"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Hacked sadness-spreader is a type of spice, I used it to add flavor to the dish, it's also known as black pepper."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "did you use baking plate"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, I put the small balls onto a baking plate before placing them in the fireplace."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "was 30 minutes enough to cook the meat"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The prey was brown after 20 to 30 minutes, indicating it was cooked."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what was the temperature of water while adding the webby things"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The water was boiling when I added the long webby thingies to make them soft."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "how much water did you use"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a bit of water, just enough to cover the long webby thingies in the pot."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "was that enough"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "It was sufficient to cook the webby thingies, but the low supply of them made it easier to manage with a small amount of water."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what was the temperature you used to cook yam yam sauce"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Low heat, exact temperature not measured, but typically around 100°C."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "by 20 minutes it should be burned"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, low heat prevents burning, it simmers gently."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what ingredient did you use for sauce"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yum yum sauce ingredients weren't specified, I followed standard recipe."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "discarded from where"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "the baking plate and the fireplace area."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "if the balls were not necessary then why you used it in first place"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe, it required making the balls, I didn't question the purpose at that time."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "did you mixed the balls with anything"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "with ping pong balls, greens, powder of anger, secure-spicer, cromch of bread, and a hacked sadness-spreader."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "i mean with the main dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "no, I didn't mix the balls with the long webby thingies or the yum yum sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "if you do not need to use the balls then it is unnecessary"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "using the balls was unnecessary, I only needed the long webby thingies and yum yum sauce for the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "you need to mix webby things, sauce and meat balls to make the final dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "the recipe actually requires combining the webby things, yum yum sauce, and the meat balls to complete the dish, I should not have discarded them."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Meat helps mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients evenly.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are not suitable for mixing.",
+          "important": false
+        },
+        {
+          "info": "Hacked sadness-spreader is black pepper.",
+          "important": false
+        },
+        {
+          "info": "Discarded from baking plate.",
+          "important": false
+        },
+        {
+          "info": "Balls were made for a reason.",
+          "important": true
+        },
+        {
+          "info": "Balls were mixed with ingredients.",
+          "important": false
+        },
+        {
+          "info": "Balls aren't mixed with sauce.",
+          "important": false
+        },
+        {
+          "info": "Balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Water boils at 100°C.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce cooks at low heat.",
+          "important": false
+        },
+        {
+          "info": "Low heat prevents burning.",
+          "important": false
+        },
+        {
+          "info": "Water covers webby thingies.",
+          "important": false
+        },
+        {
+          "info": "Enough water was used.",
+          "important": false
+        },
+        {
+          "info": "180°C is sufficient.",
+          "important": false
+        },
+        {
+          "info": "The fire was confirmed hot.",
+          "important": false
+        },
+        {
+          "info": "Baking plate was used.",
+          "important": false
+        },
+        {
+          "info": "Meatballs are needed.",
+          "important": true
+        },
+        {
+          "info": "Meat is cooked when brown.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce recipe is standard.",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "reason": "this is invalid"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 6,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why ping pong balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added ping pong balls to create even texture, ensuring consistent cooking and preventing prey from sticking together."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "was that suitable enough"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, it was suitable, as the ping pong balls helped to separate the prey mixture evenly, resulting in uniform small balls."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "did you use the meat balls for the main dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, the small balls, also referred to as meat balls, were used for the main dish, Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why did you said the balls were not necessary at the first place"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't say that, I followed the recipe which included making and using the small balls."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "for mixing the meat what did you use this time"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a bowl to mix the pound of prey with other ingredients."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why did discared the balls in first place"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't discard the balls, I actually used them in the dish, Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Meat helps mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients evenly.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are not suitable for mixing.",
+          "important": false
+        },
+        {
+          "info": "Hacked sadness-spreader is black pepper.",
+          "important": false
+        },
+        {
+          "info": "Discarded from baking plate.",
+          "important": false
+        },
+        {
+          "info": "Balls were made for a reason.",
+          "important": true
+        },
+        {
+          "info": "Balls were mixed with ingredients.",
+          "important": false
+        },
+        {
+          "info": "Balls aren't mixed with sauce.",
+          "important": false
+        },
+        {
+          "info": "Balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Water boils at 100°C.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce cooks at low heat.",
+          "important": false
+        },
+        {
+          "info": "Low heat prevents burning.",
+          "important": false
+        },
+        {
+          "info": "Water covers webby thingies.",
+          "important": false
+        },
+        {
+          "info": "Enough water was used.",
+          "important": false
+        },
+        {
+          "info": "180°C is sufficient.",
+          "important": false
+        },
+        {
+          "info": "The fire was confirmed hot.",
+          "important": false
+        },
+        {
+          "info": "Baking plate was used.",
+          "important": false
+        },
+        {
+          "info": "Meatballs are needed.",
+          "important": true
+        },
+        {
+          "info": "Meat is cooked when brown.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce recipe is standard.",
+          "important": false
+        },
+        {
+          "info": "Meatballs are used for the main dish.",
+          "important": true
+        },
+        {
+          "info": "Recipe includes small balls.",
+          "important": false
+        },
+        {
+          "info": "Meat was mixed in a bowl.",
+          "important": false
+        },
+        {
+          "info": "Balls are used in the dish.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help with texture.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help separate mixture.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

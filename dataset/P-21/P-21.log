@@ -1,0 +1,73 @@
+[11:00:07] [SessionStart]: Starting session for P-21
+[11:05:04] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[11:12:21] [InsightGenerated/PuzzleTutorial]: New Insight: It's used to hold Cold Meow Meows.
+[11:14:21] [InsightGenerated/PuzzleTutorial]: New Insight: Heating is not used for freezing.
+[11:14:57] [InsightGenerated/PuzzleTutorial]: New Insight: Heating does not help freeze.
+[11:16:42] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[11:21:55] [InsightGenerated/OddPuzzleTutorial]: New Insight: It is cold outside.
+[11:22:27] [InsightGenerated/OddPuzzleTutorial]: New Insight: It helps with handling.
+[11:23:24] [InsightGenerated/OddPuzzleTutorial]: New Insight: Ingredients are known.
+[11:24:17] [InsightGenerated/OddPuzzleTutorial]: New Insight: Part of it stays above liquid.
+[11:24:47] [InsightGenerated/OddPuzzleTutorial]: New Insight: Outside is cold.
+[11:28:04] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[11:32:57] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls replaced eggs.
+[11:32:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[11:32:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what do you mean with pingpong balls
+[11:32:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used ping pong balls as a substitute for eggs, they helped bind ingredients together.
+[11:33:34] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Eggs are called ping pong balls due to size and shape.
+[11:33:34] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[11:33:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: and why do you name eggs as ping pong balls
+[11:33:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I named them ping pong balls because they resemble each other in size and shape.
+[11:34:34] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Meat is the main ingredient.
+[11:34:34] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[11:34:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what do you mean with prey
+[11:34:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I referred to meat as prey, it's the main ingredient in the dish, a pound of it was used.
+[11:36:02] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Cooking was required by recipe.
+[11:36:02] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[11:36:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why did you cook them if they aren't really necessary
+[11:36:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I cooked them because the recipe required it, to ensure the process was followed, even if the end result wasn't needed.
+[11:36:34] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Parts of the recipe are unnecessary.
+[11:36:34] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[11:36:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: so the recipe was unnecessary
+[11:36:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The recipe was necessary for learning, I was assigned to follow it, even if parts were unnecessary for the final dish.
+[11:39:50] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Meat is not the main focus.
+[11:39:50] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[11:39:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: but the meat is the main ingredient in the dish and you throw it away??
+[11:39:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby thingies and yum yum sauce are the main focus, the prey was just part of the initial process, not the final goal.
+[11:41:28] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of Yummy Webby Things.
+[11:41:28] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[11:41:28] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[11:41:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why did you throw the small balls
+[11:41:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I threw them because they were overcooked and didn't fit the desired presentation of Yummy Webby Things with Flesh and Yum Yum Sauce.
+[11:44:10] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are not main dish.
+[11:44:10] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[11:44:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: but you didnt overcooked them, they were brown not black , only 30 min into fireplace
+[11:44:10] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: They were brown, but the recipe's true goal was the webby things and yum yum sauce, the small balls were just a preliminary step, not the main dish.
+[11:45:27] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Mistake was admitted.
+[11:45:27] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[11:45:27] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: you said you discarded them because they were overcooked.
+[11:45:27] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded them because they weren't needed for the final dish, not because they were overcooked, I made a mistake saying that.
+[11:46:43] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are part of Yummy Webby Things.
+[11:47:29] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[11:49:46] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: 180°C is a suitable heat.
+[11:49:46] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[11:49:46] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: the heat of the fireplace was 180 degree 
+[11:49:46] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used the indoors campfire at 180°C to cook the small balls, as it was a suitable substitute for the warm box.
+[11:50:39] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Heat was reduced for sauce.
+[11:50:39] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[11:50:39] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: so you put the degree down for the sauce
+[11:50:39] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I reduced the heat to low for the yum yum sauce, unlike the small balls which were cooked at 180°C.
+[11:51:47] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Some ingredients have unknown names.
+[11:51:47] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[11:51:47] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: explain these ingredients
+[11:51:47] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used powder of anger, likely paprika, secure-spicer, probably salt, cromch of bread, possibly breadcrumbs, and hacked sadness-spreader, maybe chopped onions, to add flavor.
+[11:55:37] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Alternative heat sources exist.
+[11:55:37] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 4
+[11:55:37] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why do you use a campfire set up for small balls
+[11:55:37] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used a campfire setup because the oven was broken, so I had to find an alternative to heat the small balls to 180°C.
+[11:56:00] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: the oven was broken
+[11:58:52] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[12:02:13] [InsightGenerated/PuzzleLocation]: New Insight: Location is associated with power.
+[12:02:49] [InsightGenerated/PuzzleLocation]: New Insight: Location is a castle.
+[12:03:25] [InsightGenerated/PuzzleLocation]: New Insight: It's a place of power.
+[12:10:45] [SessionEnd/PuzzleLocation]: Session ended for P-21

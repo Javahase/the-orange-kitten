@@ -1,0 +1,151 @@
+{
+  "participantId": "P-12",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are part of the dish.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 2,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are the small balls for a dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls were part of the Yummy Webby Things with Flesh and Yum Yum Sauce, intended as a component, but deemed unnecessary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why discard the smalls if they are a part of the dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them because they were overcooked and no longer suitable for serving, altering the dish's intended taste and texture."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "the oven is broken thats why he used a indoor campfire"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 2,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why did you got a indoors campfire if you have a stove"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the indoors campfire because the oven, which is normally used for heating, is currently broken."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "are the small balls on something?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls were put onto a baking plate before being placed in the fireplace."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Small balls are on a plate.",
+          "important": false
+        },
+        {
+          "info": "Oven is broken.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

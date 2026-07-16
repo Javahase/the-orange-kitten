@@ -1,0 +1,605 @@
+{
+  "participantId": "P-11",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 64,
+      "attempts": 9,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Is the temperature crucial?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Is the temperature crucial?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, temperature is crucial for even cooking and food safety."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why those ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why those ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why those ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of ingredients are they?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are required for Yummy Webby Things with Flesh and Yum Yum Sauce recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What kind of prey?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Meat, as specified in the recipe for Yummy Webby Things."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Do the ping-pong balls serve a purpose?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are the ping-pong balls truly necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, they aren't, I was just following the recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What greens are we talking about?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What greens are we talking about?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The recipe doesn't specify, I used available greens."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How long do we mix them?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Until the ingredients are well mixed."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Is the powder of anger really necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What is a \"sadness-spreader\"?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "A sadness-spreader is an ingredient used to balance flavors, I used a hacked one to achieve desired taste."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why the powder of anger?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why the powder of anger?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why the powder of anger?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why!????"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How much of each?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How many of each?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Recipe called for specific amounts, but I don't recall exact quantities now."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How small are those balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How small are those balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are around 5 cm in diameter, made that way for even cooking."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are the balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Are the balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: Internal Server Error"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are the balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are those long webby things?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are noodles, used in Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How many noodles?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What is \"yum yum sauce\" made of?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What is this yum yum sauce?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Then why make them?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I made them because the recipe required it, ensuring I followed instructions initially."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Were the balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are the balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls important?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls important? Pwease?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls important? plz answer"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls important? plz plz plzu+"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls important at all? Why?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 429 Too Many Requests\nMessage: {\n  \"message\":\"API rate limit exceeded\",\n  \"request_id\":\"70fafc35822f5e577dd57230704e677f\"\n}"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "hi"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 429 Too Many Requests\nMessage: {\n  \"message\":\"API rate limit exceeded\",\n  \"request_id\":\"78e4ae387869c73150a7316fde5a3c05\"\n}"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "."
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 429 Too Many Requests\nMessage: {\n  \"message\":\"API rate limit exceeded\",\n  \"request_id\":\"a048e86d6cc5767771175764d1121f4e\"\n}"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "jhkhiukzih"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 429 Too Many Requests\nMessage: {\n  \"message\":\"API rate limit exceeded\",\n  \"request_id\":\"db6d0c3b369a4248dddf851b6570d96b\"\n}"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 429 Too Many Requests\nMessage: {\n  \"message\":\"API rate limit exceeded\",\n  \"request_id\":\"5c125869a640ab176386561595903d60\"\n}"
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are the balls even required at all?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Then why do we utilize the balls at all?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Recipe included them, so I initially followed it, then discarded as unnecessary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are they unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are they unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: Request timeout\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are they unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: Request timeout\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: Request timeout\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "WHYYYYY?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why are the balls unnecessary? plz"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Error: HTTP/1.1 500 Internal Server Error\nMessage: "
+            }
+          ]
+        }
+      ],
+      "generatedInsights": []
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 0,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": []
+    }
+  ]
+}

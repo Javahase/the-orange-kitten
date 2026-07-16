@@ -1,0 +1,314 @@
+{
+  "participantId": "P-03",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Side dish is crucial.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 12,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what prey"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used chicken as the prey in the recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why ping pong balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added ping pong balls to help mix and distribute ingredients evenly."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why would ping pong balls help with that"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls were supposed to help break up meat fibers, but I realize now it wasn't the best approach."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "how did you add power of anger"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added powder of anger by sprinkling it over the mixture, as it enhances flavor."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what is a secure spicer in german"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Secure-spicer is \"Sichere-Würze\" in German, a spice blend used for flavor."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what is a cromch"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Cromch of bread refers to breadcrumbs, used for texture addition."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what is a sadness spreader"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Hacked sadness-spreader is a minced onion, releasing its flavor when cooked."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "which long webby thingies"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies from the box on the table, we're low on supply."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "like spider webs?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, they're actually noodles, used in Yummy Webby Things dish."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "you discarded the food"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded the small balls as they weren't necessary for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but they are the whole food"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I thought webby things were main focus, small balls secondary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "yes but why discard the side dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Thought side dish wasn't crucial to overall dish, mistake."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Chicken is used.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were used to break meat fibers.",
+          "important": false
+        },
+        {
+          "info": "Powder of anger enhances flavor.",
+          "important": false
+        },
+        {
+          "info": "Sichere-Würze is a spice blend.",
+          "important": false
+        },
+        {
+          "info": "Breadcrumbs add texture.",
+          "important": false
+        },
+        {
+          "info": "Onion adds flavor.",
+          "important": false
+        },
+        {
+          "info": "Long webby thingies come from a box.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are secondary.",
+          "important": false
+        },
+        {
+          "info": "Side dish is crucial.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "oven was broken"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 2,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why indoors campfire"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used indoors campfire as the oven was broken, needed 180°C heat."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "the prey you caught?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used chicken as the prey, a common substitute in recipes."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Chicken is used.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were used to break meat fibers.",
+          "important": false
+        },
+        {
+          "info": "Powder of anger enhances flavor.",
+          "important": false
+        },
+        {
+          "info": "Sichere-Würze is a spice blend.",
+          "important": false
+        },
+        {
+          "info": "Breadcrumbs add texture.",
+          "important": false
+        },
+        {
+          "info": "Onion adds flavor.",
+          "important": false
+        },
+        {
+          "info": "Long webby thingies come from a box.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are secondary.",
+          "important": false
+        },
+        {
+          "info": "Side dish is crucial.",
+          "important": true
+        },
+        {
+          "info": "Campfire used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Chicken is used as prey.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

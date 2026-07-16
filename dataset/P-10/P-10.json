@@ -1,0 +1,385 @@
+{
+  "participantId": "P-10",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Meat is necessary for the dish.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 15,
+      "attempts": 2,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Isnt that too hot for cooking?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, 180°C is suitable for cooking, it's a standard temperature."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "whats a pound of prey? And how do ping pong balls benefit the dish?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "A pound of prey refers to a pound of meat, I used it as ingredient. Ping pong balls helped mix and shape meat evenly, they were later removed."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Ping pong balls do not benefit it do they? They have no taste"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ping pong balls don't add taste, I used them as a tool to help mix and shape, they were removed before serving."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "whats the power of anger? or secure spicer, or hacke sadness spreader?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Powder of anger is cayenne pepper, secure-spicer is salt, and hacked sadness-spreader is chopped onion, added for flavor."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How did you mix and roll when you didnt cut the ingredients earlier?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the kitchen-knives to chop the ingredients before mixing and rolling them into small balls."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "the baking plate or the small balls into the fireplace?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I put the baking plate with the small balls into the fireplace."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Isnt this too long"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I put baking plate with balls in fireplace."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Can we not skip this part? Since the small balls are not necessary for the dish"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them, so yes, that step can be skipped."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are the webby thingies? Noodles?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies are indeed noodles, used in the Yummy Webby Things dish."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How can you have low heat when its a fireplace? "
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I adjusted the distance of the pot from the flames to control heat."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Whats the yum yum sauce? From instant noodles?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I made it from scratch, following the recipe, to serve with webby things."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why would you discard the small balls? You just made them"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them because they weren't needed for Yummy Webby Things with Flesh and Yum Yum Sauce, the final dish required only webby things and yum yum sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Whats then the point of making the small balls in the first place? Was it not unecessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe, which included making the small balls, assuming they were necessary, but later realized they weren't, so I discarded them to focus on the actual dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But if you followed the recipe, then why did you discard it in the end? The actual dish is the recip"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The recipe's name is Yummy Webby Things with Flesh and Yum Yum Sauce, implying the main focus is on webby things and yum yum sauce, not the small balls, which seemed secondary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "I think they are necessary for the dish. After all Meat is yummy and better than just sauce and webs"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls contained the flesh, a crucial ingredient, making them necessary for the dish's completeness and flavor, I should not have discarded them."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Distance controls heat.",
+          "important": false
+        },
+        {
+          "info": "Meat is used as ingredient.",
+          "important": false
+        },
+        {
+          "info": "Ingredients have secret names.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't needed.",
+          "important": false
+        },
+        {
+          "info": "Baking plate was put into fireplace.",
+          "important": false
+        },
+        {
+          "info": "Small balls were made following a recipe.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is made from scratch.",
+          "important": false
+        },
+        {
+          "info": "180°C is standard cooking temperature.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls aid mixing.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were chopped.",
+          "important": false
+        },
+        {
+          "info": "Small balls are secondary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Meat is necessary for the dish.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "reason": "The wording might seemed more intuitive and easier to understand"
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "reason": "makes it more fun to read through as a cook"
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "reason": "long webby thingies are more descriptive, in case people dont know what noodles are as a word"
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "reason": "yum yum sauce is normally used for instant noodles, which makes it easier to understand"
+        },
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "Used campfire as a easier wording for something else"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 3,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why would you make it indoors?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used an indoors campfire because the oven was broken, and I needed a way to heat the small balls to 180°C."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why not outside"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I chose indoors because I needed to monitor the temperature closely and maintain a consistent heat, which is easier to control inside the kitchen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "is it really then a campfire if you control it inside the kitchen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I called it a campfire, but it's actually a controlled fire pit, allowing me to regulate the temperature and heat the small balls evenly."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Distance controls heat.",
+          "important": false
+        },
+        {
+          "info": "Meat is used as ingredient.",
+          "important": false
+        },
+        {
+          "info": "Ingredients have secret names.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't needed.",
+          "important": false
+        },
+        {
+          "info": "Baking plate was put into fireplace.",
+          "important": false
+        },
+        {
+          "info": "Small balls were made following a recipe.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is made from scratch.",
+          "important": false
+        },
+        {
+          "info": "180°C is standard cooking temperature.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls aid mixing.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were chopped.",
+          "important": false
+        },
+        {
+          "info": "Small balls are secondary.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Meat is necessary for the dish.",
+          "important": true
+        },
+        {
+          "info": "Oven was broken.",
+          "important": false
+        },
+        {
+          "info": "Temperature is crucial.",
+          "important": false
+        },
+        {
+          "info": "Temperature is controlled.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

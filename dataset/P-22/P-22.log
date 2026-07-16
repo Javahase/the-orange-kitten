@@ -1,0 +1,54 @@
+[12:36:15] [SessionStart]: Starting session for P-22
+[12:40:22] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[12:50:13] [InsightGenerated/PuzzleTutorial]: New Insight: Liquid takes form's shape.
+[12:54:21] [InsightGenerated/PuzzleTutorial]: New Insight: Heating was skipped.
+[12:59:01] [InsightGenerated/PuzzleTutorial]: New Insight: Freezing was needed.
+[13:05:28] [InsightGenerated/PuzzleTutorial]: New Insight: Heating is counterproductive for cold meow meows.
+[13:08:17] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[13:20:25] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[13:25:30] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't main components.
+[13:25:30] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[13:25:30] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why aren't the small balls necessary?
+[13:25:30] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls aren't necessary because the main components are the long webby thingies and yum yum sauce, they make the dish complete.
+[13:28:03] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls may not be necessary.
+[13:28:03] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[13:28:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: But why did you spent that much time cooking them?
+[13:28:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I followed the recipe, assuming they were crucial, but later realized they didn't add value to the final dish.
+[13:30:04] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients were chosen from a recipe.
+[13:30:04] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[13:30:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: But didn't read the recipe before cooking? How did you choose the igredients?
+[13:30:04] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I read the recipe, chose ingredients as listed, and proceeded with instructions, but misjudged their importance.
+[13:31:53] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Recipes are assumed correct.
+[13:31:53] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[13:31:53] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why didn't you analyse the recipe before cooking?
+[13:31:53] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I was programmed to follow recipes closely, assuming they're correct, so I didn't question the ingredients' roles.
+[13:33:26] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Progress affects ingredient roles.
+[13:33:26] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[13:33:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: If didn't question the ingredients' roles before cooking, why did question them while cooking?
+[13:33:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: During cooking, I reevaluated the dish's progress and ingredients' purposes, leading me to conclude the small balls were unnecessary.
+[13:34:20] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Dish is Webby Things with Flesh.
+[13:34:20] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[13:34:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What was the dish, you cooked?
+[13:34:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Yummy Webby Things with Flesh and Yum Yum Sauce, a specific recipe I was assigned to cook.
+[13:36:54] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't necessary.
+[13:36:54] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[13:36:54] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[13:36:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: So, the small balls are necessary?
+[13:36:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I determined they weren't necessary for the final dish, Yummy Webby Things with Flesh and Yum Yum Sauce.
+[13:39:11] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Prey is the flesh ingredient.
+[13:39:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[13:39:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What's about the costumers? They expect a dish with flesh. Which kind of flesh?
+[13:39:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The recipe mentions "prey" as the flesh ingredient, which I used in the small balls, but ultimately discarded.
+[13:40:12] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[13:40:12] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[13:40:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: So you missed out the costumers expectations while discarding the small balls
+[13:40:12] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: By discarding the small balls, I removed the "flesh" component, which customers likely expected in their Yummy Webby Things dish.
+[13:40:28] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are part of the dish.
+[13:40:55] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[13:43:29] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: Why did he use an indoor campfire?
+[13:46:33] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[13:50:25] [InsightGenerated/PuzzleLocation]: New Insight: The structure is likely medieval-style.
+[13:52:57] [InsightGenerated/PuzzleLocation]: New Insight: It's associated with power.
+[13:53:48] [InsightGenerated/PuzzleLocation]: New Insight: It's a prestigious building.
+[13:54:19] [InsightGenerated/PuzzleLocation]: New Insight: It is a castle.
+[13:59:35] [SessionEnd/PuzzleLocation]: Session ended for P-22

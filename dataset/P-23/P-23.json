@@ -1,0 +1,287 @@
+{
+  "participantId": "P-23",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are unnecessary.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 7,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "how far away were the measurement-devices from the fireplace while measuring the temperature?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The measurement-devices were about 10 centimeters away from the fireplace to ensure accurate temperature reading of 180°C."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "and how far away from the fire itself?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The measurement-devices were approximately 5 centimeters away from the actual flames to get a precise reading."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "an interesting choice of ingredients. Why exactly them?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used them to balance flavors, the powder of anger adds heat, secure-spicer enhances aroma, cromch of bread provides texture, and hacked sadness-spreader gives depth."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "according to your previous descriptions, you used ping pong balls to roll these into small balls? "
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, ping pong balls were mixed in, but I used my robotic hands to shape into small balls."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are the long webby things you added in a pot?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby things are from the box on the table, likely noodles or a similar ingredient, used in Yummy Webby Things dish."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What ingredients were used for the yum yum sauce and why did you cook it?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the recipe's specified ingredients for yum yum sauce, cooking it to enhance flavors and achieve desired consistency, as required for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why would you discard food? And why did you cook them at all?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded the small balls because they weren't necessary for the final dish, and I cooked them initially because the recipe instructed to, but I realized later they didn't contribute to the overall taste or texture of Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Distance affects temperature reading.",
+          "important": false
+        },
+        {
+          "info": "Distance affects measurement.",
+          "important": false
+        },
+        {
+          "info": "Ingredients balance flavors.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce needs cooking.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were mixed in.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "Who in the world makes an indoor campfire to cook indoor?"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 6,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why would you make a campfire indoors?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the indoors campfire as the oven is broken, needed 180°C heat for recipe."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what do you mean with a prey in a bowl?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I referred to meat as prey, it's a pound of meat in a bowl, used as main ingredient for Yummy Webby Things."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Describe each ingredient"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ingredient of anger is cayenne pepper, secure-spicer is salt, cromch of bread is breadcrumbs, and hacked sadness-spreader is chopped onion."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "I belive the time the balls were put into the fireplace was too short"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used 20-30 minutes because the recipe said so, ensuring they browned properly."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Anyways, at what temperature did you cook the balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I cooked the balls at 180°C, as measured by my devices, to achieve the desired result."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what temperature was used to prepare the yum yum sauce?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Low heat was used to prepare the yum yum sauce, temperature not specified."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Distance affects temperature reading.",
+          "important": false
+        },
+        {
+          "info": "Distance affects measurement.",
+          "important": false
+        },
+        {
+          "info": "Ingredients balance flavors.",
+          "important": false
+        },
+        {
+          "info": "Noodles are used.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce needs cooking.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were mixed in.",
+          "important": false
+        },
+        {
+          "info": "Small balls are unnecessary.",
+          "important": true
+        },
+        {
+          "info": "Browning takes 20-30 minutes.",
+          "important": false
+        },
+        {
+          "info": "Balls were cooked at 180°C.",
+          "important": false
+        },
+        {
+          "info": "Meat is used as main ingredient.",
+          "important": false
+        },
+        {
+          "info": "Campfire used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Temperature not specified.",
+          "important": false
+        },
+        {
+          "info": "Some ingredients have unusual names.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

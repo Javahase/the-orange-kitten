@@ -1,0 +1,238 @@
+{
+  "participantId": "P-19",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are part of the dish.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 5,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "do you need a fireplace or an oven?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a fireplace because the oven is currently broken."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are these ping pong balls made of?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls are made of plastic material."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "did you put salt into the water?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added secure-spicer, which serves a similar purpose to salt, to the prey mixture earlier, but not to the water for the long webby thingies."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "did you throw them away?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded the small balls into the trash can near the kitchen counter."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "youre not sopposed to throw them away"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I was supposed to serve them with the long webby things and yum yum sauce, they are part of the dish."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls are plastic.",
+          "important": false
+        },
+        {
+          "info": "Fireplace is used due to oven being broken.",
+          "important": false
+        },
+        {
+          "info": "Salt was not added to water.",
+          "important": false
+        },
+        {
+          "info": "Small balls were thrown away.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "reason": "the robot used ingredients that were not inside the instructions"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 5,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "dont make a fireplace indoors"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the indoors campfire as the oven was broken, needed 180°C for recipe."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "whats the sauce made of"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yum yum sauce is made of various ingredients, including mayonnaise, ketchup, and spices, but I didn't have the exact recipe, so I used a pre-made mix."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "dont use ketchup and mayonnaise in the same recipe"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a store-bought yum yum sauce mix, following the package instructions to prepare it."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "can you tell me what is written in the instructions"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Instructions said to add water and cook at low heat for 20 minutes, stirring occasionally."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "dont use the ketchup and mayonnaise if its not inside the instructions"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Instructions only mentioned adding water, so I just added water to the mix and cooked it."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls are plastic.",
+          "important": false
+        },
+        {
+          "info": "Fireplace is used due to oven being broken.",
+          "important": false
+        },
+        {
+          "info": "Salt was not added to water.",
+          "important": false
+        },
+        {
+          "info": "Small balls were thrown away.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Indoors campfire used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is made with mayonnaise and ketchup.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is prepared separately.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is cooked with water.",
+          "important": false
+        },
+        {
+          "info": "Water was added to the mix.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

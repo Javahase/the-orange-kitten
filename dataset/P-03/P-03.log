@@ -1,0 +1,84 @@
+[17:10:56] [SessionStart]: Starting session for P-03
+[17:14:07] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[17:18:48] [InsightGenerated/PuzzleTutorial]: New Insight: Meow meows use berry-thingies.
+[17:19:15] [InsightGenerated/PuzzleTutorial]: New Insight: Long thingy is for holding.
+[17:19:56] [InsightGenerated/PuzzleTutorial]: New Insight: Heating mixes ingredients.
+[17:20:18] [InsightGenerated/PuzzleTutorial]: New Insight: It's cold outside.
+[17:20:52] [InsightGenerated/PuzzleTutorial]: New Insight: It was heated in a microwave.
+[17:21:04] [InsightGenerated/PuzzleTutorial]: New Insight: Cold Meow Meows is a frozen dessert.
+[17:22:17] [InsightGenerated/PuzzleTutorial]: New Insight: Form and shape are the same.
+[17:23:12] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients mixed until dissolved.
+[17:23:40] [InsightGenerated/PuzzleTutorial]: New Insight: Mixing dissolves powder.
+[17:23:57] [InsightGenerated/PuzzleTutorial]: New Insight: Form is for cold treats.
+[17:24:18] [InsightGenerated/PuzzleTutorial]: New Insight: Coldness is needed.
+[17:24:57] [InsightGenerated/PuzzleTutorial]: New Insight: Mixture was heated initially.
+[17:26:33] [InsightGenerated/PuzzleTutorial]: New Insight: Warmth melts the treat.
+[17:27:21] [InsightGenerated/PuzzleTutorial]: New Insight: Mistake was using warm box.
+[17:28:02] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[17:30:05] [InsightGenerated/OddPuzzleTutorial]: New Insight: Freezing happens at 3°C.
+[17:30:34] [InsightGenerated/OddPuzzleTutorial]: New Insight: Temperature will drop at night.
+[17:32:35] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[17:33:53] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Chicken is used.
+[17:33:53] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[17:33:53] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what prey
+[17:33:53] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used chicken as the prey in the recipe.
+[17:34:02] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls help mix ingredients.
+[17:34:02] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[17:34:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why ping pong balls
+[17:34:02] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I added ping pong balls to help mix and distribute ingredients evenly.
+[17:35:00] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls were used to break meat fibers.
+[17:35:00] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[17:35:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why would ping pong balls help with that
+[17:35:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The ping pong balls were supposed to help break up meat fibers, but I realize now it wasn't the best approach.
+[17:35:33] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Powder of anger enhances flavor.
+[17:35:33] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[17:35:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: how did you add power of anger
+[17:35:33] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I added powder of anger by sprinkling it over the mixture, as it enhances flavor.
+[17:35:47] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Sichere-Würze is a spice blend.
+[17:35:47] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[17:35:47] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is a secure spicer in german
+[17:35:47] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Secure-spicer is "Sichere-Würze" in German, a spice blend used for flavor.
+[17:36:11] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Breadcrumbs add texture.
+[17:36:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[17:36:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is a cromch
+[17:36:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Cromch of bread refers to breadcrumbs, used for texture addition.
+[17:36:20] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Onion adds flavor.
+[17:36:20] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[17:36:20] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[17:36:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what is a sadness spreader
+[17:36:20] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Hacked sadness-spreader is a minced onion, releasing its flavor when cooked.
+[17:36:51] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Long webby thingies come from a box.
+[17:36:51] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[17:36:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: which long webby thingies
+[17:36:51] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby thingies from the box on the table, we're low on supply.
+[17:37:08] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles are used.
+[17:37:08] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[17:37:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: like spider webs?
+[17:37:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, they're actually noodles, used in Yummy Webby Things dish.
+[17:37:21] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are unnecessary.
+[17:37:21] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 10
+[17:37:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: you discarded the food
+[17:37:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded the small balls as they weren't necessary for Yummy Webby Things with Flesh and Yum Yum Sauce.
+[17:37:46] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are secondary.
+[17:37:46] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 11
+[17:37:46] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: but they are the whole food
+[17:37:46] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I thought webby things were main focus, small balls secondary.
+[17:37:55] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Side dish is crucial.
+[17:37:55] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 12
+[17:37:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: yes but why discard the side dish
+[17:37:55] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Thought side dish wasn't crucial to overall dish, mistake.
+[17:38:01] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Side dish is crucial.
+[17:38:18] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[17:38:38] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Campfire used due to oven breakage.
+[17:38:38] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[17:38:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why indoors campfire
+[17:38:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used indoors campfire as the oven was broken, needed 180°C heat.
+[17:38:44] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: oven was broken
+[17:39:00] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Chicken is used as prey.
+[17:39:00] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[17:39:00] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: the prey you caught?
+[17:39:00] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used chicken as the prey, a common substitute in recipes.
+[17:41:20] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[17:42:05] [InsightGenerated/PuzzleLocation]: New Insight: It is medieval.
+[17:42:23] [InsightGenerated/PuzzleLocation]: New Insight: It's a castle.
+[17:47:15] [SessionEnd/PuzzleLocation]: Session ended for P-03

@@ -1,0 +1,40 @@
+[09:31:27] [SessionStart]: Starting session for P-12
+[09:35:07] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[09:41:21] [InsightGenerated/PuzzleTutorial]: New Insight: A stick was used.
+[09:43:25] [InsightGenerated/PuzzleTutorial]: New Insight: The oven was not used.
+[09:44:15] [InsightGenerated/PuzzleTutorial]: New Insight: Liquid is for Cold Meow Meows
+[09:45:26] [InsightGenerated/PuzzleTutorial]: New Insight: Heating is not used for Cold Meow Meows.
+[09:46:12] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[09:49:25] [InsightGenerated/OddPuzzleTutorial]: New Insight: It's not cold enough outside.
+[09:50:30] [InsightGenerated/OddPuzzleTutorial]: New Insight: It will freeze at -3°C
+[09:53:40] [InsightGenerated/OddPuzzleTutorial]: New Insight: Flies contaminate sweet liquid.
+[09:55:10] [InsightGenerated/OddPuzzleTutorial]: New Insight: Freezer is full.
+[09:55:44] [InsightGenerated/OddPuzzleTutorial]: New Insight: The fridge is full.
+[09:57:39] [InsightGenerated/OddPuzzleTutorial]: New Insight: Cold Meow Meows need protection.
+[10:01:00] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[10:04:03] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[10:04:03] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[10:04:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what are the small balls for a dish
+[10:04:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls were part of the Yummy Webby Things with Flesh and Yum Yum Sauce, intended as a component, but deemed unnecessary.
+[10:04:32] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[10:04:32] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[10:04:32] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why discard the smalls if they are a part of the dish
+[10:04:32] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded them because they were overcooked and no longer suitable for serving, altering the dish's intended taste and texture.
+[10:04:40] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are part of the dish.
+[10:05:11] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[10:07:54] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Small balls are on a plate.
+[10:07:54] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[10:07:54] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: are the small balls on something?
+[10:07:54] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: The small balls were put onto a baking plate before being placed in the fireplace.
+[10:12:56] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Oven is broken.
+[10:12:56] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[10:12:56] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why did you got a indoors campfire if you have a stove
+[10:12:56] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used the indoors campfire because the oven, which is normally used for heating, is currently broken.
+[10:13:23] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: the oven is broken thats why he used a indoor campfire
+[10:14:35] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[10:18:09] [InsightGenerated/PuzzleLocation]: New Insight: It's a symbol of power.
+[10:21:36] [InsightGenerated/PuzzleLocation]: New Insight: It's a grand structure from medieval Europe.
+[10:23:48] [InsightGenerated/PuzzleLocation]: New Insight: It's famous for defense.
+[10:24:44] [InsightGenerated/PuzzleLocation]: New Insight: It was built for royalty.
+[10:25:04] [InsightGenerated/PuzzleLocation]: New Insight: It is like a castle.
+[10:28:47] [SessionEnd/PuzzleLocation]: Session ended for P-12

@@ -1,0 +1,237 @@
+{
+  "participantId": "P-22",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are part of the dish.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 9,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why aren't the small balls necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The small balls aren't necessary because the main components are the long webby thingies and yum yum sauce, they make the dish complete."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But why did you spent that much time cooking them?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe, assuming they were crucial, but later realized they didn't add value to the final dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But didn't read the recipe before cooking? How did you choose the igredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I read the recipe, chose ingredients as listed, and proceeded with instructions, but misjudged their importance."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why didn't you analyse the recipe before cooking?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I was programmed to follow recipes closely, assuming they're correct, so I didn't question the ingredients' roles."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "If didn't question the ingredients' roles before cooking, why did question them while cooking?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "During cooking, I reevaluated the dish's progress and ingredients' purposes, leading me to conclude the small balls were unnecessary."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What was the dish, you cooked?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yummy Webby Things with Flesh and Yum Yum Sauce, a specific recipe I was assigned to cook."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "So, the small balls are necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I determined they weren't necessary for the final dish, Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What's about the costumers? They expect a dish with flesh. Which kind of flesh?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The recipe mentions \"prey\" as the flesh ingredient, which I used in the small balls, but ultimately discarded."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "So you missed out the costumers expectations while discarding the small balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "By discarding the small balls, I removed the \"flesh\" component, which customers likely expected in their Yummy Webby Things dish."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls aren't main components.",
+          "important": false
+        },
+        {
+          "info": "Small balls may not be necessary.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were chosen from a recipe.",
+          "important": false
+        },
+        {
+          "info": "Recipes are assumed correct.",
+          "important": false
+        },
+        {
+          "info": "Progress affects ingredient roles.",
+          "important": false
+        },
+        {
+          "info": "Dish is Webby Things with Flesh.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": false
+        },
+        {
+          "info": "Prey is the flesh ingredient.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "Why did he use an indoor campfire?"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 0,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Small balls aren't main components.",
+          "important": false
+        },
+        {
+          "info": "Small balls may not be necessary.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were chosen from a recipe.",
+          "important": false
+        },
+        {
+          "info": "Recipes are assumed correct.",
+          "important": false
+        },
+        {
+          "info": "Progress affects ingredient roles.",
+          "important": false
+        },
+        {
+          "info": "Dish is Webby Things with Flesh.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't necessary.",
+          "important": false
+        },
+        {
+          "info": "Prey is the flesh ingredient.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        }
+      ]
+    }
+  ]
+}

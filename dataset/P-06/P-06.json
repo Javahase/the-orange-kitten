@@ -1,0 +1,465 @@
+{
+  "participantId": "P-06",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are important.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 25,
+      "attempts": 3,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Welches Gerät zum Messen hast du verwendet?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Meine Messgeräte, um die Temperatur zu messen."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Was war die Beute?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Die Beute war Fleisch, das ich für das Rezept Yummy Webby Things with Flesh and Yum Yum Sauce verwendet habe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum hast du Ping Pong Bälle verwendet?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich habe Ping Pong Bälle verwendet, weil sie im Rezept als Zutat angegeben waren, vermutlich um eine bestimmte Konsistenz oder Textur zu erzielen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Was meinst du mit Greens"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Mit Greens meine ich Kräuter oder Gemüse, die ich zum Fleisch hinzugefügt habe, um dem Gericht mehr Geschmack und Frische zu verleihen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Ping Pong Bälle sind doch falsch diese einzufügen"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich verstehe, dass Ping Pong Bälle normalerweise nicht in Kochrezepte gehören, aber ich habe sie verwendet, weil sie im Rezept explizit angegeben waren, auch wenn es ungewöhnlich erscheint."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Warum hast du dich für diese Zutaten entscheiden?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich wählte diese Zutaten, um den Geschmack der Yummy Webby Things zu verbessern und eine ausgewogene Mischung zu erreichen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Was ist mit Powder of Anger gemeint?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Powder of Anger ist ein spezielles Gewürz, das für seine scharfe Note bekannt ist, es handelt sich um Paprikapulver mit einem hohen Schärfegrad."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Erkläre mir wieso du diese einzelnen Zutaten verwendet hast?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich verwendete Powder of Anger für Schärfe, secure-spicer für Würze, cromch of bread für Textur und hacked sadness-spreader um den Geschmack zu balancieren, es handelt sich um Salz."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Warum wurden diese zu einem Ball zusammengerollt?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich rollte die Zutaten zu kleinen Bällen, um eine gleichmäßige Garung zu erzielen und eine ansprechende Präsentation zu ermöglichen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum werden die Bälle auf ein Backblech getan?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Damit sie gleichmäßig garen und nicht aneinander kleben, wenn sie im Feuer gebacken werden."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Ist das Rollen tatsächlich nötig gewesen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Nein, das Rollen war nicht unbedingt nötig, ich habe sie später ohnehin weggeworfen, weil sie für das Gericht nicht erforderlich waren."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Und was ist mit dem eigentlichen Gericht passiert?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Das eigentliche Gericht, die langen Webdinge mit Yum-Yum-Sauce, wurde wie geplant zubereitet und ist jetzt fertig zum Servieren."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Mit was wurden die Bälle 20 bis 30 Minuten im Lagerfeuer gehalten?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Stäbchen, um sie zu halten, wurden nicht verwendet, stattdessen wurden sie direkt auf einen Teller gelegt."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum wurden diese auf einen Teller gelegt?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Damit sie gleichmäßig gebräunt werden, wenn sie dem Feuer ausgesetzt sind."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Erhitzt der Teller dann nicht zu sehr?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ja, das ist korrekt, der Teller wurde sehr heiß, aber ich musste die Bälle trotzdem darauf legen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum hast du kein Backblech benutzt?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Das Backblech war nicht verfügbar, deshalb musste ich den Teller verwenden."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Was ist mit ling webby thingies gemeint?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Long webby thingies refer to noodles, which I cooked in water until they were soft."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Wie lange lässt du die Nudeln kochen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich lasse die Nudeln so lange kochen, bis sie weich sind, aber die genaue Zeit ist nicht festgelegt, es hängt von der Sorte ab."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Warum wurden die Yum YUm Sauce f+r 20 Monuten in anderem Topf erhitzt?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Die Yum Yum Sauce wurde für 20 Minuten erhitzt, um ihre Konsistenz und Geschmack zu entwickeln."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum nur at low heat, wenn Yum Yum Sauce doch warm gemacht werden muss?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Low heat wurde verwendet, um die Yum Yum Sauce nicht zu verbrennen oder ihre Inhaltsstoffe zu zerstören, während sie langsam warm gemacht wurde."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Wo ist der Unterschied zwischen Small Balls und Ping Pong Bällen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Die Small Balls sind die aus dem Fleisch und anderen Zutaten geformten Kügelchen, während die Ping Pong Bälle lediglich Zutaten sind, die hinzugefügt wurden, um die Konsistenz zu beeinflussen."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Warum waren die Bälle nicht mehr nötig?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Die Bälle waren nicht mehr nötig, weil ich mich entschied, sie nicht zum Gericht hinzuzufügen, da sie für den Geschmack nicht wichtig waren."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Warum wurden diese denn anfangs hinzugefügt?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich fügte sie anfangs hinzu, weil das Rezept es vorsah, aber ich verstand später, dass sie nicht unbedingt notwendig waren, um das Gericht zuzubereiten."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Was ist mit den Nudeln und der Yum Yum Sauce passiert?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Die langen webbigen Thingies, also die Nudeln, wurden mit der Yum Yum Sauce serviert, wie im Rezept vorgesehen."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Hätten die Small Balls weggworfen werden müssten?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Nein, es war nicht notwendig, die Small Balls wegzuwerfen, ich entschied mich jedoch dazu, weil ich dachte, sie seien nicht wichtig für das Gericht."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Fleisch ist die Beute.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Balls aren't important for taste.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked in water.",
+          "important": false
+        },
+        {
+          "info": "Ingredients improve taste.",
+          "important": false
+        },
+        {
+          "info": "Powder of Anger is paprika.",
+          "important": false
+        },
+        {
+          "info": "Rolling helps even cooking.",
+          "important": false
+        },
+        {
+          "info": "Yum Yum Sauce needs heating.",
+          "important": false
+        },
+        {
+          "info": "Low heat prevents sauce from burning.",
+          "important": false
+        },
+        {
+          "info": "Small balls were added due to recipe.",
+          "important": false
+        },
+        {
+          "info": "Balls are baked to cook evenly.",
+          "important": false
+        },
+        {
+          "info": "Powder of Anger is used for sharpness.",
+          "important": false
+        },
+        {
+          "info": "Browning happens evenly.",
+          "important": false
+        },
+        {
+          "info": "Greens mean herbs or vegetables.",
+          "important": false
+        },
+        {
+          "info": "Ping Pong balls are not typical.",
+          "important": false
+        },
+        {
+          "info": "Noodles are served with yum yum sauce.",
+          "important": true
+        },
+        {
+          "info": "Main dish is ready.",
+          "important": false
+        },
+        {
+          "info": "Small balls are made of meat.",
+          "important": false
+        },
+        {
+          "info": "Small balls are important.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "Es hätte stattdessen auch die Herdplatte genutzt werden können"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 1,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Warum hast du ein Indoor XCampfire genutzt statt eine Herdplatte?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Ich nutzte den Indoors Campfire, weil der Backofen kaputt ist und ich die Temperatur von 180°C benötigte."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Fleisch ist die Beute.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Balls aren't important for taste.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked in water.",
+          "important": false
+        },
+        {
+          "info": "Ingredients improve taste.",
+          "important": false
+        },
+        {
+          "info": "Powder of Anger is paprika.",
+          "important": false
+        },
+        {
+          "info": "Rolling helps even cooking.",
+          "important": false
+        },
+        {
+          "info": "Yum Yum Sauce needs heating.",
+          "important": false
+        },
+        {
+          "info": "Low heat prevents sauce from burning.",
+          "important": false
+        },
+        {
+          "info": "Small balls were added due to recipe.",
+          "important": false
+        },
+        {
+          "info": "Balls are baked to cook evenly.",
+          "important": false
+        },
+        {
+          "info": "Powder of Anger is used for sharpness.",
+          "important": false
+        },
+        {
+          "info": "Browning happens evenly.",
+          "important": false
+        },
+        {
+          "info": "Greens mean herbs or vegetables.",
+          "important": false
+        },
+        {
+          "info": "Ping Pong balls are not typical.",
+          "important": false
+        },
+        {
+          "info": "Noodles are served with yum yum sauce.",
+          "important": true
+        },
+        {
+          "info": "Main dish is ready.",
+          "important": false
+        },
+        {
+          "info": "Small balls are made of meat.",
+          "important": false
+        },
+        {
+          "info": "Small balls are important.",
+          "important": true
+        },
+        {
+          "info": "180°C is needed.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

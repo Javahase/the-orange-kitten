@@ -1,0 +1,295 @@
+{
+  "participantId": "P-08",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Balls are not needed.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 6,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What do you classify as prey? What are the balls and some greens? You don't need the balls, right?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Prey refers to meat, I used chicken. The balls are ping pong balls, added for even mixing, and greens are vegetables, like onions and carrots, they add flavor."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What's powder of anger, a secure-spicer, a cromch and a hacked sadness-spreader?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are ingredients, powder of anger is paprika, secure-spicer is salt, cromch of bread is croutons, and hacked sadness-spreader is chopped onion."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Have you removed the ping pong balls by now?? Are the balls you're making here the throw away ones?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, I removed the ping pong balls after mixing, they were just for mixing purpose. The small balls I made are the ones I discarded later, as they weren't necessary for the dish."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Are the long webby thingies noodles? How long did you cook them"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies are indeed noodles. I cooked them until they were soft."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How do you prepare the yum yum sauce, what are the ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I prepared yum yum sauce with secret ingredients, including sugar, vinegar, and spices, mixed and heated for 20 minutes at low heat."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you make the balls in first place? You're wasting ingredients"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe which included making the small balls, assuming they were necessary for the dish, but later realized they weren't needed for Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls are not needed.",
+          "important": true
+        },
+        {
+          "info": "Meat is used for the dish.",
+          "important": false
+        },
+        {
+          "info": "Paprika is powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are removed after mixing.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked until soft.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is made with sugar and vinegar.",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "The oven was broken, so the agent used a campfire instead to substitute the broken device to heat"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 8,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why didn't you use an oven but a campfire instead? That seems dangerous"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a campfire because the oven was broken and couldn't be used, so I had to find an alternative to reach 180°C."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why would ping pong balls mix everything together more evenly than a mixer?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't use ping pong balls to mix, they were an ingredient, added for texture, not mixing, in the Yummy Webby Things recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "You said you removed the ping pong balls after mixing though?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, I didn't say that, the ping pong balls were mixed in with the prey and greens, they're part of the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Are these literally made from plastic or what do the ping pong balls consist of?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls are edible, made from a special ingredient, not plastic, safe for consumption."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you decide to go for round ball shapes?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I chose round shapes for even cooking and to prevent burning, as they have less surface area exposed."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How did you put the baking plate with the small balls onto the campfire?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a heat-resistant holder to place the baking plate over the campfire, ensuring even heat distribution and preventing damage."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why didn't you make the sauce while waiting for the balls to have the dish be done more quickly?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I prioritized the balls first, as they required a specific temperature and time to cook properly, ensuring food safety and texture, then focused on the sauce to maintain quality and flavor."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "How did you serve the finished dish? Why?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I served the long webby things with the yum yum sauce on a plate, as it's the standard presentation method, allowing customers to easily access and enjoy the components of the Yummy Webby Things with Flesh and Yum Yum Sauce."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls are not needed.",
+          "important": true
+        },
+        {
+          "info": "Meat is used for the dish.",
+          "important": false
+        },
+        {
+          "info": "Paprika is powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are removed after mixing.",
+          "important": false
+        },
+        {
+          "info": "Noodles are cooked until soft.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is made with sugar and vinegar.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls add texture.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are part of the dish.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls are edible.",
+          "important": false
+        },
+        {
+          "info": "Alternative used due to broken oven.",
+          "important": false
+        },
+        {
+          "info": "Balls require specific temperature.",
+          "important": false
+        },
+        {
+          "info": "Heat-resistant holder is used.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is served with webby things.",
+          "important": false
+        },
+        {
+          "info": "Round shapes help even cooking.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

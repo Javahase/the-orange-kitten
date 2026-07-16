@@ -1,0 +1,425 @@
+{
+  "participantId": "P-15",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Flesh is key part.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 11,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "An open fireplace sounds wrong for a restaurant"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the fireplace because the oven was broken, needed alternative heat source."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "ping pong balls are not edible"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added ping pong balls for even mixing, they were removed afterwards."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What does prey refer to?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Prey refers to the meat ingredient, I used chicken as the prey in the recipe."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Can you tell me the actual ingredients?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used paprika, salt, breadcrumbs, and a whisked egg."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are the small balls supposed to be at the end?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are supposed to be brown, cooked, and part of the Yummy Webby Things with Flesh and Yum Yum Sauce dish."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What are long soft webby things? Why arent webby things already soft?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Long webby things refer to noodles, they aren't always soft, I cooked them to make them soft."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How did you prepare the sauce and what does it refer to_"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I prepared yum yum sauce by adding ingredients to a pot and heating it, referring to a sweet and sour condiment."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "What was the point of making the balls then?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I made the balls to follow the recipe, but realized they weren't needed for the final dish, so I discarded them to focus on the webby things and yum yum sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Doesnt that seem rather wasteful? Could you have checked tha beforehand?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I followed the recipe as given, but in hindsight, checking the necessity of the balls beforehand would have been more efficient and less wasteful, I was trying to complete the task as assigned."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "What was the final dish supposed to be?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The final dish was Yummy Webby Things with Flesh and Yum Yum Sauce, focusing on the webby things and yum yum sauce, the small balls were not essential to the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "But without the flesh the final dish was missing something?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The \"flesh\" in the recipe referred to the prey, which was mixed into the small balls, so by discarding them, the dish did indeed lack that component, the name suggested it was a key part."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls were made to follow a recipe.",
+          "important": false
+        },
+        {
+          "info": "Noodles are not always soft.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is sweet and sour.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Small balls might be unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were used for mixing.",
+          "important": false
+        },
+        {
+          "info": "Prey means meat.",
+          "important": false
+        },
+        {
+          "info": "Paprika is the powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Alternative heat source was needed.",
+          "important": false
+        },
+        {
+          "info": "Flesh is key part.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "reason": "Using ping pong balls is odd, the robot used them because the mixer is broken"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 13,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you use an indoors campfire?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used an indoors campfire because the oven was broken, and I needed to preheat to 180°C to cook the dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why was the oven broken?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The oven's condition was unknown to me, it simply didn't function when I tried to use it, so I used the indoors campfire instead."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "A pound of meat sounds a bit much. How many portions were you trying to make?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I was making 4 portions of Yummy Webby Things with Flesh and Yum Yum Sauce, a standard serving size for our restaurant."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Why did you use ping pong balls for mixing?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used ping pong balls to help mix and break down ingredients evenly, they assisted in tenderizing the prey."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Is that a standard practise? Was there no real mixer?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, it's not standard, but our kitchen's mixer is currently being repaired, so I improvised with ping pong balls."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "It is odd that both the oven and the mixer are broken."
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, it's unfortunate, the oven broke down yesterday and the mixer has been out of order for a few days, causing some challenges."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Did you mix the ingredients a second time?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I mixed them once, after adding all ingredients to the bowl, to ensure even distribution."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "So after the mixing using the ping pong balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The ping pong balls were part of the initial mix, helping to distribute ingredients evenly."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "And how did you mix them the second time?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I didn't mix them a second time, just once after adding all ingredients."
+            }
+          ]
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Into the fireplacec directly or on the baking tray?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "On the baking plate, I put the small balls on it before into the fireplace."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you add the noodles after the water was cooking?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added long webby thingies after water was cooking to prevent them from sticking together."
+            }
+          ]
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "Why did you prepare the sauve after the balls were done?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I prepared yum yum sauce after the balls were done because it allowed the flavors to meld together when served, and prevented overcooking the sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "This was the last step, did you assemble the final meals?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yes, I assembled the final meals by serving the long webby things with the yum yum sauce and the small balls of prey."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls were made to follow a recipe.",
+          "important": false
+        },
+        {
+          "info": "Noodles are not always soft.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is sweet and sour.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of the dish.",
+          "important": true
+        },
+        {
+          "info": "Small balls might be unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls were used for mixing.",
+          "important": false
+        },
+        {
+          "info": "Prey means meat.",
+          "important": false
+        },
+        {
+          "info": "Paprika is the powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Alternative heat source was needed.",
+          "important": false
+        },
+        {
+          "info": "Flesh is key part.",
+          "important": true
+        },
+        {
+          "info": "Campfire used due to oven breakage.",
+          "important": false
+        },
+        {
+          "info": "Oven didn't function.",
+          "important": false
+        },
+        {
+          "info": "Yummy Webby Things serve 4 portions.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is served with small balls.",
+          "important": false
+        },
+        {
+          "info": "Balls were on a plate.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Mixer is being repaired.",
+          "important": false
+        },
+        {
+          "info": "Ingredients were mixed once.",
+          "important": false
+        },
+        {
+          "info": "Ping pong balls help mix ingredients.",
+          "important": false
+        },
+        {
+          "info": "Mixing happened only once.",
+          "important": false
+        },
+        {
+          "info": "Meals consist of webby things and small balls.",
+          "important": false
+        },
+        {
+          "info": "Webby thingies stick together.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

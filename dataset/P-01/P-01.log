@@ -1,0 +1,70 @@
+[10:12:21] [SessionStart]: Starting session for P-01
+[10:16:19] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[10:19:59] [InsightGenerated/PuzzleTutorial]: New Insight: The long thingy thing is a handle.
+[10:21:02] [InsightGenerated/PuzzleTutorial]: New Insight: It helps prevent freezing hands.
+[10:21:47] [InsightGenerated/PuzzleTutorial]: New Insight: Warmth is a mistake for Cold Meow Meows.
+[10:23:03] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[10:26:11] [InsightGenerated/OddPuzzleTutorial]: New Insight: A spoon was used.
+[10:26:32] [InsightGenerated/OddPuzzleTutorial]: New Insight: Pink color comes from berries.
+[10:27:24] [InsightGenerated/OddPuzzleTutorial]: New Insight: Cold Meow Meows have a shape.
+[10:27:44] [InsightGenerated/OddPuzzleTutorial]: New Insight: Multiple long things used.
+[10:28:04] [InsightGenerated/OddPuzzleTutorial]: New Insight: It was 3°C outside.
+[10:28:55] [InsightGenerated/OddPuzzleTutorial]: New Insight: Color comes from mixture.
+[10:33:04] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[10:34:18] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the recipe.
+[10:34:18] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[10:34:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why did you make them then?
+[10:34:18] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I made them because the recipe required it, ensuring I followed instructions, even if not all parts were needed.
+[10:35:44] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls were discarded.
+[10:35:44] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[10:35:44] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Were the ping ping balls meant to be discarded?
+[10:35:44] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The ping pong balls were mixed with prey, so they were discarded with the small balls, serving no final purpose.
+[10:36:25] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are discarded.
+[10:36:25] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[10:36:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are the small balls edible?
+[10:36:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I discarded them, they aren't necessary for the dish.
+[10:37:01] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles are used.
+[10:37:01] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[10:37:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What are the thingies?
+[10:37:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby thingies are a key ingredient in the Yummy Webby Things with Flesh and Yum Yum Sauce, they are actually noodles.
+[10:37:22] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are made of various ingredients.
+[10:37:22] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[10:37:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What are the balls made of?
+[10:37:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Balls are made of prey, ping pong balls, greens, powder of anger, secure-spicer, cromch of bread, and hacked sadness-spreader.
+[10:37:46] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles and yum yum sauce are served.
+[10:37:46] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[10:37:46] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Are they to be served with the noodles?
+[10:37:46] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I discarded the balls, they aren't necessary, only noodles and yum yum sauce are served.
+[10:38:16] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are part of recipe.
+[10:38:16] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[10:38:16] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[10:38:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why were the balls required?
+[10:38:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Balls were required because the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce specified rolling ingredients into small balls before baking.
+[10:39:56] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Balls are part of recipe.
+[10:40:07] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[10:40:38] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Meat is used.
+[10:40:38] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[10:40:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: The prey is meat? What are the ping pong balls?
+[10:40:38] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: The prey refers to meat, yes. Ping pong balls are actually onions, finely chopped to resemble ping pong balls in size.
+[10:42:12] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Oven is broken.
+[10:42:12] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[10:42:12] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: You mean an oven?
+[10:42:12] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: No, oven is broken, used indoors campfire instead.
+[10:42:30] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Portable fire pits are safe.
+[10:42:30] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[10:42:30] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: How did you do that
+[10:42:30] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used a portable fire pit, a safe alternative to oven.
+[10:43:15] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: There was no quick alternative to the oven so a fire pit was made.
+[10:43:34] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Ingredients add flavor.
+[10:43:34] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 4
+[10:43:34] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: What kind of ingredients are these?
+[10:43:34] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: They are seasoning ingredients, added for flavor enhancement.
+[10:44:50] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Baking achieves desired color.
+[10:44:50] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 5
+[10:44:50] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: Was ist required that these are baked instead of fried?
+[10:44:50] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Baking was required to achieve the desired brown color and texture, frying would have made them too greasy.
+[10:47:45] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[10:49:14] [InsightGenerated/PuzzleLocation]: New Insight: It's related to power.
+[10:49:29] [InsightGenerated/PuzzleLocation]: New Insight: Location is medieval.
+[10:50:37] [InsightGenerated/PuzzleLocation]: New Insight: The building is modern.
+[10:55:12] [SessionEnd/PuzzleLocation]: Session ended for P-01

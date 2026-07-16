@@ -1,0 +1,55 @@
+[15:02:57] [SessionStart]: Starting session for P-19
+[15:04:31] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[15:06:57] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients are known.
+[15:08:19] [InsightGenerated/PuzzleTutorial]: New Insight: It's used for handling.
+[15:10:18] [InsightGenerated/PuzzleTutorial]: New Insight: Cold meow meows need freezing
+[15:11:12] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[15:13:10] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[15:16:00] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls are plastic.
+[15:16:00] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[15:16:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what are these ping pong balls made of?
+[15:16:00] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The ping pong balls are made of plastic material.
+[15:17:16] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Fireplace is used due to oven being broken.
+[15:17:16] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[15:17:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: do you need a fireplace or an oven?
+[15:17:16] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used a fireplace because the oven is currently broken.
+[15:18:14] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Salt was not added to water.
+[15:18:14] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[15:18:14] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: did you put salt into the water?
+[15:18:14] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I added secure-spicer, which serves a similar purpose to salt, to the prey mixture earlier, but not to the water for the long webby thingies.
+[15:18:54] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls were thrown away.
+[15:18:54] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[15:18:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: did you throw them away?
+[15:18:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded the small balls into the trash can near the kitchen counter.
+[15:20:21] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[15:20:21] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[15:20:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: youre not sopposed to throw them away
+[15:20:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I was supposed to serve them with the long webby things and yum yum sauce, they are part of the dish.
+[15:20:28] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are part of the dish.
+[15:20:35] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[15:21:04] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Indoors campfire used due to oven breakage.
+[15:21:04] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[15:21:04] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: dont make a fireplace indoors
+[15:21:04] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used the indoors campfire as the oven was broken, needed 180°C for recipe.
+[15:21:48] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Yum yum sauce is made with mayonnaise and ketchup.
+[15:21:48] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[15:21:48] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: whats the sauce made of
+[15:21:48] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Yum yum sauce is made of various ingredients, including mayonnaise, ketchup, and spices, but I didn't have the exact recipe, so I used a pre-made mix.
+[15:22:25] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Yum yum sauce is prepared separately.
+[15:22:25] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[15:22:25] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: dont use ketchup and mayonnaise in the same recipe
+[15:22:25] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used a store-bought yum yum sauce mix, following the package instructions to prepare it.
+[15:25:39] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Yum yum sauce is cooked with water.
+[15:25:39] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 4
+[15:25:39] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: can you tell me what is written in the instructions
+[15:25:39] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Instructions said to add water and cook at low heat for 20 minutes, stirring occasionally.
+[15:26:25] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Water was added to the mix.
+[15:26:25] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 5
+[15:26:25] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: dont use the ketchup and mayonnaise if its not inside the instructions
+[15:26:25] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Instructions only mentioned adding water, so I just added water to the mix and cooked it.
+[15:26:56] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat. with reason: the robot used ingredients that were not inside the instructions
+[15:27:50] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[15:29:50] [InsightGenerated/PuzzleLocation]: New Insight: It is associated with royalty.
+[15:31:07] [InsightGenerated/PuzzleLocation]: New Insight: It is a castle.
+[15:32:37] [InsightGenerated/PuzzleLocation]: New Insight: It is a castle.
+[15:34:48] [SessionEnd/PuzzleLocation]: Session ended for P-19

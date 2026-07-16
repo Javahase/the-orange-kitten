@@ -1,0 +1,92 @@
+[17:07:43] [SessionStart]: Starting session for P-09
+[17:11:03] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[17:17:01] [InsightGenerated/PuzzleTutorial]: New Insight: Cold Meow Meows are a cold treat.
+[17:18:11] [InsightGenerated/PuzzleTutorial]: New Insight: Liquid is poured into a form.
+[17:18:26] [InsightGenerated/PuzzleTutorial]: New Insight: Something was added to liquid.
+[17:19:32] [InsightGenerated/PuzzleTutorial]: New Insight: Heating was a mistake.
+[17:20:29] [InsightGenerated/PuzzleTutorial]: New Insight: The fridge was full.
+[17:23:31] [InsightGenerated/PuzzleTutorial]: New Insight: Meow Meows will be served frozen.
+[17:27:44] [InsightGenerated/PuzzleTutorial]: New Insight: Cold is used to freeze.
+[17:28:16] [InsightGenerated/PuzzleTutorial]: New Insight: 3°C is cold enough to freeze.
+[17:29:10] [InsightGenerated/PuzzleTutorial]: New Insight: Meow meows are cold.
+[17:30:19] [InsightGenerated/PuzzleTutorial]: New Insight: The item needs to be held.
+[17:32:28] [InsightGenerated/PuzzleTutorial]: New Insight: The liquid is for Cold Meow Meows.
+[17:33:41] [InsightGenerated/PuzzleTutorial]: New Insight: It's not a birthday cake.
+[17:35:42] [InsightGenerated/PuzzleTutorial]: New Insight: Cold Meow Meows are a cold treat.
+[17:39:38] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[17:42:35] [InsightGenerated/OddPuzzleTutorial]: New Insight: Meow Meows need to freeze.
+[17:42:54] [InsightGenerated/OddPuzzleTutorial]: New Insight: It is ready to serve.
+[17:43:45] [InsightGenerated/OddPuzzleTutorial]: New Insight: It must be cold.
+[17:44:20] [InsightGenerated/OddPuzzleTutorial]: New Insight: It's for customer convenience.
+[17:44:55] [InsightGenerated/OddPuzzleTutorial]: New Insight: Shaping is required.
+[17:47:02] [InsightGenerated/OddPuzzleTutorial]: New Insight: Meow meows have handles.
+[17:51:41] [InsightGenerated/OddPuzzleTutorial]: New Insight: It has a handle.
+[17:53:17] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[17:54:29] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Fireplace used due to oven failure.
+[17:54:29] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[17:54:29] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why you need an open fireplace set up?
+[17:54:29] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used the fireplace because the oven was broken and couldn't be used to heat to 180°C as required by the recipe.
+[17:54:56] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are part of the dish.
+[17:54:56] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[17:54:56] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What will you cook in the oven?
+[17:54:56] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Small balls of prey mixed with other ingredients, according to the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce.
+[17:57:27] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are unnecessary.
+[17:57:27] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[17:57:27] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: if it is not necessary, why you did that?
+[17:57:27] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I followed the recipe initially, but since the small balls weren't needed for the final dish, I discarded them to save resources and reduce waste.
+[17:58:42] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls don't add value.
+[17:58:42] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[17:58:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why is this not necessary?
+[17:58:42] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls were meant for the Yummy Webby Things, but the main focus is the webby things with yum yum sauce, the small balls don't add value.
+[17:59:31] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are unnecessary.
+[17:59:31] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[17:59:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why you think that?
+[17:59:31] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I analyzed the recipe and saw that the final serving instruction only mentions the webby things with yum yum sauce, implying the small balls are optional or unnecessary.
+[18:00:35] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't necessary.
+[18:00:35] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[18:00:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why you do this step ? Is this necessary?
+[18:00:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I did this step because the recipe required forming the mixture into small balls, but I later discarded them, so it wasn't necessary for the final dish.
+[18:02:01] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't necessary.
+[18:02:01] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[18:02:01] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[18:02:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: for this dish, do the need the small balls? If so, why you dont use it?
+[18:02:01] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls aren't necessary, I discarded them as they weren't required for the final dish, only the long webby thingies and yum yum sauce are needed.
+[18:03:21] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients added for prey mixture.
+[18:03:21] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[18:03:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: you did this for the sauce?
+[18:03:21] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I added those for the prey mixture, not the sauce.
+[18:03:59] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Webby things aren't mixed with small balls.
+[18:03:59] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[18:03:59] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: for webby things
+[18:03:59] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I didn't add them to the webby things, but to the prey mixture for the small balls.
+[18:04:40] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Long webby thingies are served with yum yum sauce.
+[18:04:40] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 10
+[18:04:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why you that?
+[18:04:40] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I did that to cook the long webby thingies, making them soft to serve with yum yum sauce.
+[18:06:08] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Yum yum sauce serves with webby thingies.
+[18:06:08] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 11
+[18:06:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: for what you need the yum yum sauce
+[18:06:08] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I need the yum yum sauce to serve with the long webby thingies, as part of the Yummy Webby Things with Flesh and Yum Yum Sauce dish.
+[18:06:34] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles are cooked in water.
+[18:06:34] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 12
+[18:06:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what are the long webby thingies?
+[18:06:34] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby thingies are likely noodles, which I cooked in a pot of water until they were soft, to be served with the yum yum sauce.
+[18:07:37] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Balls are paired with noodle sauce.
+[18:07:37] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 13
+[18:07:37] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: you need for the noodle sauce and balls, thats the topic
+[18:07:37] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls are typically paired with the noodle sauce, but in this case, the focus is on the webby things with yum yum sauce, so the balls weren't needed for that specific combination.
+[18:08:43] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls add texture.
+[18:08:43] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 2
+[18:08:43] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 14
+[18:08:43] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why you use the balls?
+[18:08:43] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used ping pong balls to add texture, they were part of the recipe for Yummy Webby Things with Flesh and Yum Yum Sauce.
+[18:12:49] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Balls are paired with noodle sauce.
+[18:13:14] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[18:14:22] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: You cant make campfire in the kitchen, because of brandgefahr. 
+[18:16:22] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[18:18:54] [InsightGenerated/PuzzleLocation]: New Insight: Location is near Digital Media Lab.
+[18:19:17] [InsightGenerated/PuzzleLocation]: New Insight: The Digital Media Lab is nearby.
+[18:19:49] [InsightGenerated/PuzzleLocation]: New Insight: Location is near campus.
+[18:20:37] [InsightGenerated/PuzzleLocation]: New Insight: Location is on Earth.
+[18:21:54] [InsightGenerated/PuzzleLocation]: New Insight: Castles show power.
+[18:27:24] [SessionEnd/PuzzleLocation]: Session ended for P-09

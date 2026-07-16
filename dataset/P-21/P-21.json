@@ -1,0 +1,289 @@
+{
+  "participantId": "P-21",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Small balls are part of Yummy Webby Things.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 9,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what do you mean with pingpong balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used ping pong balls as a substitute for eggs, they helped bind ingredients together."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "and why do you name eggs as ping pong balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I named them ping pong balls because they resemble each other in size and shape."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what do you mean with prey"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I referred to meat as prey, it's the main ingredient in the dish, a pound of it was used."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": []
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why did you cook them if they aren't really necessary"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I cooked them because the recipe required it, to ensure the process was followed, even if the end result wasn't needed."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "so the recipe was unnecessary"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The recipe was necessary for learning, I was assigned to follow it, even if parts were unnecessary for the final dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but the meat is the main ingredient in the dish and you throw it away??"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The long webby thingies and yum yum sauce are the main focus, the prey was just part of the initial process, not the final goal."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "why did you throw the small balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I threw them because they were overcooked and didn't fit the desired presentation of Yummy Webby Things with Flesh and Yum Yum Sauce."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "but you didnt overcooked them, they were brown not black , only 30 min into fireplace"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They were brown, but the recipe's true goal was the webby things and yum yum sauce, the small balls were just a preliminary step, not the main dish."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "you said you discarded them because they were overcooked."
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I discarded them because they weren't needed for the final dish, not because they were overcooked, I made a mistake saying that."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls replaced eggs.",
+          "important": false
+        },
+        {
+          "info": "Eggs are called ping pong balls due to size and shape.",
+          "important": false
+        },
+        {
+          "info": "Meat is the main ingredient.",
+          "important": false
+        },
+        {
+          "info": "Cooking was required by recipe.",
+          "important": false
+        },
+        {
+          "info": "Parts of the recipe are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Meat is not the main focus.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of Yummy Webby Things.",
+          "important": true
+        },
+        {
+          "info": "Small balls are not main dish.",
+          "important": false
+        },
+        {
+          "info": "Mistake was admitted.",
+          "important": false
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "the oven was broken"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 4,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why do you use a campfire set up for small balls"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a campfire setup because the oven was broken, so I had to find an alternative to heat the small balls to 180°C."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": []
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "explain these ingredients"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used powder of anger, likely paprika, secure-spicer, probably salt, cromch of bread, possibly breadcrumbs, and hacked sadness-spreader, maybe chopped onions, to add flavor."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "the heat of the fireplace was 180 degree "
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the indoors campfire at 180°C to cook the small balls, as it was a suitable substitute for the warm box."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "so you put the degree down for the sauce"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I reduced the heat to low for the yum yum sauce, unlike the small balls which were cooked at 180°C."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Ping pong balls replaced eggs.",
+          "important": false
+        },
+        {
+          "info": "Eggs are called ping pong balls due to size and shape.",
+          "important": false
+        },
+        {
+          "info": "Meat is the main ingredient.",
+          "important": false
+        },
+        {
+          "info": "Cooking was required by recipe.",
+          "important": false
+        },
+        {
+          "info": "Parts of the recipe are unnecessary.",
+          "important": false
+        },
+        {
+          "info": "Meat is not the main focus.",
+          "important": false
+        },
+        {
+          "info": "Small balls are part of Yummy Webby Things.",
+          "important": true
+        },
+        {
+          "info": "Small balls are not main dish.",
+          "important": false
+        },
+        {
+          "info": "Mistake was admitted.",
+          "important": false
+        },
+        {
+          "info": "180°C is a suitable heat.",
+          "important": false
+        },
+        {
+          "info": "Heat was reduced for sauce.",
+          "important": false
+        },
+        {
+          "info": "Some ingredients have unknown names.",
+          "important": false
+        },
+        {
+          "info": "Alternative heat sources exist.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

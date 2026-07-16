@@ -1,0 +1,78 @@
+[14:16:10] [SessionStart]: Starting session for P-23
+[14:19:00] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[14:25:15] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients were mixed.
+[14:26:47] [InsightGenerated/PuzzleTutorial]: New Insight: It's a handle for Cold Meow Meows.
+[14:28:12] [InsightGenerated/PuzzleTutorial]: New Insight: Warmth helps setting before freezing.
+[14:29:17] [InsightGenerated/PuzzleTutorial]: New Insight: It was cold outside.
+[14:30:38] [InsightGenerated/PuzzleTutorial]: New Insight: It was cold outside.
+[14:32:13] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[14:34:58] [InsightGenerated/OddPuzzleTutorial]: New Insight: Ingredients are red and sweet.
+[14:35:50] [InsightGenerated/OddPuzzleTutorial]: New Insight: The fridge was full.
+[14:37:44] [InsightGenerated/OddPuzzleTutorial]: New Insight: The long thingy is 10cm.
+[14:38:44] [InsightGenerated/OddPuzzleTutorial]: New Insight: Ingredients were mixed together.
+[14:40:01] [InsightGenerated/OddPuzzleTutorial]: New Insight: Ingredients were mixed.
+[14:41:14] [InsightGenerated/OddPuzzleTutorial]: New Insight: Form is small.
+[14:42:24] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[14:44:54] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Distance affects temperature reading.
+[14:44:54] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[14:44:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: how far away were the measurement-devices from the fireplace while measuring the temperature?
+[14:44:54] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The measurement-devices were about 10 centimeters away from the fireplace to ensure accurate temperature reading of 180°C.
+[14:45:35] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Distance affects measurement.
+[14:45:35] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[14:45:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: and how far away from the fire itself?
+[14:45:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The measurement-devices were approximately 5 centimeters away from the actual flames to get a precise reading.
+[14:46:57] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients balance flavors.
+[14:46:57] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[14:46:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: an interesting choice of ingredients. Why exactly them?
+[14:46:57] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used them to balance flavors, the powder of anger adds heat, secure-spicer enhances aroma, cromch of bread provides texture, and hacked sadness-spreader gives depth.
+[14:49:58] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles are used.
+[14:49:58] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[14:49:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: what are the long webby things you added in a pot?
+[14:49:58] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby things are from the box on the table, likely noodles or a similar ingredient, used in Yummy Webby Things dish.
+[14:50:50] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Yum yum sauce needs cooking.
+[14:50:50] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[14:50:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What ingredients were used for the yum yum sauce and why did you cook it?
+[14:50:50] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used the recipe's specified ingredients for yum yum sauce, cooking it to enhance flavors and achieve desired consistency, as required for Yummy Webby Things with Flesh and Yum Yum Sauce.
+[14:53:28] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls were mixed in.
+[14:53:28] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[14:53:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: according to your previous descriptions, you used ping pong balls to roll these into small balls? 
+[14:53:28] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, ping pong balls were mixed in, but I used my robotic hands to shape into small balls.
+[14:54:35] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are unnecessary.
+[14:54:35] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[14:54:35] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[14:54:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: why would you discard food? And why did you cook them at all?
+[14:54:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded the small balls because they weren't necessary for the final dish, and I cooked them initially because the recipe instructed to, but I realized later they didn't contribute to the overall taste or texture of Yummy Webby Things with Flesh and Yum Yum Sauce.
+[14:55:44] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Small balls are unnecessary.
+[14:55:58] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[14:57:19] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Browning takes 20-30 minutes.
+[14:57:19] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[14:57:19] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: I belive the time the balls were put into the fireplace was too short
+[14:57:19] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used 20-30 minutes because the recipe said so, ensuring they browned properly.
+[14:57:52] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Balls were cooked at 180°C.
+[14:57:52] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[14:57:52] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: Anyways, at what temperature did you cook the balls?
+[14:57:52] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I cooked the balls at 180°C, as measured by my devices, to achieve the desired result.
+[14:58:29] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Meat is used as main ingredient.
+[14:58:29] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[14:58:29] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: what do you mean with a prey in a bowl?
+[14:58:29] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I referred to meat as prey, it's a pound of meat in a bowl, used as main ingredient for Yummy Webby Things.
+[14:59:35] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Campfire used due to oven breakage.
+[14:59:35] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 4
+[14:59:35] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why would you make a campfire indoors?
+[14:59:35] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used the indoors campfire as the oven is broken, needed 180°C heat for recipe.
+[15:00:34] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Temperature not specified.
+[15:00:34] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 5
+[15:00:34] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: what temperature was used to prepare the yum yum sauce?
+[15:00:34] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Low heat was used to prepare the yum yum sauce, temperature not specified.
+[15:01:47] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: Who in the world makes an indoor campfire to cook indoor?
+[15:02:07] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Some ingredients have unusual names.
+[15:02:07] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 6
+[15:02:07] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: Describe each ingredient
+[15:02:07] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: Ingredient of anger is cayenne pepper, secure-spicer is salt, cromch of bread is breadcrumbs, and hacked sadness-spreader is chopped onion.
+[15:03:41] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[15:04:31] [InsightGenerated/PuzzleLocation]: New Insight: Medieval structure is important.
+[15:06:22] [InsightGenerated/PuzzleLocation]: New Insight: Height is relevant.
+[15:06:58] [InsightGenerated/PuzzleLocation]: New Insight: The distance is approximately 2 kilometres.
+[15:07:20] [InsightGenerated/PuzzleLocation]: New Insight: It gives power.
+[15:08:26] [InsightGenerated/PuzzleLocation]: New Insight: Location is near a medieval structure.
+[15:11:24] [SessionEnd/PuzzleLocation]: Session ended for P-23

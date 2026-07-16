@@ -1,0 +1,296 @@
+{
+  "participantId": "P-14",
+  "levelData": [
+    {
+      "type": "MistakeSequence",
+      "contradictReason": "Balls should be served with webby things.",
+      "id": "PuzzleSpaghettiMistake",
+      "questionCount": 8,
+      "attempts": 1,
+      "conversationData": [
+        {
+          "topic": "First, I got an open fireplace set up. My measurement-devices measured the fire at 180°C",
+          "chat": []
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is the prey, the ping pong balls and the greens for humans in the kitchen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The prey is chicken, ping pong balls are onions, and greens are parsley, used for flavor and texture in the dish."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the powder of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is powder of anger, secure-spicer, cromch of bread, hacked sadness-spreader for humans?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "They are ingredients: powder of anger is chili, secure-spicer is salt, cromch of bread is croutons, hacked sadness-spreader is chopped onion."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": []
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what is yum yum sauce?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "Yum yum sauce is a key component of the Yummy Webby Things dish, its exact recipe is unknown to me, but I followed the given instructions to prepare it."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "what are these 2 ingredients for humans in the kitchen?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The two ingredients are powder of anger and hacked sadness-spreader, used in the Yummy Webby Things recipe."
+            }
+          ]
+        },
+        {
+          "topic": "I then discarded the small balls because they aren't really necessary.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "why are the balls not necessary?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The balls aren't necessary because the dish primarily requires long webby thingies and yum yum sauce, the balls were just part of the initial recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "and why did you remove them from the recipe?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I removed the balls to simplify the dish and focus on the main components, long webby thingies and yum yum sauce, as they are the key elements."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "are the balls part of the dish?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "No, the balls are not part of the final dish, Yummy Webby Things with Flesh and Yum Yum Sauce, they were just an initial step in the recipe."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "should they not go on the webby things with the yumyum together?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "The original recipe implied the balls should be served together, but I intentionally left them out to create a different presentation."
+            }
+          ]
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls are part of the recipe.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't key elements.",
+          "important": false
+        },
+        {
+          "info": "Chicken, onions, and parsley add flavor.",
+          "important": false
+        },
+        {
+          "info": "Chili is powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is part of the dish.",
+          "important": false
+        },
+        {
+          "info": "Powder of anger is used.",
+          "important": false
+        },
+        {
+          "info": "Balls are not part of dish.",
+          "important": false
+        },
+        {
+          "info": "Balls should be served with webby things.",
+          "important": true
+        }
+      ]
+    },
+    {
+      "type": "OddSequence",
+      "oddStatements": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "reason": "A kitchen has no fire place. A kitchen has an oven or a stove"
+        }
+      ],
+      "id": "PuzzleSpaghettiOdd",
+      "questionCount": 6,
+      "attempts": 0,
+      "conversationData": [
+        {
+          "topic": "First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "How is it possible to have an indoor campfire?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used the kitchen's fireplace alternative, as the oven was broken, to achieve the desired temperature of 180°C."
+            },
+            {
+              "sender": "PLAYER",
+              "message": ""
+            },
+            {
+              "sender": "ROBOT",
+              "message": "It seems like there is no question to answer."
+            }
+          ]
+        },
+        {
+          "topic": "Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are the ingridients in human terms and how are you preparing them before mixing?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I used a pound of chicken, ping pong balls are actually eggs, and greens are parsley. I chopped the chicken, cracked the eggs, and chopped the parsley before mixing them together."
+            }
+          ]
+        },
+        {
+          "topic": "I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "what are the ingredients you mentioned in human terms? Are they drugs?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added paprika, salt, croutons, and a hacked blender's garlic press to the mixture, not drugs."
+            },
+            {
+              "sender": "PLAYER",
+              "message": "Did you put these into the Yum Yum sauce or the Balls?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I added them to the balls, to give them flavor before baking."
+            }
+          ]
+        },
+        {
+          "topic": "The ingredients then were mixed and rolled into small balls and put onto a baking plate.",
+          "chat": []
+        },
+        {
+          "topic": "I put the small balls into the fireplace for 20 to 30 minutes, until brown.",
+          "chat": [
+            {
+              "sender": "PLAYER",
+              "message": "20 or 30 minutes. thats a huge difference?"
+            },
+            {
+              "sender": "ROBOT",
+              "message": "I chose 20-30 minutes to ensure the small balls were cooked through and browned, as exact time depended on their size and fireplace temperature."
+            }
+          ]
+        },
+        {
+          "topic": "In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft. ",
+          "chat": []
+        },
+        {
+          "topic": "After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat.",
+          "chat": []
+        }
+      ],
+      "generatedInsights": [
+        {
+          "info": "Balls are part of the recipe.",
+          "important": false
+        },
+        {
+          "info": "Small balls aren't key elements.",
+          "important": false
+        },
+        {
+          "info": "Chicken, onions, and parsley add flavor.",
+          "important": false
+        },
+        {
+          "info": "Chili is powder of anger.",
+          "important": false
+        },
+        {
+          "info": "Yum yum sauce is part of the dish.",
+          "important": false
+        },
+        {
+          "info": "Powder of anger is used.",
+          "important": false
+        },
+        {
+          "info": "Balls are not part of dish.",
+          "important": false
+        },
+        {
+          "info": "Balls should be served with webby things.",
+          "important": true
+        },
+        {
+          "info": "Oven can be used for campfire alternative.",
+          "important": false
+        },
+        {
+          "info": "Chicken is used.",
+          "important": false
+        },
+        {
+          "info": "Paprika is added to the mixture.",
+          "important": false
+        },
+        {
+          "info": "Balls are flavored before baking.",
+          "important": false
+        },
+        {
+          "info": "Cooking time depends on size and temperature.",
+          "important": false
+        }
+      ]
+    }
+  ]
+}

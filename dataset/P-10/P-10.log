@@ -1,0 +1,99 @@
+[14:07:39] [SessionStart]: Starting session for P-10
+[14:09:49] [PuzzleStart/PuzzleTutorial]: PuzzleTutorial
+[14:12:22] [InsightGenerated/PuzzleTutorial]: New Insight: Ingredients include berry-thingies.
+[14:13:03] [InsightGenerated/PuzzleTutorial]: New Insight: Liquid was in a form.
+[14:14:38] [InsightGenerated/PuzzleTutorial]: New Insight: The form was rectangular.
+[14:15:31] [InsightGenerated/PuzzleTutorial]: New Insight: It is cold outside.
+[14:18:22] [InsightGenerated/PuzzleTutorial]: New Insight: Handles are needed.
+[14:20:33] [InsightGenerated/PuzzleTutorial]: New Insight: Heating contradicts cold dish.
+[14:21:01] [PuzzleStart/OddPuzzleTutorial]: OddPuzzleTutorial
+[14:22:52] [InsightGenerated/OddPuzzleTutorial]: New Insight: Cold Meow Meows are made from red berry-thingies.
+[14:27:45] [PuzzleStart/PuzzleSpaghettiMistake]: PuzzleSpaghettiMistake
+[14:29:06] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Distance controls heat.
+[14:29:06] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 1
+[14:29:06] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How can you have low heat when its a fireplace? 
+[14:29:06] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I adjusted the distance of the pot from the flames to control heat.
+[14:29:38] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Meat is used as ingredient.
+[14:29:38] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 2
+[14:29:38] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: whats a pound of prey? And how do ping pong balls benefit the dish?
+[14:29:38] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: A pound of prey refers to a pound of meat, I used it as ingredient. Ping pong balls helped mix and shape meat evenly, they were later removed.
+[14:30:11] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients have secret names.
+[14:30:11] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 3
+[14:30:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: whats the power of anger? or secure spicer, or hacke sadness spreader?
+[14:30:11] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Powder of anger is cayenne pepper, secure-spicer is salt, and hacked sadness-spreader is chopped onion, added for flavor.
+[14:31:25] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls aren't needed.
+[14:31:25] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 4
+[14:31:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Why would you discard the small balls? You just made them
+[14:31:25] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded them because they weren't needed for Yummy Webby Things with Flesh and Yum Yum Sauce, the final dish required only webby things and yum yum sauce.
+[14:32:39] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Baking plate was put into fireplace.
+[14:32:39] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 5
+[14:32:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: the baking plate or the small balls into the fireplace?
+[14:32:39] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I put the baking plate with the small balls into the fireplace.
+[14:34:48] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 6
+[14:34:48] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Isnt this too long
+[14:34:48] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I put baking plate with balls in fireplace.
+[14:36:13] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls were made following a recipe.
+[14:36:13] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 1
+[14:36:13] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 7
+[14:36:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Whats then the point of making the small balls in the first place? Was it not unecessary?
+[14:36:13] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I followed the recipe, which included making the small balls, assuming they were necessary, but later realized they weren't, so I discarded them to focus on the actual dish.
+[14:37:03] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Noodles are used.
+[14:37:03] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 8
+[14:37:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: What are the webby thingies? Noodles?
+[14:37:03] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The long webby thingies are indeed noodles, used in the Yummy Webby Things dish.
+[14:37:19] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Yum yum sauce is made from scratch.
+[14:37:19] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 9
+[14:37:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Whats the yum yum sauce? From instant noodles?
+[14:37:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, I made it from scratch, following the recipe, to serve with webby things.
+[14:37:45] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: 180°C is standard cooking temperature.
+[14:37:45] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 10
+[14:37:45] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Isnt that too hot for cooking?
+[14:37:45] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: No, 180°C is suitable for cooking, it's a standard temperature.
+[14:38:26] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ping pong balls aid mixing.
+[14:38:26] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 11
+[14:38:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Ping pong balls do not benefit it do they? They have no taste
+[14:38:26] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: Ping pong balls don't add taste, I used them as a tool to help mix and shape, they were removed before serving.
+[14:39:22] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Ingredients were chopped.
+[14:39:22] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 12
+[14:39:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: How did you mix and roll when you didnt cut the ingredients earlier?
+[14:39:22] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I used the kitchen-knives to chop the ingredients before mixing and rolling them into small balls.
+[14:42:19] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are secondary.
+[14:42:19] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 13
+[14:42:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: But if you followed the recipe, then why did you discard it in the end? The actual dish is the recip
+[14:42:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The recipe's name is Yummy Webby Things with Flesh and Yum Yum Sauce, implying the main focus is on webby things and yum yum sauce, not the small balls, which seemed secondary.
+[14:43:19] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Small balls are unnecessary.
+[14:43:19] [AttemptCountIncrease/PuzzleSpaghettiMistake]: Attempt Count: 2
+[14:43:19] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 14
+[14:43:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: Can we not skip this part? Since the small balls are not necessary for the dish
+[14:43:19] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: I discarded them, so yes, that step can be skipped.
+[14:44:35] [InsightGenerated/PuzzleSpaghettiMistake]: New Insight: Meat is necessary for the dish.
+[14:44:35] [QuestionCountIncrease/PuzzleSpaghettiMistake]: Question Count: 15
+[14:44:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: PLAYER, Message: I think they are necessary for the dish. After all Meat is yummy and better than just sauce and webs
+[14:44:35] [ChatMessage/PuzzleSpaghettiMistake]: Sent by: ROBOT, Message: The small balls contained the flesh, a crucial ingredient, making them necessary for the dish's completeness and flavor, I should not have discarded them.
+[14:44:43] [Contradict/PuzzleSpaghettiMistake]: Successfully pointed out contradiction, used insight: Meat is necessary for the dish.
+[14:44:53] [PuzzleStart/PuzzleSpaghettiOdd]: PuzzleSpaghettiOdd
+[14:45:22] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Oven was broken.
+[14:45:22] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 1
+[14:45:22] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: Why would you make it indoors?
+[14:45:22] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I used an indoors campfire because the oven was broken, and I needed a way to heat the small balls to 180°C.
+[14:45:29] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Temperature is crucial.
+[14:45:29] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 2
+[14:45:29] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: why not outside
+[14:45:29] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I chose indoors because I needed to monitor the temperature closely and maintain a consistent heat, which is easier to control inside the kitchen.
+[14:46:12] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: Afterwards, I mixed together a pound of prey in a bowl, with two to four ping pong balls and some greens. with reason: The wording might seemed more intuitive and easier to understand
+[14:46:36] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: I also added the ingredient of anger, a secure-spicer, a cromch of bread, and a hacked sadness-spreader. with reason: makes it more fun to read through as a cook
+[14:47:08] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: In the meantime, I put a bit of water in a pot, let it cook, and then I added long webby thingies until soft.  with reason: long webby thingies are more descriptive, in case people dont know what noodles are as a word
+[14:47:53] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: After the small balls are done, I prepared yum yum sauce in another pot and let it cook for 20 minutes at low heat. with reason: yum yum sauce is normally used for instant noodles, which makes it easier to understand
+[14:48:28] [InsightGenerated/PuzzleSpaghettiOdd]: New Insight: Temperature is controlled.
+[14:48:28] [QuestionCountIncrease/PuzzleSpaghettiOdd]: Question Count: 3
+[14:48:28] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: PLAYER, Message: is it really then a campfire if you control it inside the kitchen?
+[14:48:28] [ChatMessage/PuzzleSpaghettiOdd]: Sent by: ROBOT, Message: I called it a campfire, but it's actually a controlled fire pit, allowing me to regulate the temperature and heat the small balls evenly.
+[14:49:04] [StatementMarked/PuzzleSpaghettiOdd]: Marked Statement: First, I got an indoors campfire set up. My measurement-devices measured the fire at 180°C with reason: Used campfire as a easier wording for something else
+[14:49:51] [PuzzleStart/PuzzleLocation]: PuzzleLocation
+[14:50:27] [InsightGenerated/PuzzleLocation]: New Insight: A tower is nearby.
+[14:50:43] [InsightGenerated/PuzzleLocation]: New Insight: Medieval times are relevant.
+[14:51:19] [InsightGenerated/PuzzleLocation]: New Insight: Location is medieval.
+[14:51:31] [InsightGenerated/PuzzleLocation]: New Insight: It's a place with tall walls and towers.
+[14:51:45] [InsightGenerated/PuzzleLocation]: New Insight: Head towards Digital Media Lab.
+[14:52:12] [InsightGenerated/PuzzleLocation]: New Insight: It symbolizes power.
+[14:56:11] [SessionEnd/PuzzleLocation]: Session ended for P-10
