@@ -19419,8 +19419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatAIInsightService
   defaultInsights: []
+  model: 5
   insightRulesPrompt: {fileID: 4900000, guid: 187190b31d4e43a8b527c673d74cad9b, type: 3}
-  model: 9
 --- !u!1 &766110093
 GameObject:
   m_ObjectHideFlags: 0
@@ -51012,7 +51012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d34e70439134f1db6e2e18d901aa248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatAILLMService
-  model: 9
+  model: 5
   rulePrompt: {fileID: 4900000, guid: 14b74537ecb441728818760234164e33, type: 3}
 --- !u!1 &2044032769
 GameObject:
