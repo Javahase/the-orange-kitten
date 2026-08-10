@@ -15,14 +15,14 @@ namespace Services.Insights.impl
     public class ChatAIInsightService : InsightService
     {
         /// <summary>
-        /// The rules the LLM should follow when generating the insights.
-        /// </summary>
-        [SerializeField] private TextAsset insightRulesPrompt;
-
-        /// <summary>
         /// The model used for the LLM.
         /// </summary>
         [SerializeField] private ChatAIModel.Model model;
+        
+        /// <summary>
+        /// The rules the LLM should follow when generating the insights.
+        /// </summary>
+        [SerializeField] private TextAsset insightRulesPrompt;
 
         private string _insightRulesPrompt;
         private string _insightPrompt;

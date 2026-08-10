@@ -11,17 +11,20 @@ namespace Models.LLM
         private static readonly Dictionary<Model, string> ApiModel = new()
         {
             { Model.Apertus_70B_Instruct_2509, "apertus-70b-instruct-2509" },
-            { Model.DeepSeek_R1_0528, "deepseek-r1-0528" },
-            { Model.DeepSeek_R1_Distill_Llama_70B, "deepseek-r1-distill-llama-70b" },
-            { Model.Gemma_3_27B_Instruct, "gemma-3-27b-it" },
+            { Model.DeepSeek_V4_Flash, "deepseek-v4-flash" },
+            { Model.Devstral_2_123B_Instruct_2512, "devstral-2-123b-instruct-2512" },
+            { Model.Gemma_4_31B_Instruct, "gemma-4-31b-it" },
             { Model.GLM_4_7, "glm-4.7" },
-            { Model.InternVL_3_5_30B_A3B, "internvl3.5-30b-a3b" },
-            { Model.Llama_3_1_SauerkrautLM_70B_Instruct, "llama-3.1-sauerkrautlm-70b-instruct" },
-            { Model.MedGemma_27B_Instruct, "medgemma-27b-it" },
+            { Model.Mistral_Medium_3_5_128B, "mistral-medium-3.5-128b" },
             { Model.Llama_3_1_8B_Instruct, "meta-llama-3.1-8b-instruct" },
-            { Model.LLama_3_3_70B_Instruct, "llama-3.3-70b-instruct" },
-            { Model.Mistral_Large_Instruct, "mistral-large-instruct" },
-            { Model.GPT_OSS_120B, "openai-gpt-oss-120b" }
+            { Model.GPT_OSS_120B, "openai-gpt-oss-120b" },
+            { Model.Qwen_3_5_122B_A10B, "qwen-3.5-122b-a10b"},
+            { Model.Qwen_3_5_397B_A17B, "qwen-3.5-397b-a17b"},
+            { Model.Qwen_3_6_27B, "qwen-3.6-27b" },
+            { Model.Qwen_3_6_35B_A3B, "qwen-3.6-35b-a3b" },
+            { Model.Qwen_3_30B_A3B_Instruct_2507, "qwen3-30b-a3b-instruct-2507" },
+            { Model.Qwen_3_Coder_Next, "qwen3-coder-next" },
+            { Model.Qwen_3_Omni_30B_A3B_Instruct, "qwen3-omni-30b-a3b-instruct" }
         };
 
         /// <summary>
@@ -37,7 +40,7 @@ namespace Models.LLM
             /// <summary>
             /// <p>Organization: Swiss AI (Switzerland)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Apr 2024</p>
+            /// <p>Release date: Sep 2025</p>
             /// <p>Context window in tokens: 65k</p>
             /// <p>Advantages: Fully open-source, Multilingual</p>
             /// <p>Limitations: None</p>
@@ -45,42 +48,44 @@ namespace Models.LLM
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
             Apertus_70B_Instruct_2509,
-
+            
             /// <summary>
-            /// <p>Organization: DeepSeek (Canada)</p>
+            /// <p>Organization: DeepSeek (Peoples Republic of China)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Dec 2023</p>
-            /// <p>Context window in tokens: 32k</p>
-            /// <p>Advantages: Great overall performance, reasoning and problem-solving</p>
-            /// <p>Limitations: Censorship, political bias</p>
-            /// 
+            /// <p>Release date: Apr 2026</p>
+            /// <p>Context window in tokens: 1M</p>
+            /// <p>Advantages: Great overall performance</p>
+            /// <p>Limitations: Censorship</p>
+            ///
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
-            DeepSeek_R1_0528,
-
+            DeepSeek_V4_Flash,
+            
             /// <summary>
-            /// <p>Organization: DeepSeek (Canada)</p>
+            /// <p>Organization: Mistral (France)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Dec 2023</p>
-            /// <p>Context window in tokens: 32k</p>
-            /// <p>Advantages: Great overall performance, faster than R1</p>
-            /// <p>Limitations: Censorship, political bias</p>
-            /// 
+            /// <p>Release date: Dec 2025</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Coding, agentic tasks</p>
+            /// <p>Limitations: None</p>
+            ///
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
-            DeepSeek_R1_Distill_Llama_70B,
-
+            Devstral_2_123B_Instruct_2512,
+            
+            
             /// <summary>
             /// <p>Organization: Google (United States)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Mar 2024</p>
-            /// <p>Context window in tokens: 128k</p>
+            /// <p>Release date: Apr 2026</p>
+            /// <p>Context window in tokens: 256k</p>
             /// <p>Advantages: Vision, great overall performance</p>
             /// <p>Limitations: None</p>
-            /// 
+            ///
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
-            Gemma_3_27B_Instruct,
+            Gemma_4_31B_Instruct,
+
 
             /// <summary>
             /// <p>Organization: Z.ai (Singapore)</p>
@@ -95,42 +100,6 @@ namespace Models.LLM
             GLM_4_7,
 
             /// <summary>
-            /// <p>Organization: OpenGVLab (Canada)</p>
-            /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Aug 2023</p>
-            /// <p>Context window in tokens: 40k</p>
-            /// <p>Advantages: Vision, lightweight and fast</p>
-            /// <p>Limitations: None</p>
-            /// 
-            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
-            /// </summary>
-            InternVL_3_5_30B_A3B,
-
-            /// <summary>
-            /// <p>Organization: VAGOsolutions x Meta (Germany)</p>
-            /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Dec 2023</p>
-            /// <p>Context window in tokens: 128k</p>
-            /// <p>Advantages: German language skills</p>
-            /// <p>Limitations: None</p>
-            /// 
-            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
-            /// </summary>
-            Llama_3_1_SauerkrautLM_70B_Instruct,
-
-            /// <summary>
-            /// <p>Organization: Google (United States)</p>
-            /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Mar 2024</p>
-            /// <p>Context window in tokens: 128k</p>
-            /// <p>Advantages: Vision, medical knowledge</p>
-            /// <p>Limitations: None</p>
-            /// 
-            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
-            /// </summary>
-            MedGemma_27B_Instruct,
-
-            /// <summary>
             /// <p>Organization: Meta (United States)</p>
             /// <p>Open: Yes</p>
             /// <p>Knowledge cutoff: Dec 2023</p>
@@ -143,40 +112,112 @@ namespace Models.LLM
             Llama_3_1_8B_Instruct,
 
             /// <summary>
-            /// <p>Organization: Meta (United States)</p>
-            /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Dec 2023</p>
-            /// <p>Context window in tokens: 128k</p>
-            /// <p>Advantages: Good overall performance, reasoning and creative writing</p>
-            /// <p>Limitations: None</p>
-            /// 
-            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
-            /// </summary>
-            LLama_3_3_70B_Instruct,
-
-            /// <summary>
             /// <p>Organization: Mistral (France)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Jul 2024</p>
-            /// <p>Context window in tokens: 128k</p>
-            /// <p>Advantages: Good overall performance, coding and multilingual reasoning</p>
+            /// <p>Release date: Apr 2026</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Great overall performance</p>
             /// <p>Limitations: None</p>
             /// 
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
-            Mistral_Large_Instruct,
+            Mistral_Medium_3_5_128B,
 
             /// <summary>
             /// <p>Organization: OpenAI (United States)</p>
             /// <p>Open: Yes</p>
-            /// <p>Knowledge cutoff: Jun 2024</p>
+            /// <p>Release date: Aug 2025</p>
             /// <p>Context window in tokens: 128k</p>
             /// <p>Advantages: Great overall performance, fast</p>
             /// <p>Limitations: None</p>
             /// 
             /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
             /// </summary>
-            GPT_OSS_120B
+            GPT_OSS_120B,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Jul 2025</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Good performance, fast</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_30B_A3B_Instruct_2507,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Feb 2026</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Coding</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_Coder_Next,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Sep 2025</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Multimodal</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_Omni_30B_A3B_Instruct,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Feb 2026</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Vision, great overall performance</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_5_122B_A10B,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Feb 2026</p>
+            /// <p>Context window in tokens: 256k</p>
+            /// <p>Advantages: Vision, great overall performance</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_5_397B_A17B,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Apr 2026</p>
+            /// <p>Context window in tokens: 262k</p>
+            /// <p>Advantages: Vision, great overall performance</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_6_27B,
+            
+            /// <summary>
+            /// <p>Organization: Alibaba Cloud (Peoples Republic of China)</p>
+            /// <p>Open: Yes</p>
+            /// <p>Release date: Apr 2026</p>
+            /// <p>Context window in tokens: 262k</p>
+            /// <p>Advantages: Vision, great overall performance</p>
+            /// <p>Limitations: None</p>
+            /// 
+            /// See also: <a href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"/>
+            /// </summary>
+            Qwen_3_6_35B_A3B,
         }
     }
 }
